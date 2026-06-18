@@ -145,7 +145,7 @@ Sciences</institution>
 
 <body>
 <sec id="potential-journals">
-  <title>1 Potential journals</title>
+  <title>Potential journals</title>
   <list list-type="bullet">
     <list-item>
       <p>Soil and Tillage Research</p>
@@ -169,7 +169,7 @@ Sciences</institution>
   </list>
 </sec>
 <sec id="introduction">
-  <title>2 Introduction</title>
+  <title>1 Introduction</title>
   <p>Plastics are extensively used in all aspects of life, including
   residential, commercial, industrial, agricultural and institutional
   sectors. Through improper disposal, accidental and incidental
@@ -233,9 +233,9 @@ Sciences</institution>
   from cropland in surface runoff during spring snowmelt.</p>
 </sec>
 <sec id="methods">
-  <title>3 Methods</title>
+  <title>2 Methods</title>
   <sec id="site-description">
-    <title>3.1 Site description</title>
+    <title>2.1 Site description</title>
     <p>The study site is located near the edge of the Manitoba
     Escarpment in the South Tobacco Creek Watershed (STCW), near the
     town of Miami, Manitoba, Canada (49.3711°N, 98.2439°W; 445 masl)
@@ -301,7 +301,7 @@ Sciences</institution>
     </fig>
   </sec>
   <sec id="soil-sampling-and-analysis">
-    <title>3.2 Soil sampling and analysis</title>
+    <title>2.2 Soil sampling and analysis</title>
     <p>Soil sampling was conducted at locations established in previous
     research
     (<xref alt="Tiessen et al. 2010" rid="ref-tiessen2010" ref-type="bibr">Tiessen
@@ -328,7 +328,7 @@ Sciences</institution>
     weighed using a balance with 0.1 mg resolution.</p>
   </sec>
   <sec id="runoff-and-water-sampling">
-    <title>3.3 Runoff and water sampling</title>
+    <title>2.3 Runoff and water sampling</title>
     <p>A v-notched weir was installed in the riparian area at the
     outflow of each watershed. The water depth at the weirs was recorded
     water depth at 5-min intervals using a pressure transducer (Onset
@@ -383,7 +383,7 @@ Sciences</institution>
     is the number of measurement periods.</p>
   </sec>
   <sec id="statistical-analysis">
-    <title>3.4 Statistical analysis</title>
+    <title>2.4 Statistical analysis</title>
     <p>All statistical analysis, plotting, and mapping were undertaken
     using the R Statistical Software (v4.5.3); R Core Team
     (<xref alt="2026" rid="ref-rcoreteam2026" ref-type="bibr">2026</xref>)),
@@ -414,9 +414,9 @@ Sciences</institution>
   </sec>
 </sec>
 <sec id="results-and-discussion">
-  <title>4 Results and Discussion</title>
+  <title>3 Results and Discussion</title>
   <sec id="in-field-abundance-and-distribution">
-    <title>4.1 In-field abundance and distribution</title>
+    <title>3.1 In-field abundance and distribution</title>
     <p>In the statistical model investigating polymer abundance, the
     estimated variance for the random factor of sampling location was
     effectively zero, and this factor was removed from the model. No
@@ -676,7 +676,7 @@ Sciences</institution>
     range of plastic types and sizes.</p>
   </sec>
   <sec id="runoff-and-loss">
-    <title>4.2 Runoff and loss</title>
+    <title>3.2 Runoff and loss</title>
     <p>Agricultural soils can serve as a long-term source of
     microplastics (MPs) to downstream ecosystems. Although
     concentrations in agricultural soil may be low, the extensive area
@@ -703,7 +703,7 @@ Sciences</institution>
   </sec>
 </sec>
 <sec id="conclusions">
-  <title>5 Conclusions</title>
+  <title>4 Conclusions</title>
   <p>Polymer coatings from slow-release fertilizers showed clear spatial
   and temporal dynamics, with evidence of downslope movement and export
   to downstream environments, demonstrating that agricultural soils can

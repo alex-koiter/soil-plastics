@@ -71,7 +71,7 @@ bibliography: references.bib
 number-sections: true
 ---
 
-## Potential journals
+## Potential journals {.unnumbered}
 - Soil and Tillage Research
   - A Short Communication is a concise but complete description of a limited investigation, which will not be included in a later paper. Short Communications should be as completely documented, both by reference to the literature and description of the experimental procedures employed, as a regular paper. They should not occupy more than 6 printed pages (about 12 manuscript pages, including figures, tables and references).
   - Pretty sure BU has a publishing agreement so it should be free to publish
