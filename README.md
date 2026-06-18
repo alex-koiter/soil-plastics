@@ -1,4 +1,6 @@
-## A Quarto Manuscript Template
+## Distribution and loss of slow-release polymer capsules in an agro-ecosystem
 
-This is a template repo for generating a manuscript from Quarto that accompanies the tutorial at: [Quarto Manuscripts: RStudio](https://quarto.org/docs/manuscripts/authoring/rstudio.html)
+### This is very preliminary work and is not ready for public dissemination
 
+
+A preview of the manuscript, including notebooks for analysis, can be found at <https://alexkoiter.ca/soil-plastics/>

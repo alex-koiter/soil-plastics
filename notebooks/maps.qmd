@@ -1,0 +1,209 @@
+---
+title: 01 Map of study area
+author: Alex Koiter
+---
+## Load Libraries
+```{r}
+library(tidyverse)
+library(ggspatial)
+library(sf)
+library(rnaturalearth)
+library(patchwork)
+library(OpenStreetMap)
+library(janitor)
+```
+
+## Important coordinates 
+Regional site location
+
+```{r}
+site <- st_sfc(st_point(c(-98.364195, 49.338907)), crs = 4326)
+box = c(xmin = -98.371228, xmax = -98.363396, ymax =  49.341214, ymin =  49.335711)
+
+
+
+```
+
+Study sample locations
+```{r}
+
+sites <- read_csv(here::here("./notebooks/sample_locations.csv"))|>
+  clean_names() |>
+  dplyr::select(-latitude, -longitude) |>
+  st_as_sf(coords  = c("easting", "northing"), crs = 32614)|>
+  st_transform(crs = 3857) |>
+  mutate(coords = as.data.frame(
+  st_coordinates(.data[["geometry"]])))|>
+  unnest("coords") |>
+  st_drop_geometry() |>
+  mutate(sample_sit = fct_recode(sample_sit, "Upper" = "Upslope", "Mid" = "Midslope", "Lower" = "Downslope")) |>
+  mutate(sample_sit = fct_relevel(sample_sit, "Upper", "Mid" , "Lower"))
+```
+
+
+## Canada
+```{r}
+canada <- ne_states(country = "Canada", returnclass = "sf") %>%
+  st_transform(crs = 3348) 
+
+```
+
+## Maps
+
+
+### Canada
+```{r}
+p1 <- ggplot() +
+  theme_bw() +
+  layer_spatial(canada, fill = "white") +
+  layer_spatial(site, shape = 23, colour = "red", fill = "red", size = 2) +
+  theme(axis.text = element_blank(),
+        axis.ticks = element_blank(),
+        axis.title = element_blank(),
+        plot.margin = unit(c(0,0,0,0), "mm"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        #panel.border = element_blank(),
+        panel.background = element_blank())
+```
+
+```{r}
+sf_use_s2(FALSE)
+mb_river <- ne_download(scale = 10,  type = 'rivers_lake_centerlines', category = "physical", returnclass = "sf") %>%
+  st_transform(crs = 4326) %>%
+  st_crop(st_bbox(c(xmin = -100, ymin = 48.99267, 
+                    xmax = -95.15399, ymax = 51.399), 
+                  crs = st_crs(.)))
+
+mb_lakes <- ne_download(scale = 10,  type = 'lakes', category = "physical", returnclass = "sf") %>%
+  st_transform(crs = 4326) %>%
+  st_crop(st_bbox(c(xmin = -100, ymin = 48.99267, 
+                    xmax = -95.15399, ymax = 51.399), 
+                  crs = st_crs(.)))
+
+mb <- ne_states(country = "Canada", returnclass = "sf") %>%
+  filter(name == "Manitoba") %>%
+  st_transform(crs = 4326) %>%
+  st_crop(st_bbox(c(xmin = -100, ymin = 48.99267, 
+                    xmax = -95.15399, ymax = 51.399), 
+                  crs = st_crs(.)))
+
+mb_cities <- maps::canada.cities %>%
+  filter(country.etc == "MB") %>%
+  mutate(name = str_remove(name, " [A-Z]{2}$")) %>%
+  st_as_sf(coords = c("long", "lat"), crs = 4326) %>%
+  st_transform(crs = 4326) %>%
+  st_crop(st_bbox(c(xmin = -100, ymin = 48.99267, 
+                    xmax = -95.15399, ymax = 51.399), 
+                  crs = st_crs(.))) %>%
+  filter(pop >5000)
+```
+
+
+```{r}
+# Create an sf point from the site's coordinates
+site_as_sf <- st_sf(
+  name = "Site",
+  country.etc = NA_character_,
+  pop = NA_real_,
+  capital = NA_real_,
+  geometry = st_sfc(st_point(c(-98.3642, 49.33891)), crs = 4326)
+)
+
+# Combine with mb_cities
+mb_cities_with_site <- rbind(mb_cities, site_as_sf)
+```
+
+```{r}
+p4 <- ggplot() +
+  theme_bw() +
+  geom_sf(data = mb, fill = "white") +
+  geom_sf(data = mb_river, colour = "skyblue4") +
+  geom_sf(data = mb_lakes, fill = "lightblue") +
+  geom_sf(data = mb_cities) +
+  ggrepel::geom_label_repel(
+    data = mb_cities_with_site,
+    aes(label = name, geometry = geometry),
+    stat = "sf_coordinates",
+    min.segment.length = 0,
+    nudge_y = 0.02,
+    size = 2,
+    box.padding = 0.5
+  ) +
+  layer_spatial(site, shape = 23, colour = "red", fill = "red", size = 2) +
+  labs(tag = "a)") +
+  annotation_scale(location = "bl",
+                   height = unit(0.05, "cm"), 
+                   pad_y = unit(0.5, "cm"),
+                   pad_x = unit(1.1, "cm")) +
+  annotation_north_arrow(location = "br", 
+                         height = unit(0.5, "cm"),
+                         width = unit(0.5, "cm"), 
+                   pad_y = unit(0.5, "cm"),
+                   pad_x = unit(1.1, "cm")) +
+  theme(axis.text = element_blank(),
+        axis.ticks = element_blank(),
+        axis.title = element_blank(),
+        plot.margin = unit(c(0,0,0,0), "mm"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank())
+p4
+#box = c(xmin = , xmax = -, ymax =  , ymin =  )
+
+```
+
+```{r}
+map <- openmap(c(49.341, -98.37), c(49.335711, -98.362), zoom = NULL,
+                  type = "esri-imagery", mergeTiles = TRUE) 
+# 
+# sa_map2 <- openproj(map, projection = "+proj=longlat +datum=WGS84 +no_defs +type=crs")
+
+p5 <- OpenStreetMap::autoplot.OpenStreetMap(map)  +
+  annotation_scale(
+    location = "bl",
+    width_hint = 0.25,
+    plot_unit = "m",         
+    unit_category = "metric",
+    style = "bar") +
+  theme_void(base_size = 12) +
+  geom_point(
+    data = sites,
+    aes(x = X, y = Y, fill = sample_sit, shape = factor(transect)),
+    colour = "black",
+    size = 2.5) +
+  scale_fill_viridis_d(name = "Position") +
+  scale_shape_manual(values = 21:24, name = "Transect") +
+  guides(
+    fill = guide_legend(override.aes = list(shape = 21)),
+    shape = guide_legend(override.aes = list(fill = NA))) +
+geom_segment(
+    aes(x = -10950045, y = 6332636, xend = -10950200, yend = 6332150),
+    colour = "black", linewidth = 0.8, linetype = "dashed") +
+  # annotate("label", x = -10950296, y = 6332115, label = "West", fill = "lightgray") +
+  # annotate("label", x = -10950016, y = 6332115, label = "East", fill = "lightgray") +
+  labs(tag = "b)") +   
+  theme(legend.position = "bottom", legend.box = "vertical") 
+p5
+
+```
+
+```{r}
+#| label: fig-mapr
+#| fig-dpi: 300
+#| fig-width: 6.69
+#| fig-height: 3.54
+#| fig-cap: "Showing a) the location of the study site in southern Manitoba with an inset map of Canada; and b) the locations of the four transects and three slope positions sampled in the East and West watersheds as separted by the dashed line."
+   
+p6 <- (p4 + inset_element(p1, left = 0.6, bottom = 0.6, right = 1, top = 1)) + p5 +  plot_layout(widths = c(1, 1))
+p6
+
+#ggsave(plot = p6, filename = here::here("./Figures/Figure .png"), width = 170, height = 90, units = "mm", dpi = 400) 
+```
+
+## Session info
+```{r}
+sessioninfo::session_info()
+```
+

@@ -1,0 +1,1987 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.39">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Alexander J Koiter">
+<meta name="author" content="Aaron Glenn">
+<meta name="author" content="Cameron Beaupre">
+<meta name="author" content="Henry Wilson">
+<meta name="keywords" content="Slow-release fertilizer, Micro-plastic, Fate and transport">
+
+<title>Distribution and loss of slow-release polymer coatings in an agro-ecosystem</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-bb3eb020369cb14e268a6b18491f71f5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta name="citation_title" content="Distribution and loss of slow-release polymer coatings in an agro-ecosystem">
+<meta name="citation_abstract" content="Abstract goes here
+">
+<meta name="citation_keywords" content="Slow-release fertilizer,Micro-plastic,Fate and transport">
+<meta name="citation_author" content="Alexander J Koiter">
+<meta name="citation_author" content="Aaron Glenn">
+<meta name="citation_author" content="Cameron Beaupre">
+<meta name="citation_author" content="Henry Wilson">
+<meta name="citation_language" content="en">
+<meta name="citation_reference" content="citation_title=Strategies for the development of volcanic hazard maps in monogenetic volcanic fields: The example of La Palma (Canary Islands);,citation_author=José Marrero;,citation_author=Alicia García;,citation_author=Manuel Berrocoso;,citation_author=Ángeles Llinares;,citation_author=Antonio Rodríguez-Losada;,citation_author=R. Ortiz;,citation_publication_date=2019-07;,citation_cover_date=2019-07;,citation_year=2019;,citation_doi=10.1186/s13617-019-0085-5;,citation_volume=8;,citation_journal_title=Journal of Applied Volcanology;">
+<meta name="citation_reference" content="citation_title=South tobacco creek/steppler watershed fact sheet;,citation_author=undefined Agriculture;,citation_author=undefined Agri-Food Canada;,citation_publication_date=2011;,citation_cover_date=2011;,citation_year=2011;,citation_fulltext_html_url=http://www.agr.gc.ca;">
+<meta name="citation_reference" content="citation_title=Soils of the rural municipalities of grey, dufferin, roland, thompson and part of stanley;,citation_author=W Michalyna;,citation_author=G Podolsky;,citation_author=E St. Jacques;,citation_publication_date=1988;,citation_cover_date=1988;,citation_year=1988;">
+<meta name="citation_reference" content="citation_title=Conventional and conservation tillage: Influence on seasonal runoff, sediment, and nutrient losses in the canadian prairies;,citation_author=K. H. D. Tiessen;,citation_author=J. A. Elliott;,citation_author=J. Yarotski;,citation_author=D. A. Lobb;,citation_author=D. N. Flaten;,citation_author=N. E. Glozier;,citation_publication_date=2010;,citation_cover_date=2010;,citation_year=2010;,citation_issue=3;,citation_volume=39;,citation_journal_title=Journal of Environmental Quality;">
+<meta name="citation_reference" content="citation_title=Effects of plastic residues and microplastics on soil ecosystems: A global meta-analysis;,citation_author=Jinrui Zhang;,citation_author=Siyang Ren;,citation_author=Wen Xu;,citation_author=Ce Liang;,citation_author=Jingjing Li;,citation_author=Hanyue Zhang;,citation_author=Yanan Li;,citation_author=Xuejun Liu;,citation_author=Davey L. Jones;,citation_author=David R. Chadwick;,citation_author=Fusuo Zhang;,citation_author=Kai Wang;,citation_publication_date=2022-08-05;,citation_cover_date=2022-08-05;,citation_year=2022;,citation_fulltext_html_url=https://www.sciencedirect.com/science/article/pii/S0304389422008548;,citation_doi=10.1016/j.jhazmat.2022.129065;,citation_volume=435;,citation_journal_title=Journal of Hazardous Materials;">
+<meta name="citation_reference" content="citation_title=Microplastic contamination in lake winnipeg, canada;,citation_author=Philip J. Anderson;,citation_author=Sarah Warrack;,citation_author=Victoria Langen;,citation_author=Jonathan K. Challis;,citation_author=Mark L. Hanson;,citation_author=Michael D. Rennie;,citation_publication_date=2017-06-01;,citation_cover_date=2017-06-01;,citation_year=2017;,citation_fulltext_html_url=https://www.sciencedirect.com/science/article/pii/S0269749116312647;,citation_doi=10.1016/j.envpol.2017.02.072;,citation_volume=225;,citation_journal_title=Environmental Pollution;">
+<meta name="citation_reference" content="citation_title=Spatial distribution of microplastics in surficial benthic sediment of lake michigan and lake erie;,citation_author=Peter L. Lenaker;,citation_author=Steven R. Corsi;,citation_author=Sherri A. Mason;,citation_publication_date=2021-01-05;,citation_cover_date=2021-01-05;,citation_year=2021;,citation_fulltext_html_url=https://doi.org/10.1021/acs.est.0c06087;,citation_issue=1;,citation_doi=10.1021/acs.est.0c06087;,citation_volume=55;,citation_journal_title=Environmental Science &amp;amp;amp; Technology;">
+<meta name="citation_reference" content="citation_title=Investigating microplastic dynamics in soils: Orientation for sampling strategies and sample pre-procession;,citation_author=Collin Joel Weber;,citation_author=Christoph Weihrauch;,citation_author=Christian Opp;,citation_author=Peter Chifflard;,citation_publication_date=2021;,citation_cover_date=2021;,citation_year=2021;,citation_fulltext_html_url=https://onlinelibrary.wiley.com/doi/abs/10.1002/ldr.3676;,citation_issue=1;,citation_doi=10.1002/ldr.3676;,citation_volume=32;,citation_language=en;,citation_journal_title=Land Degradation &amp;amp;amp; Development;">
+<meta name="citation_reference" content="citation_title=Microplastic incorporation into soil in agroecosystems;,citation_author=Matthias C. Rillig;,citation_author=Rosolino Ingraffia;,citation_author=Anderson A. Souza Machado;,citation_publication_date=2017-10-18;,citation_cover_date=2017-10-18;,citation_year=2017;,citation_fulltext_html_url=https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2017.01805/full;,citation_doi=10.3389/fpls.2017.01805;,citation_volume=8;,citation_language=en-US;,citation_journal_title=Frontiers in Plant Science;">
+<meta name="citation_reference" content="citation_title=Transfer and transport of microplastics from biosolids to agricultural soils and the wider environment;,citation_author=Jill Crossman;,citation_author=Rachel R. Hurley;,citation_author=Martyn Futter;,citation_author=Luca Nizzetto;,citation_publication_date=2020-07-01;,citation_cover_date=2020-07-01;,citation_year=2020;,citation_fulltext_html_url=https://www.sciencedirect.com/science/article/pii/S0048969720318477;,citation_doi=10.1016/j.scitotenv.2020.138334;,citation_volume=724;,citation_journal_title=Science of The Total Environment;">
+<meta name="citation_reference" content="citation_title=Model-based analysis of erosion-induced microplastic delivery from arable land to the stream network of a mesoscale catchment;,citation_author=Raphael Rehm;,citation_author=Peter Fiener;,citation_publication_date=2024-03-12;,citation_cover_date=2024-03-12;,citation_year=2024;,citation_fulltext_html_url=https://soil.copernicus.org/articles/10/211/2024/;,citation_issue=1;,citation_doi=10.5194/soil-10-211-2024;,citation_volume=10;,citation_language=en-US;,citation_journal_title=SOIL;">
+<meta name="citation_reference" content="citation_title=Soil erosion is a major drive for nano &amp;amp;amp; micro-plastics to enter riverine systems from cultivated land;,citation_author=Yanting Wang;,citation_author=Siyuan Jing;,citation_author=Peiyu Hou;,citation_author=Rui Ni;,citation_author=Lili Niu;,citation_author=Thomas Cherico Wanger;,citation_author=Weiping Liu;,citation_author=Kai Liu;,citation_publication_date=2024-06-01;,citation_cover_date=2024-06-01;,citation_year=2024;,citation_fulltext_html_url=https://www.sciencedirect.com/science/article/pii/S0043135424004986;,citation_doi=10.1016/j.watres.2024.121597;,citation_volume=256;,citation_journal_title=Water Research;">
+<meta name="citation_reference" content="citation_title=Preferential emission of microplastics from biosolid-applied agricultural soils: Field evidence and theoretical framework;,citation_author=Jamie Leonard;,citation_author=Sujith Ravi;,citation_author=Sanjay K. Mohanty;,citation_publication_date=2024-02-13;,citation_cover_date=2024-02-13;,citation_year=2024;,citation_fulltext_html_url=https://doi.org/10.1021/acs.estlett.3c00850;,citation_issue=2;,citation_doi=10.1021/acs.estlett.3c00850;,citation_volume=11;,citation_journal_title=Environmental Science &amp;amp;amp; Technology Letters;">
+<meta name="citation_reference" content="citation_title=Science assessment of plastic pollution;,citation_author=undefined Environment;,citation_author=undefined Climate Change Canada;,citation_author=undefined Health Canada;,citation_publication_date=2020;,citation_cover_date=2020;,citation_year=2020;,citation_fulltext_html_url=https://www.canada.ca/en/environment-climate-change/services/evaluating-existing-substances/science-assessment-plastic-pollution.html;">
+<meta name="citation_reference" content="citation_title=weathercan: Download and format weather data from Environment and Climate Change Canada;,citation_author=Stefanie E. LaZerte;,citation_author=Sam Albers;,citation_publication_date=2018-02-11;,citation_cover_date=2018-02-11;,citation_year=2018;,citation_fulltext_html_url=http://joss.theoj.org/papers/10.21105/joss.00571;,citation_issue=22;,citation_doi=10.21105/joss.00571;,citation_volume=3;,citation_language=en;,citation_journal_title=The Journal of Open Source Software;">
+<meta name="citation_reference" content="citation_title=R: A language and environment for statistical computing;,citation_author=undefined R Core Team;,citation_publication_date=2026;,citation_cover_date=2026;,citation_year=2026;,citation_fulltext_html_url=http://www.R-project.org;">
+<meta name="citation_reference" content="citation_title=RStudio: Integrated development environment for r;,citation_author=undefined RStudio;,citation_publication_date=2026;,citation_cover_date=2026;,citation_year=2026;,citation_fulltext_html_url=http://www.rstudio.org/;">
+<meta name="citation_reference" content="citation_title=ggplot2: Elegant graphics for data analysis;,citation_author=H Wickham;,citation_publication_date=2016;,citation_cover_date=2016;,citation_year=2016;">
+<meta name="citation_reference" content="citation_title=Rnaturalearth: World map data from natural earth;,citation_author=Philippe Massicotte;,citation_author=Andy South;,citation_publication_date=2023;,citation_cover_date=2023;,citation_year=2023;,citation_fulltext_html_url=https://CRAN.R-project.org/package=rnaturalearth;,citation_doi=10.32614/CRAN.package.rnaturalearth;">
+<meta name="citation_reference" content="citation_title=OpenStreetMap: Access to open street map raster images;,citation_author=Ian Fellows;,citation_author=undefined JMapViewer library by Jan Peter Stotz;,citation_publication_date=2023;,citation_cover_date=2023;,citation_year=2023;,citation_fulltext_html_url=https://CRAN.R-project.org/package=OpenStreetMap;,citation_doi=10.32614/CRAN.package.OpenStreetMap;">
+<meta name="citation_reference" content="citation_title=glmmTMB Balances Speed and Flexibility Among Packages for Zero-inflated Generalized Linear Mixed Modeling;,citation_author=Mollie Brooks;,citation_author=Kasper Kristensen;,citation_author=Koen Benthem;,citation_author=Arni Magnusson;,citation_author=Casper Berg;,citation_author=Anders Nielsen;,citation_author=Hans Skaug;,citation_author=Martin Mächler;,citation_author=Benjamin Bolker;,citation_publication_date=2017;,citation_cover_date=2017;,citation_year=2017;,citation_fulltext_html_url=https://journal.r-project.org/archive/2017/RJ-2017-066/index.html;,citation_issue=2;,citation_doi=10.32614/RJ-2017-066;,citation_volume=9;,citation_language=en;,citation_journal_title=The R Journal;">
+</head>
+
+<body>
+
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Distribution and loss of slow-release polymer coatings in an agro-ecosystem</h1>
+          </div>
+
+    
+    <div class="quarto-title-meta-container">
+      <div class="quarto-title-meta-column-start">
+            <div class="quarto-title-meta-author">
+          <div class="quarto-title-meta-heading">Authors</div>
+          <div class="quarto-title-meta-heading">Affiliations</div>
+          
+                <div class="quarto-title-meta-contents">
+            <p class="author">Alexander J Koiter <a href="mailto:koitera@brandonu.ca" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0002-9355-9561" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        Brandon University, Department of Geography and Environment
+                      </p>
+                  </div>
+                      <div class="quarto-title-meta-contents">
+            <p class="author">Aaron Glenn <a href="mailto:aaron.glenn@AGR.GC.CA" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        Agriculture and Agri-Food Canada, Brandon Research and Development Centre
+                      </p>
+                  </div>
+                      <div class="quarto-title-meta-contents">
+            <p class="author">Cameron Beaupre <a href="mailto:beauprecameron2@gmail.com" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        Brandon University, Masters in Environmental and Life Sciences
+                      </p>
+                  </div>
+                      <div class="quarto-title-meta-contents">
+            <p class="author">Henry Wilson <a href="mailto:henry.wilson@AGR.GC.CA" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        Agriculture and Agri-Food Canada, Brandon Research and Development Centre
+                      </p>
+                  </div>
+                    </div>
+        
+        <div class="quarto-title-meta">
+
+                      
+          
+                <div>
+            <div class="quarto-title-meta-heading">Modified</div>
+            <div class="quarto-title-meta-contents">
+              <p class="date-modified">Thursday, June 18, 2026</p>
+            </div>
+          </div>
+                
+              </div>
+      </div>
+      <div class="quarto-title-meta-column-end quarto-other-formats-target">
+      <div class="quarto-alternate-formats"><div class="quarto-title-meta-heading">Other Formats</div><div class="quarto-title-meta-contents"><p><a href="index.docx"><i class="bi bi-file-word"></i>MS Word</a></p></div></div></div>
+    </div>
+
+    <div>
+      <div class="abstract">
+        <div class="block-title">Abstract</div>
+        <p>Abstract goes here</p>
+      </div>
+    </div>
+
+    <div>
+      <div class="keywords">
+        <div class="block-title">Keywords</div>
+        <p>Slow-release fertilizer, Micro-plastic, Fate and transport</p>
+      </div>
+    </div>
+
+    <div class="quarto-other-links-text-target">
+    </div>  </div>
+</header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#potential-journals" id="toc-potential-journals" class="nav-link active" data-scroll-target="#potential-journals"><span class="header-section-number">1</span> Potential journals</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">2</span> Introduction</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods"><span class="header-section-number">3</span> Methods</a>
+  <ul class="collapse">
+  <li><a href="#site-description" id="toc-site-description" class="nav-link" data-scroll-target="#site-description"><span class="header-section-number">3.1</span> Site description</a></li>
+  <li><a href="#soil-sampling-and-analysis" id="toc-soil-sampling-and-analysis" class="nav-link" data-scroll-target="#soil-sampling-and-analysis"><span class="header-section-number">3.2</span> Soil sampling and analysis</a></li>
+  <li><a href="#runoff-and-water-sampling" id="toc-runoff-and-water-sampling" class="nav-link" data-scroll-target="#runoff-and-water-sampling"><span class="header-section-number">3.3</span> Runoff and water sampling</a></li>
+  <li><a href="#statistical-analysis" id="toc-statistical-analysis" class="nav-link" data-scroll-target="#statistical-analysis"><span class="header-section-number">3.4</span> Statistical analysis</a></li>
+  </ul></li>
+  <li><a href="#results-and-discussion" id="toc-results-and-discussion" class="nav-link" data-scroll-target="#results-and-discussion"><span class="header-section-number">4</span> Results and Discussion</a>
+  <ul class="collapse">
+  <li><a href="#in-field-abundance-and-distribution" id="toc-in-field-abundance-and-distribution" class="nav-link" data-scroll-target="#in-field-abundance-and-distribution"><span class="header-section-number">4.1</span> In-field abundance and distribution</a></li>
+  <li><a href="#runoff-and-loss" id="toc-runoff-and-loss" class="nav-link" data-scroll-target="#runoff-and-loss"><span class="header-section-number">4.2</span> Runoff and loss</a></li>
+  </ul></li>
+  <li><a href="#conclusions" id="toc-conclusions" class="nav-link" data-scroll-target="#conclusions"><span class="header-section-number">5</span> Conclusions</a></li>
+  <li><a href="#acknowledgments" id="toc-acknowledgments" class="nav-link" data-scroll-target="#acknowledgments">Acknowledgments</a></li>
+  <li><a href="#statements-and-declarations" id="toc-statements-and-declarations" class="nav-link" data-scroll-target="#statements-and-declarations">Statements and declarations</a>
+  <ul class="collapse">
+  <li><a href="#funding" id="toc-funding" class="nav-link" data-scroll-target="#funding">Funding</a></li>
+  <li><a href="#competing-interests" id="toc-competing-interests" class="nav-link" data-scroll-target="#competing-interests">Competing interests</a></li>
+  <li><a href="#data-and-code-availability" id="toc-data-and-code-availability" class="nav-link" data-scroll-target="#data-and-code-availability">Data and code availability</a></li>
+  <li><a href="#author-contributions" id="toc-author-contributions" class="nav-link" data-scroll-target="#author-contributions">Author contributions</a></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+<div class="quarto-alternate-notebooks"><h2>Notebooks</h2><ul><li><a href="notebooks/maps.embed-preview.html"><i class="bi bi-journal-code"></i>01 Map of study area</a></li><li><a href="notebooks/weather_discharge.embed-preview.html"><i class="bi bi-journal-code"></i>02 Climate and weather</a></li><li><a href="notebooks/soil_sampling.embed-preview.html"><i class="bi bi-journal-code"></i>03 Soil sampling</a></li></ul></div></nav>
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+  
+
+
+<section id="potential-journals" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="potential-journals"><span class="header-section-number">1</span> Potential journals</h2>
+<ul>
+<li>Soil and Tillage Research
+<ul>
+<li>A Short Communication is a concise but complete description of a limited investigation, which will not be included in a later paper. Short Communications should be as completely documented, both by reference to the literature and description of the experimental procedures employed, as a regular paper. They should not occupy more than 6 printed pages (about 12 manuscript pages, including figures, tables and references).</li>
+<li>Pretty sure BU has a publishing agreement so it should be free to publish</li>
+</ul></li>
+</ul>
+</section>
+<section id="introduction" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="introduction"><span class="header-section-number">2</span> Introduction</h2>
+<p>Plastics are extensively used in all aspects of life, including residential, commercial, industrial, agricultural and institutional sectors. Through improper disposal, accidental and incidental releases, and intentional placement, plastics have become a widespread pollutant found in every ecosystem. This has resulted in global concern surrounding the effects of plastic pollution on ecosystem and human health <span class="citation" data-cites="zhang2022">(<a href="#ref-zhang2022" role="doc-biblioref">Zhang et al., 2022</a>)</span>. Of particular concern, are micro-plastics (MPs) (&lt;5mm) due to their movement and health impacts within the food chain and their rapid dispersion beyond their initial point of release. Despite the ubiquitous distribution of MP pollution across all ecosystem types, the focus has primarily been on marine and freshwater ecosystems <span class="citation" data-cites="anderson2017 lenaker2021">(<a href="#ref-anderson2017" role="doc-biblioref">Anderson et al., 2017</a>; <a href="#ref-lenaker2021" role="doc-biblioref">Lenaker et al., 2021</a>)</span> and with an emphasis on urban and industrial sources. A 2021 survey of the plastic pollution literature found that only 4% of publications specifically investigated MPs in soils <span class="citation" data-cites="weber2021">(<a href="#ref-weber2021" role="doc-biblioref">Weber et al., 2021</a>)</span>. Agriculture and soil have received relatively less attention despite the prevalent use of plastics, including horticultural mulch, twine, bale wrap, product bags and containers, and polymer-coated slow-release fertilizers <span class="citation" data-cites="rillig2017">(<a href="#ref-rillig2017" role="doc-biblioref">Rillig et al., 2017</a>)</span>.</p>
+<p>There is currently little information on the concentration, distribution, or the types of plastic in agricultural soil, the effect they have on soil and plant health and the extent as to which agro-ecosytems are a net source of MPs to downstream ecosystems. Even within agriculture and soil science disciplines, the focus has largely been on assessing the risks associated with applying municipal biosolids as a soil amendment which have been shown to have higher concentrations of MPs <span class="citation" data-cites="crossman2020">(<a href="#ref-crossman2020" role="doc-biblioref">Crossman et al., 2020</a>)</span>. There is a considerable gap in our understanding of nature of MPs in soils both in terms of the direct impact on the agro-ecosystem health and as a source of MPs to downstream ecosystems.</p>
+<p>Soil erosion, including tillage and surface water runoff actively redistribute MPs across agricultural landscapes <span class="citation" data-cites="rehm2024 wang2024">(<a href="#ref-rehm2024" role="doc-biblioref">Rehm and Fiener, 2024</a>; <a href="#ref-wang2024" role="doc-biblioref">Wang et al., 2024</a>)</span>. Due to their low density, these buoyant particles are easily transported beyond field boundaries into adjacent environments making agricultural soils a likely source of MPs <span class="citation" data-cites="leonard2024">(<a href="#ref-leonard2024" role="doc-biblioref">Leonard et al., 2024</a>)</span>. Given the lack of basic research on agricultural soil MPs, specifically in cold snowmelt dominated agricultural systems, this is a high-priority research area (<span class="citation" data-cites="environmentandclimatechangecanada2020">(<a href="#ref-environmentandclimatechangecanada2020" role="doc-biblioref">Environment et al., 2020</a>)</span>. The primary purpose of this pilot project was to investigate the fate of polymer coatings from slow-release fertilizers applied to agro-ecosystems in Manitoba, Canada. The objectives of this project were to: 1) characterize the lateral and vertical movement of polymer coatings within surface soils; and 2) quantify the export of polymer coatings from cropland in surface runoff during spring snowmelt.</p>
+</section>
+<section id="methods" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="methods"><span class="header-section-number">3</span> Methods</h2>
+<section id="site-description" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="site-description"><span class="header-section-number">3.1</span> Site description</h3>
+<p>The study site is located near the edge of the Manitoba Escarpment in the South Tobacco Creek Watershed (STCW), near the town of Miami, Manitoba, Canada (49.3711°N, 98.2439°W; 445 masl) (<a href="#fig-mapr" class="quarto-xref">Figure&nbsp;1</a>). The mean annual temperature is ~4 °C, and the mean annual precipitation is ~530 mm, of which approximately 15% occurs as snow (Environment Canada, 2026; Morden MB, climate ID 5021849, 1991–2020 normals). The topography is hummocky to undulating, with slope gradients of approximately 5%. Soils are classified as Orthic Dark Grey Chernozems, predominantly of the Dezwood Series. The Dezwood Series developed on moderately to strongly calcareous, deep, uniform, loamy mixed shale, limestone, and granite till deposits. These soils are often slightly eroded and slightly stony, with medium available water-holding capacity, medium organic matter content, and medium to high natural fertility <span class="citation" data-cites="michalyna1988">(<a href="#ref-michalyna1988" role="doc-biblioref">Michalyna et al., 1988</a>)</span>.</p>
+<div class="quarto-embed-nb-cell">
+<div id="cell-fig-mapr" class="cell" data-fig-dpi="300" data-fig-width="6.69" data-fig-height="3.54">
+<div class="cell-output cell-output-display">
+<div id="fig-mapr" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mapr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="index_files/figure-html/notebooks-maps-fig-mapr-output-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;1: Showing a) the location of the study site in southern Manitoba with an inset map of Canada; and b) the locations of the four transects and three slope positions sampled in the East and West watersheds as separted by the dashed line."><img src="index_files/figure-html/notebooks-maps-fig-mapr-output-2.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mapr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Showing a) the location of the study site in southern Manitoba with an inset map of Canada; and b) the locations of the four transects and three slope positions sampled in the East and West watersheds as separted by the dashed line.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>The STCW has a long history of being part of a national program aimed at assessing the economic and water quality impacts of different agricultural practices across Canada <span class="citation" data-cites="agricultureandagri-foodcanada2011">(<a href="#ref-agricultureandagri-foodcanada2011" role="doc-biblioref">Agriculture and Agri-Food Canada, 2011</a>)</span>. Within the STCW the research site comprises two small paired watersheds that drain to edge-of-field weirs: the east watershed (5.15 ha) and the west watershed (4.16 ha). Historically, these watersheds were used to compare runoff and nutrient loading from zero-tillage and conventionally tilled fields <span class="citation" data-cites="tiessen2010">(<a href="#ref-tiessen2010" role="doc-biblioref">Tiessen et al., 2010</a>)</span>. Both watersheds are now managed under the same practices. Polymer-coated urea (Environmental Smart Nitrogen) was broadcast applied at a rate of 110 kg ha<sup>-1</sup> on 2022-05-24 using a spin spreader and incorporated into the surface soil with the seeding of canola on 2022- 05-25 using an air hoe drill. Following canola harvest, the field was tilled to a depth of 10 to 15 cm using a field cultivator on 2022-10-29. A conventional fertilizer blend was applied in the spring of 2023 and incorporated into the soil with a single pass of the field cultivator prior to the seeding of spring wheat using the air hoe drill on 2023-05-11 (<a href="#fig-weather-climate" class="quarto-xref">Figure&nbsp;2</a>). ESN’s polymer coating is primarily composed of castor oil and polymethylene polyphenylene isocyanate (PPI), is reported to degrade over approximately 18-24 months in soil, yielding CO<sub>2</sub>, NH<sub>3</sub>, and water (Nutrien, 2018; ESN, 2023).</p>
+<div class="quarto-embed-nb-cell">
+<div id="cell-fig-weather-climate" class="cell" data-fig-height="10" data-fig-dpi="300">
+<div class="cell-output cell-output-display">
+<div id="fig-weather-climate" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-weather-climate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="index_files/figure-html/notebooks-weather_discharge-fig-weather-climate-output-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;2: a) Climate Normals (1991-2020) for Morden, MB (Climate ID 5021849), located approximately 30 km from the field site. b) Weather conditions for the 2022 and 2023 water years (Oct 1 - Sept 30) for Deerwood, MB (Station ID 29886), located approximately 8 km from the field site. Vertical lines indicate the timing of (1) application of Environmental Smart Nitrogen (ESN) (polymer-coated slow-release urea); (2) seeding and tillage field operations; and (3) collection of soil and runoff samples. Red and blue points indicate average daily temperatures above and below 0 degrees Celsius, respectively."><img src="index_files/figure-html/notebooks-weather_discharge-fig-weather-climate-output-2.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-weather-climate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: a) Climate Normals (1991-2020) for Morden, MB (Climate ID 5021849), located approximately 30 km from the field site. b) Weather conditions for the 2022 and 2023 water years (Oct 1 - Sept 30) for Deerwood, MB (Station ID 29886), located approximately 8 km from the field site. Vertical lines indicate the timing of (1) application of Environmental Smart Nitrogen (ESN) (polymer-coated slow-release urea); (2) seeding and tillage field operations; and (3) collection of soil and runoff samples. Red and blue points indicate average daily temperatures above and below 0 degrees Celsius, respectively.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="soil-sampling-and-analysis" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="soil-sampling-and-analysis"><span class="header-section-number">3.2</span> Soil sampling and analysis</h3>
+<p>Soil sampling was conducted at locations established in previous research <span class="citation" data-cites="tiessen2010">(<a href="#ref-tiessen2010" role="doc-biblioref">Tiessen et al., 2010</a>)</span> along four transects in each of the watersheds, with each transect spanning three hillslope positions: upper, mid, and lower slope (<a href="#fig-mapr" class="quarto-xref">Figure&nbsp;1</a>), giving 24 sampling locations in total. Samples were collected on three dates: 21 October 2022, 11 May 2023, and 19 September 2023 (<a href="#fig-weather-climate" class="quarto-xref">Figure&nbsp;2</a>). Surface soil samples were excavated with a spade from a 25 cm × 25 cm square to a depth of 5 cm, yielding a sample volume of 3125 cm³. On 19 September 2023, an additional sample was collected at each location from the 5–10 cm depth interval. Two additional surface riparian samples were also collected from each watershed on this date.</p>
+<p>Soil samples were disaggregated by hand into smaller aggregates and air-dried. Each sample was further manually disaggregated and sieved sequentially through 2-mm and 1.18-mm meshes. Polymer coatings were retrieved from the sieves using tweezers. The extracted coatings were cleaned by magnetic stirring in distilled water for 10 minutes at 500 rpm, then filtered and dried at 30 °C. The cleaned and dried polymer coatings were counted and collectively weighed using a balance with 0.1 mg resolution.</p>
+</section>
+<section id="runoff-and-water-sampling" class="level3" data-number="3.3">
+<h3 data-number="3.3" class="anchored" data-anchor-id="runoff-and-water-sampling"><span class="header-section-number">3.3</span> Runoff and water sampling</h3>
+<p>A v-notched weir was installed in the riparian area at the outflow of each watershed. The water depth at the weirs was recorded water depth at 5-min intervals using a pressure transducer (Onset HOBO Water Level Data Logger). The water depth were then used to calculate flow, based on a standard v-notched weir flow equation (Smith, 1985). Throughout the runoff event, staff gauges read manually and from time-lapse photography were used to verify the logger-collected water depth data. Measurement of polymer coatings exported by surface runoff occurred on 2023-04-13, and 2023-04-14. The weir filters were applied to each weir for a maximum duration of two hours each day and switched twice a day for a total of four measurement periods at each weir over the 2-day runoff event. Polymer coatings were collected using a simple filtration system consisting of 1-mm screening was across the upstream side of the v notch Polymers coatings were extracted from the screens using tweezers. The Polymers coatings were dried at 30° C, counted and weighed. An incremental volume of water was calculated based on the flow rate over a set interval time of 15 minutes. The total estimated number of polymer coatings was extrapolated from periodic measurements by multiplying the total accumulated volume of water by the volume-weighted mean concentration of polymer coatings. Polymer coating concentration was assumed to be independent of discharge.</p>
+<p><span id="eq-poly"><span class="math display">\[PC = V \times \frac{\sum_{i=1}^{n} PC_i}{\sum_{i=1}^{n} V_i} \tag{1}\]</span></span></p>
+<p>where <span class="math inline">\(PC\)</span> is the total estimated number of polymer coatings over the monitoring period, <span class="math inline">\(V\)</span> is the total accumulated volume of water over the monitoring period (m<sup>3</sup>), <span class="math inline">\(PC_i\)</span> is the number of polymer coatings counted during measurement period <span class="math inline">\(i\)</span>, <span class="math inline">\(V_i\)</span> is the volume of water that passed during measurement period <span class="math inline">\(i\)</span> (m<sup>3</sup>), and <span class="math inline">\(n\)</span> is the number of measurement periods.</p>
+</section>
+<section id="statistical-analysis" class="level3" data-number="3.4">
+<h3 data-number="3.4" class="anchored" data-anchor-id="statistical-analysis"><span class="header-section-number">3.4</span> Statistical analysis</h3>
+<p>All statistical analysis, plotting, and mapping were undertaken using the R Statistical Software (v4.5.3); <span class="citation" data-cites="rcoreteam2026">R Core Team (<a href="#ref-rcoreteam2026" role="doc-biblioref">2026</a>)</span>), through the RStudio Integrated Development Environment (v2026.05.1; <span class="citation" data-cites="rstudio2026">(<a href="#ref-rstudio2026" role="doc-biblioref">RStudio, 2026</a>)</span> ). All plots and maps were created using the R package <code>ggplot2</code> (v4.0.3; <span class="citation" data-cites="wickham2016">Wickham (<a href="#ref-wickham2016" role="doc-biblioref">2016</a>)</span>). Country and regional maps were created using data from the <code>rnaturalearth</code> package <span class="citation" data-cites="massicotte2023">(<a href="#ref-massicotte2023" role="doc-biblioref">Massicotte and South, 2023</a>)</span> and other maps using ESRI imagery and the <code>OpenStreetMap</code> package <span class="citation" data-cites="fellows2023">(<a href="#ref-fellows2023" role="doc-biblioref">Fellows and JMapViewer library by Jan Peter Stotz, 2023</a>)</span> . Weather data and climate normal data was retrieved from ECCC using <code>weathercan</code> package (v1.0.0; <span class="citation" data-cites="e.lazerte2018">E. LaZerte and Albers (<a href="#ref-e.lazerte2018" role="doc-biblioref">2018</a>)</span>). Four Linear Mixed Models (R package <code>glmmTMB</code> v1.1.14; <span class="citation" data-cites="brooks2017">Brooks et al. (<a href="#ref-brooks2017" role="doc-biblioref">2017</a>)</span>) were used to investigate the effect of hillslope position and sampling date (including interaction) on the abundance (number of coatings) and areal density (mass of polymer per unit area). Sample location was included as a random factor to control for the repeated measures over time.</p>
+</section>
+</section>
+<section id="results-and-discussion" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="results-and-discussion"><span class="header-section-number">4</span> Results and Discussion</h2>
+<section id="in-field-abundance-and-distribution" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="in-field-abundance-and-distribution"><span class="header-section-number">4.1</span> In-field abundance and distribution</h3>
+<p>In the statistical model investigating polymer abundance, the estimated variance for the random factor of sampling location was effectively zero, and this factor was removed from the model. No significant interaction between sampling date and hillslope position was detected for the abundance or density of polymer coatings in the 0-5 cm layer. Both slope position and sampling date had a significant effect (p &lt; 0.05) on the abundance and density of polymer coatings (<a href="#fig-poly-surface" class="quarto-xref">Figure&nbsp;3</a>). Post-hoc pairwise comparisons showed that lower slope positions had significantly higher abundance, exceeding the upper positions by 112 and the mid positions by 94 coatings (<a href="#fig-poly-surface" class="quarto-xref">Figure&nbsp;3</a> and <a href="#tbl-abundance-posthoc" class="quarto-xref">Table&nbsp;1</a>). Density followed a similar pattern, with the lower slope exceeding the upper positions by 0.12 g m⁻² and the mid positions by 0.09 g m⁻² (<a href="#fig-poly-surface" class="quarto-xref">Figure&nbsp;3</a> and <a href="#tbl-density-posthoc" class="quarto-xref">Table&nbsp;2</a>).</p>
+<p>The downslope increase in polymer quantities could relate to movement via overland flow, as the buoyant nature of the coatings makes them easy to transport. Tillage erosion may also move coatings downslope with the soil. The overall reduction in polymer in surface soils over time may result from loss beyond the field boundary through overland flow. However, vertical movement below 5 cm likely accounts for much of this loss in surface MPs over time, as field operations including seeding and tillage mix the plow layer, resulting in downward movement despite surface application. This is supported by data showing similar polymer abundance and areal densities in both the 0-5 and 5-10 cm sampling depths (<a href="#fig-depth" class="quarto-xref">Figure&nbsp;4</a>). Lastly, the reduction in polymer density may also be attributed to decomposition of the polymer over time. The relatively small loss also suggests that the polymer coatings may be more persistent beyonf 24 months in the soil environment and repeat applications of polymer coated fertilizers are likely to lead to accumulation of coatings.</p>
+<div class="quarto-embed-nb-cell">
+<div id="cell-fig-poly-surface" class="cell" data-fig-dpi="300">
+<div class="cell-output cell-output-display">
+<div id="fig-poly-surface" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-poly-surface-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="index_files/figure-html/notebooks-soil_sampling-fig-poly-surface-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figure&nbsp;3: Surface (0-5 cm) polymer areal density (a and b) and abundance (c and d) by elevation and date. Points show raw observations; Points outlined in black and error bars show model predictions with 95% CIs from a model fitted to square-root transformed data, back-transformed to the original scale. Within each plot significant differences (p<0.05) between slope position or sampling dates are denoted with different letters. Because the riparian area had fewer sampling locations and was only sampled on 2023-09-19 it was excluded from the statistical analysis"><img src="index_files/figure-html/notebooks-soil_sampling-fig-poly-surface-output-1.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-poly-surface-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Surface (0-5 cm) polymer areal density (a and b) and abundance (c and d) by elevation and date. Points show raw observations; Points outlined in black and error bars show model predictions with 95% CIs from a model fitted to square-root transformed data, back-transformed to the original scale. Within each plot significant differences (p&lt;0.05) between slope position or sampling dates are denoted with different letters. Because the riparian area had fewer sampling locations and was only sampled on 2023-09-19 it was excluded from the statistical analysis
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="quarto-embed-nb-cell">
+<div class="cell">
+<div id="tbl-abundance-posthoc" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-abundance-posthoc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Results of the post-hoc pairwise comparisons with a Benjamini-Hochberg p value adjustment for differences in the abundance of polymer coatings (<span class="math inline">\(coatings~m^{-2}\)</span>) between the three slope poistions and sampling dates. Data were square-root transformed prior to analysis and back-transformed to the original scale for reporting.
+</figcaption>
+<div aria-describedby="tbl-abundance-posthoc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output cell-output-display">
+<div id="dagoqyumpr" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#dagoqyumpr table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#dagoqyumpr thead, #dagoqyumpr tbody, #dagoqyumpr tfoot, #dagoqyumpr tr, #dagoqyumpr td, #dagoqyumpr th {
+  border-style: none;
+}
+
+#dagoqyumpr p {
+  margin: 0;
+  padding: 0;
+}
+
+#dagoqyumpr .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#dagoqyumpr .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#dagoqyumpr .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#dagoqyumpr .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#dagoqyumpr .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#dagoqyumpr .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#dagoqyumpr .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#dagoqyumpr .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#dagoqyumpr .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#dagoqyumpr .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#dagoqyumpr .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#dagoqyumpr .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#dagoqyumpr .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#dagoqyumpr .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#dagoqyumpr .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#dagoqyumpr .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#dagoqyumpr .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#dagoqyumpr .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#dagoqyumpr .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dagoqyumpr .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#dagoqyumpr .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#dagoqyumpr .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#dagoqyumpr .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dagoqyumpr .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#dagoqyumpr .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#dagoqyumpr .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#dagoqyumpr .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dagoqyumpr .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#dagoqyumpr .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#dagoqyumpr .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#dagoqyumpr .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#dagoqyumpr .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#dagoqyumpr .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dagoqyumpr .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#dagoqyumpr .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dagoqyumpr .gt_left {
+  text-align: left;
+}
+
+#dagoqyumpr .gt_center {
+  text-align: center;
+}
+
+#dagoqyumpr .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#dagoqyumpr .gt_font_normal {
+  font-weight: normal;
+}
+
+#dagoqyumpr .gt_font_bold {
+  font-weight: bold;
+}
+
+#dagoqyumpr .gt_font_italic {
+  font-style: italic;
+}
+
+#dagoqyumpr .gt_super {
+  font-size: 65%;
+}
+
+#dagoqyumpr .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#dagoqyumpr .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#dagoqyumpr .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#dagoqyumpr .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#dagoqyumpr .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#dagoqyumpr .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#dagoqyumpr .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#dagoqyumpr .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#dagoqyumpr div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_col_headings header">
+<th id="Contrast" class="gt_col_heading gt_columns_bottom_border gt_left" style="text-align: center;" data-quarto-table-cell-role="th" scope="col">Contrast</th>
+<th id="Estimate" class="gt_col_heading gt_columns_bottom_border gt_right" style="text-align: center;" data-quarto-table-cell-role="th" scope="col">Estimate</th>
+<th id="SE" class="gt_col_heading gt_columns_bottom_border gt_right" style="text-align: center;" data-quarto-table-cell-role="th" scope="col">SE</th>
+<th id="df" class="gt_col_heading gt_columns_bottom_border gt_right" style="text-align: center;" data-quarto-table-cell-role="th" scope="col">df</th>
+<th id="t-ratio" class="gt_col_heading gt_columns_bottom_border gt_right" style="text-align: center;" data-quarto-table-cell-role="th" scope="col">t ratio</th>
+<th id="p-value" class="gt_col_heading gt_columns_bottom_border gt_right" style="text-align: center;" data-quarto-table-cell-role="th" scope="col">p value</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="gt_group_heading_row odd">
+<td colspan="6" id="Slope Position" class="gt_group_heading" data-quarto-table-cell-role="th" style="text-align: center; font-weight: bold;" scope="colgroup">Slope Position</td>
+</tr>
+<tr class="gt_row_group_first even">
+<td class="gt_row gt_left" style="text-align: center;" headers="Slope Position  Contrast">Upper - Middle</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  Estimate">−18.06</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  SE">37.07</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  df">66</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  t ratio">−0.49</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  p value">0.628</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: center;" headers="Slope Position  Contrast">Upper - Lower</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  Estimate">−112.16</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  SE">40.57</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  df">66</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  t ratio">−2.76</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  p value">0.022</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: center;" headers="Slope Position  Contrast">Middle - Lower</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  Estimate">−94.10</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  SE">41.20</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  df">66</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  t ratio">−2.28</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  p value">0.038</td>
+</tr>
+<tr class="gt_group_heading_row odd">
+<td colspan="6" id="Sampling Date" class="gt_group_heading" data-quarto-table-cell-role="th" style="text-align: center; font-weight: bold;" scope="colgroup">Sampling Date</td>
+</tr>
+<tr class="gt_row_group_first even">
+<td class="gt_row gt_left" style="text-align: center;" headers="Sampling Date  Contrast">2022-10-21 - 2023-05-11</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  Estimate">51.48</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  SE">45.17</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  df">66</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  t ratio">1.14</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  p value">0.259</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: center;" headers="Sampling Date  Contrast">2022-10-21 - 2023-09-19</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  Estimate">241.72</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  SE">38.63</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  df">66</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  t ratio">6.26</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  p value">&lt;0.001</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: center;" headers="Sampling Date  Contrast">2023-05-11 - 2023-09-19</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  Estimate">190.24</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  SE">36.66</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  df">66</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  t ratio">5.19</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  p value">&lt;0.001</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-embed-nb-cell">
+<div class="cell">
+<div id="tbl-density-posthoc" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-density-posthoc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: Results of the post-hoc pairwise comparisons with a Benjamini-Hochberg p value adjustment for differences in the mass of polymer coatings (<span class="math inline">\(g~m^{-2}\)</span>) between the three slope poistions and sampling dates. Data were square-root transformed prior to analysis and back-transformed to the original scale for reporting.
+</figcaption>
+<div aria-describedby="tbl-density-posthoc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output cell-output-display">
+<div id="wtfitkecfw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#wtfitkecfw table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#wtfitkecfw thead, #wtfitkecfw tbody, #wtfitkecfw tfoot, #wtfitkecfw tr, #wtfitkecfw td, #wtfitkecfw th {
+  border-style: none;
+}
+
+#wtfitkecfw p {
+  margin: 0;
+  padding: 0;
+}
+
+#wtfitkecfw .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#wtfitkecfw .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#wtfitkecfw .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#wtfitkecfw .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#wtfitkecfw .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#wtfitkecfw .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#wtfitkecfw .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#wtfitkecfw .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#wtfitkecfw .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#wtfitkecfw .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#wtfitkecfw .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#wtfitkecfw .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#wtfitkecfw .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#wtfitkecfw .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#wtfitkecfw .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#wtfitkecfw .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#wtfitkecfw .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#wtfitkecfw .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#wtfitkecfw .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#wtfitkecfw .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#wtfitkecfw .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#wtfitkecfw .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#wtfitkecfw .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#wtfitkecfw .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#wtfitkecfw .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#wtfitkecfw .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#wtfitkecfw .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#wtfitkecfw .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#wtfitkecfw .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#wtfitkecfw .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#wtfitkecfw .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#wtfitkecfw .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#wtfitkecfw .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#wtfitkecfw .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#wtfitkecfw .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#wtfitkecfw .gt_left {
+  text-align: left;
+}
+
+#wtfitkecfw .gt_center {
+  text-align: center;
+}
+
+#wtfitkecfw .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#wtfitkecfw .gt_font_normal {
+  font-weight: normal;
+}
+
+#wtfitkecfw .gt_font_bold {
+  font-weight: bold;
+}
+
+#wtfitkecfw .gt_font_italic {
+  font-style: italic;
+}
+
+#wtfitkecfw .gt_super {
+  font-size: 65%;
+}
+
+#wtfitkecfw .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#wtfitkecfw .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#wtfitkecfw .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#wtfitkecfw .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#wtfitkecfw .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#wtfitkecfw .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#wtfitkecfw .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#wtfitkecfw .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#wtfitkecfw div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_col_headings header">
+<th id="Contrast" class="gt_col_heading gt_columns_bottom_border gt_left" style="text-align: center;" data-quarto-table-cell-role="th" scope="col">Contrast</th>
+<th id="Estimate" class="gt_col_heading gt_columns_bottom_border gt_right" style="text-align: center;" data-quarto-table-cell-role="th" scope="col">Estimate</th>
+<th id="SE" class="gt_col_heading gt_columns_bottom_border gt_right" style="text-align: center;" data-quarto-table-cell-role="th" scope="col">SE</th>
+<th id="z-ratio" class="gt_col_heading gt_columns_bottom_border gt_right" style="text-align: center;" data-quarto-table-cell-role="th" scope="col">z ratio</th>
+<th id="p-value" class="gt_col_heading gt_columns_bottom_border gt_right" style="text-align: center;" data-quarto-table-cell-role="th" scope="col">p value</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="gt_group_heading_row odd">
+<td colspan="5" id="Slope Position" class="gt_group_heading" data-quarto-table-cell-role="th" style="text-align: center; font-weight: bold;" scope="colgroup">Slope Position</td>
+</tr>
+<tr class="gt_row_group_first even">
+<td class="gt_row gt_left" style="text-align: center;" headers="Slope Position  Contrast">Upper - Middle</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  Estimate">−0.03</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  SE">0.04</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  z ratio">−0.69</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  p value">0.492</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: center;" headers="Slope Position  Contrast">Upper - Lower</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  Estimate">−0.12</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  SE">0.05</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  z ratio">−2.59</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  p value">0.029</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: center;" headers="Slope Position  Contrast">Middle - Lower</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  Estimate">−0.09</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  SE">0.05</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  z ratio">−1.91</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  p value">0.083</td>
+</tr>
+<tr class="gt_group_heading_row odd">
+<td colspan="5" id="Sampling Date" class="gt_group_heading" data-quarto-table-cell-role="th" style="text-align: center; font-weight: bold;" scope="colgroup">Sampling Date</td>
+</tr>
+<tr class="gt_row_group_first even">
+<td class="gt_row gt_left" style="text-align: center;" headers="Sampling Date  Contrast">2022-10-21 - 2023-05-11</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  Estimate">0.08</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  SE">0.04</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  z ratio">1.86</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  p value">0.062</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: center;" headers="Sampling Date  Contrast">2022-10-21 - 2023-09-19</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  Estimate">0.27</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  SE">0.04</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  z ratio">7.23</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  p value">&lt;0.001</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: center;" headers="Sampling Date  Contrast">2023-05-11 - 2023-09-19</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  Estimate">0.19</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  SE">0.03</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  z ratio">5.53</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  p value">&lt;0.001</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-embed-nb-cell">
+<div id="cell-fig-depth" class="cell" data-fig-dpi="300">
+<div class="cell-output cell-output-display">
+<div id="fig-depth" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-depth-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="index_files/figure-html/notebooks-soil_sampling-fig-depth-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Figure&nbsp;4: Polymer density (a) and abundance (b) for two sampling depths (0-5 and 5-10 cm) and the combined (0-10 cm) by slope position. Samples were collected on 2023-09-19 and no ploymer was detected below 5 cm in the riparian area"><img src="index_files/figure-html/notebooks-soil_sampling-fig-depth-output-1.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-depth-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Polymer density (a) and abundance (b) for two sampling depths (0-5 and 5-10 cm) and the combined (0-10 cm) by slope position. Samples were collected on 2023-09-19 and no ploymer was detected below 5 cm in the riparian area
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>The distribution of MPs in soil within agro-ecosystems is dynamic in both space and time, and continued research in this area must account for both dimensions when developing research ideas and sampling strategies. Currently, few guidelines or established sampling protocols are in place. The results of this study suggest that a transect approach along the catena is likely to capture the topographically driven variability, yielding high informational value with lower effort compared to a grid or random sampling approach. The results also demonstrate the importance of sampling depth. While the surface layer (0-5 cm) is important for investigating loss through surface processes, a complete inventory is needed for long-term studies. At a minimum, sampling should extend to the depth of the deepest tillage operation, but preferential flow paths and bioturbation may carry MPs deeper into the soil profile. Ideally incremental depth sampling is used to characterize the concentration of MPs with depth. In this study, the fertilizer was broadcast applied, resulting in a relatively uniform horizontal distribution of MPs; however, where fertilizer is banded, sampling must span the full width of the bands to account for the concentrated horizontal distribution of MPs.</p>
+<p>Beyond sampling strategy, additional work is needed to examine temporal and spatial patterns of other types and sources of agricultural MPs. Much of the literature on microplastics has focused on soils receiving biosolids, which often contain substantial amounts of plastics. On many farms in Manitoba, biosolids are not used as a soil amendment; however, the sources of MPs are instead on-farm uses (e.g., bale wrap, twine, bags/containers) or external sources through atmospheric deposition or overland flooding. In these cases, concentrations are likely to be very low, adding further challenges to quantifying and identifying MPs. Nonetheless, the dynamic nature observed with the polymer coatings in this study is likely transferable to a wide range of plastic types and sizes.</p>
+</section>
+<section id="runoff-and-loss" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="runoff-and-loss"><span class="header-section-number">4.2</span> Runoff and loss</h3>
+<p>Agricultural soils can serve as a long-term source of microplastics (MPs) to downstream ecosystems. Although concentrations in agricultural soil may be low, the extensive area of farmland means the total load can be considerable. In snowmelt-dominated regions like Manitoba, the snowmelt period is when the greatest losses are likely to occur; however, during this time, riparian areas have frozen soils and dormant vegetation, reducing their filtering capabilities and making riparian buffers less effective as a management practice for mitigating MP loss. Quantifying MPs in agricultural runoff presents methodological challenges: low concentrations necessitate filtering large volumes of runoff, and traditional automatic water samplers are likely insufficient for this purpose. While the simple screens used in this study allowed for large volumes of water to be filtered, this method has some limitations. Clogging with organic debris (e.g., crop residues) and sediment is an issue, and freezing of water on the screen during frequent freeze-thaw cycles similarly impedes flow. Further, the large mesh size used only captures larger MPs, and smaller MPs are not represented. Better edge-of-field runoff sampling approaches are needed for these types of conditions and to capture the full range of MP sizes. Lastly, this study did not investigate the role of shorter-duration, high-intensity rain events during the summer months as a potential pathway for MP export.</p>
+</section>
+</section>
+<section id="conclusions" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="conclusions"><span class="header-section-number">5</span> Conclusions</h2>
+<p>Polymer coatings from slow-release fertilizers showed clear spatial and temporal dynamics, with evidence of downslope movement and export to downstream environments, demonstrating that agricultural soils can serve as a source of MPs. Soil sampling designs and research questions must account for this spatial and temporal variability, and developing best practices for sampling MPs in agricultural settings should be a research priority. The findings of this study are likely applicable to other types of agricultural plastics, which may show similar transport dynamics. Edge-of-field sampling in cold climates presents particular challenges, as low concentrations require filtering large volumes of runoff and freeze-thaw conditions and debris impede water flow through sampling equipment, highlighting the need for improved sampling approaches that can reliably quantify MP export under these conditions. As plastic inputs to agricultural landscapes continue to grow, whether from on-farm use or external sources, characterizing and managing MP movement through the landscape will be essential to effectively quantify and mitigate their broader environmental impact.</p>
+</section>
+<section id="acknowledgments" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="acknowledgments">Acknowledgments</h2>
+<p>Special thanks and recognition for the field and technical support from …</p>
+</section>
+<section id="statements-and-declarations" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="statements-and-declarations">Statements and declarations</h2>
+<section id="funding" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="funding">Funding</h3>
+<p>This research was supported by …</p>
+</section>
+<section id="competing-interests" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="competing-interests">Competing interests</h3>
+<p>The authors have no competing interests to declare that are relevant to the content of this article.</p>
+</section>
+<section id="data-and-code-availability" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="data-and-code-availability">Data and code availability</h3>
+<p>Data and source code for analysis and manuscript available on GitHub: <a href="https://github.com/alex-koiter/soil-plastics" class="uri">https://github.com/alex-koiter/soil-plastics</a></p>
+<p>Additional information, including analytical notebooks with details of the analysis and intermediate steps, is available online: <a href="https://alexkoiter.ca/soil-plastics/" class="uri">https://alexkoiter.ca/soil-plastics/</a></p>
+</section>
+<section id="author-contributions" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="author-contributions">Author contributions</h3>
+<p><strong>C Beaupre</strong> Methodology; Investigation; Data curation; Formal analysis; Writing - Original Draft; Writing - Review &amp; Editing</p>
+<p><strong>A Glenn</strong>: Conceptualization; Funding acquisition; Methodology; Investigation; Data curation; Formal analysis; Writing - Original Draft; Writing – review and editing; Project administration</p>
+<p><strong>A Koiter</strong>: Conceptualization; Methodology; Investigation; Data curation; Formal analysis; Visualization; Writing - Original Draft; Writing – review and editing; Software</p>
+<p><strong>H Wilson</strong>: Methodology; Formal analysis; Writing - Review &amp; Editing</p>
+</section>
+</section>
+<section id="references" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-agricultureandagri-foodcanada2011" class="csl-entry" role="listitem">
+Agriculture, Agri-Food Canada, 2011. <a href="http://www.agr.gc.ca">South tobacco creek/steppler watershed fact sheet</a>.
+</div>
+<div id="ref-anderson2017" class="csl-entry" role="listitem">
+Anderson, P.J., Warrack, S., Langen, V., Challis, J.K., Hanson, M.L., Rennie, M.D., 2017. Microplastic contamination in lake winnipeg, canada. Environmental Pollution 225, 223–231. <a href="https://doi.org/10.1016/j.envpol.2017.02.072">https://doi.org/10.1016/j.envpol.2017.02.072</a>
+</div>
+<div id="ref-brooks2017" class="csl-entry" role="listitem">
+Brooks, Mollie,E., Kristensen, K., Benthem, Koen,J.,van., Magnusson, A., Berg, Casper,W., Nielsen, A., Skaug, Hans,J., Mächler, M., Bolker, Benjamin,M., 2017. glmmTMB Balances Speed and Flexibility Among Packages for Zero-inflated Generalized Linear Mixed Modeling. The R Journal 9, 378. <a href="https://doi.org/10.32614/RJ-2017-066">https://doi.org/10.32614/RJ-2017-066</a>
+</div>
+<div id="ref-crossman2020" class="csl-entry" role="listitem">
+Crossman, J., Hurley, R.R., Futter, M., Nizzetto, L., 2020. Transfer and transport of microplastics from biosolids to agricultural soils and the wider environment. Science of The Total Environment 724, 138334. <a href="https://doi.org/10.1016/j.scitotenv.2020.138334">https://doi.org/10.1016/j.scitotenv.2020.138334</a>
+</div>
+<div id="ref-e.lazerte2018" class="csl-entry" role="listitem">
+E. LaZerte, S., Albers, S., 2018. weathercan: Download and format weather data from Environment and Climate Change Canada. The Journal of Open Source Software 3, 571. <a href="https://doi.org/10.21105/joss.00571">https://doi.org/10.21105/joss.00571</a>
+</div>
+<div id="ref-environmentandclimatechangecanada2020" class="csl-entry" role="listitem">
+Environment, Climate Change Canada, Health Canada, 2020. <a href="https://www.canada.ca/en/environment-climate-change/services/evaluating-existing-substances/science-assessment-plastic-pollution.html">Science assessment of plastic pollution</a>.
+</div>
+<div id="ref-fellows2023" class="csl-entry" role="listitem">
+Fellows, I., JMapViewer library by Jan Peter Stotz, using the, 2023. OpenStreetMap: Access to open street map raster images. <a href="https://doi.org/10.32614/CRAN.package.OpenStreetMap">https://doi.org/10.32614/CRAN.package.OpenStreetMap</a>
+</div>
+<div id="ref-lenaker2021" class="csl-entry" role="listitem">
+Lenaker, P.L., Corsi, S.R., Mason, S.A., 2021. Spatial distribution of microplastics in surficial benthic sediment of lake michigan and lake erie. Environmental Science &amp; Technology 55, 373–384. <a href="https://doi.org/10.1021/acs.est.0c06087">https://doi.org/10.1021/acs.est.0c06087</a>
+</div>
+<div id="ref-leonard2024" class="csl-entry" role="listitem">
+Leonard, J., Ravi, S., Mohanty, S.K., 2024. Preferential emission of microplastics from biosolid-applied agricultural soils: Field evidence and theoretical framework. Environmental Science &amp; Technology Letters 11, 136–142. <a href="https://doi.org/10.1021/acs.estlett.3c00850">https://doi.org/10.1021/acs.estlett.3c00850</a>
+</div>
+<div id="ref-massicotte2023" class="csl-entry" role="listitem">
+Massicotte, P., South, A., 2023. Rnaturalearth: World map data from natural earth. <a href="https://doi.org/10.32614/CRAN.package.rnaturalearth">https://doi.org/10.32614/CRAN.package.rnaturalearth</a>
+</div>
+<div id="ref-michalyna1988" class="csl-entry" role="listitem">
+Michalyna, W., Podolsky, G., St. Jacques, E., 1988. Soils of the rural municipalities of grey, dufferin, roland, thompson and part of stanley.
+</div>
+<div id="ref-rcoreteam2026" class="csl-entry" role="listitem">
+R Core Team, 2026. <a href="http://www.R-project.org">R: A language and environment for statistical computing</a>.
+</div>
+<div id="ref-rehm2024" class="csl-entry" role="listitem">
+Rehm, R., Fiener, P., 2024. Model-based analysis of erosion-induced microplastic delivery from arable land to the stream network of a mesoscale catchment. SOIL 10, 211–230. <a href="https://doi.org/10.5194/soil-10-211-2024">https://doi.org/10.5194/soil-10-211-2024</a>
+</div>
+<div id="ref-rillig2017" class="csl-entry" role="listitem">
+Rillig, M.C., Ingraffia, R., Souza Machado, A.A. de, 2017. Microplastic incorporation into soil in agroecosystems. Frontiers in Plant Science 8. <a href="https://doi.org/10.3389/fpls.2017.01805">https://doi.org/10.3389/fpls.2017.01805</a>
+</div>
+<div id="ref-rstudio2026" class="csl-entry" role="listitem">
+RStudio, 2026. <a href="http://www.rstudio.org/">RStudio: Integrated development environment for r</a>.
+</div>
+<div id="ref-tiessen2010" class="csl-entry" role="listitem">
+Tiessen, K.H.D., Elliott, J.A., Yarotski, J., Lobb, D.A., Flaten, D.N., Glozier, N.E., 2010. Conventional and conservation tillage: Influence on seasonal runoff, sediment, and nutrient losses in the canadian prairies. Journal of Environmental Quality 39, 964980.
+</div>
+<div id="ref-wang2024" class="csl-entry" role="listitem">
+Wang, Y., Jing, S., Hou, P., Ni, R., Niu, L., Wanger, T.C., Liu, W., Liu, K., 2024. Soil erosion is a major drive for nano &amp; micro-plastics to enter riverine systems from cultivated land. Water Research 256, 121597. <a href="https://doi.org/10.1016/j.watres.2024.121597">https://doi.org/10.1016/j.watres.2024.121597</a>
+</div>
+<div id="ref-weber2021" class="csl-entry" role="listitem">
+Weber, C.J., Weihrauch, C., Opp, C., Chifflard, P., 2021. Investigating microplastic dynamics in soils: Orientation for sampling strategies and sample pre-procession. Land Degradation &amp; Development 32, 270–284. <a href="https://doi.org/10.1002/ldr.3676">https://doi.org/10.1002/ldr.3676</a>
+</div>
+<div id="ref-wickham2016" class="csl-entry" role="listitem">
+Wickham, H., 2016. ggplot2: Elegant graphics for data analysis. Springer-Verlag, New York NY U.S.A.
+</div>
+<div id="ref-zhang2022" class="csl-entry" role="listitem">
+Zhang, J., Ren, S., Xu, W., Liang, C., Li, J., Zhang, H., Li, Y., Liu, X., Jones, D.L., Chadwick, D.R., Zhang, F., Wang, K., 2022. Effects of plastic residues and microplastics on soil ecosystems: A global meta-analysis. Journal of Hazardous Materials 435, 129065. <a href="https://doi.org/10.1016/j.jhazmat.2022.129065">https://doi.org/10.1016/j.jhazmat.2022.129065</a>
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+</body></html>

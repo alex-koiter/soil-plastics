@@ -1,0 +1,181 @@
+---
+title: "02 Climate and weather"
+author: "Alex Koiter"
+---
+
+## Load libraries
+
+```{r}
+suppressPackageStartupMessages({
+  library(tidyverse)
+  library(patchwork)
+  library(weathercan)
+})
+```
+
+## Get the data
+
+### Find station_id and climate_id
+
+```{r}
+stations_search(coords = c(49.332263, -98.382368), dist = 20, normals_years = "1991-2020")
+# Climate ID 5021849 MORDEN 27.04977 km away
+```
+
+```{r}
+stations_search(coords = c(49.332263, -98.382368), dist = 20, normals_years = "1981-2010")
+# Climate ID 5021736 MIAMI ORCHARD 8.5 km away
+```
+
+```{r}
+stations_search(coords = c(49.332263, -98.382368), dist = 20, interval = "day", starts_latest = 2020, ends_earliest = 2024)
+# Station ID 29886 DEERWOOD
+```
+
+## Normals
+
+```{r}
+
+df_normal_miami <-  normals_dl(climate_ids = 5021736, normals_years = "1981-2010") |>
+  unnest(normals) |>
+  filter(period == "Year") |>
+  select(precip, rain, )
+```
+
+
+
+### Download
+```{r}
+df_normal_morden <- normals_dl(climate_ids = 5021849, normals_years = "current", measurement_type = c("Temperature", "Precipitation")) |>
+  filter(period_of_record == "Normal") |>
+  #filter(element_group %in% c("Precipitation", "Temperature")) |>
+  select(period, precipitation_mm, rainfall_mm, daily_average_c)
+
+morden_annual <- df_normal_morden |>
+  filter(period == "Year")|>
+  summarise(precipitation_mm = max(precipitation_mm, na.rm = TRUE), 
+            rainfall_mm = max(rainfall_mm, na.rm = TRUE),
+            daily_average_c = max(daily_average_c, na.rm = TRUE))
+morden_annual
+```
+
+```{r}
+morden_annual$precipitation_mm
+
+morden_month <- df_normal_morden |>
+  filter(period != "Year") |>
+  group_by(period) |>
+  summarise(precip = max(precipitation_mm, na.rm = TRUE), 
+            rainfall_mm = max(rainfall_mm, na.rm = TRUE),
+            daily_c = max(daily_average_c, na.rm = TRUE)) |>
+  mutate(date = mdy(paste0(period, "-01-2025")))
+```
+
+### Plot Climate Normals
+```{r}
+p1 <- ggplot() +
+  theme_bw() +
+  geom_segment(data = morden_month, aes(x = date, y = precip/2.25 - 30, xend = date, yend = -30), linewidth = 8, colour =  "skyblue4") +
+  stat_smooth(data = morden_month, aes(x = date, y = daily_c), method = "loess", se = FALSE, linewidth = 1, colour =  "black") +
+  scale_y_continuous(name = expression("Temperature " ( degree*C)), 
+                     sec.axis = sec_axis(~ (. + 30) * 2.25 , name = "Precipitation (mm)"),
+                     limits = c(-30, 30),
+                     expand = c(0, 0)) +  
+  scale_x_date(date_labels = "%b", 
+               date_breaks = "1 month", 
+               #expand = c(0.01,0.01), 
+               name = "",
+               #limits = (c(as_date("2025-01-01"), as_date("2025-12-20")))
+               ) +
+  annotate(geom="text", x = as_date("2025-01-15"), y = 25, label = "1991-2020 Climate Normals - Morden",
+           color="black", hjust = 0) +
+  annotate(geom="text", x = as_date("2025-01-15"), y = 20, label = "Annual Temp = 4.0 \u00B0C",
+           color="black", hjust = 0) +
+  annotate(geom="text", x = as_date("2025-01-15"), y = 15, label = "Annual Precip = 527.8 mm",
+           color="black", hjust = 0)
+p1
+```
+
+
+## Study period weather
+
+### Download
+
+```{r}
+df_day <- weather_dl(station_ids = 29886, interval = "day", start = "2021-10-01", end = "2023-09-30") |>
+  select(date, mean_temp, total_precip) |>
+  mutate(water_year = case_when(
+    month(date) >= 10 ~ year(date) + 1,
+    TRUE ~ year(date)
+  )) |>
+  group_by(water_year) %>%
+  mutate(cumul = cumsum(replace_na(total_precip, 0))) %>%
+  ungroup()
+```
+
+### Sampling details
+```{r}
+vline_data <- data.frame(
+  water_year = c(2022, 2022, 2023, 2023, 2023, 2023, 2023, 2023),
+  x = as.Date(c("2022-05-24", "2022-05-25", "2022-10-29", "2023-04-01", "2022-10-21", "2023-05-11", "2023-09-19", "2023-05-11"))
+)
+
+annotation_data <- data.frame(
+  water_year = c(2022, 2022, 2023, 2023, 2023, 2023, 2023, 2023),
+  x = as.Date(c("2022-05-24", "2022-05-25", "2022-10-29", "2023-04-01", "2022-10-21", "2023-05-11", "2023-09-19", "2023-05-11")), 
+  y = c(35, 0, 35, 35, 35, 35, 35, 0),
+  label = c("ESN", "Seeding", "Tillage", "Runoff", "Soil", "Soil", "Soil", "Seeding")
+) |>
+  mutate(x = case_when(label %in% c("Seeding", "Tillage") ~ x + 11,
+                       TRUE ~ x))
+  
+```
+
+### Plot study weather
+```{r}
+p2 <- ggplot() +
+  theme_bw() +
+  geom_point(data = df_day, aes(x = date, y = mean_temp, color = ifelse(mean_temp > 0, "#dc2626", "#2563eb"))) +
+  scale_color_identity() +
+  geom_line(data = df_day, aes(x = date, y = cumul/8 - 35), colour =  "skyblue4", linewidth = 1) +
+  scale_y_continuous(name = expression("Temperature " ( degree*C)), 
+                     sec.axis = sec_axis(~ (. + 35) * 8 , name = "Precipitation (mm)"),
+                     #limits = c(-30, 30),
+                     expand = c(0, 0)) +
+  scale_x_date(date_labels = "%b", date_breaks = "1 month") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5)) +
+  facet_wrap(~water_year, scales = "free_x", ncol=1) +
+geom_vline(data = vline_data,
+             aes(xintercept = x),
+             color = "black", 
+             linewidth = 0.5) +
+ geom_text(data = annotation_data,
+            aes(x = x, y = y, label = label),
+            color = "black",
+            angle = 90,
+            hjust = 1,
+            vjust = -0.25,
+            inherit.aes = FALSE)
+p2
+
+```
+
+## Combined plot
+
+```{r}
+#| label: fig-weather-climate
+#| fig-height: 10
+#| fig-dpi: 300
+#| fig-cap: "a) Climate Normals (1991-2020) for Morden, MB (Climate ID 5021849), located approximately 30 km from the field site. b) Weather conditions for the 2022 and 2023 water years (Oct 1 - Sept 30) for Deerwood, MB (Station ID 29886), located approximately 8 km from the field site. Vertical lines indicate the timing of (1) application of Environmental Smart Nitrogen (ESN) (polymer-coated slow-release urea); (2) seeding and tillage field operations; and (3) collection of soil and runoff samples. Red and blue points indicate average daily temperatures above and below 0 degrees Celsius, respectively."
+
+
+p1 / p2 + 
+  plot_layout(heights = c(1, 2), axis_title = "collect") +
+  plot_annotation(tag_levels = "a", tag_suffix = ")")
+```
+
+## Session info
+```{r}
+sessioninfo::session_info()
+```
+

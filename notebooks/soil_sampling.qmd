@@ -1,0 +1,481 @@
+---
+title: "03 Soil sampling"
+author: "Alex Koiter"
+html-table-processing: none
+---
+
+## Load libraries
+
+```{r}
+suppressPackageStartupMessages({
+library(tidyverse)
+library(patchwork)
+library(DHARMa)
+library(glmmTMB)
+library(emmeans)
+library(gt)
+})
+```
+
+## Read in data
+```{r}
+data <- read_csv(here::here("./notebooks/soil_data.csv"))|>
+  mutate(date_fct = as.factor(date))  |>
+  mutate(elevation = fct_relevel(elevation, c("Upper", "Middle", "Lower", "Riparian"))) |>
+  mutate(depth = fct_relevel(depth, c("0-5 cm", "5-10 cm", "0-10 cm")))
+```
+
+## Polymer abundance (0-5 cm)
+
+### Look at data
+
+```{r}
+p1 <- ggplot(data = filter(data, depth == "0-5 cm"), aes(x = elevation, y = n_m2, fill = date_fct)) +
+  geom_boxplot(position = position_dodge2(preserve = "single")) +
+  theme_bw() +
+  scale_fill_viridis_d() +
+  labs(y = bquote("Polymer abundance (coatings m"^-2*")"), x = "Slope position")
+p1
+```
+
+### Stats
+```{r}
+m1 <- glmmTMB(n_m2 ~ elevation * date_fct + (1|flag_location),
+              data = filter(data, depth == "0-5 cm" & elevation != "Riparian"))
+```
+
+```{r}
+simulateResiduals(m1, n = 1000, plot = TRUE)
+
+```
+
+```{r}
+car::Anova(m1, type = "III")
+```
+
+```{r}
+summary(m1)
+# Estimated variance for flag_location is essentially zero, removing  random effect
+```
+
+```{r}
+m1 <- glmmTMB(n_m2 ~ elevation * date_fct ,
+              data = filter(data, depth == "0-5 cm" & elevation != "Riparian"))
+```
+
+```{r}
+simulateResiduals(m1, n = 1000, plot = TRUE)
+```
+
+```{r}
+car::Anova(m1, type = "III")
+```
+
+```{r}
+# Removing interaction
+m1 <- glmmTMB(n_m2 ~ elevation + date_fct,
+              data = filter(data, depth == "0-5 cm" & elevation != "Riparian"))
+```
+
+```{r}
+simulateResiduals(m1, n = 1000, plot = TRUE) 
+```
+
+```{r}
+performance::check_collinearity(m1)
+```
+
+```{r}
+car::Anova(m1, type = "III")
+```
+
+```{r}
+# Square root transform
+m1_sqrt <- glmmTMB(sqrt(n_m2) ~ elevation + date_fct,
+                   data = filter(data, depth == "0-5 cm" & elevation != "Riparian"))
+```
+
+```{r}
+simulateResiduals(m1_sqrt, n = 1000, plot = TRUE) 
+```
+
+```{r}
+performance::check_collinearity(m1_sqrt)
+```
+
+```{r}
+car::Anova(m1_sqrt, type = "III")
+```
+
+### Pairwise comparisons 
+
+```{r}
+
+em_elev <- emmeans(m1_sqrt, ~ elevation, type = "response") |> 
+  regrid() |> 
+  contrast(method = "pairwise", adjust = "fdr")  |>
+  as.data.frame() |>
+  mutate(type = "Slope Position")
+
+em_elev # back transformed
+```
+
+```{r}
+em_date <- emmeans(m1_sqrt, ~ date_fct, type = "response") |> 
+  regrid() |> 
+  contrast(method = "pairwise", adjust = "fdr") |>
+  as.data.frame() |>
+  mutate(type = "Sampling Date") |>
+  mutate(contrast = str_remove_all(contrast, "[()]"))
+
+em_date # back transformed
+
+pairs <- em_elev |>
+  bind_rows(em_date) %>%
+  rename("Contrast" = "contrast", "Estimate" = "estimate", "t ratio" = "t.ratio", "p value" = "p.value")
+
+```
+
+
+```{r}
+#| label: tbl-abundance-posthoc
+#| tbl-cap: Results of the post-hoc pairwise comparisons with a Benjamini-Hochberg p value adjustment for differences in the abundance of polymer coatings ($coatings~m^{-2}$) between the three slope poistions and sampling dates. Data were square-root transformed prior to analysis and back-transformed to the original scale for reporting.
+
+
+pairs |>
+  group_by(type) |>
+  gt() |>
+  fmt_number(columns = c("Estimate", "SE", "t ratio"), decimal = 2)|>
+  fmt_number(columns = c("p value"), decimal = 3)|>
+  sub_small_vals(threshold = 0.001) |>
+  tab_style(style =  cell_text(weight = "bold", align = "center"), locations =  cells_row_groups()) |>
+  tab_options(column_labels.font.weight = "bold")
+```
+
+
+### Plotting 
+
+```{r}
+# Get predictions on the sqrt scale
+preds_elev <- emmeans(m1_sqrt, ~ elevation)
+preds_date <- emmeans(m1_sqrt, ~ date_fct)
+
+# Back-transform manually
+preds_df_elev <- as.data.frame(preds_elev) |>
+  mutate(
+    response = emmean^2,
+    lower    = lower.CL^2,
+    upper    = upper.CL^2
+  )
+
+preds_df_date <- as.data.frame(preds_date) |>
+  mutate(
+    response = emmean^2,
+    lower    = lower.CL^2,
+    upper    = upper.CL^2
+  )
+
+```
+
+```{r}
+
+# Polymer abundance by elevation and date. Points show raw observations; Points outlined in black and error bars show model predictions with 95% CIs from a GLMM fitted to square-root transformed data, back-transformed to the original scale. Because the riparian area had fewer sampling locations and was only sampled on 2023-09-19 it was excluded from the formal analysis
+
+p1_a <- ggplot(filter(data, depth == "0-5 cm" ), aes(x = elevation, y = n_m2, color = date_fct)) +
+  geom_jitter(position = position_dodge(0.3), alpha = 0.6, size = 2) +
+  geom_errorbar(data = preds_df_elev, 
+                aes(y = response, ymin = lower, ymax = upper),
+                width = 0.15, position = position_dodge(0.3), color = "black") +
+  geom_point(data = preds_df_elev, aes(y = response),
+             shape = 21, fill = "white", position = position_dodge(0.3), color = "black", size = 3) +
+  labs(y = bquote("Abundance (coatings m"^-2*")"), x = "Slope position", color = "Date", tag = "a)") +
+  #guides(color = guide_legend(order = 1), fill = guide_legend(order = 1)) +
+  guides(color = guide_legend(nrow = 2)) +
+  theme_bw(base_size = 12)+
+  theme(axis.title.x = element_blank())+ 
+  annotate("text", x = "Upper", y = 800, label = "a") + 
+  annotate("text", x = "Middle", y = 800, label = "a") + 
+  annotate("text", x = "Lower", y = 800, label = "b")
+
+p1_a
+
+p1_b <- ggplot(filter(data, depth == "0-5 cm" ), aes(x = date_fct, y = n_m2, colour = elevation)) +
+  geom_jitter(position = position_dodge(0.3), alpha = 0.6, size = 2) +
+  geom_errorbar(data = preds_df_date, 
+                aes(y = response, ymin = lower, ymax = upper),
+                width = 0.15, position = position_dodge(0.3), color = "black") +
+  geom_point(data = preds_df_date, aes(y = response),
+             shape = 21, fill = "white", position = position_dodge(0.3), color = "black", size = 3) +
+  labs(y = bquote("Abundance (coatings m"^-2*")"), x = "Sample date", color = "Position", tag = "b)") +
+  #guides(color = guide_legend(order = 1), fill = guide_legend(order = 1)) +
+  guides(color = guide_legend(nrow = 2)) +
+  theme_bw(base_size = 12) +
+  theme(axis.title.x = element_blank()) +  
+  annotate("text", x = "2022-10-21", y = 800, label = "a") + 
+  annotate("text", x = "2023-05-11", y = 800, label = "a") + 
+  annotate("text", x = "2023-09-19", y = 800, label = "b")
+
+p1_b
+```
+
+```{r}
+#| label: fig-denisty-surface
+#| fig-cap: "Polymer abundance (0-5 cm) by elevation and date. Points show raw observations; Points outlined in black and error bars show model predictions with 95% CIs from a linear model fitted to square-root transformed data, back-transformed to the original scale. Within each plot significant differences (p<0.05) between slope position or sampling dates are denoted with different letters. Because the riparian area had fewer sampling locations and was only sampled on 2023-09-19 it was excluded from the formal analysis"
+#| fig-height: 10
+
+
+p1_1 <- p1_a + p1_b  + plot_layout(axis = 'collect') & theme(legend.position = 'bottom', legend.title = element_blank())
+p1_1 
+# ggsave(plot = p1_1, filename = here::here("./Figures/Figure 1.png"), width = 184, height = 100, units = "mm", dpi = 400)
+```
+
+
+
+## Polymer areal density 0-5 cm
+
+### Look at data
+```{r}
+p2 <- ggplot(data = filter(data, depth == "0-5 cm"), aes(x = elevation, y = mass_m2, fill = date_fct)) +
+  geom_boxplot(position = position_dodge2(preserve = "single")) +
+  theme_bw() +
+  scale_fill_viridis_d() +
+  labs(y = bquote("Polymer areal density (g m"^-2*")"), x = "Slope position")
+p2
+```
+
+### Stats
+
+```{r}
+m2 <- glmmTMB(mass_m2 ~ elevation * date_fct + (1|flag_location),
+              data = filter(data, depth == "0-5 cm" & elevation != "Riparian"))
+```
+
+```{r}
+simulateResiduals(m2, n = 1000, plot = TRUE)
+```
+
+```{r}
+car::Anova(m2, type = "III") 
+```
+
+```{r}
+# Removing interaction
+m2 <- glmmTMB(mass_m2 ~ elevation + date_fct + (1|flag_location),
+              data = filter(data, depth == "0-5 cm" & elevation != "Riparian"))
+```
+
+```{r}
+simulateResiduals(m2, n = 1000, plot = TRUE) 
+```
+
+```{r}
+performance::check_collinearity(m2)
+```
+
+```{r}
+car::Anova(m2, type = "III")
+```
+
+```{r}
+# Square root transform
+m2_sqrt <- glmmTMB(sqrt(mass_m2) ~ elevation + date_fct + (1|flag_location),
+              data = filter(data, depth == "0-5 cm" & elevation != "Riparian"))
+```
+
+```{r}
+simulateResiduals(m2_sqrt, n = 1000, plot = TRUE) 
+```
+
+```{r}
+performance::check_collinearity(m2_sqrt)
+```
+
+```{r}
+car::Anova(m2_sqrt, type = "III")
+```
+
+```{r}
+summary(m2_sqrt)
+```
+
+### Pairwise comparisons 
+
+```{r}
+em_elev1 <- emmeans(m2_sqrt, ~ elevation, type = "response") |> 
+  regrid() |> 
+  contrast(method = "pairwise", adjust = "fdr")|>
+  as.data.frame() |>
+  mutate(type = "Slope Position")
+
+em_elev1 # back transformed
+```
+
+```{r}
+em_date1 <- emmeans(m2_sqrt, ~ date_fct, type = "response") |> 
+  regrid() |> 
+  contrast(method = "pairwise", adjust = "fdr")|>
+  as.data.frame() |>
+  mutate(type = "Sampling Date")|>
+  mutate(contrast = str_remove_all(contrast, "[()]"))
+
+em_date1 # back transformed
+```
+
+```{r}
+pairs1 <- em_elev1 |>
+  bind_rows(em_date1) %>%
+  rename("Contrast" = "contrast", "Estimate" = "estimate", "z ratio" = "z.ratio", "p value" = "p.value") |>
+  select(-df)
+
+```
+
+
+
+
+```{r}
+#| label: tbl-density-posthoc
+#| tbl-cap: Results of the post-hoc pairwise comparisons with a Benjamini-Hochberg p value adjustment for differences in the mass of polymer coatings ($g~m^{-2}$) between the three slope poistions and sampling dates. Data were square-root transformed prior to analysis and back-transformed to the original scale for reporting.
+
+
+pairs1 |>
+  group_by(type) |>
+  gt() |>
+  fmt_number(columns = c("Estimate", "SE", "z ratio"), decimal = 2)|>
+  fmt_number(columns = c("p value"), decimal = 3)|>
+  sub_small_vals(threshold = 0.001) |>
+  tab_style(style =  cell_text(weight = "bold", align = "center"), locations =  cells_row_groups()) |>
+  tab_options(column_labels.font.weight = "bold")
+```
+
+
+
+### Plotting 
+
+```{r}
+# Get predictions on the sqrt scale
+preds_elev1 <- emmeans(m2_sqrt, ~ elevation)
+preds_date1 <- emmeans(m2_sqrt, ~ date_fct)
+
+# Back-transform manually
+preds_df_elev1 <- as.data.frame(preds_elev1) |>
+  mutate(
+    response = emmean^2,
+    lower    = asymp.LCL^2,
+    upper    = asymp.UCL^2
+  )
+
+preds_df_date1 <- as.data.frame(preds_date1) |>
+  mutate(
+    response = emmean^2,
+    lower    = asymp.LCL^2,
+    upper    = asymp.UCL^2
+  )
+```
+
+```{r}
+p2_a <- ggplot(filter(data, depth == "0-5 cm" ), aes(x = elevation, y = mass_m2, color = date_fct)) +
+  geom_jitter(position = position_dodge(0.3), alpha = 0.6, size = 2) +
+  geom_errorbar(data = preds_df_elev1, 
+                aes(y = response, ymin = lower, ymax = upper),
+                width = 0.15, position = position_dodge(0.3), color = "black") +
+  geom_point(data = preds_df_elev1, aes(y = response),
+             shape = 21, fill = "white", position = position_dodge(0.3), color = "black", size = 3) +
+  labs(y = bquote("Areal density (g m"^-2*")"), x = "Slope position", color = "Date", tag = "c)") +
+  #guides(color = guide_legend(order = 1), fill = guide_legend(order = 1)) +
+  guides(color = guide_legend(nrow = 2)) +
+  theme_bw(base_size = 12) +
+  theme(axis.title.x = element_blank())+ 
+  annotate("text", x = "Upper", y = 1, label = "a") + 
+  annotate("text", x = "Middle", y = 1, label = "a") + 
+  annotate("text", x = "Lower", y = 1, label = "b")
+
+p2_a
+
+p2_b <- ggplot(filter(data, depth == "0-5 cm" ), aes(x = date_fct, y = mass_m2, colour = elevation)) +
+  geom_jitter(position = position_dodge(0.3), alpha = 0.6, size = 2) +
+  geom_errorbar(data = preds_df_date1, 
+                aes(y = response, ymin = lower, ymax = upper),
+                width = 0.15, position = position_dodge(0.3), color = "black") +
+  geom_point(data = preds_df_date1, aes(y = response),
+             shape = 21, fill = "white", position = position_dodge(0.3), color = "black", size = 3) +
+  labs(y = bquote("Areal density (g m"^-2*")"), x = "Sample date", color = "Position", tag = "d)") +
+  #guides(color = guide_legend(order = 1), fill = guide_legend(order = 1)) +
+  guides(color = guide_legend(nrow = 2)) +
+  theme_bw(base_size = 12) +
+  theme(axis.title.x = element_blank()) +  
+  annotate("text", x = "2022-10-21", y = 1, label = "a") + 
+  annotate("text", x = "2023-05-11", y = 1, label = "a") + 
+  annotate("text", x = "2023-09-19", y = 1, label = "b")
+
+p2_b
+```
+
+```{r}
+#| label: fig-mass-surface
+#| fig-cap: "Polymer mass (0-5 cm) by elevation (a) and date (b). Points show raw observations; Points outlined in black and error bars show model predictions with 95% CIs from a linear mixed-effects model fitted to square-root transformed data, back-transformed to the original scale. Within each plot significant differences (p<0.05) between slope position or sampling dates are denoted with different letters. Because the riparian area had fewer sampling locations and was only sampled on 2023-09-19 it was excluded from the formal analysis"
+
+
+p2_1 <- p2_a + p2_b  + plot_layout(axis = 'collect') & theme(legend.position = 'bottom', legend.title = element_blank())
+p2_1 
+# ggsave(plot = p1_2, filename = here::here("./Figures/Figure 2.png"), width = 184, height = 100, units = "mm", dpi = 400)
+```
+
+
+
+## Combined figure
+
+```{r}
+#| label: fig-poly-surface
+#| fig-dpi: 300
+#| fig-cap: "Surface (0-5 cm) polymer areal density (a and b) and abundance (c and d) by elevation and date. Points show raw observations; Points outlined in black and error bars show model predictions with 95% CIs from a model fitted to square-root transformed data, back-transformed to the original scale. Within each plot significant differences (p<0.05) between slope position or sampling dates are denoted with different letters. Because the riparian area had fewer sampling locations and was only sampled on 2023-09-19 it was excluded from the statistical analysis"
+
+
+fig_1 <- (p1_a/ p2_a) + plot_layout(axis = 'collect', guides = 'collect') & theme(legend.position = 'bottom', legend.title = element_blank()) | (p1_b / p2_b)  + plot_layout(axis = 'collect', guides = 'collect') & theme(legend.position = 'bottom', legend.title = element_blank())
+fig_1 
+
+# ggsave(plot = fig_1, filename = here::here("./Figures/Figure 1.png"), width = 184, height = 175, units = "mm", dpi = 400)
+```
+
+
+
+## Polymer with depth
+### Look at data
+
+```{r}
+p3 <- ggplot(data = filter(data, date == "2023-09-19"), aes(x = elevation, y = mass_m2, fill = depth)) +
+  geom_boxplot(position = position_dodge2(preserve = "single")) +
+  theme_bw() +
+  scale_fill_viridis_d() +
+  labs(y = bquote("Polymer areal density (g m"^-2*")"), x = "Slope position", tag = "a)") +
+  theme(axis.title.x = element_blank())
+p3
+
+p4 <- ggplot(data = filter(data, date == "2023-09-19"), aes(x = elevation, y = n_m2, fill = depth)) +
+  geom_boxplot(position = position_dodge2(preserve = "single")) +
+  theme_bw() +
+  scale_fill_viridis_d() +
+  labs(y = bquote("Polymer abundance (coatings m"^-2*")"), x = "Slope position", tag = "b)") +
+  theme(axis.title.x = element_blank())
+p4
+
+```
+
+### Plotting
+
+```{r}
+#| label: fig-depth
+#| fig-dpi: 300
+#| fig-cap: "Polymer density (a) and abundance (b) for two sampling depths (0-5 and 5-10 cm) and the combined (0-10 cm) by slope position. Samples were collected on 2023-09-19 and no ploymer was detected below 5 cm in the riparian area"
+
+
+p5 <- p3 + p4  + plot_layout(axis = 'collect', guides = 'collect') & theme(legend.position = 'bottom', legend.title = element_blank())
+p5 
+
+# ggsave(plot = p5, filename = here::here("./Figures/Figure 2.png"), width = 184, height = 100, units = "mm", dpi = 400)
+```
+
+## Session info
+```{r}
+sessioninfo::session_info()
+```
+

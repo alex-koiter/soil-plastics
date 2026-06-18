@@ -1,0 +1,2642 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="generator" content="quarto-1.6.39">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+    <title>03 Soil sampling</title>
+    <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      div.columns{display: flex; gap: min(4vw, 1.5em);}
+      div.column{flex: auto; overflow-x: auto;}
+      div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+      ul.task-list{list-style: none;}
+      ul.task-list li input[type="checkbox"] {
+        width: 0.8em;
+        margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+        vertical-align: middle;
+      }
+      /* CSS for syntax highlighting */
+      pre > code.sourceCode { white-space: pre; position: relative; }
+      pre > code.sourceCode > span { line-height: 1.25; }
+      pre > code.sourceCode > span:empty { height: 1.2em; }
+      .sourceCode { overflow: visible; }
+      code.sourceCode > span { color: inherit; text-decoration: inherit; }
+      div.sourceCode { margin: 1em 0; }
+      pre.sourceCode { margin: 0; }
+      @media screen {
+      div.sourceCode { overflow: auto; }
+      }
+      @media print {
+      pre > code.sourceCode { white-space: pre-wrap; }
+      pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+      }
+      pre.numberSource code
+        { counter-reset: source-line 0; }
+      pre.numberSource code > span
+        { position: relative; left: -4em; counter-increment: source-line; }
+      pre.numberSource code > span > a:first-child::before
+        { content: counter(source-line);
+          position: relative; left: -1em; text-align: right; vertical-align: baseline;
+          border: none; display: inline-block;
+          -webkit-touch-callout: none; -webkit-user-select: none;
+          -khtml-user-select: none; -moz-user-select: none;
+          -ms-user-select: none; user-select: none;
+          padding: 0 4px; width: 4em;
+        }
+      pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+      div.sourceCode
+        {   }
+      @media screen {
+      pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+      }
+    </style>
+
+    <style>
+      body.hypothesis-enabled #quarto-embed-header {
+        padding-right: 36px;
+      }
+
+      #quarto-embed-header {
+        height: 3em;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid 1px;
+      }
+
+      #quarto-embed-header h6 {
+        font-size: 1.1em;
+        padding-top: 0.6em;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-weight: 400;
+      }
+
+      #quarto-embed-header a.quarto-back-link,
+      #quarto-embed-header a.quarto-download-embed {
+        font-size: 0.8em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+
+      .quarto-back-container {
+        padding-left: 0.5em;
+        display: flex;
+      }
+
+      .headroom {
+          will-change: transform;
+          transition: transform 200ms linear;
+      }
+
+      .headroom--pinned {
+          transform: translateY(0%);
+      }
+
+      .headroom--unpinned {
+          transform: translateY(-100%);
+      }      
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script>
+    window.document.addEventListener("DOMContentLoaded", function () {
+
+      var header = window.document.querySelector("#quarto-embed-header");
+      const titleBannerEl = window.document.querySelector("body > #title-block-header");
+      if (titleBannerEl) {
+        titleBannerEl.style.paddingTop = header.clientHeight + "px";
+      }
+      const contentEl = window.document.getElementById('quarto-content');
+      for (const child of contentEl.children) {
+        child.style.paddingTop = header.clientHeight + "px";
+        child.style.marginTop = "1em";
+      }
+
+      // Use the article root if the `back` call doesn't work. This isn't perfect
+      // but should typically work
+      window.quartoBackToArticle = () => {
+        var currentUrl = window.location.href;
+        window.history.back();
+        setTimeout(() => {
+            // if location was not changed in 100 ms, then there is no history back
+            if(currentUrl === window.location.href){              
+                // redirect to site root
+                window.location.href = "../index.html";
+            }
+        }, 100);
+      }
+
+      const headroom = new window.Headroom(header, {
+        tolerance: 5,
+        onPin: function () {
+        },
+        onUnpin: function () {
+        },
+      });
+      headroom.init();
+    });
+    </script>
+
+    
+<script src="../site_libs/manuscript-notebook/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-bb3eb020369cb14e268a6b18491f71f5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script> 
+      </head>
+
+  <body class="quarto-notebook">
+    <div id="quarto-embed-header" class="headroom fixed-top bg-primary">
+      
+      <a onclick="window.quartoBackToArticle(); return false;" class="btn btn-primary quarto-back-link" href=""><i class="bi bi-caret-left"></i> Back to Article</a>
+      <h6><i class="bi bi-journal-code"></i> 03 Soil sampling</h6>
+
+            <a href="../notebooks/soil_sampling.qmd" class="btn btn-primary quarto-download-embed" download="soil_sampling.qmd">Download Source</a>
+          </div>
+
+     <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">03 Soil sampling</h1>
+          </div>
+
+    
+    <div class="quarto-title-meta-container">
+      <div class="quarto-title-meta-column-start">
+        
+        <div class="quarto-title-meta">
+
+                
+          
+                
+              </div>
+      </div>
+      <div class="quarto-title-meta-column-end quarto-other-formats-target">
+      </div>
+    </div>
+
+
+
+    <div class="quarto-other-links-text-target">
+    </div>  </div>
+</header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#load-libraries" id="toc-load-libraries" class="nav-link active" data-scroll-target="#load-libraries">Load libraries</a></li>
+  <li><a href="#read-in-data" id="toc-read-in-data" class="nav-link" data-scroll-target="#read-in-data">Read in data</a></li>
+  <li><a href="#polymer-abundance-0-5-cm" id="toc-polymer-abundance-0-5-cm" class="nav-link" data-scroll-target="#polymer-abundance-0-5-cm">Polymer abundance (0-5 cm)</a>
+  <ul class="collapse">
+  <li><a href="#look-at-data" id="toc-look-at-data" class="nav-link" data-scroll-target="#look-at-data">Look at data</a></li>
+  <li><a href="#stats" id="toc-stats" class="nav-link" data-scroll-target="#stats">Stats</a></li>
+  <li><a href="#pairwise-comparisons" id="toc-pairwise-comparisons" class="nav-link" data-scroll-target="#pairwise-comparisons">Pairwise comparisons</a></li>
+  <li><a href="#plotting" id="toc-plotting" class="nav-link" data-scroll-target="#plotting">Plotting</a></li>
+  </ul></li>
+  <li><a href="#polymer-areal-density-0-5-cm" id="toc-polymer-areal-density-0-5-cm" class="nav-link" data-scroll-target="#polymer-areal-density-0-5-cm">Polymer areal density 0-5 cm</a>
+  <ul class="collapse">
+  <li><a href="#look-at-data-1" id="toc-look-at-data-1" class="nav-link" data-scroll-target="#look-at-data-1">Look at data</a></li>
+  <li><a href="#stats-1" id="toc-stats-1" class="nav-link" data-scroll-target="#stats-1">Stats</a></li>
+  <li><a href="#pairwise-comparisons-1" id="toc-pairwise-comparisons-1" class="nav-link" data-scroll-target="#pairwise-comparisons-1">Pairwise comparisons</a></li>
+  <li><a href="#plotting-1" id="toc-plotting-1" class="nav-link" data-scroll-target="#plotting-1">Plotting</a></li>
+  </ul></li>
+  <li><a href="#combined-figure" id="toc-combined-figure" class="nav-link" data-scroll-target="#combined-figure">Combined figure</a></li>
+  <li><a href="#polymer-with-depth" id="toc-polymer-with-depth" class="nav-link" data-scroll-target="#polymer-with-depth">Polymer with depth</a>
+  <ul class="collapse">
+  <li><a href="#look-at-data-2" id="toc-look-at-data-2" class="nav-link" data-scroll-target="#look-at-data-2">Look at data</a></li>
+  <li><a href="#plotting-2" id="toc-plotting-2" class="nav-link" data-scroll-target="#plotting-2">Plotting</a></li>
+  </ul></li>
+  <li><a href="#session-info" id="toc-session-info" class="nav-link" data-scroll-target="#session-info">Session info</a></li>
+  </ul>
+</nav>
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">      
+
+       <p>Alex Koiter</p>
+<section id="load-libraries" class="level2">
+<h2 class="anchored" data-anchor-id="load-libraries">Load libraries</h2>
+<div class="cell-container"><div class="cell-decorator"><pre>In [1]:</pre></div><div id="c0d78588-7bc5-4124-8cb3-2927e9739a8c" class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>suppressPackageStartupMessages({</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>library(tidyverse)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>library(patchwork)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>library(DHARMa)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>library(glmmTMB)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>library(emmeans)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>library(gt)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div>
+</section>
+<section id="read-in-data" class="level2">
+<h2 class="anchored" data-anchor-id="read-in-data">Read in data</h2>
+<div class="cell-container"><div class="cell-decorator"><pre>In [2]:</pre></div><div id="d1892286-838e-4bd4-97cd-1804c02993ba" class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">&lt;-</span> read_csv(here::here(<span class="st">"./notebooks/soil_data.csv"</span>))<span class="op">|&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  mutate(date_fct <span class="op">=</span> <span class="im">as</span>.factor(date))  <span class="op">|&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  mutate(elevation <span class="op">=</span> fct_relevel(elevation, c(<span class="st">"Upper"</span>, <span class="st">"Middle"</span>, <span class="st">"Lower"</span>, <span class="st">"Riparian"</span>))) <span class="op">|&gt;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  mutate(depth <span class="op">=</span> fct_relevel(depth, c(<span class="st">"0-5 cm"</span>, <span class="st">"5-10 cm"</span>, <span class="st">"0-10 cm"</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Rows: 124 Columns: 11
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr  (4): flag_location, elevation, depth, watershed
+dbl  (5): mass, count, n_m2, mass_m2, mass_n
+date (2): date, date_fct
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+</div>
+</div></div>
+</section>
+<section id="polymer-abundance-0-5-cm" class="level2">
+<h2 class="anchored" data-anchor-id="polymer-abundance-0-5-cm">Polymer abundance (0-5 cm)</h2>
+<section id="look-at-data" class="level3">
+<h3 class="anchored" data-anchor-id="look-at-data">Look at data</h3>
+<div class="cell-container"><div class="cell-decorator"><pre>In [3]:</pre></div><div id="870d207d-0617-4857-b983-dd8e02676b34" class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>p1 <span class="op">&lt;-</span> ggplot(data <span class="op">=</span> <span class="bu">filter</span>(data, depth <span class="op">==</span> <span class="st">"0-5 cm"</span>), aes(x <span class="op">=</span> elevation, y <span class="op">=</span> n_m2, fill <span class="op">=</span> date_fct)) <span class="op">+</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  geom_boxplot(position <span class="op">=</span> position_dodge2(preserve <span class="op">=</span> <span class="st">"single"</span>)) <span class="op">+</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  theme_bw() <span class="op">+</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  scale_fill_viridis_d() <span class="op">+</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  labs(y <span class="op">=</span> bquote(<span class="st">"Polymer abundance (coatings m"</span><span class="op">^-</span><span class="dv">2</span><span class="op">*</span><span class="st">")"</span>), x <span class="op">=</span> <span class="st">"Slope position"</span>)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>p1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div class="">
+<figure class="figure">
+<p class=""><a href="soil_sampling.embed_files/figure-html/cell-4-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="soil_sampling.embed_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div></div>
+</section>
+<section id="stats" class="level3">
+<h3 class="anchored" data-anchor-id="stats">Stats</h3>
+<div class="cell-container"><div class="cell-decorator"><pre>In [4]:</pre></div><div id="36ab04cf-89c3-41d2-829c-9aedd56344c5" class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>m1 <span class="op">&lt;-</span> glmmTMB(n_m2 <span class="op">~</span> elevation <span class="op">*</span> date_fct <span class="op">+</span> (<span class="dv">1</span><span class="op">|</span>flag_location),</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>              data <span class="op">=</span> <span class="bu">filter</span>(data, depth <span class="op">==</span> <span class="st">"0-5 cm"</span> <span class="op">&amp;</span> elevation <span class="op">!=</span> <span class="st">"Riparian"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in finalizeTMB(TMBStruc, obj, fit, h, data.tmb.old): Model convergence
+problem; non-positive-definite Hessian matrix. See vignette('troubleshooting')</code></pre>
+</div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [5]:</pre></div><div id="ca173747-2046-475c-bc8d-615abced7676" class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>simulateResiduals(m1, n <span class="op">=</span> <span class="dv">1000</span>, plot <span class="op">=</span> TRUE)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div class="">
+<figure class="figure">
+<p class=""><a href="soil_sampling.embed_files/figure-html/cell-6-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="soil_sampling.embed_files/figure-html/cell-6-output-1.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Object of Class DHARMa with simulated residuals based on 1000 simulations with refit = FALSE . See ?DHARMa::simulateResiduals for help. 
+ 
+Scaled residual values: 0.923 0.552 0.586 0.05 0.992 0.844 0.119 0.336 0.212 0.966 0.204 0.265 0.942 0.217 0.079 0.707 0.06 0.172 0.071 0.985 ...</code></pre>
+</div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [6]:</pre></div><div id="30e8448a-4a0b-4999-bfb5-901afdd6f514" class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>car::Anova(m1, <span class="bu">type</span> <span class="op">=</span> <span class="st">"III"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Deviance Table (Type III Wald chisquare tests)
+
+Response: n_m2
+                     Chisq Df Pr(&gt;Chisq)    
+(Intercept)        41.9747  1  9.246e-11 ***
+elevation           5.8475  2   0.053731 .  
+date_fct           10.3518  2   0.005651 ** 
+elevation:date_fct  3.7667  4   0.438499    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [7]:</pre></div><div id="31df5241-73c8-4819-9ae6-b30805412b99" class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>summary(m1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> Family: gaussian  ( identity )
+Formula:          n_m2 ~ elevation * date_fct + (1 | flag_location)
+Data: filter(data, depth == "0-5 cm" &amp; elevation != "Riparian")
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+       NA        NA        NA        NA        61 
+
+Random effects:
+
+Conditional model:
+ Groups        Name        Variance  Std.Dev. 
+ flag_location (Intercept) 5.573e-30 2.361e-15
+ Residual                  2.025e+04 1.423e+02
+Number of obs: 72, groups:  flag_location, 24
+
+Dispersion estimate for gaussian family (sigma^2): 2.03e+04 
+
+Conditional model:
+                                   Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept)                          325.99      50.32   6.479 9.25e-11 ***
+elevationMiddle                       62.01      71.16   0.871  0.38351    
+elevationLower                       170.01      71.16   2.389  0.01689 *  
+date_fct2023-05-11                   -12.00      71.16  -0.169  0.86609    
+date_fct2023-09-19                  -204.00      71.16  -2.867  0.00415 ** 
+elevationMiddle:date_fct2023-05-11   -98.01     100.63  -0.974  0.33007    
+elevationLower:date_fct2023-05-11    -31.97     100.63  -0.318  0.75069    
+elevationMiddle:date_fct2023-09-19   -15.97     100.63  -0.159  0.87388    
+elevationLower:date_fct2023-09-19   -122.01     100.63  -1.212  0.22533    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [8]:</pre></div><div id="23c8cdf6-5ccc-42e9-99a8-43dff2f9d40e" class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>m1 <span class="op">&lt;-</span> glmmTMB(n_m2 <span class="op">~</span> elevation <span class="op">*</span> date_fct ,</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>              data <span class="op">=</span> <span class="bu">filter</span>(data, depth <span class="op">==</span> <span class="st">"0-5 cm"</span> <span class="op">&amp;</span> elevation <span class="op">!=</span> <span class="st">"Riparian"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [9]:</pre></div><div id="67cd537c-ad15-4eef-b1d7-04fd54b25b32" class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>simulateResiduals(m1, n <span class="op">=</span> <span class="dv">1000</span>, plot <span class="op">=</span> TRUE)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div class="">
+<figure class="figure">
+<p class=""><a href="soil_sampling.embed_files/figure-html/cell-10-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="soil_sampling.embed_files/figure-html/cell-10-output-1.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Object of Class DHARMa with simulated residuals based on 1000 simulations with refit = FALSE . See ?DHARMa::simulateResiduals for help. 
+ 
+Scaled residual values: 0.923 0.552 0.586 0.05 0.992 0.844 0.119 0.336 0.212 0.966 0.204 0.264 0.942 0.217 0.079 0.707 0.06 0.172 0.071 0.985 ...</code></pre>
+</div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [10]:</pre></div><div id="df3df3de-3283-40b3-be91-a80b880c50c3" class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>car::Anova(m1, <span class="bu">type</span> <span class="op">=</span> <span class="st">"III"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Deviance Table (Type III Wald chisquare tests)
+
+Response: n_m2
+                     Chisq Df Pr(&gt;Chisq)    
+(Intercept)        41.9777  1  9.232e-11 ***
+elevation           5.8469  2   0.053748 .  
+date_fct           10.3519  2   0.005651 ** 
+elevation:date_fct  3.7642  4   0.438864    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [11]:</pre></div><div id="6ea0504b-849f-4414-91d6-6e0f70baf71e" class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Removing interaction</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>m1 <span class="op">&lt;-</span> glmmTMB(n_m2 <span class="op">~</span> elevation <span class="op">+</span> date_fct,</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>              data <span class="op">=</span> <span class="bu">filter</span>(data, depth <span class="op">==</span> <span class="st">"0-5 cm"</span> <span class="op">&amp;</span> elevation <span class="op">!=</span> <span class="st">"Riparian"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [12]:</pre></div><div id="270e7177-b3b1-47c9-ad30-6d12ba71e1b7" class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>simulateResiduals(m1, n <span class="op">=</span> <span class="dv">1000</span>, plot <span class="op">=</span> TRUE) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div class="">
+<figure class="figure">
+<p class=""><a href="soil_sampling.embed_files/figure-html/cell-13-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="soil_sampling.embed_files/figure-html/cell-13-output-1.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Object of Class DHARMa with simulated residuals based on 1000 simulations with refit = FALSE . See ?DHARMa::simulateResiduals for help. 
+ 
+Scaled residual values: 0.935 0.612 0.627 0.069 0.992 0.851 0.146 0.362 0.157 0.942 0.161 0.215 0.954 0.269 0.115 0.757 0.072 0.197 0.085 0.985 ...</code></pre>
+</div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [13]:</pre></div><div id="42d53618-ebdc-4264-b2c2-60272e8d6c8a" class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>performance::check_collinearity(m1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># Check for Multicollinearity
+
+Low Correlation
+
+      Term VIF      VIF  CI adj. VIF Tolerance
+ elevation   1 [1.00, 1.00]        1         1
+  date_fct   1 [1.00, 1.00]        1         1</code></pre>
+</div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [14]:</pre></div><div id="9bd0f20d-edf0-492c-af7a-f7363fd61e6c" class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>car::Anova(m1, <span class="bu">type</span> <span class="op">=</span> <span class="st">"III"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Deviance Table (Type III Wald chisquare tests)
+
+Response: n_m2
+              Chisq Df Pr(&gt;Chisq)    
+(Intercept) 85.5228  1  &lt; 2.2e-16 ***
+elevation    8.8659  2    0.01188 *  
+date_fct    38.8340  2  3.692e-09 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [15]:</pre></div><div id="ffe7db20-f1e1-41d7-811e-5393182b5aff" class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Square root transform</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>m1_sqrt <span class="op">&lt;-</span> glmmTMB(sqrt(n_m2) <span class="op">~</span> elevation <span class="op">+</span> date_fct,</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>                   data <span class="op">=</span> <span class="bu">filter</span>(data, depth <span class="op">==</span> <span class="st">"0-5 cm"</span> <span class="op">&amp;</span> elevation <span class="op">!=</span> <span class="st">"Riparian"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [16]:</pre></div><div id="14226992-78c8-4866-905a-bb228caeb006" class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>simulateResiduals(m1_sqrt, n <span class="op">=</span> <span class="dv">1000</span>, plot <span class="op">=</span> TRUE) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div class="">
+<figure class="figure">
+<p class=""><a href="soil_sampling.embed_files/figure-html/cell-17-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="soil_sampling.embed_files/figure-html/cell-17-output-1.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Object of Class DHARMa with simulated residuals based on 1000 simulations with refit = FALSE . See ?DHARMa::simulateResiduals for help. 
+ 
+Scaled residual values: 0.882 0.615 0.625 0.094 0.98 0.851 0.19 0.449 0.196 0.926 0.184 0.25 0.903 0.329 0.154 0.723 0.069 0.245 0.097 0.965 ...</code></pre>
+</div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [17]:</pre></div><div id="2fcb9af9-30c4-4168-93f4-439390047b93" class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>performance::check_collinearity(m1_sqrt)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># Check for Multicollinearity
+
+Low Correlation
+
+      Term VIF      VIF  CI adj. VIF Tolerance
+ elevation   1 [1.00, 1.00]        1         1
+  date_fct   1 [1.00, 1.00]        1         1</code></pre>
+</div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [18]:</pre></div><div id="8d7999a2-6f8d-441e-9f8b-4f904cd8e24b" class="cell">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>car::Anova(m1_sqrt, <span class="bu">type</span> <span class="op">=</span> <span class="st">"III"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Deviance Table (Type III Wald chisquare tests)
+
+Response: sqrt(n_m2)
+               Chisq Df Pr(&gt;Chisq)    
+(Intercept) 275.4368  1  &lt; 2.2e-16 ***
+elevation     8.8044  2    0.01225 *  
+date_fct     47.3246  2  5.292e-11 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div></div>
+</section>
+<section id="pairwise-comparisons" class="level3">
+<h3 class="anchored" data-anchor-id="pairwise-comparisons">Pairwise comparisons</h3>
+<div class="cell-container"><div class="cell-decorator"><pre>In [19]:</pre></div><div id="f3067ec6-4c28-4ab9-83f3-608fb22db2f4" class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>em_elev <span class="op">&lt;-</span> emmeans(m1_sqrt, <span class="op">~</span> elevation, <span class="bu">type</span> <span class="op">=</span> <span class="st">"response"</span>) <span class="op">|&gt;</span> </span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>  regrid() <span class="op">|&gt;</span> </span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>  contrast(method <span class="op">=</span> <span class="st">"pairwise"</span>, adjust <span class="op">=</span> <span class="st">"fdr"</span>)  <span class="op">|&gt;</span></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>  <span class="im">as</span>.data.frame() <span class="op">|&gt;</span></span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>  mutate(<span class="bu">type</span> <span class="op">=</span> <span class="st">"Slope Position"</span>)</span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>em_elev <span class="co"># back transformed</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>        contrast   estimate       SE df    t.ratio    p.value           type
+1 Upper - Middle  -18.06178 37.07429 66 -0.4871781 0.62774629 Slope Position
+2  Upper - Lower -112.16079 40.56626 66 -2.7648786 0.02212594 Slope Position
+3 Middle - Lower  -94.09901 41.20269 66 -2.2838076 0.03841204 Slope Position</code></pre>
+</div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [20]:</pre></div><div id="0537d93b-99e0-462d-a211-b091263d4609" class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>em_date <span class="op">&lt;-</span> emmeans(m1_sqrt, <span class="op">~</span> date_fct, <span class="bu">type</span> <span class="op">=</span> <span class="st">"response"</span>) <span class="op">|&gt;</span> </span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>  regrid() <span class="op">|&gt;</span> </span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>  contrast(method <span class="op">=</span> <span class="st">"pairwise"</span>, adjust <span class="op">=</span> <span class="st">"fdr"</span>) <span class="op">|&gt;</span></span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>  <span class="im">as</span>.data.frame() <span class="op">|&gt;</span></span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>  mutate(<span class="bu">type</span> <span class="op">=</span> <span class="st">"Sampling Date"</span>) <span class="op">|&gt;</span></span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>  mutate(contrast <span class="op">=</span> str_remove_all(contrast, <span class="st">"[()]"</span>))</span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>em_date <span class="co"># back transformed</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                 contrast estimate       SE df  t.ratio      p.value
+1 2022-10-21 - 2023-05-11  51.4810 45.17452 66 1.139603 2.585710e-01
+2 2022-10-21 - 2023-09-19 241.7163 38.63457 66 6.256476 9.957450e-08
+3 2023-05-11 - 2023-09-19 190.2353 36.66474 66 5.188508 3.299117e-06
+           type
+1 Sampling Date
+2 Sampling Date
+3 Sampling Date</code></pre>
+</div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [21]:</pre></div><div class="cell">
+
+<div class="cell-container"><div class="cell-decorator"><pre>In [22]:</pre></div><div><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>pairs <span class="op">|&gt;</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>  group_by(<span class="bu">type</span>) <span class="op">|&gt;</span></span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>  gt() <span class="op">|&gt;</span></span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>  fmt_number(columns <span class="op">=</span> c(<span class="st">"Estimate"</span>, <span class="st">"SE"</span>, <span class="st">"t ratio"</span>), decimal <span class="op">=</span> <span class="dv">2</span>)<span class="op">|&gt;</span></span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>  fmt_number(columns <span class="op">=</span> c(<span class="st">"p value"</span>), decimal <span class="op">=</span> <span class="dv">3</span>)<span class="op">|&gt;</span></span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>  sub_small_vals(threshold <span class="op">=</span> <span class="fl">0.001</span>) <span class="op">|&gt;</span></span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a>  tab_style(style <span class="op">=</span>  cell_text(weight <span class="op">=</span> <span class="st">"bold"</span>, align <span class="op">=</span> <span class="st">"center"</span>), locations <span class="op">=</span>  cells_row_groups()) <span class="op">|&gt;</span></span>
+<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a>  tab_options(column_labels.font.weight <span class="op">=</span> <span class="st">"bold"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div><div id="tbl-abundance-posthoc" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-abundance-posthoc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Results of the post-hoc pairwise comparisons with a Benjamini-Hochberg p value adjustment for differences in the abundance of polymer coatings (<span class="math inline">\(coatings~m^{-2}\)</span>) between the three slope poistions and sampling dates. Data were square-root transformed prior to analysis and back-transformed to the original scale for reporting.
+</figcaption>
+<div aria-describedby="tbl-abundance-posthoc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output cell-output-display">
+<div id="dagoqyumpr" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#dagoqyumpr table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#dagoqyumpr thead, #dagoqyumpr tbody, #dagoqyumpr tfoot, #dagoqyumpr tr, #dagoqyumpr td, #dagoqyumpr th {
+  border-style: none;
+}
+
+#dagoqyumpr p {
+  margin: 0;
+  padding: 0;
+}
+
+#dagoqyumpr .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#dagoqyumpr .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#dagoqyumpr .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#dagoqyumpr .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#dagoqyumpr .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#dagoqyumpr .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#dagoqyumpr .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#dagoqyumpr .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#dagoqyumpr .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#dagoqyumpr .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#dagoqyumpr .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#dagoqyumpr .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#dagoqyumpr .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#dagoqyumpr .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#dagoqyumpr .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#dagoqyumpr .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#dagoqyumpr .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#dagoqyumpr .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#dagoqyumpr .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dagoqyumpr .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#dagoqyumpr .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#dagoqyumpr .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#dagoqyumpr .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dagoqyumpr .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#dagoqyumpr .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#dagoqyumpr .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#dagoqyumpr .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dagoqyumpr .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#dagoqyumpr .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#dagoqyumpr .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#dagoqyumpr .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#dagoqyumpr .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#dagoqyumpr .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dagoqyumpr .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#dagoqyumpr .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dagoqyumpr .gt_left {
+  text-align: left;
+}
+
+#dagoqyumpr .gt_center {
+  text-align: center;
+}
+
+#dagoqyumpr .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#dagoqyumpr .gt_font_normal {
+  font-weight: normal;
+}
+
+#dagoqyumpr .gt_font_bold {
+  font-weight: bold;
+}
+
+#dagoqyumpr .gt_font_italic {
+  font-style: italic;
+}
+
+#dagoqyumpr .gt_super {
+  font-size: 65%;
+}
+
+#dagoqyumpr .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#dagoqyumpr .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#dagoqyumpr .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#dagoqyumpr .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#dagoqyumpr .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#dagoqyumpr .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#dagoqyumpr .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#dagoqyumpr .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#dagoqyumpr div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_col_headings header">
+<th id="Contrast" class="gt_col_heading gt_columns_bottom_border gt_left" style="text-align: center;" data-quarto-table-cell-role="th" scope="col">Contrast</th>
+<th id="Estimate" class="gt_col_heading gt_columns_bottom_border gt_right" style="text-align: center;" data-quarto-table-cell-role="th" scope="col">Estimate</th>
+<th id="SE" class="gt_col_heading gt_columns_bottom_border gt_right" style="text-align: center;" data-quarto-table-cell-role="th" scope="col">SE</th>
+<th id="df" class="gt_col_heading gt_columns_bottom_border gt_right" style="text-align: center;" data-quarto-table-cell-role="th" scope="col">df</th>
+<th id="t-ratio" class="gt_col_heading gt_columns_bottom_border gt_right" style="text-align: center;" data-quarto-table-cell-role="th" scope="col">t ratio</th>
+<th id="p-value" class="gt_col_heading gt_columns_bottom_border gt_right" style="text-align: center;" data-quarto-table-cell-role="th" scope="col">p value</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="gt_group_heading_row odd">
+<td colspan="6" id="Slope Position" class="gt_group_heading" data-quarto-table-cell-role="th" style="text-align: center; font-weight: bold;" scope="colgroup">Slope Position</td>
+</tr>
+<tr class="gt_row_group_first even">
+<td class="gt_row gt_left" style="text-align: center;" headers="Slope Position  Contrast">Upper - Middle</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  Estimate">−18.06</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  SE">37.07</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  df">66</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  t ratio">−0.49</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  p value">0.628</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: center;" headers="Slope Position  Contrast">Upper - Lower</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  Estimate">−112.16</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  SE">40.57</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  df">66</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  t ratio">−2.76</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  p value">0.022</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: center;" headers="Slope Position  Contrast">Middle - Lower</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  Estimate">−94.10</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  SE">41.20</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  df">66</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  t ratio">−2.28</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  p value">0.038</td>
+</tr>
+<tr class="gt_group_heading_row odd">
+<td colspan="6" id="Sampling Date" class="gt_group_heading" data-quarto-table-cell-role="th" style="text-align: center; font-weight: bold;" scope="colgroup">Sampling Date</td>
+</tr>
+<tr class="gt_row_group_first even">
+<td class="gt_row gt_left" style="text-align: center;" headers="Sampling Date  Contrast">2022-10-21 - 2023-05-11</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  Estimate">51.48</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  SE">45.17</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  df">66</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  t ratio">1.14</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  p value">0.259</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: center;" headers="Sampling Date  Contrast">2022-10-21 - 2023-09-19</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  Estimate">241.72</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  SE">38.63</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  df">66</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  t ratio">6.26</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  p value">&lt;0.001</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: center;" headers="Sampling Date  Contrast">2023-05-11 - 2023-09-19</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  Estimate">190.24</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  SE">36.66</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  df">66</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  t ratio">5.19</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  p value">&lt;0.001</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</figure>
+</div></div></div>
+</div></div>
+</section>
+<section id="plotting" class="level3">
+<h3 class="anchored" data-anchor-id="plotting">Plotting</h3>
+<div class="cell-container"><div class="cell-decorator"><pre>In [23]:</pre></div><div id="c80c90c7-afa8-4d01-8ff2-7b7b60328bda" class="cell">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get predictions on the sqrt scale</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>preds_elev <span class="op">&lt;-</span> emmeans(m1_sqrt, <span class="op">~</span> elevation)</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>preds_date <span class="op">&lt;-</span> emmeans(m1_sqrt, <span class="op">~</span> date_fct)</span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Back-transform manually</span></span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>preds_df_elev <span class="op">&lt;-</span> <span class="im">as</span>.data.frame(preds_elev) <span class="op">|&gt;</span></span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>  mutate(</span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>    response <span class="op">=</span> emmean<span class="op">^</span><span class="dv">2</span>,</span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>    lower    <span class="op">=</span> lower.CL<span class="op">^</span><span class="dv">2</span>,</span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a>    upper    <span class="op">=</span> upper.CL<span class="op">^</span><span class="dv">2</span></span>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-13"><a href="#cb37-13" aria-hidden="true" tabindex="-1"></a>preds_df_date <span class="op">&lt;-</span> <span class="im">as</span>.data.frame(preds_date) <span class="op">|&gt;</span></span>
+<span id="cb37-14"><a href="#cb37-14" aria-hidden="true" tabindex="-1"></a>  mutate(</span>
+<span id="cb37-15"><a href="#cb37-15" aria-hidden="true" tabindex="-1"></a>    response <span class="op">=</span> emmean<span class="op">^</span><span class="dv">2</span>,</span>
+<span id="cb37-16"><a href="#cb37-16" aria-hidden="true" tabindex="-1"></a>    lower    <span class="op">=</span> lower.CL<span class="op">^</span><span class="dv">2</span>,</span>
+<span id="cb37-17"><a href="#cb37-17" aria-hidden="true" tabindex="-1"></a>    upper    <span class="op">=</span> upper.CL<span class="op">^</span><span class="dv">2</span></span>
+<span id="cb37-18"><a href="#cb37-18" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [24]:</pre></div><div id="dc266500-80e7-4a9c-bab9-541b0fa809a6" class="cell">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Polymer abundance by elevation and date. Points show raw observations; Points outlined in black and error bars show model predictions with 95% CIs from a GLMM fitted to square-root transformed data, back-transformed to the original scale. Because the riparian area had fewer sampling locations and was only sampled on 2023-09-19 it was excluded from the formal analysis</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>p1_a <span class="op">&lt;-</span> ggplot(<span class="bu">filter</span>(data, depth <span class="op">==</span> <span class="st">"0-5 cm"</span> ), aes(x <span class="op">=</span> elevation, y <span class="op">=</span> n_m2, color <span class="op">=</span> date_fct)) <span class="op">+</span></span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>  geom_jitter(position <span class="op">=</span> position_dodge(<span class="fl">0.3</span>), alpha <span class="op">=</span> <span class="fl">0.6</span>, size <span class="op">=</span> <span class="dv">2</span>) <span class="op">+</span></span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>  geom_errorbar(data <span class="op">=</span> preds_df_elev, </span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>                aes(y <span class="op">=</span> response, ymin <span class="op">=</span> lower, ymax <span class="op">=</span> upper),</span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a>                width <span class="op">=</span> <span class="fl">0.15</span>, position <span class="op">=</span> position_dodge(<span class="fl">0.3</span>), color <span class="op">=</span> <span class="st">"black"</span>) <span class="op">+</span></span>
+<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a>  geom_point(data <span class="op">=</span> preds_df_elev, aes(y <span class="op">=</span> response),</span>
+<span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a>             shape <span class="op">=</span> <span class="dv">21</span>, fill <span class="op">=</span> <span class="st">"white"</span>, position <span class="op">=</span> position_dodge(<span class="fl">0.3</span>), color <span class="op">=</span> <span class="st">"black"</span>, size <span class="op">=</span> <span class="dv">3</span>) <span class="op">+</span></span>
+<span id="cb38-10"><a href="#cb38-10" aria-hidden="true" tabindex="-1"></a>  labs(y <span class="op">=</span> bquote(<span class="st">"Abundance (coatings m"</span><span class="op">^-</span><span class="dv">2</span><span class="op">*</span><span class="st">")"</span>), x <span class="op">=</span> <span class="st">"Slope position"</span>, color <span class="op">=</span> <span class="st">"Date"</span>, tag <span class="op">=</span> <span class="st">"a)"</span>) <span class="op">+</span></span>
+<span id="cb38-11"><a href="#cb38-11" aria-hidden="true" tabindex="-1"></a>  <span class="co">#guides(color = guide_legend(order = 1), fill = guide_legend(order = 1)) +</span></span>
+<span id="cb38-12"><a href="#cb38-12" aria-hidden="true" tabindex="-1"></a>  guides(color <span class="op">=</span> guide_legend(nrow <span class="op">=</span> <span class="dv">2</span>)) <span class="op">+</span></span>
+<span id="cb38-13"><a href="#cb38-13" aria-hidden="true" tabindex="-1"></a>  theme_bw(base_size <span class="op">=</span> <span class="dv">12</span>)<span class="op">+</span></span>
+<span id="cb38-14"><a href="#cb38-14" aria-hidden="true" tabindex="-1"></a>  theme(axis.title.x <span class="op">=</span> element_blank())<span class="op">+</span> </span>
+<span id="cb38-15"><a href="#cb38-15" aria-hidden="true" tabindex="-1"></a>  annotate(<span class="st">"text"</span>, x <span class="op">=</span> <span class="st">"Upper"</span>, y <span class="op">=</span> <span class="dv">800</span>, label <span class="op">=</span> <span class="st">"a"</span>) <span class="op">+</span> </span>
+<span id="cb38-16"><a href="#cb38-16" aria-hidden="true" tabindex="-1"></a>  annotate(<span class="st">"text"</span>, x <span class="op">=</span> <span class="st">"Middle"</span>, y <span class="op">=</span> <span class="dv">800</span>, label <span class="op">=</span> <span class="st">"a"</span>) <span class="op">+</span> </span>
+<span id="cb38-17"><a href="#cb38-17" aria-hidden="true" tabindex="-1"></a>  annotate(<span class="st">"text"</span>, x <span class="op">=</span> <span class="st">"Lower"</span>, y <span class="op">=</span> <span class="dv">800</span>, label <span class="op">=</span> <span class="st">"b"</span>)</span>
+<span id="cb38-18"><a href="#cb38-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-19"><a href="#cb38-19" aria-hidden="true" tabindex="-1"></a>p1_a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="soil_sampling.embed_files/figure-html/cell-24-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="soil_sampling.embed_files/figure-html/cell-24-output-1.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="soil_sampling.embed_files/figure-html/cell-24-output-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="soil_sampling.embed_files/figure-html/cell-24-output-2.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [25]:</pre></div><div id="cell-fig-denisty-surface" class="cell" data-fig-height="10">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>p1_1 <span class="op">&lt;-</span> p1_a <span class="op">+</span> p1_b  <span class="op">+</span> plot_layout(axis <span class="op">=</span> <span class="st">'collect'</span>) <span class="op">&amp;</span> theme(legend.position <span class="op">=</span> <span class="st">'bottom'</span>, legend.title <span class="op">=</span> element_blank())</span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>p1_1 </span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a><span class="co"># ggsave(plot = p1_1, filename = here::here("./Figures/Figure 1.png"), width = 184, height = 100, units = "mm", dpi = 400)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="fig-denisty-surface" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-denisty-surface-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
+<a href="soil_sampling.embed_files/figure-html/fig-denisty-surface-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Figure&nbsp;1: Polymer abundance (0-5 cm) by elevation and date. Points show raw observations; Points outlined in black and error bars show model predictions with 95% CIs from a linear model fitted to square-root transformed data, back-transformed to the original scale. Within each plot significant differences (p<0.05) between slope position or sampling dates are denoted with different letters. Because the riparian area had fewer sampling locations and was only sampled on 2023-09-19 it was excluded from the formal analysis"><img src="soil_sampling.embed_files/figure-html/fig-denisty-surface-output-1.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-denisty-surface-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Polymer abundance (0-5 cm) by elevation and date. Points show raw observations; Points outlined in black and error bars show model predictions with 95% CIs from a linear model fitted to square-root transformed data, back-transformed to the original scale. Within each plot significant differences (p&lt;0.05) between slope position or sampling dates are denoted with different letters. Because the riparian area had fewer sampling locations and was only sampled on 2023-09-19 it was excluded from the formal analysis
+</figcaption>
+</figure>
+</div>
+</div>
+</div></div>
+</section>
+</section>
+<section id="polymer-areal-density-0-5-cm" class="level2">
+<h2 class="anchored" data-anchor-id="polymer-areal-density-0-5-cm">Polymer areal density 0-5 cm</h2>
+<section id="look-at-data-1" class="level3">
+<h3 class="anchored" data-anchor-id="look-at-data-1">Look at data</h3>
+<div class="cell-container"><div class="cell-decorator"><pre>In [26]:</pre></div><div id="32c8d957-df0c-47f9-8e3f-288ea729967e" class="cell">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>p2 <span class="op">&lt;-</span> ggplot(data <span class="op">=</span> <span class="bu">filter</span>(data, depth <span class="op">==</span> <span class="st">"0-5 cm"</span>), aes(x <span class="op">=</span> elevation, y <span class="op">=</span> mass_m2, fill <span class="op">=</span> date_fct)) <span class="op">+</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>  geom_boxplot(position <span class="op">=</span> position_dodge2(preserve <span class="op">=</span> <span class="st">"single"</span>)) <span class="op">+</span></span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>  theme_bw() <span class="op">+</span></span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>  scale_fill_viridis_d() <span class="op">+</span></span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a>  labs(y <span class="op">=</span> bquote(<span class="st">"Polymer areal density (g m"</span><span class="op">^-</span><span class="dv">2</span><span class="op">*</span><span class="st">")"</span>), x <span class="op">=</span> <span class="st">"Slope position"</span>)</span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a>p2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div class="">
+<figure class="figure">
+<p class=""><a href="soil_sampling.embed_files/figure-html/cell-26-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img src="soil_sampling.embed_files/figure-html/cell-26-output-1.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div></div>
+</section>
+<section id="stats-1" class="level3">
+<h3 class="anchored" data-anchor-id="stats-1">Stats</h3>
+<div class="cell-container"><div class="cell-decorator"><pre>In [27]:</pre></div><div id="4a8a56b2-a243-4e06-b5fc-102239b90438" class="cell">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>m2 <span class="op">&lt;-</span> glmmTMB(mass_m2 <span class="op">~</span> elevation <span class="op">*</span> date_fct <span class="op">+</span> (<span class="dv">1</span><span class="op">|</span>flag_location),</span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>              data <span class="op">=</span> <span class="bu">filter</span>(data, depth <span class="op">==</span> <span class="st">"0-5 cm"</span> <span class="op">&amp;</span> elevation <span class="op">!=</span> <span class="st">"Riparian"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [28]:</pre></div><div id="34e9dadd-9b38-4b26-8963-22cbf354a7bb" class="cell">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>simulateResiduals(m2, n <span class="op">=</span> <span class="dv">1000</span>, plot <span class="op">=</span> TRUE)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div class="">
+<figure class="figure">
+<p class=""><a href="soil_sampling.embed_files/figure-html/cell-28-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img src="soil_sampling.embed_files/figure-html/cell-28-output-1.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Object of Class DHARMa with simulated residuals based on 1000 simulations with refit = FALSE . See ?DHARMa::simulateResiduals for help. 
+ 
+Scaled residual values: 0.966 0.334 0.55 0.168 0.969 0.757 0.194 0.486 0.141 0.988 0.227 0.413 0.838 0.21 0.081 0.787 0.124 0.409 0.15 0.797 ...</code></pre>
+</div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [29]:</pre></div><div id="51d586ff-3472-4347-a315-13eeb883d5c6" class="cell">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>car::Anova(m2, <span class="bu">type</span> <span class="op">=</span> <span class="st">"III"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Deviance Table (Type III Wald chisquare tests)
+
+Response: mass_m2
+                     Chisq Df Pr(&gt;Chisq)    
+(Intercept)        41.4100  1  1.234e-10 ***
+elevation           6.4290  2   0.040175 *  
+date_fct           11.4822  2   0.003211 ** 
+elevation:date_fct  5.2689  4   0.260799    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [30]:</pre></div><div id="f7f7e85a-584c-4b5f-95a6-d177b298a551" class="cell">
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Removing interaction</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>m2 <span class="op">&lt;-</span> glmmTMB(mass_m2 <span class="op">~</span> elevation <span class="op">+</span> date_fct <span class="op">+</span> (<span class="dv">1</span><span class="op">|</span>flag_location),</span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>              data <span class="op">=</span> <span class="bu">filter</span>(data, depth <span class="op">==</span> <span class="st">"0-5 cm"</span> <span class="op">&amp;</span> elevation <span class="op">!=</span> <span class="st">"Riparian"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [31]:</pre></div><div id="539761d0-28e0-497f-a211-27ac7d2e2c3d" class="cell">
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>simulateResiduals(m2, n <span class="op">=</span> <span class="dv">1000</span>, plot <span class="op">=</span> TRUE) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div class="">
+<figure class="figure">
+<p class=""><a href="soil_sampling.embed_files/figure-html/cell-31-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img src="soil_sampling.embed_files/figure-html/cell-31-output-1.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Object of Class DHARMa with simulated residuals based on 1000 simulations with refit = FALSE . See ?DHARMa::simulateResiduals for help. 
+ 
+Scaled residual values: 0.975 0.394 0.634 0.211 0.961 0.732 0.194 0.486 0.118 0.975 0.187 0.354 0.878 0.287 0.11 0.838 0.112 0.375 0.143 0.806 ...</code></pre>
+</div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [32]:</pre></div><div id="b2f54ed0-c464-476c-ab8f-3691b319202f" class="cell">
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>performance::check_collinearity(m2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># Check for Multicollinearity
+
+Low Correlation
+
+      Term VIF      VIF  CI adj. VIF Tolerance
+ elevation   1 [1.00, 1.00]        1         1
+  date_fct   1 [1.00, 1.00]        1         1</code></pre>
+</div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [33]:</pre></div><div id="a3d03fde-84de-4a24-9c9d-187474430e9c" class="cell">
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>car::Anova(m2, <span class="bu">type</span> <span class="op">=</span> <span class="st">"III"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Deviance Table (Type III Wald chisquare tests)
+
+Response: mass_m2
+              Chisq Df Pr(&gt;Chisq)    
+(Intercept) 71.5435  1  &lt; 2.2e-16 ***
+elevation    7.9335  2    0.01893 *  
+date_fct    48.4580  2  3.003e-11 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [34]:</pre></div><div id="65a04d2a-bb00-47cc-b22c-0739953da451" class="cell">
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Square root transform</span></span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>m2_sqrt <span class="op">&lt;-</span> glmmTMB(sqrt(mass_m2) <span class="op">~</span> elevation <span class="op">+</span> date_fct <span class="op">+</span> (<span class="dv">1</span><span class="op">|</span>flag_location),</span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a>              data <span class="op">=</span> <span class="bu">filter</span>(data, depth <span class="op">==</span> <span class="st">"0-5 cm"</span> <span class="op">&amp;</span> elevation <span class="op">!=</span> <span class="st">"Riparian"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [35]:</pre></div><div id="e8e2f1ca-45b8-4dfa-9c5d-2a087be174d7" class="cell">
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>simulateResiduals(m2_sqrt, n <span class="op">=</span> <span class="dv">1000</span>, plot <span class="op">=</span> TRUE) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in newton(lsp = lsp, X = G$X, y = G$y, Eb = G$Eb, UrS = G$UrS, L = G$L,
+: Fitting terminated with step failure - check results carefully</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div class="">
+<figure class="figure">
+<p class=""><a href="soil_sampling.embed_files/figure-html/cell-35-output-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img src="soil_sampling.embed_files/figure-html/cell-35-output-2.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Object of Class DHARMa with simulated residuals based on 1000 simulations with refit = FALSE . See ?DHARMa::simulateResiduals for help. 
+ 
+Scaled residual values: 0.911 0.456 0.634 0.276 0.937 0.73 0.215 0.512 0.116 0.955 0.198 0.403 0.833 0.322 0.132 0.77 0.121 0.45 0.161 0.813 ...</code></pre>
+</div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [36]:</pre></div><div id="b242c055-5411-4400-97b5-d38abd52983a" class="cell">
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>performance::check_collinearity(m2_sqrt)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># Check for Multicollinearity
+
+Low Correlation
+
+      Term VIF      VIF  CI adj. VIF Tolerance
+ elevation   1 [1.00, 1.00]        1         1
+  date_fct   1 [1.00, 1.00]        1         1</code></pre>
+</div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [37]:</pre></div><div id="40fa621a-997c-476b-9f2a-28f13821236c" class="cell">
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a>car::Anova(m2_sqrt, <span class="bu">type</span> <span class="op">=</span> <span class="st">"III"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Deviance Table (Type III Wald chisquare tests)
+
+Response: sqrt(mass_m2)
+               Chisq Df Pr(&gt;Chisq)    
+(Intercept) 248.5740  1  &lt; 2.2e-16 ***
+elevation     7.3091  2    0.02587 *  
+date_fct     62.2984  2  2.965e-14 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [38]:</pre></div><div id="802ecccc-d5fd-4727-8e19-f06a8e240720" class="cell">
+<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a>summary(m2_sqrt)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> Family: gaussian  ( identity )
+Formula:          sqrt(mass_m2) ~ elevation + date_fct + (1 | flag_location)
+Data: filter(data, depth == "0-5 cm" &amp; elevation != "Riparian")
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+    -72.8     -56.9      43.4     -86.8        65 
+
+Random effects:
+
+Conditional model:
+ Groups        Name        Variance Std.Dev.
+ flag_location (Intercept) 0.002253 0.04746 
+ Residual                  0.015547 0.12469 
+Number of obs: 72, groups:  flag_location, 24
+
+Dispersion estimate for gaussian family (sigma^2): 0.0155 
+
+Conditional model:
+                   Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept)         0.58169    0.03689  15.766  &lt; 2e-16 ***
+elevationMiddle     0.02966    0.04311   0.688   0.4914    
+elevationLower      0.11245    0.04311   2.608   0.0091 ** 
+date_fct2023-05-11 -0.06722    0.03599  -1.868   0.0618 .  
+date_fct2023-09-19 -0.27266    0.03599  -7.575 3.59e-14 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div></div>
+</section>
+<section id="pairwise-comparisons-1" class="level3">
+<h3 class="anchored" data-anchor-id="pairwise-comparisons-1">Pairwise comparisons</h3>
+<div class="cell-container"><div class="cell-decorator"><pre>In [39]:</pre></div><div id="bf45ab93-bbfe-40c8-ad6c-9e65d56e236c" class="cell">
+<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a>em_elev1 <span class="op">&lt;-</span> emmeans(m2_sqrt, <span class="op">~</span> elevation, <span class="bu">type</span> <span class="op">=</span> <span class="st">"response"</span>) <span class="op">|&gt;</span> </span>
+<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a>  regrid() <span class="op">|&gt;</span> </span>
+<span id="cb63-3"><a href="#cb63-3" aria-hidden="true" tabindex="-1"></a>  contrast(method <span class="op">=</span> <span class="st">"pairwise"</span>, adjust <span class="op">=</span> <span class="st">"fdr"</span>)<span class="op">|&gt;</span></span>
+<span id="cb63-4"><a href="#cb63-4" aria-hidden="true" tabindex="-1"></a>  <span class="im">as</span>.data.frame() <span class="op">|&gt;</span></span>
+<span id="cb63-5"><a href="#cb63-5" aria-hidden="true" tabindex="-1"></a>  mutate(<span class="bu">type</span> <span class="op">=</span> <span class="st">"Slope Position"</span>)</span>
+<span id="cb63-6"><a href="#cb63-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb63-7"><a href="#cb63-7" aria-hidden="true" tabindex="-1"></a>em_elev1 <span class="co"># back transformed</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>        contrast    estimate         SE  df    z.ratio    p.value
+1 Upper - Middle -0.02866984 0.04168730 Inf -0.6877356 0.49161929
+2  Upper - Lower -0.11798997 0.04549595 Inf -2.5934171 0.02850824
+3 Middle - Lower -0.08932013 0.04665257 Inf -1.9145811 0.08331892
+            type
+1 Slope Position
+2 Slope Position
+3 Slope Position</code></pre>
+</div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [40]:</pre></div><div id="4638f858-3270-404e-9128-b43b48ebf445" class="cell">
+<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a>em_date1 <span class="op">&lt;-</span> emmeans(m2_sqrt, <span class="op">~</span> date_fct, <span class="bu">type</span> <span class="op">=</span> <span class="st">"response"</span>) <span class="op">|&gt;</span> </span>
+<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a>  regrid() <span class="op">|&gt;</span> </span>
+<span id="cb65-3"><a href="#cb65-3" aria-hidden="true" tabindex="-1"></a>  contrast(method <span class="op">=</span> <span class="st">"pairwise"</span>, adjust <span class="op">=</span> <span class="st">"fdr"</span>)<span class="op">|&gt;</span></span>
+<span id="cb65-4"><a href="#cb65-4" aria-hidden="true" tabindex="-1"></a>  <span class="im">as</span>.data.frame() <span class="op">|&gt;</span></span>
+<span id="cb65-5"><a href="#cb65-5" aria-hidden="true" tabindex="-1"></a>  mutate(<span class="bu">type</span> <span class="op">=</span> <span class="st">"Sampling Date"</span>)<span class="op">|&gt;</span></span>
+<span id="cb65-6"><a href="#cb65-6" aria-hidden="true" tabindex="-1"></a>  mutate(contrast <span class="op">=</span> str_remove_all(contrast, <span class="st">"[()]"</span>))</span>
+<span id="cb65-7"><a href="#cb65-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb65-8"><a href="#cb65-8" aria-hidden="true" tabindex="-1"></a>em_date1 <span class="co"># back transformed</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                 contrast  estimate         SE  df  z.ratio      p.value
+1 2022-10-21 - 2023-05-11 0.0800540 0.04295358 Inf 1.863733 6.235925e-02
+2 2022-10-21 - 2023-09-19 0.2686988 0.03718098 Inf 7.226782 1.483718e-12
+3 2023-05-11 - 2023-09-19 0.1886448 0.03410173 Inf 5.531825 4.753738e-08
+           type
+1 Sampling Date
+2 Sampling Date
+3 Sampling Date</code></pre>
+</div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [41]:</pre></div><div id="3e32de97-91c7-4f9c-bf15-94b0bc8eb5bb" class="cell">
+<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a>pairs1 <span class="op">&lt;-</span> em_elev1 <span class="op">|&gt;</span></span>
+<span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a>  bind_rows(em_date1) <span class="op">%&gt;%</span></span>
+<span id="cb67-3"><a href="#cb67-3" aria-hidden="true" tabindex="-1"></a>  rename(<span class="st">"Contrast"</span> <span class="op">=</span> <span class="st">"contrast"</span>, <span class="st">"Estimate"</span> <span class="op">=</span> <span class="st">"estimate"</span>, <span class="st">"z ratio"</span> <span class="op">=</span> <span class="st">"z.ratio"</span>, <span class="st">"p value"</span> <span class="op">=</span> <span class="st">"p.value"</span>) <span class="op">|&gt;</span></span>
+<span id="cb67-4"><a href="#cb67-4" aria-hidden="true" tabindex="-1"></a>  select(<span class="op">-</span>df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [42]:</pre></div><div class="cell">
+
+<div class="cell-container"><div class="cell-decorator"><pre>In [43]:</pre></div><div><div class="sourceCode cell-code" id="cb68"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a>pairs1 <span class="op">|&gt;</span></span>
+<span id="cb68-2"><a href="#cb68-2" aria-hidden="true" tabindex="-1"></a>  group_by(<span class="bu">type</span>) <span class="op">|&gt;</span></span>
+<span id="cb68-3"><a href="#cb68-3" aria-hidden="true" tabindex="-1"></a>  gt() <span class="op">|&gt;</span></span>
+<span id="cb68-4"><a href="#cb68-4" aria-hidden="true" tabindex="-1"></a>  fmt_number(columns <span class="op">=</span> c(<span class="st">"Estimate"</span>, <span class="st">"SE"</span>, <span class="st">"z ratio"</span>), decimal <span class="op">=</span> <span class="dv">2</span>)<span class="op">|&gt;</span></span>
+<span id="cb68-5"><a href="#cb68-5" aria-hidden="true" tabindex="-1"></a>  fmt_number(columns <span class="op">=</span> c(<span class="st">"p value"</span>), decimal <span class="op">=</span> <span class="dv">3</span>)<span class="op">|&gt;</span></span>
+<span id="cb68-6"><a href="#cb68-6" aria-hidden="true" tabindex="-1"></a>  sub_small_vals(threshold <span class="op">=</span> <span class="fl">0.001</span>) <span class="op">|&gt;</span></span>
+<span id="cb68-7"><a href="#cb68-7" aria-hidden="true" tabindex="-1"></a>  tab_style(style <span class="op">=</span>  cell_text(weight <span class="op">=</span> <span class="st">"bold"</span>, align <span class="op">=</span> <span class="st">"center"</span>), locations <span class="op">=</span>  cells_row_groups()) <span class="op">|&gt;</span></span>
+<span id="cb68-8"><a href="#cb68-8" aria-hidden="true" tabindex="-1"></a>  tab_options(column_labels.font.weight <span class="op">=</span> <span class="st">"bold"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div><div id="tbl-density-posthoc" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-density-posthoc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: Results of the post-hoc pairwise comparisons with a Benjamini-Hochberg p value adjustment for differences in the mass of polymer coatings (<span class="math inline">\(g~m^{-2}\)</span>) between the three slope poistions and sampling dates. Data were square-root transformed prior to analysis and back-transformed to the original scale for reporting.
+</figcaption>
+<div aria-describedby="tbl-density-posthoc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output cell-output-display">
+<div id="wtfitkecfw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#wtfitkecfw table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#wtfitkecfw thead, #wtfitkecfw tbody, #wtfitkecfw tfoot, #wtfitkecfw tr, #wtfitkecfw td, #wtfitkecfw th {
+  border-style: none;
+}
+
+#wtfitkecfw p {
+  margin: 0;
+  padding: 0;
+}
+
+#wtfitkecfw .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#wtfitkecfw .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#wtfitkecfw .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#wtfitkecfw .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#wtfitkecfw .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#wtfitkecfw .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#wtfitkecfw .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#wtfitkecfw .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#wtfitkecfw .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#wtfitkecfw .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#wtfitkecfw .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#wtfitkecfw .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#wtfitkecfw .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#wtfitkecfw .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#wtfitkecfw .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#wtfitkecfw .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#wtfitkecfw .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#wtfitkecfw .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#wtfitkecfw .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#wtfitkecfw .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#wtfitkecfw .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#wtfitkecfw .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#wtfitkecfw .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#wtfitkecfw .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#wtfitkecfw .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#wtfitkecfw .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#wtfitkecfw .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#wtfitkecfw .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#wtfitkecfw .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#wtfitkecfw .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#wtfitkecfw .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#wtfitkecfw .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#wtfitkecfw .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#wtfitkecfw .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#wtfitkecfw .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#wtfitkecfw .gt_left {
+  text-align: left;
+}
+
+#wtfitkecfw .gt_center {
+  text-align: center;
+}
+
+#wtfitkecfw .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#wtfitkecfw .gt_font_normal {
+  font-weight: normal;
+}
+
+#wtfitkecfw .gt_font_bold {
+  font-weight: bold;
+}
+
+#wtfitkecfw .gt_font_italic {
+  font-style: italic;
+}
+
+#wtfitkecfw .gt_super {
+  font-size: 65%;
+}
+
+#wtfitkecfw .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#wtfitkecfw .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#wtfitkecfw .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#wtfitkecfw .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#wtfitkecfw .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#wtfitkecfw .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#wtfitkecfw .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#wtfitkecfw .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#wtfitkecfw div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_col_headings header">
+<th id="Contrast" class="gt_col_heading gt_columns_bottom_border gt_left" style="text-align: center;" data-quarto-table-cell-role="th" scope="col">Contrast</th>
+<th id="Estimate" class="gt_col_heading gt_columns_bottom_border gt_right" style="text-align: center;" data-quarto-table-cell-role="th" scope="col">Estimate</th>
+<th id="SE" class="gt_col_heading gt_columns_bottom_border gt_right" style="text-align: center;" data-quarto-table-cell-role="th" scope="col">SE</th>
+<th id="z-ratio" class="gt_col_heading gt_columns_bottom_border gt_right" style="text-align: center;" data-quarto-table-cell-role="th" scope="col">z ratio</th>
+<th id="p-value" class="gt_col_heading gt_columns_bottom_border gt_right" style="text-align: center;" data-quarto-table-cell-role="th" scope="col">p value</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="gt_group_heading_row odd">
+<td colspan="5" id="Slope Position" class="gt_group_heading" data-quarto-table-cell-role="th" style="text-align: center; font-weight: bold;" scope="colgroup">Slope Position</td>
+</tr>
+<tr class="gt_row_group_first even">
+<td class="gt_row gt_left" style="text-align: center;" headers="Slope Position  Contrast">Upper - Middle</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  Estimate">−0.03</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  SE">0.04</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  z ratio">−0.69</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  p value">0.492</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: center;" headers="Slope Position  Contrast">Upper - Lower</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  Estimate">−0.12</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  SE">0.05</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  z ratio">−2.59</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  p value">0.029</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: center;" headers="Slope Position  Contrast">Middle - Lower</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  Estimate">−0.09</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  SE">0.05</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  z ratio">−1.91</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Slope Position  p value">0.083</td>
+</tr>
+<tr class="gt_group_heading_row odd">
+<td colspan="5" id="Sampling Date" class="gt_group_heading" data-quarto-table-cell-role="th" style="text-align: center; font-weight: bold;" scope="colgroup">Sampling Date</td>
+</tr>
+<tr class="gt_row_group_first even">
+<td class="gt_row gt_left" style="text-align: center;" headers="Sampling Date  Contrast">2022-10-21 - 2023-05-11</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  Estimate">0.08</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  SE">0.04</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  z ratio">1.86</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  p value">0.062</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: center;" headers="Sampling Date  Contrast">2022-10-21 - 2023-09-19</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  Estimate">0.27</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  SE">0.04</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  z ratio">7.23</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  p value">&lt;0.001</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: center;" headers="Sampling Date  Contrast">2023-05-11 - 2023-09-19</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  Estimate">0.19</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  SE">0.03</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  z ratio">5.53</td>
+<td class="gt_row gt_right" style="text-align: center;" headers="Sampling Date  p value">&lt;0.001</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</figure>
+</div></div></div>
+</div></div>
+</section>
+<section id="plotting-1" class="level3">
+<h3 class="anchored" data-anchor-id="plotting-1">Plotting</h3>
+<div class="cell-container"><div class="cell-decorator"><pre>In [44]:</pre></div><div id="06e80d23-a770-4ceb-b2d6-c96871322769" class="cell">
+<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get predictions on the sqrt scale</span></span>
+<span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a>preds_elev1 <span class="op">&lt;-</span> emmeans(m2_sqrt, <span class="op">~</span> elevation)</span>
+<span id="cb69-3"><a href="#cb69-3" aria-hidden="true" tabindex="-1"></a>preds_date1 <span class="op">&lt;-</span> emmeans(m2_sqrt, <span class="op">~</span> date_fct)</span>
+<span id="cb69-4"><a href="#cb69-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb69-5"><a href="#cb69-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Back-transform manually</span></span>
+<span id="cb69-6"><a href="#cb69-6" aria-hidden="true" tabindex="-1"></a>preds_df_elev1 <span class="op">&lt;-</span> <span class="im">as</span>.data.frame(preds_elev1) <span class="op">|&gt;</span></span>
+<span id="cb69-7"><a href="#cb69-7" aria-hidden="true" tabindex="-1"></a>  mutate(</span>
+<span id="cb69-8"><a href="#cb69-8" aria-hidden="true" tabindex="-1"></a>    response <span class="op">=</span> emmean<span class="op">^</span><span class="dv">2</span>,</span>
+<span id="cb69-9"><a href="#cb69-9" aria-hidden="true" tabindex="-1"></a>    lower    <span class="op">=</span> asymp.LCL<span class="op">^</span><span class="dv">2</span>,</span>
+<span id="cb69-10"><a href="#cb69-10" aria-hidden="true" tabindex="-1"></a>    upper    <span class="op">=</span> asymp.UCL<span class="op">^</span><span class="dv">2</span></span>
+<span id="cb69-11"><a href="#cb69-11" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb69-12"><a href="#cb69-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb69-13"><a href="#cb69-13" aria-hidden="true" tabindex="-1"></a>preds_df_date1 <span class="op">&lt;-</span> <span class="im">as</span>.data.frame(preds_date1) <span class="op">|&gt;</span></span>
+<span id="cb69-14"><a href="#cb69-14" aria-hidden="true" tabindex="-1"></a>  mutate(</span>
+<span id="cb69-15"><a href="#cb69-15" aria-hidden="true" tabindex="-1"></a>    response <span class="op">=</span> emmean<span class="op">^</span><span class="dv">2</span>,</span>
+<span id="cb69-16"><a href="#cb69-16" aria-hidden="true" tabindex="-1"></a>    lower    <span class="op">=</span> asymp.LCL<span class="op">^</span><span class="dv">2</span>,</span>
+<span id="cb69-17"><a href="#cb69-17" aria-hidden="true" tabindex="-1"></a>    upper    <span class="op">=</span> asymp.UCL<span class="op">^</span><span class="dv">2</span></span>
+<span id="cb69-18"><a href="#cb69-18" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [45]:</pre></div><div id="cc4efb6c-d4fe-4567-9e5e-0b4def9c0121" class="cell">
+<div class="sourceCode cell-code" id="cb70"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a>p2_a <span class="op">&lt;-</span> ggplot(<span class="bu">filter</span>(data, depth <span class="op">==</span> <span class="st">"0-5 cm"</span> ), aes(x <span class="op">=</span> elevation, y <span class="op">=</span> mass_m2, color <span class="op">=</span> date_fct)) <span class="op">+</span></span>
+<span id="cb70-2"><a href="#cb70-2" aria-hidden="true" tabindex="-1"></a>  geom_jitter(position <span class="op">=</span> position_dodge(<span class="fl">0.3</span>), alpha <span class="op">=</span> <span class="fl">0.6</span>, size <span class="op">=</span> <span class="dv">2</span>) <span class="op">+</span></span>
+<span id="cb70-3"><a href="#cb70-3" aria-hidden="true" tabindex="-1"></a>  geom_errorbar(data <span class="op">=</span> preds_df_elev1, </span>
+<span id="cb70-4"><a href="#cb70-4" aria-hidden="true" tabindex="-1"></a>                aes(y <span class="op">=</span> response, ymin <span class="op">=</span> lower, ymax <span class="op">=</span> upper),</span>
+<span id="cb70-5"><a href="#cb70-5" aria-hidden="true" tabindex="-1"></a>                width <span class="op">=</span> <span class="fl">0.15</span>, position <span class="op">=</span> position_dodge(<span class="fl">0.3</span>), color <span class="op">=</span> <span class="st">"black"</span>) <span class="op">+</span></span>
+<span id="cb70-6"><a href="#cb70-6" aria-hidden="true" tabindex="-1"></a>  geom_point(data <span class="op">=</span> preds_df_elev1, aes(y <span class="op">=</span> response),</span>
+<span id="cb70-7"><a href="#cb70-7" aria-hidden="true" tabindex="-1"></a>             shape <span class="op">=</span> <span class="dv">21</span>, fill <span class="op">=</span> <span class="st">"white"</span>, position <span class="op">=</span> position_dodge(<span class="fl">0.3</span>), color <span class="op">=</span> <span class="st">"black"</span>, size <span class="op">=</span> <span class="dv">3</span>) <span class="op">+</span></span>
+<span id="cb70-8"><a href="#cb70-8" aria-hidden="true" tabindex="-1"></a>  labs(y <span class="op">=</span> bquote(<span class="st">"Areal density (g m"</span><span class="op">^-</span><span class="dv">2</span><span class="op">*</span><span class="st">")"</span>), x <span class="op">=</span> <span class="st">"Slope position"</span>, color <span class="op">=</span> <span class="st">"Date"</span>, tag <span class="op">=</span> <span class="st">"c)"</span>) <span class="op">+</span></span>
+<span id="cb70-9"><a href="#cb70-9" aria-hidden="true" tabindex="-1"></a>  <span class="co">#guides(color = guide_legend(order = 1), fill = guide_legend(order = 1)) +</span></span>
+<span id="cb70-10"><a href="#cb70-10" aria-hidden="true" tabindex="-1"></a>  guides(color <span class="op">=</span> guide_legend(nrow <span class="op">=</span> <span class="dv">2</span>)) <span class="op">+</span></span>
+<span id="cb70-11"><a href="#cb70-11" aria-hidden="true" tabindex="-1"></a>  theme_bw(base_size <span class="op">=</span> <span class="dv">12</span>) <span class="op">+</span></span>
+<span id="cb70-12"><a href="#cb70-12" aria-hidden="true" tabindex="-1"></a>  theme(axis.title.x <span class="op">=</span> element_blank())<span class="op">+</span> </span>
+<span id="cb70-13"><a href="#cb70-13" aria-hidden="true" tabindex="-1"></a>  annotate(<span class="st">"text"</span>, x <span class="op">=</span> <span class="st">"Upper"</span>, y <span class="op">=</span> <span class="dv">1</span>, label <span class="op">=</span> <span class="st">"a"</span>) <span class="op">+</span> </span>
+<span id="cb70-14"><a href="#cb70-14" aria-hidden="true" tabindex="-1"></a>  annotate(<span class="st">"text"</span>, x <span class="op">=</span> <span class="st">"Middle"</span>, y <span class="op">=</span> <span class="dv">1</span>, label <span class="op">=</span> <span class="st">"a"</span>) <span class="op">+</span> </span>
+<span id="cb70-15"><a href="#cb70-15" aria-hidden="true" tabindex="-1"></a>  annotate(<span class="st">"text"</span>, x <span class="op">=</span> <span class="st">"Lower"</span>, y <span class="op">=</span> <span class="dv">1</span>, label <span class="op">=</span> <span class="st">"b"</span>)</span>
+<span id="cb70-16"><a href="#cb70-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb70-17"><a href="#cb70-17" aria-hidden="true" tabindex="-1"></a>p2_a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="soil_sampling.embed_files/figure-html/cell-44-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img src="soil_sampling.embed_files/figure-html/cell-44-output-1.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="soil_sampling.embed_files/figure-html/cell-44-output-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img src="soil_sampling.embed_files/figure-html/cell-44-output-2.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [46]:</pre></div><div id="cell-fig-mass-surface" class="cell">
+<div class="sourceCode cell-code" id="cb71"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a>p2_1 <span class="op">&lt;-</span> p2_a <span class="op">+</span> p2_b  <span class="op">+</span> plot_layout(axis <span class="op">=</span> <span class="st">'collect'</span>) <span class="op">&amp;</span> theme(legend.position <span class="op">=</span> <span class="st">'bottom'</span>, legend.title <span class="op">=</span> element_blank())</span>
+<span id="cb71-2"><a href="#cb71-2" aria-hidden="true" tabindex="-1"></a>p2_1 </span>
+<span id="cb71-3"><a href="#cb71-3" aria-hidden="true" tabindex="-1"></a><span class="co"># ggsave(plot = p1_2, filename = here::here("./Figures/Figure 2.png"), width = 184, height = 100, units = "mm", dpi = 400)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="fig-mass-surface" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mass-surface-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
+<a href="soil_sampling.embed_files/figure-html/fig-mass-surface-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15" title="Figure&nbsp;2: Polymer mass (0-5 cm) by elevation (a) and date (b). Points show raw observations; Points outlined in black and error bars show model predictions with 95% CIs from a linear mixed-effects model fitted to square-root transformed data, back-transformed to the original scale. Within each plot significant differences (p<0.05) between slope position or sampling dates are denoted with different letters. Because the riparian area had fewer sampling locations and was only sampled on 2023-09-19 it was excluded from the formal analysis"><img src="soil_sampling.embed_files/figure-html/fig-mass-surface-output-1.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mass-surface-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Polymer mass (0-5 cm) by elevation (a) and date (b). Points show raw observations; Points outlined in black and error bars show model predictions with 95% CIs from a linear mixed-effects model fitted to square-root transformed data, back-transformed to the original scale. Within each plot significant differences (p&lt;0.05) between slope position or sampling dates are denoted with different letters. Because the riparian area had fewer sampling locations and was only sampled on 2023-09-19 it was excluded from the formal analysis
+</figcaption>
+</figure>
+</div>
+</div>
+</div></div>
+</section>
+</section>
+<section id="combined-figure" class="level2">
+<h2 class="anchored" data-anchor-id="combined-figure">Combined figure</h2>
+<div class="cell-container"><div class="cell-decorator"><pre>In [47]:</pre></div><div id="cell-fig-poly-surface" class="cell" data-fig-dpi="300">
+<div class="sourceCode cell-code" id="cb72"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a>fig_1 <span class="op">&lt;-</span> (p1_a<span class="op">/</span> p2_a) <span class="op">+</span> plot_layout(axis <span class="op">=</span> <span class="st">'collect'</span>, guides <span class="op">=</span> <span class="st">'collect'</span>) <span class="op">&amp;</span> theme(legend.position <span class="op">=</span> <span class="st">'bottom'</span>, legend.title <span class="op">=</span> element_blank()) <span class="op">|</span> (p1_b <span class="op">/</span> p2_b)  <span class="op">+</span> plot_layout(axis <span class="op">=</span> <span class="st">'collect'</span>, guides <span class="op">=</span> <span class="st">'collect'</span>) <span class="op">&amp;</span> theme(legend.position <span class="op">=</span> <span class="st">'bottom'</span>, legend.title <span class="op">=</span> element_blank())</span>
+<span id="cb72-2"><a href="#cb72-2" aria-hidden="true" tabindex="-1"></a>fig_1 </span>
+<span id="cb72-3"><a href="#cb72-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb72-4"><a href="#cb72-4" aria-hidden="true" tabindex="-1"></a><span class="co"># ggsave(plot = fig_1, filename = here::here("./Figures/Figure 1.png"), width = 184, height = 175, units = "mm", dpi = 400)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="fig-poly-surface" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-poly-surface-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
+<a href="soil_sampling.embed_files/figure-html/fig-poly-surface-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16" title="Figure&nbsp;3: Surface (0-5 cm) polymer areal density (a and b) and abundance (c and d) by elevation and date. Points show raw observations; Points outlined in black and error bars show model predictions with 95% CIs from a model fitted to square-root transformed data, back-transformed to the original scale. Within each plot significant differences (p<0.05) between slope position or sampling dates are denoted with different letters. Because the riparian area had fewer sampling locations and was only sampled on 2023-09-19 it was excluded from the statistical analysis"><img src="soil_sampling.embed_files/figure-html/fig-poly-surface-output-1.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-poly-surface-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Surface (0-5 cm) polymer areal density (a and b) and abundance (c and d) by elevation and date. Points show raw observations; Points outlined in black and error bars show model predictions with 95% CIs from a model fitted to square-root transformed data, back-transformed to the original scale. Within each plot significant differences (p&lt;0.05) between slope position or sampling dates are denoted with different letters. Because the riparian area had fewer sampling locations and was only sampled on 2023-09-19 it was excluded from the statistical analysis
+</figcaption>
+</figure>
+</div>
+</div>
+</div></div>
+</section>
+<section id="polymer-with-depth" class="level2">
+<h2 class="anchored" data-anchor-id="polymer-with-depth">Polymer with depth</h2>
+<section id="look-at-data-2" class="level3">
+<h3 class="anchored" data-anchor-id="look-at-data-2">Look at data</h3>
+<div class="cell-container"><div class="cell-decorator"><pre>In [48]:</pre></div><div id="dad4e5a1-846b-44ca-8802-78ae7f0e9340" class="cell">
+<div class="sourceCode cell-code" id="cb73"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a>p3 <span class="op">&lt;-</span> ggplot(data <span class="op">=</span> <span class="bu">filter</span>(data, date <span class="op">==</span> <span class="st">"2023-09-19"</span>), aes(x <span class="op">=</span> elevation, y <span class="op">=</span> mass_m2, fill <span class="op">=</span> depth)) <span class="op">+</span></span>
+<span id="cb73-2"><a href="#cb73-2" aria-hidden="true" tabindex="-1"></a>  geom_boxplot(position <span class="op">=</span> position_dodge2(preserve <span class="op">=</span> <span class="st">"single"</span>)) <span class="op">+</span></span>
+<span id="cb73-3"><a href="#cb73-3" aria-hidden="true" tabindex="-1"></a>  theme_bw() <span class="op">+</span></span>
+<span id="cb73-4"><a href="#cb73-4" aria-hidden="true" tabindex="-1"></a>  scale_fill_viridis_d() <span class="op">+</span></span>
+<span id="cb73-5"><a href="#cb73-5" aria-hidden="true" tabindex="-1"></a>  labs(y <span class="op">=</span> bquote(<span class="st">"Polymer areal density (g m"</span><span class="op">^-</span><span class="dv">2</span><span class="op">*</span><span class="st">")"</span>), x <span class="op">=</span> <span class="st">"Slope position"</span>, tag <span class="op">=</span> <span class="st">"a)"</span>) <span class="op">+</span></span>
+<span id="cb73-6"><a href="#cb73-6" aria-hidden="true" tabindex="-1"></a>  theme(axis.title.x <span class="op">=</span> element_blank())</span>
+<span id="cb73-7"><a href="#cb73-7" aria-hidden="true" tabindex="-1"></a>p3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="soil_sampling.embed_files/figure-html/cell-47-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img src="soil_sampling.embed_files/figure-html/cell-47-output-1.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="soil_sampling.embed_files/figure-html/cell-47-output-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18"><img src="soil_sampling.embed_files/figure-html/cell-47-output-2.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div></div>
+</section>
+<section id="plotting-2" class="level3">
+<h3 class="anchored" data-anchor-id="plotting-2">Plotting</h3>
+<div class="cell-container"><div class="cell-decorator"><pre>In [49]:</pre></div><div id="cell-fig-depth" class="cell" data-fig-dpi="300">
+<div class="sourceCode cell-code" id="cb74"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a>p5 <span class="op">&lt;-</span> p3 <span class="op">+</span> p4  <span class="op">+</span> plot_layout(axis <span class="op">=</span> <span class="st">'collect'</span>, guides <span class="op">=</span> <span class="st">'collect'</span>) <span class="op">&amp;</span> theme(legend.position <span class="op">=</span> <span class="st">'bottom'</span>, legend.title <span class="op">=</span> element_blank())</span>
+<span id="cb74-2"><a href="#cb74-2" aria-hidden="true" tabindex="-1"></a>p5 </span>
+<span id="cb74-3"><a href="#cb74-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-4"><a href="#cb74-4" aria-hidden="true" tabindex="-1"></a><span class="co"># ggsave(plot = p5, filename = here::here("./Figures/Figure 2.png"), width = 184, height = 100, units = "mm", dpi = 400)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="fig-depth" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-depth-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
+<a href="soil_sampling.embed_files/figure-html/fig-depth-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19" title="Figure&nbsp;4: Polymer density (a) and abundance (b) for two sampling depths (0-5 and 5-10 cm) and the combined (0-10 cm) by slope position. Samples were collected on 2023-09-19 and no ploymer was detected below 5 cm in the riparian area"><img src="soil_sampling.embed_files/figure-html/fig-depth-output-1.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-depth-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Polymer density (a) and abundance (b) for two sampling depths (0-5 and 5-10 cm) and the combined (0-10 cm) by slope position. Samples were collected on 2023-09-19 and no ploymer was detected below 5 cm in the riparian area
+</figcaption>
+</figure>
+</div>
+</div>
+</div></div>
+</section>
+</section>
+<section id="session-info" class="level2">
+<h2 class="anchored" data-anchor-id="session-info">Session info</h2>
+<div class="cell-container"><div class="cell-decorator"><pre>In [50]:</pre></div><div id="5be5250c-e034-4e4f-b9e5-3d901f31ed4c" class="cell">
+<div class="sourceCode cell-code" id="cb75"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a>sessioninfo::session_info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>─ Session info ───────────────────────────────────────────────────────────────
+ setting  value
+ version  R version 4.5.3 (2026-03-11)
+ os       Ubuntu 24.04.4 LTS
+ system   x86_64, linux-gnu
+ ui       X11
+ language (EN)
+ collate  en_US.UTF-8
+ ctype    en_US.UTF-8
+ tz       America/Winnipeg
+ date     2026-06-18
+ pandoc   3.1.3 @ /usr/bin/ (via rmarkdown)
+ quarto   1.6.39 @ /usr/local/bin/quarto
+
+─ Packages ───────────────────────────────────────────────────────────────────
+ package      * version    date (UTC) lib source
+ abind          1.4-8      2024-09-12 [1] CRAN (R 4.5.0)
+ bit            4.6.0      2025-03-06 [1] CRAN (R 4.5.0)
+ bit64          4.6.0-1    2025-01-16 [1] CRAN (R 4.5.0)
+ boot           1.3-32     2025-08-29 [4] CRAN (R 4.5.2)
+ car            3.1-3      2024-09-27 [1] CRAN (R 4.5.0)
+ carData        3.0-5      2022-01-06 [1] CRAN (R 4.5.0)
+ cli            3.6.6      2026-04-09 [1] CRAN (R 4.5.3)
+ codetools      0.2-20     2024-03-31 [4] CRAN (R 4.4.0)
+ crayon         1.5.3      2024-06-20 [1] CRAN (R 4.5.0)
+ datawizard     1.3.1      2026-04-26 [1] CRAN (R 4.5.3)
+ DHARMa       * 0.5.0      2026-06-01 [1] CRAN (R 4.5.3)
+ digest         0.6.39     2025-11-19 [1] CRAN (R 4.5.3)
+ doParallel     1.0.17     2022-02-07 [1] CRAN (R 4.5.0)
+ dplyr        * 1.2.1      2026-04-03 [1] CRAN (R 4.5.3)
+ emmeans      * 2.0.3      2026-04-09 [1] CRAN (R 4.5.3)
+ estimability   1.5.1      2024-05-12 [1] CRAN (R 4.5.0)
+ evaluate       1.0.5      2025-08-27 [1] CRAN (R 4.5.3)
+ farver         2.1.2      2024-05-13 [1] CRAN (R 4.5.0)
+ fastmap        1.2.0      2024-05-15 [1] CRAN (R 4.5.0)
+ forcats      * 1.0.0      2023-01-29 [1] CRAN (R 4.5.0)
+ foreach        1.5.2      2022-02-02 [1] CRAN (R 4.5.0)
+ Formula        1.2-5      2023-02-24 [1] CRAN (R 4.5.0)
+ fs             2.1.0      2026-04-18 [1] CRAN (R 4.5.3)
+ gap            1.6        2024-08-27 [1] CRAN (R 4.5.0)
+ gap.datasets   0.0.6      2023-08-25 [1] CRAN (R 4.5.0)
+ generics       0.1.4      2025-05-09 [1] CRAN (R 4.5.1)
+ ggplot2      * 4.0.3      2026-04-22 [1] CRAN (R 4.5.3)
+ glmmTMB      * 1.1.14     2026-01-15 [1] CRAN (R 4.5.3)
+ glue           1.8.1      2026-04-17 [1] CRAN (R 4.5.3)
+ gt           * 1.3.0      2026-01-22 [1] CRAN (R 4.5.3)
+ gtable         0.3.6      2024-10-25 [1] CRAN (R 4.5.0)
+ here           1.0.2      2025-09-15 [1] CRAN (R 4.5.1)
+ hms            1.1.3      2023-03-21 [1] CRAN (R 4.5.0)
+ htmltools      0.5.9      2025-12-04 [1] CRAN (R 4.5.3)
+ httpuv         1.6.16     2025-04-16 [1] CRAN (R 4.5.0)
+ insight        1.5.1      2026-05-21 [1] CRAN (R 4.5.3)
+ iterators      1.0.14     2022-02-05 [1] CRAN (R 4.5.0)
+ jsonlite       2.0.0      2025-03-27 [1] CRAN (R 4.5.0)
+ knitr          1.51       2025-12-20 [1] CRAN (R 4.5.3)
+ labeling       0.4.3      2023-08-29 [1] CRAN (R 4.5.0)
+ later          1.4.2      2025-04-08 [1] CRAN (R 4.5.0)
+ lattice        0.22-9     2026-02-09 [4] CRAN (R 4.5.2)
+ lifecycle      1.0.5      2026-01-08 [1] CRAN (R 4.5.3)
+ lme4           1.1-37     2025-03-26 [1] CRAN (R 4.5.0)
+ lubridate    * 1.9.4      2024-12-08 [1] CRAN (R 4.5.0)
+ magrittr       2.0.5      2026-04-04 [1] CRAN (R 4.5.3)
+ MASS           7.3-65     2025-02-28 [4] CRAN (R 4.4.3)
+ Matrix         1.7-4      2025-08-28 [4] CRAN (R 4.5.1)
+ mgcv           1.9-4      2025-11-07 [4] CRAN (R 4.5.2)
+ mime           0.13       2025-03-17 [1] CRAN (R 4.5.0)
+ minqa          1.2.8      2024-08-17 [1] CRAN (R 4.5.0)
+ multcomp       1.4-28     2025-01-29 [1] CRAN (R 4.5.0)
+ mvtnorm        1.3-3      2025-01-10 [1] CRAN (R 4.5.0)
+ nlme           3.1-168    2025-03-31 [4] CRAN (R 4.4.3)
+ nloptr         2.2.1      2025-03-17 [1] CRAN (R 4.5.0)
+ numDeriv       2016.8-1.1 2019-06-06 [1] CRAN (R 4.5.0)
+ patchwork    * 1.3.2      2025-08-25 [1] CRAN (R 4.5.3)
+ performance    0.17.0     2026-05-21 [1] CRAN (R 4.5.3)
+ pillar         1.11.1     2025-09-17 [1] CRAN (R 4.5.3)
+ pkgconfig      2.0.3      2019-09-22 [1] CRAN (R 4.5.0)
+ plyr           1.8.9      2023-10-02 [1] CRAN (R 4.5.0)
+ promises       1.3.2      2024-11-28 [1] CRAN (R 4.5.0)
+ purrr        * 1.2.2      2026-04-10 [1] CRAN (R 4.5.3)
+ qgam           2.0.0      2025-04-10 [1] CRAN (R 4.5.0)
+ R6             2.6.1      2025-02-15 [1] CRAN (R 4.5.0)
+ rbibutils      2.3        2024-10-04 [1] CRAN (R 4.5.0)
+ RColorBrewer   1.1-3      2022-04-03 [1] CRAN (R 4.5.0)
+ Rcpp           1.1.1-1.1  2026-04-24 [1] CRAN (R 4.5.3)
+ Rdpack         2.6.4      2025-04-09 [1] CRAN (R 4.5.0)
+ readr        * 2.1.5      2024-01-10 [1] CRAN (R 4.5.0)
+ reformulas     0.4.4      2026-02-02 [1] CRAN (R 4.5.3)
+ rlang          1.2.0      2026-04-06 [1] CRAN (R 4.5.3)
+ rmarkdown      2.31       2026-03-26 [1] CRAN (R 4.5.3)
+ rprojroot      2.1.1      2025-08-26 [1] CRAN (R 4.5.1)
+ rstudioapi     0.17.1     2024-10-22 [1] CRAN (R 4.5.0)
+ S7             0.2.2      2026-04-22 [1] CRAN (R 4.5.3)
+ sandwich       3.1-1      2024-09-15 [1] CRAN (R 4.5.0)
+ sass           0.4.10     2025-04-11 [1] CRAN (R 4.5.0)
+ scales         1.4.0      2025-04-24 [1] CRAN (R 4.5.0)
+ sessioninfo    1.2.4.9000 2026-06-17 [1] Github (r-lib/sessioninfo@12423b7)
+ shiny          1.10.0     2024-12-14 [1] CRAN (R 4.5.0)
+ stringi        1.8.7      2025-03-27 [1] CRAN (R 4.5.0)
+ stringr      * 1.6.0      2025-11-04 [1] CRAN (R 4.5.1)
+ survival       3.8-6      2026-01-16 [4] CRAN (R 4.5.2)
+ TH.data        1.1-3      2025-01-17 [1] CRAN (R 4.5.0)
+ tibble       * 3.3.1      2026-01-11 [1] CRAN (R 4.5.3)
+ tidyr        * 1.3.2      2025-12-19 [1] CRAN (R 4.5.3)
+ tidyselect     1.2.1      2024-03-11 [1] CRAN (R 4.5.0)
+ tidyverse    * 2.0.0      2023-02-22 [1] CRAN (R 4.5.0)
+ timechange     0.3.0      2024-01-18 [1] CRAN (R 4.5.0)
+ TMB            1.9.17     2025-03-10 [1] CRAN (R 4.5.0)
+ tzdb           0.5.0      2025-03-15 [1] CRAN (R 4.5.0)
+ vctrs          0.7.3      2026-04-11 [1] CRAN (R 4.5.3)
+ viridisLite    0.4.3      2026-02-04 [1] CRAN (R 4.5.3)
+ vroom          1.6.5      2023-12-05 [1] CRAN (R 4.5.0)
+ withr          3.0.2      2024-10-28 [1] CRAN (R 4.5.0)
+ xfun           0.57       2026-03-20 [1] CRAN (R 4.5.3)
+ xml2           1.5.2      2026-01-17 [1] CRAN (R 4.5.3)
+ xtable         1.8-4      2019-04-21 [1] CRAN (R 4.5.0)
+ yaml           2.3.12     2025-12-10 [1] CRAN (R 4.5.3)
+ zoo            1.8-14     2025-04-10 [1] CRAN (R 4.5.0)
+
+ [1] /home/alex/R/x86_64-pc-linux-gnu-library/4.5
+ [2] /usr/local/lib/R/site-library
+ [3] /usr/lib/R/site-library
+ [4] /usr/lib/R/library
+ * ── Packages attached to the search path.
+
+──────────────────────────────────────────────────────────────────────────────</code></pre>
+</div>
+</div></div>
+</section>
+     </main>
+<!-- /main column -->  <script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>  </div> <!-- /content -->  <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script> 
+  
+</body></html>

@@ -1,0 +1,2883 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving
+and Interchange DTD v1.2 20190208//EN" "JATS-archivearticle1.dtd">
+
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2" article-type="other">
+
+<front>
+
+
+<article-meta>
+
+
+<title-group>
+<article-title>Distribution and loss of slow-release polymer coatings in
+an agro-ecosystem</article-title>
+</title-group>
+
+<contrib-group>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">0000-0002-9355-9561</contrib-id>
+<name>
+<surname>Koiter</surname>
+<given-names>Alexander J</given-names>
+</name>
+<string-name>Alexander J Koiter</string-name>
+
+<email>koitera@brandonu.ca</email>
+<role>Statistics</role>
+<role vocab="https://credit.niso.org" vocab-term="visualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/visualization/">Visualization</role>
+<role>Author</role>
+<xref ref-type="aff" rid="aff-1">a</xref>
+<xref ref-type="corresp" rid="cor-1">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Glenn</surname>
+<given-names>Aaron</given-names>
+</name>
+<string-name>Aaron Glenn</string-name>
+
+<email>aaron.glenn@AGR.GC.CA</email>
+<role>Principle investigator</role>
+<role>Project design</role>
+<role>Author</role>
+<xref ref-type="aff" rid="aff-2">b</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Beaupre</surname>
+<given-names>Cameron</given-names>
+</name>
+<string-name>Cameron Beaupre</string-name>
+
+<email>beauprecameron2@gmail.com</email>
+<role>MSc thesis</role>
+<role>Sample collection</role>
+<role>Lab analysis</role>
+<role>Initial data analysis</role>
+<role>Initial draft of manuscript</role>
+<xref ref-type="aff" rid="aff-3">c</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Wilson</surname>
+<given-names>Henry</given-names>
+</name>
+<string-name>Henry Wilson</string-name>
+
+<email>henry.wilson@AGR.GC.CA</email>
+<role>Project design</role>
+<role>Hydrology</role>
+<role>Author</role>
+<xref ref-type="aff" rid="aff-2">b</xref>
+</contrib>
+</contrib-group>
+<aff id="aff-1">
+<institution-wrap>
+<institution>Brandon University, Department of Geography and
+Environment</institution>
+</institution-wrap>
+<addr-line>270 18th St</addr-line>
+<city>Brandon</city>
+<state>MB</state>
+
+<postal-code>R7A 6A9</postal-code>
+
+
+</aff>
+<aff id="aff-2">
+<institution-wrap>
+<institution>Agriculture and Agri-Food Canada, Brandon Research and
+Development Centre</institution>
+</institution-wrap>
+<addr-line>2701 Grand Valley Road</addr-line>
+<city>Brandon</city>
+<state>MB</state>
+
+<postal-code>R7A 5Y3</postal-code>
+
+
+</aff>
+<aff id="aff-3">
+<institution-wrap>
+<institution>Brandon University, Masters in Environmental and Life
+Sciences</institution>
+</institution-wrap>
+<addr-line>270 18th St</addr-line>
+<city>Brandon</city>
+<state>MB</state>
+
+<postal-code>R7A 6A9</postal-code>
+
+
+</aff>
+<author-notes>
+<corresp id="cor-1">koitera@brandonu.ca</corresp>
+</author-notes>
+
+
+
+
+
+
+
+
+
+<history></history>
+
+
+<abstract>
+<p>Abstract goes here</p>
+</abstract>
+<kwd-group kwd-group-type="author">
+<kwd>Slow-release fertilizer</kwd>
+<kwd>Micro-plastic</kwd>
+<kwd>Fate and transport</kwd>
+</kwd-group>
+
+
+
+
+</article-meta>
+
+</front>
+
+<body>
+<sec id="potential-journals">
+  <title>1 Potential journals</title>
+  <list list-type="bullet">
+    <list-item>
+      <p>Soil and Tillage Research</p>
+      <list list-type="bullet">
+        <list-item>
+          <p>A Short Communication is a concise but complete description
+          of a limited investigation, which will not be included in a
+          later paper. Short Communications should be as completely
+          documented, both by reference to the literature and
+          description of the experimental procedures employed, as a
+          regular paper. They should not occupy more than 6 printed
+          pages (about 12 manuscript pages, including figures, tables
+          and references).</p>
+        </list-item>
+        <list-item>
+          <p>Pretty sure BU has a publishing agreement so it should be
+          free to publish</p>
+        </list-item>
+      </list>
+    </list-item>
+  </list>
+</sec>
+<sec id="introduction">
+  <title>2 Introduction</title>
+  <p>Plastics are extensively used in all aspects of life, including
+  residential, commercial, industrial, agricultural and institutional
+  sectors. Through improper disposal, accidental and incidental
+  releases, and intentional placement, plastics have become a widespread
+  pollutant found in every ecosystem. This has resulted in global
+  concern surrounding the effects of plastic pollution on ecosystem and
+  human health
+  (<xref alt="Zhang et al. 2022" rid="ref-zhang2022" ref-type="bibr">Zhang
+  et al. 2022</xref>). Of particular concern, are micro-plastics (MPs)
+  (&lt;5mm) due to their movement and health impacts within the food
+  chain and their rapid dispersion beyond their initial point of
+  release. Despite the ubiquitous distribution of MP pollution across
+  all ecosystem types, the focus has primarily been on marine and
+  freshwater ecosystems
+  (<xref alt="Anderson et al. 2017" rid="ref-anderson2017" ref-type="bibr">Anderson
+  et al. 2017</xref>;
+  <xref alt="Lenaker, Corsi, and Mason 2021" rid="ref-lenaker2021" ref-type="bibr">Lenaker,
+  Corsi, and Mason 2021</xref>) and with an emphasis on urban and
+  industrial sources. A 2021 survey of the plastic pollution literature
+  found that only 4% of publications specifically investigated MPs in
+  soils
+  (<xref alt="Weber et al. 2021" rid="ref-weber2021" ref-type="bibr">Weber
+  et al. 2021</xref>). Agriculture and soil have received relatively
+  less attention despite the prevalent use of plastics, including
+  horticultural mulch, twine, bale wrap, product bags and containers,
+  and polymer-coated slow-release fertilizers
+  (<xref alt="Rillig, Ingraffia, and Souza Machado 2017" rid="ref-rillig2017" ref-type="bibr">Rillig,
+  Ingraffia, and Souza Machado 2017</xref>).</p>
+  <p>There is currently little information on the concentration,
+  distribution, or the types of plastic in agricultural soil, the effect
+  they have on soil and plant health and the extent as to which
+  agro-ecosytems are a net source of MPs to downstream ecosystems. Even
+  within agriculture and soil science disciplines, the focus has largely
+  been on assessing the risks associated with applying municipal
+  biosolids as a soil amendment which have been shown to have higher
+  concentrations of MPs
+  (<xref alt="Crossman et al. 2020" rid="ref-crossman2020" ref-type="bibr">Crossman
+  et al. 2020</xref>). There is a considerable gap in our understanding
+  of nature of MPs in soils both in terms of the direct impact on the
+  agro-ecosystem health and as a source of MPs to downstream
+  ecosystems.</p>
+  <p>Soil erosion, including tillage and surface water runoff actively
+  redistribute MPs across agricultural landscapes
+  (<xref alt="Rehm and Fiener 2024" rid="ref-rehm2024" ref-type="bibr">Rehm
+  and Fiener 2024</xref>;
+  <xref alt="Wang et al. 2024" rid="ref-wang2024" ref-type="bibr">Wang
+  et al. 2024</xref>). Due to their low density, these buoyant particles
+  are easily transported beyond field boundaries into adjacent
+  environments making agricultural soils a likely source of MPs
+  (<xref alt="Leonard, Ravi, and Mohanty 2024" rid="ref-leonard2024" ref-type="bibr">Leonard,
+  Ravi, and Mohanty 2024</xref>). Given the lack of basic research on
+  agricultural soil MPs, specifically in cold snowmelt dominated
+  agricultural systems, this is a high-priority research area
+  ((<xref alt="Environment, Climate Change Canada, and Health Canada 2020" rid="ref-environmentandclimatechangecanada2020" ref-type="bibr">Environment,
+  Climate Change Canada, and Health Canada 2020</xref>). The primary
+  purpose of this pilot project was to investigate the fate of polymer
+  coatings from slow-release fertilizers applied to agro-ecosystems in
+  Manitoba, Canada. The objectives of this project were to: 1)
+  characterize the lateral and vertical movement of polymer coatings
+  within surface soils; and 2) quantify the export of polymer coatings
+  from cropland in surface runoff during spring snowmelt.</p>
+</sec>
+<sec id="methods">
+  <title>3 Methods</title>
+  <sec id="site-description">
+    <title>3.1 Site description</title>
+    <p>The study site is located near the edge of the Manitoba
+    Escarpment in the South Tobacco Creek Watershed (STCW), near the
+    town of Miami, Manitoba, Canada (49.3711°N, 98.2439°W; 445 masl)
+    (<xref alt="Figure 1" rid="fig-mapr">Figure 1</xref>). The mean
+    annual temperature is ~4 °C, and the mean annual precipitation is
+    ~530 mm, of which approximately 15% occurs as snow (Environment
+    Canada, 2026; Morden MB, climate ID 5021849, 1991–2020 normals). The
+    topography is hummocky to undulating, with slope gradients of
+    approximately 5%. Soils are classified as Orthic Dark Grey
+    Chernozems, predominantly of the Dezwood Series. The Dezwood Series
+    developed on moderately to strongly calcareous, deep, uniform, loamy
+    mixed shale, limestone, and granite till deposits. These soils are
+    often slightly eroded and slightly stony, with medium available
+    water-holding capacity, medium organic matter content, and medium to
+    high natural fertility
+    (<xref alt="Michalyna, Podolsky, and St. Jacques 1988" rid="ref-michalyna1988" ref-type="bibr">Michalyna,
+    Podolsky, and St. Jacques 1988</xref>).</p>
+    <fig id="fig-mapr">
+      <caption><p>Figure 1: Showing a) the location of the study site in
+      southern Manitoba with an inset map of Canada; and b) the
+      locations of the four transects and three slope positions sampled
+      in the East and West watersheds as separted by the dashed
+      line.</p></caption>
+      <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/notebooks-maps-fig-mapr-output-2.png" />
+    </fig>
+    <p>The STCW has a long history of being part of a national program
+    aimed at assessing the economic and water quality impacts of
+    different agricultural practices across Canada
+    (<xref alt="Agriculture and Agri-Food Canada 2011" rid="ref-agricultureandagri-foodcanada2011" ref-type="bibr">Agriculture
+    and Agri-Food Canada 2011</xref>). Within the STCW the research site
+    comprises two small paired watersheds that drain to edge-of-field
+    weirs: the east watershed (5.15 ha) and the west watershed (4.16
+    ha). Historically, these watersheds were used to compare runoff and
+    nutrient loading from zero-tillage and conventionally tilled fields
+    (<xref alt="Tiessen et al. 2010" rid="ref-tiessen2010" ref-type="bibr">Tiessen
+    et al. 2010</xref>). Both watersheds are now managed under the same
+    practices. Polymer-coated urea (Environmental Smart Nitrogen) was
+    broadcast applied at a rate of 110 kg ha<sup>-1</sup> on 2022-05-24
+    using a spin spreader and incorporated into the surface soil with
+    the seeding of canola on 2022- 05-25 using an air hoe drill.
+    Following canola harvest, the field was tilled to a depth of 10 to
+    15 cm using a field cultivator on 2022-10-29. A conventional
+    fertilizer blend was applied in the spring of 2023 and incorporated
+    into the soil with a single pass of the field cultivator prior to
+    the seeding of spring wheat using the air hoe drill on 2023-05-11
+    (<xref alt="Figure 2" rid="fig-weather-climate">Figure 2</xref>).
+    ESN’s polymer coating is primarily composed of castor oil and
+    polymethylene polyphenylene isocyanate (PPI), is reported to degrade
+    over approximately 18-24 months in soil, yielding CO<sub>2</sub>,
+    NH<sub>3</sub>, and water (Nutrien, 2018; ESN, 2023).</p>
+    <fig id="fig-weather-climate">
+      <caption><p>Figure 2: a) Climate Normals (1991-2020) for Morden,
+      MB (Climate ID 5021849), located approximately 30 km from the
+      field site. b) Weather conditions for the 2022 and 2023 water
+      years (Oct 1 - Sept 30) for Deerwood, MB (Station ID 29886),
+      located approximately 8 km from the field site. Vertical lines
+      indicate the timing of (1) application of Environmental Smart
+      Nitrogen (ESN) (polymer-coated slow-release urea); (2) seeding and
+      tillage field operations; and (3) collection of soil and runoff
+      samples. Red and blue points indicate average daily temperatures
+      above and below 0 degrees Celsius, respectively.</p></caption>
+      <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/notebooks-weather_discharge-fig-weather-climate-output-2.png" />
+    </fig>
+  </sec>
+  <sec id="soil-sampling-and-analysis">
+    <title>3.2 Soil sampling and analysis</title>
+    <p>Soil sampling was conducted at locations established in previous
+    research
+    (<xref alt="Tiessen et al. 2010" rid="ref-tiessen2010" ref-type="bibr">Tiessen
+    et al. 2010</xref>) along four transects in each of the watersheds,
+    with each transect spanning three hillslope positions: upper, mid,
+    and lower slope
+    (<xref alt="Figure 1" rid="fig-mapr">Figure 1</xref>), giving 24
+    sampling locations in total. Samples were collected on three dates:
+    21 October 2022, 11 May 2023, and 19 September 2023
+    (<xref alt="Figure 2" rid="fig-weather-climate">Figure 2</xref>).
+    Surface soil samples were excavated with a spade from a 25 cm × 25
+    cm square to a depth of 5 cm, yielding a sample volume of 3125 cm³.
+    On 19 September 2023, an additional sample was collected at each
+    location from the 5–10 cm depth interval. Two additional surface
+    riparian samples were also collected from each watershed on this
+    date.</p>
+    <p>Soil samples were disaggregated by hand into smaller aggregates
+    and air-dried. Each sample was further manually disaggregated and
+    sieved sequentially through 2-mm and 1.18-mm meshes. Polymer
+    coatings were retrieved from the sieves using tweezers. The
+    extracted coatings were cleaned by magnetic stirring in distilled
+    water for 10 minutes at 500 rpm, then filtered and dried at 30 °C.
+    The cleaned and dried polymer coatings were counted and collectively
+    weighed using a balance with 0.1 mg resolution.</p>
+  </sec>
+  <sec id="runoff-and-water-sampling">
+    <title>3.3 Runoff and water sampling</title>
+    <p>A v-notched weir was installed in the riparian area at the
+    outflow of each watershed. The water depth at the weirs was recorded
+    water depth at 5-min intervals using a pressure transducer (Onset
+    HOBO Water Level Data Logger). The water depth were then used to
+    calculate flow, based on a standard v-notched weir flow equation
+    (Smith, 1985). Throughout the runoff event, staff gauges read
+    manually and from time-lapse photography were used to verify the
+    logger-collected water depth data. Measurement of polymer coatings
+    exported by surface runoff occurred on 2023-04-13, and 2023-04-14.
+    The weir filters were applied to each weir for a maximum duration of
+    two hours each day and switched twice a day for a total of four
+    measurement periods at each weir over the 2-day runoff event.
+    Polymer coatings were collected using a simple filtration system
+    consisting of 1-mm screening was across the upstream side of the v
+    notch Polymers coatings were extracted from the screens using
+    tweezers. The Polymers coatings were dried at 30° C, counted and
+    weighed. An incremental volume of water was calculated based on the
+    flow rate over a set interval time of 15 minutes. The total
+    estimated number of polymer coatings was extrapolated from periodic
+    measurements by multiplying the total accumulated volume of water by
+    the volume-weighted mean concentration of polymer coatings. Polymer
+    coating concentration was assumed to be independent of
+    discharge.</p>
+    <p><styled-content id="eq-poly"><disp-formula><alternatives>
+    <tex-math><![CDATA[PC = V \times \frac{\sum_{i=1}^{n} PC_i}{\sum_{i=1}^{n} V_i} \qquad(1)]]></tex-math>
+    <mml:math display="block" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>P</mml:mi><mml:mi>C</mml:mi><mml:mo>=</mml:mo><mml:mi>V</mml:mi><mml:mo>×</mml:mo><mml:mfrac><mml:mrow><mml:munderover><mml:mo>∑</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>n</mml:mi></mml:munderover><mml:mi>P</mml:mi><mml:msub><mml:mi>C</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow><mml:mrow><mml:munderover><mml:mo>∑</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>n</mml:mi></mml:munderover><mml:msub><mml:mi>V</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:mfrac><mml:mspace width="2.0em"></mml:mspace><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow></mml:mrow></mml:math></alternatives></disp-formula></styled-content></p>
+    <p>where <inline-formula><alternatives>
+    <tex-math><![CDATA[PC]]></tex-math>
+    <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>P</mml:mi><mml:mi>C</mml:mi></mml:mrow></mml:math></alternatives></inline-formula>
+    is the total estimated number of polymer coatings over the
+    monitoring period, <inline-formula><alternatives>
+    <tex-math><![CDATA[V]]></tex-math>
+    <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi>V</mml:mi></mml:math></alternatives></inline-formula>
+    is the total accumulated volume of water over the monitoring period
+    (m<sup>3</sup>), <inline-formula><alternatives>
+    <tex-math><![CDATA[PC_i]]></tex-math>
+    <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>P</mml:mi><mml:msub><mml:mi>C</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:math></alternatives></inline-formula>
+    is the number of polymer coatings counted during measurement period
+    <inline-formula><alternatives>
+    <tex-math><![CDATA[i]]></tex-math>
+    <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi>i</mml:mi></mml:math></alternatives></inline-formula>,
+    <inline-formula><alternatives>
+    <tex-math><![CDATA[V_i]]></tex-math>
+    <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:msub><mml:mi>V</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:math></alternatives></inline-formula>
+    is the volume of water that passed during measurement period
+    <inline-formula><alternatives>
+    <tex-math><![CDATA[i]]></tex-math>
+    <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi>i</mml:mi></mml:math></alternatives></inline-formula>
+    (m<sup>3</sup>), and <inline-formula><alternatives>
+    <tex-math><![CDATA[n]]></tex-math>
+    <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi>n</mml:mi></mml:math></alternatives></inline-formula>
+    is the number of measurement periods.</p>
+  </sec>
+  <sec id="statistical-analysis">
+    <title>3.4 Statistical analysis</title>
+    <p>All statistical analysis, plotting, and mapping were undertaken
+    using the R Statistical Software (v4.5.3); R Core Team
+    (<xref alt="2026" rid="ref-rcoreteam2026" ref-type="bibr">2026</xref>)),
+    through the RStudio Integrated Development Environment (v2026.05.1;
+    (<xref alt="RStudio 2026" rid="ref-rstudio2026" ref-type="bibr">RStudio
+    2026</xref>) ). All plots and maps were created using the R package
+    <monospace>ggplot2</monospace> (v4.0.3; Wickham
+    (<xref alt="2016" rid="ref-wickham2016" ref-type="bibr">2016</xref>)).
+    Country and regional maps were created using data from the
+    <monospace>rnaturalearth</monospace> package
+    (<xref alt="Massicotte and South 2023" rid="ref-massicotte2023" ref-type="bibr">Massicotte
+    and South 2023</xref>) and other maps using ESRI imagery and the
+    <monospace>OpenStreetMap</monospace> package
+    (<xref alt="Fellows and JMapViewer library by Jan Peter Stotz 2023" rid="ref-fellows2023" ref-type="bibr">Fellows
+    and JMapViewer library by Jan Peter Stotz 2023</xref>) . Weather
+    data and climate normal data was retrieved from ECCC using
+    <monospace>weathercan</monospace> package (v1.0.0; E. LaZerte and
+    Albers
+    (<xref alt="2018" rid="ref-e.lazerte2018" ref-type="bibr">2018</xref>)).
+    Four Linear Mixed Models (R package <monospace>glmmTMB</monospace>
+    v1.1.14; Brooks et al.
+    (<xref alt="2017" rid="ref-brooks2017" ref-type="bibr">2017</xref>))
+    were used to investigate the effect of hillslope position and
+    sampling date (including interaction) on the abundance (number of
+    coatings) and areal density (mass of polymer per unit area). Sample
+    location was included as a random factor to control for the repeated
+    measures over time.</p>
+  </sec>
+</sec>
+<sec id="results-and-discussion">
+  <title>4 Results and Discussion</title>
+  <sec id="in-field-abundance-and-distribution">
+    <title>4.1 In-field abundance and distribution</title>
+    <p>In the statistical model investigating polymer abundance, the
+    estimated variance for the random factor of sampling location was
+    effectively zero, and this factor was removed from the model. No
+    significant interaction between sampling date and hillslope position
+    was detected for the abundance or density of polymer coatings in the
+    0-5 cm layer. Both slope position and sampling date had a
+    significant effect (p &lt; 0.05) on the abundance and density of
+    polymer coatings
+    (<xref alt="Figure 3" rid="fig-poly-surface">Figure 3</xref>).
+    Post-hoc pairwise comparisons showed that lower slope positions had
+    significantly higher abundance, exceeding the upper positions by 112
+    and the mid positions by 94 coatings
+    (<xref alt="Figure 3" rid="fig-poly-surface">Figure 3</xref> and
+    <xref alt="Table 1" rid="tbl-abundance-posthoc">Table 1</xref>).
+    Density followed a similar pattern, with the lower slope exceeding
+    the upper positions by 0.12 g m⁻² and the mid positions by 0.09 g
+    m⁻² (<xref alt="Figure 3" rid="fig-poly-surface">Figure 3</xref> and
+    <xref alt="Table 2" rid="tbl-density-posthoc">Table 2</xref>).</p>
+    <p>The downslope increase in polymer quantities could relate to
+    movement via overland flow, as the buoyant nature of the coatings
+    makes them easy to transport. Tillage erosion may also move coatings
+    downslope with the soil. The overall reduction in polymer in surface
+    soils over time may result from loss beyond the field boundary
+    through overland flow. However, vertical movement below 5 cm likely
+    accounts for much of this loss in surface MPs over time, as field
+    operations including seeding and tillage mix the plow layer,
+    resulting in downward movement despite surface application. This is
+    supported by data showing similar polymer abundance and areal
+    densities in both the 0-5 and 5-10 cm sampling depths
+    (<xref alt="Figure 4" rid="fig-depth">Figure 4</xref>). Lastly, the
+    reduction in polymer density may also be attributed to decomposition
+    of the polymer over time. The relatively small loss also suggests
+    that the polymer coatings may be more persistent beyonf 24 months in
+    the soil environment and repeat applications of polymer coated
+    fertilizers are likely to lead to accumulation of coatings.</p>
+    <fig id="fig-poly-surface">
+      <caption><p>Figure 3: Surface (0-5 cm) polymer areal density (a
+      and b) and abundance (c and d) by elevation and date. Points show
+      raw observations; Points outlined in black and error bars show
+      model predictions with 95% CIs from a model fitted to square-root
+      transformed data, back-transformed to the original scale. Within
+      each plot significant differences (p&lt;0.05) between slope
+      position or sampling dates are denoted with different letters.
+      Because the riparian area had fewer sampling locations and was
+      only sampled on 2023-09-19 it was excluded from the statistical
+      analysis</p></caption>
+      <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/notebooks-soil_sampling-fig-poly-surface-output-1.png" />
+    </fig>
+    <fig id="tbl-abundance-posthoc">
+      <caption><p>Table 1: Results of the post-hoc pairwise comparisons
+      with a Benjamini-Hochberg p value adjustment for differences in
+      the abundance of polymer coatings (<inline-formula><alternatives>
+      <tex-math><![CDATA[coatings~m^{-2}]]></tex-math>
+      <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>c</mml:mi><mml:mi>o</mml:mi><mml:mi>a</mml:mi><mml:mi>t</mml:mi><mml:mi>i</mml:mi><mml:mi>n</mml:mi><mml:mi>g</mml:mi><mml:mi>s</mml:mi><mml:mspace width="0.222em"></mml:mspace><mml:msup><mml:mi>m</mml:mi><mml:mrow><mml:mi>−</mml:mi><mml:mn>2</mml:mn></mml:mrow></mml:msup></mml:mrow></mml:math></alternatives></inline-formula>)
+      between the three slope poistions and sampling dates. Data were
+      square-root transformed prior to analysis and back-transformed to
+      the original scale for reporting.</p></caption>
+      <table-wrap>
+        <table>
+          <thead>
+            <tr>
+              <th align="center" id="Contrast" scope="col">Contrast</th>
+              <th align="center" id="Estimate" scope="col">Estimate</th>
+              <th align="center" id="SE" scope="col">SE</th>
+              <th align="center" id="df" scope="col">df</th>
+              <th align="center" id="t-ratio" scope="col">t ratio</th>
+              <th align="center" id="p-value" scope="col">p value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="center" colspan="6" id="SlopeU0020Position" style="font-weight: bold" scope="colgroup">Slope
+              Position</td>
+            </tr>
+            <tr>
+              <td align="center" headers="Slope Position  Contrast">Upper
+              - Middle</td>
+              <td align="center" headers="Slope Position  Estimate">−18.06</td>
+              <td align="center" headers="Slope Position  SE">37.07</td>
+              <td align="center" headers="Slope Position  df">66</td>
+              <td align="center" headers="Slope Position  t ratio">−0.49</td>
+              <td align="center" headers="Slope Position  p value">0.628</td>
+            </tr>
+            <tr>
+              <td align="center" headers="Slope Position  Contrast">Upper
+              - Lower</td>
+              <td align="center" headers="Slope Position  Estimate">−112.16</td>
+              <td align="center" headers="Slope Position  SE">40.57</td>
+              <td align="center" headers="Slope Position  df">66</td>
+              <td align="center" headers="Slope Position  t ratio">−2.76</td>
+              <td align="center" headers="Slope Position  p value">0.022</td>
+            </tr>
+            <tr>
+              <td align="center" headers="Slope Position  Contrast">Middle
+              - Lower</td>
+              <td align="center" headers="Slope Position  Estimate">−94.10</td>
+              <td align="center" headers="Slope Position  SE">41.20</td>
+              <td align="center" headers="Slope Position  df">66</td>
+              <td align="center" headers="Slope Position  t ratio">−2.28</td>
+              <td align="center" headers="Slope Position  p value">0.038</td>
+            </tr>
+            <tr>
+              <td align="center" colspan="6" id="SamplingU0020Date" style="font-weight: bold" scope="colgroup">Sampling
+              Date</td>
+            </tr>
+            <tr>
+              <td align="center" headers="Sampling Date  Contrast">2022-10-21
+              - 2023-05-11</td>
+              <td align="center" headers="Sampling Date  Estimate">51.48</td>
+              <td align="center" headers="Sampling Date  SE">45.17</td>
+              <td align="center" headers="Sampling Date  df">66</td>
+              <td align="center" headers="Sampling Date  t ratio">1.14</td>
+              <td align="center" headers="Sampling Date  p value">0.259</td>
+            </tr>
+            <tr>
+              <td align="center" headers="Sampling Date  Contrast">2022-10-21
+              - 2023-09-19</td>
+              <td align="center" headers="Sampling Date  Estimate">241.72</td>
+              <td align="center" headers="Sampling Date  SE">38.63</td>
+              <td align="center" headers="Sampling Date  df">66</td>
+              <td align="center" headers="Sampling Date  t ratio">6.26</td>
+              <td align="center" headers="Sampling Date  p value">&lt;0.001</td>
+            </tr>
+            <tr>
+              <td align="center" headers="Sampling Date  Contrast">2023-05-11
+              - 2023-09-19</td>
+              <td align="center" headers="Sampling Date  Estimate">190.24</td>
+              <td align="center" headers="Sampling Date  SE">36.66</td>
+              <td align="center" headers="Sampling Date  df">66</td>
+              <td align="center" headers="Sampling Date  t ratio">5.19</td>
+              <td align="center" headers="Sampling Date  p value">&lt;0.001</td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+    </fig>
+    <fig id="tbl-density-posthoc">
+      <caption><p>Table 2: Results of the post-hoc pairwise comparisons
+      with a Benjamini-Hochberg p value adjustment for differences in
+      the mass of polymer coatings (<inline-formula><alternatives>
+      <tex-math><![CDATA[g~m^{-2}]]></tex-math>
+      <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>g</mml:mi><mml:mspace width="0.222em"></mml:mspace><mml:msup><mml:mi>m</mml:mi><mml:mrow><mml:mi>−</mml:mi><mml:mn>2</mml:mn></mml:mrow></mml:msup></mml:mrow></mml:math></alternatives></inline-formula>)
+      between the three slope poistions and sampling dates. Data were
+      square-root transformed prior to analysis and back-transformed to
+      the original scale for reporting.</p></caption>
+      <table-wrap>
+        <table>
+          <thead>
+            <tr>
+              <th align="center" id="Contrast" scope="col">Contrast</th>
+              <th align="center" id="Estimate" scope="col">Estimate</th>
+              <th align="center" id="SE" scope="col">SE</th>
+              <th align="center" id="z-ratio" scope="col">z ratio</th>
+              <th align="center" id="p-value" scope="col">p value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="center" colspan="5" id="SlopeU0020Position" style="font-weight: bold" scope="colgroup">Slope
+              Position</td>
+            </tr>
+            <tr>
+              <td align="center" headers="Slope Position  Contrast">Upper
+              - Middle</td>
+              <td align="center" headers="Slope Position  Estimate">−0.03</td>
+              <td align="center" headers="Slope Position  SE">0.04</td>
+              <td align="center" headers="Slope Position  z ratio">−0.69</td>
+              <td align="center" headers="Slope Position  p value">0.492</td>
+            </tr>
+            <tr>
+              <td align="center" headers="Slope Position  Contrast">Upper
+              - Lower</td>
+              <td align="center" headers="Slope Position  Estimate">−0.12</td>
+              <td align="center" headers="Slope Position  SE">0.05</td>
+              <td align="center" headers="Slope Position  z ratio">−2.59</td>
+              <td align="center" headers="Slope Position  p value">0.029</td>
+            </tr>
+            <tr>
+              <td align="center" headers="Slope Position  Contrast">Middle
+              - Lower</td>
+              <td align="center" headers="Slope Position  Estimate">−0.09</td>
+              <td align="center" headers="Slope Position  SE">0.05</td>
+              <td align="center" headers="Slope Position  z ratio">−1.91</td>
+              <td align="center" headers="Slope Position  p value">0.083</td>
+            </tr>
+            <tr>
+              <td align="center" colspan="5" id="SamplingU0020Date" style="font-weight: bold" scope="colgroup">Sampling
+              Date</td>
+            </tr>
+            <tr>
+              <td align="center" headers="Sampling Date  Contrast">2022-10-21
+              - 2023-05-11</td>
+              <td align="center" headers="Sampling Date  Estimate">0.08</td>
+              <td align="center" headers="Sampling Date  SE">0.04</td>
+              <td align="center" headers="Sampling Date  z ratio">1.86</td>
+              <td align="center" headers="Sampling Date  p value">0.062</td>
+            </tr>
+            <tr>
+              <td align="center" headers="Sampling Date  Contrast">2022-10-21
+              - 2023-09-19</td>
+              <td align="center" headers="Sampling Date  Estimate">0.27</td>
+              <td align="center" headers="Sampling Date  SE">0.04</td>
+              <td align="center" headers="Sampling Date  z ratio">7.23</td>
+              <td align="center" headers="Sampling Date  p value">&lt;0.001</td>
+            </tr>
+            <tr>
+              <td align="center" headers="Sampling Date  Contrast">2023-05-11
+              - 2023-09-19</td>
+              <td align="center" headers="Sampling Date  Estimate">0.19</td>
+              <td align="center" headers="Sampling Date  SE">0.03</td>
+              <td align="center" headers="Sampling Date  z ratio">5.53</td>
+              <td align="center" headers="Sampling Date  p value">&lt;0.001</td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+    </fig>
+    <fig id="fig-depth">
+      <caption><p>Figure 4: Polymer density (a) and abundance (b) for
+      two sampling depths (0-5 and 5-10 cm) and the combined (0-10 cm)
+      by slope position. Samples were collected on 2023-09-19 and no
+      ploymer was detected below 5 cm in the riparian area</p></caption>
+      <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/notebooks-soil_sampling-fig-depth-output-1.png" />
+    </fig>
+    <p>The distribution of MPs in soil within agro-ecosystems is dynamic
+    in both space and time, and continued research in this area must
+    account for both dimensions when developing research ideas and
+    sampling strategies. Currently, few guidelines or established
+    sampling protocols are in place. The results of this study suggest
+    that a transect approach along the catena is likely to capture the
+    topographically driven variability, yielding high informational
+    value with lower effort compared to a grid or random sampling
+    approach. The results also demonstrate the importance of sampling
+    depth. While the surface layer (0-5 cm) is important for
+    investigating loss through surface processes, a complete inventory
+    is needed for long-term studies. At a minimum, sampling should
+    extend to the depth of the deepest tillage operation, but
+    preferential flow paths and bioturbation may carry MPs deeper into
+    the soil profile. Ideally incremental depth sampling is used to
+    characterize the concentration of MPs with depth. In this study, the
+    fertilizer was broadcast applied, resulting in a relatively uniform
+    horizontal distribution of MPs; however, where fertilizer is banded,
+    sampling must span the full width of the bands to account for the
+    concentrated horizontal distribution of MPs.</p>
+    <p>Beyond sampling strategy, additional work is needed to examine
+    temporal and spatial patterns of other types and sources of
+    agricultural MPs. Much of the literature on microplastics has
+    focused on soils receiving biosolids, which often contain
+    substantial amounts of plastics. On many farms in Manitoba,
+    biosolids are not used as a soil amendment; however, the sources of
+    MPs are instead on-farm uses (e.g., bale wrap, twine,
+    bags/containers) or external sources through atmospheric deposition
+    or overland flooding. In these cases, concentrations are likely to
+    be very low, adding further challenges to quantifying and
+    identifying MPs. Nonetheless, the dynamic nature observed with the
+    polymer coatings in this study is likely transferable to a wide
+    range of plastic types and sizes.</p>
+  </sec>
+  <sec id="runoff-and-loss">
+    <title>4.2 Runoff and loss</title>
+    <p>Agricultural soils can serve as a long-term source of
+    microplastics (MPs) to downstream ecosystems. Although
+    concentrations in agricultural soil may be low, the extensive area
+    of farmland means the total load can be considerable. In
+    snowmelt-dominated regions like Manitoba, the snowmelt period is
+    when the greatest losses are likely to occur; however, during this
+    time, riparian areas have frozen soils and dormant vegetation,
+    reducing their filtering capabilities and making riparian buffers
+    less effective as a management practice for mitigating MP loss.
+    Quantifying MPs in agricultural runoff presents methodological
+    challenges: low concentrations necessitate filtering large volumes
+    of runoff, and traditional automatic water samplers are likely
+    insufficient for this purpose. While the simple screens used in this
+    study allowed for large volumes of water to be filtered, this method
+    has some limitations. Clogging with organic debris (e.g., crop
+    residues) and sediment is an issue, and freezing of water on the
+    screen during frequent freeze-thaw cycles similarly impedes flow.
+    Further, the large mesh size used only captures larger MPs, and
+    smaller MPs are not represented. Better edge-of-field runoff
+    sampling approaches are needed for these types of conditions and to
+    capture the full range of MP sizes. Lastly, this study did not
+    investigate the role of shorter-duration, high-intensity rain events
+    during the summer months as a potential pathway for MP export.</p>
+  </sec>
+</sec>
+<sec id="conclusions">
+  <title>5 Conclusions</title>
+  <p>Polymer coatings from slow-release fertilizers showed clear spatial
+  and temporal dynamics, with evidence of downslope movement and export
+  to downstream environments, demonstrating that agricultural soils can
+  serve as a source of MPs. Soil sampling designs and research questions
+  must account for this spatial and temporal variability, and developing
+  best practices for sampling MPs in agricultural settings should be a
+  research priority. The findings of this study are likely applicable to
+  other types of agricultural plastics, which may show similar transport
+  dynamics. Edge-of-field sampling in cold climates presents particular
+  challenges, as low concentrations require filtering large volumes of
+  runoff and freeze-thaw conditions and debris impede water flow through
+  sampling equipment, highlighting the need for improved sampling
+  approaches that can reliably quantify MP export under these
+  conditions. As plastic inputs to agricultural landscapes continue to
+  grow, whether from on-farm use or external sources, characterizing and
+  managing MP movement through the landscape will be essential to
+  effectively quantify and mitigate their broader environmental
+  impact.</p>
+</sec>
+<sec id="acknowledgments">
+  <title>Acknowledgments</title>
+  <p>Special thanks and recognition for the field and technical support
+  from …</p>
+</sec>
+<sec id="statements-and-declarations">
+  <title>Statements and declarations</title>
+  <sec id="funding">
+    <title>Funding</title>
+    <p>This research was supported by …</p>
+  </sec>
+  <sec id="competing-interests">
+    <title>Competing interests</title>
+    <p>The authors have no competing interests to declare that are
+    relevant to the content of this article.</p>
+  </sec>
+  <sec id="data-and-code-availability">
+    <title>Data and code availability</title>
+    <p>Data and source code for analysis and manuscript available on
+    GitHub:
+    <ext-link ext-link-type="uri" xlink:href="https://github.com/alex-koiter/soil-plastics">https://github.com/alex-koiter/soil-plastics</ext-link></p>
+    <p>Additional information, including analytical notebooks with
+    details of the analysis and intermediate steps, is available online:
+    <ext-link ext-link-type="uri" xlink:href="https://alexkoiter.ca/soil-plastics/">https://alexkoiter.ca/soil-plastics/</ext-link></p>
+  </sec>
+  <sec id="author-contributions">
+    <title>Author contributions</title>
+    <p><bold>C Beaupre</bold> Methodology; Investigation; Data curation;
+    Formal analysis; Writing - Original Draft; Writing - Review &amp;
+    Editing</p>
+    <p><bold>A Glenn</bold>: Conceptualization; Funding acquisition;
+    Methodology; Investigation; Data curation; Formal analysis; Writing
+    - Original Draft; Writing – review and editing; Project
+    administration</p>
+    <p><bold>A Koiter</bold>: Conceptualization; Methodology;
+    Investigation; Data curation; Formal analysis; Visualization;
+    Writing - Original Draft; Writing – review and editing; Software</p>
+    <p><bold>H Wilson</bold>: Methodology; Formal analysis; Writing -
+    Review &amp; Editing</p>
+  </sec>
+</sec>
+</body>
+
+<back>
+<ref-list>
+  <title>References</title>
+  <ref id="ref-agricultureandagri-foodcanada2011">
+    <element-citation>
+      <person-group person-group-type="author">
+        <name><surname>Agriculture</surname></name>
+        <name><surname>Agri-Food Canada</surname></name>
+      </person-group>
+      <article-title>South tobacco creek/steppler watershed fact sheet</article-title>
+      <year iso-8601-date="2011">2011</year>
+      <uri>http://www.agr.gc.ca</uri>
+    </element-citation>
+  </ref>
+  <ref id="ref-michalyna1988">
+    <element-citation publication-type="report">
+      <person-group person-group-type="author">
+        <name><surname>Michalyna</surname><given-names>W</given-names></name>
+        <name><surname>Podolsky</surname><given-names>G</given-names></name>
+        <name><surname>St. Jacques</surname><given-names>E</given-names></name>
+      </person-group>
+      <article-title>Soils of the rural municipalities of grey, dufferin, roland, thompson and part of stanley</article-title>
+      <year iso-8601-date="1988">1988</year>
+    </element-citation>
+  </ref>
+  <ref id="ref-tiessen2010">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Tiessen</surname><given-names>K. H. D.</given-names></name>
+        <name><surname>Elliott</surname><given-names>J. A.</given-names></name>
+        <name><surname>Yarotski</surname><given-names>J.</given-names></name>
+        <name><surname>Lobb</surname><given-names>D. A.</given-names></name>
+        <name><surname>Flaten</surname><given-names>D. N.</given-names></name>
+        <name><surname>Glozier</surname><given-names>N. E.</given-names></name>
+      </person-group>
+      <article-title>Conventional and conservation tillage: Influence on seasonal runoff, sediment, and nutrient losses in the canadian prairies</article-title>
+      <source>Journal of Environmental Quality</source>
+      <year iso-8601-date="2010">2010</year>
+      <volume>39</volume>
+      <issue>3</issue>
+      <fpage>964980</fpage>
+      <lpage></lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-zhang2022">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Zhang</surname><given-names>Jinrui</given-names></name>
+        <name><surname>Ren</surname><given-names>Siyang</given-names></name>
+        <name><surname>Xu</surname><given-names>Wen</given-names></name>
+        <name><surname>Liang</surname><given-names>Ce</given-names></name>
+        <name><surname>Li</surname><given-names>Jingjing</given-names></name>
+        <name><surname>Zhang</surname><given-names>Hanyue</given-names></name>
+        <name><surname>Li</surname><given-names>Yanan</given-names></name>
+        <name><surname>Liu</surname><given-names>Xuejun</given-names></name>
+        <name><surname>Jones</surname><given-names>Davey L.</given-names></name>
+        <name><surname>Chadwick</surname><given-names>David R.</given-names></name>
+        <name><surname>Zhang</surname><given-names>Fusuo</given-names></name>
+        <name><surname>Wang</surname><given-names>Kai</given-names></name>
+      </person-group>
+      <article-title>Effects of plastic residues and microplastics on soil ecosystems: A global meta-analysis</article-title>
+      <source>Journal of Hazardous Materials</source>
+      <year iso-8601-date="2022-08-05">2022</year><month>08</month><day>05</day>
+      <volume>435</volume>
+      <uri>https://www.sciencedirect.com/science/article/pii/S0304389422008548</uri>
+      <pub-id pub-id-type="doi">10.1016/j.jhazmat.2022.129065</pub-id>
+      <fpage>129065</fpage>
+      <lpage></lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-anderson2017">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Anderson</surname><given-names>Philip J.</given-names></name>
+        <name><surname>Warrack</surname><given-names>Sarah</given-names></name>
+        <name><surname>Langen</surname><given-names>Victoria</given-names></name>
+        <name><surname>Challis</surname><given-names>Jonathan K.</given-names></name>
+        <name><surname>Hanson</surname><given-names>Mark L.</given-names></name>
+        <name><surname>Rennie</surname><given-names>Michael D.</given-names></name>
+      </person-group>
+      <article-title>Microplastic contamination in lake winnipeg, canada</article-title>
+      <source>Environmental Pollution</source>
+      <year iso-8601-date="2017-06-01">2017</year><month>06</month><day>01</day>
+      <volume>225</volume>
+      <uri>https://www.sciencedirect.com/science/article/pii/S0269749116312647</uri>
+      <pub-id pub-id-type="doi">10.1016/j.envpol.2017.02.072</pub-id>
+      <fpage>223</fpage>
+      <lpage>231</lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-lenaker2021">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Lenaker</surname><given-names>Peter L.</given-names></name>
+        <name><surname>Corsi</surname><given-names>Steven R.</given-names></name>
+        <name><surname>Mason</surname><given-names>Sherri A.</given-names></name>
+      </person-group>
+      <article-title>Spatial distribution of microplastics in surficial benthic sediment of lake michigan and lake erie</article-title>
+      <source>Environmental Science &amp; Technology</source>
+      <year iso-8601-date="2021-01-05">2021</year><month>01</month><day>05</day>
+      <volume>55</volume>
+      <issue>1</issue>
+      <uri>https://doi.org/10.1021/acs.est.0c06087</uri>
+      <pub-id pub-id-type="doi">10.1021/acs.est.0c06087</pub-id>
+      <fpage>373</fpage>
+      <lpage>384</lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-weber2021">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Weber</surname><given-names>Collin Joel</given-names></name>
+        <name><surname>Weihrauch</surname><given-names>Christoph</given-names></name>
+        <name><surname>Opp</surname><given-names>Christian</given-names></name>
+        <name><surname>Chifflard</surname><given-names>Peter</given-names></name>
+      </person-group>
+      <article-title>Investigating microplastic dynamics in soils: Orientation for sampling strategies and sample pre-procession</article-title>
+      <source>Land Degradation &amp; Development</source>
+      <year iso-8601-date="2021">2021</year>
+      <volume>32</volume>
+      <issue>1</issue>
+      <uri>https://onlinelibrary.wiley.com/doi/abs/10.1002/ldr.3676</uri>
+      <pub-id pub-id-type="doi">10.1002/ldr.3676</pub-id>
+      <fpage>270</fpage>
+      <lpage>284</lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-rillig2017">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Rillig</surname><given-names>Matthias C.</given-names></name>
+        <name><surname>Ingraffia</surname><given-names>Rosolino</given-names></name>
+        <name><surname>Souza Machado</surname><given-names>Anderson A. de</given-names></name>
+      </person-group>
+      <article-title>Microplastic incorporation into soil in agroecosystems</article-title>
+      <source>Frontiers in Plant Science</source>
+      <year iso-8601-date="2017-10-18">2017</year><month>10</month><day>18</day>
+      <volume>8</volume>
+      <uri>https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2017.01805/full</uri>
+      <pub-id pub-id-type="doi">10.3389/fpls.2017.01805</pub-id>
+    </element-citation>
+  </ref>
+  <ref id="ref-crossman2020">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Crossman</surname><given-names>Jill</given-names></name>
+        <name><surname>Hurley</surname><given-names>Rachel R.</given-names></name>
+        <name><surname>Futter</surname><given-names>Martyn</given-names></name>
+        <name><surname>Nizzetto</surname><given-names>Luca</given-names></name>
+      </person-group>
+      <article-title>Transfer and transport of microplastics from biosolids to agricultural soils and the wider environment</article-title>
+      <source>Science of The Total Environment</source>
+      <year iso-8601-date="2020-07-01">2020</year><month>07</month><day>01</day>
+      <volume>724</volume>
+      <uri>https://www.sciencedirect.com/science/article/pii/S0048969720318477</uri>
+      <pub-id pub-id-type="doi">10.1016/j.scitotenv.2020.138334</pub-id>
+      <fpage>138334</fpage>
+      <lpage></lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-rehm2024">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Rehm</surname><given-names>Raphael</given-names></name>
+        <name><surname>Fiener</surname><given-names>Peter</given-names></name>
+      </person-group>
+      <article-title>Model-based analysis of erosion-induced microplastic delivery from arable land to the stream network of a mesoscale catchment</article-title>
+      <source>SOIL</source>
+      <year iso-8601-date="2024-03-12">2024</year><month>03</month><day>12</day>
+      <volume>10</volume>
+      <issue>1</issue>
+      <uri>https://soil.copernicus.org/articles/10/211/2024/</uri>
+      <pub-id pub-id-type="doi">10.5194/soil-10-211-2024</pub-id>
+      <fpage>211</fpage>
+      <lpage>230</lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-wang2024">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Wang</surname><given-names>Yanting</given-names></name>
+        <name><surname>Jing</surname><given-names>Siyuan</given-names></name>
+        <name><surname>Hou</surname><given-names>Peiyu</given-names></name>
+        <name><surname>Ni</surname><given-names>Rui</given-names></name>
+        <name><surname>Niu</surname><given-names>Lili</given-names></name>
+        <name><surname>Wanger</surname><given-names>Thomas Cherico</given-names></name>
+        <name><surname>Liu</surname><given-names>Weiping</given-names></name>
+        <name><surname>Liu</surname><given-names>Kai</given-names></name>
+      </person-group>
+      <article-title>Soil erosion is a major drive for nano &amp; micro-plastics to enter riverine systems from cultivated land</article-title>
+      <source>Water Research</source>
+      <year iso-8601-date="2024-06-01">2024</year><month>06</month><day>01</day>
+      <volume>256</volume>
+      <uri>https://www.sciencedirect.com/science/article/pii/S0043135424004986</uri>
+      <pub-id pub-id-type="doi">10.1016/j.watres.2024.121597</pub-id>
+      <fpage>121597</fpage>
+      <lpage></lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-leonard2024">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Leonard</surname><given-names>Jamie</given-names></name>
+        <name><surname>Ravi</surname><given-names>Sujith</given-names></name>
+        <name><surname>Mohanty</surname><given-names>Sanjay K.</given-names></name>
+      </person-group>
+      <article-title>Preferential emission of microplastics from biosolid-applied agricultural soils: Field evidence and theoretical framework</article-title>
+      <source>Environmental Science &amp; Technology Letters</source>
+      <year iso-8601-date="2024-02-13">2024</year><month>02</month><day>13</day>
+      <volume>11</volume>
+      <issue>2</issue>
+      <uri>https://doi.org/10.1021/acs.estlett.3c00850</uri>
+      <pub-id pub-id-type="doi">10.1021/acs.estlett.3c00850</pub-id>
+      <fpage>136</fpage>
+      <lpage>142</lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-environmentandclimatechangecanada2020">
+    <element-citation publication-type="report">
+      <person-group person-group-type="author">
+        <name><surname>Environment</surname></name>
+        <name><surname>Climate Change Canada</surname></name>
+        <name><surname>Health Canada</surname></name>
+      </person-group>
+      <article-title>Science assessment of plastic pollution</article-title>
+      <year iso-8601-date="2020">2020</year>
+      <uri>https://www.canada.ca/en/environment-climate-change/services/evaluating-existing-substances/science-assessment-plastic-pollution.html</uri>
+      <fpage>195</fpage>
+      <lpage></lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-e.lazerte2018">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>E. LaZerte</surname><given-names>Stefanie</given-names></name>
+        <name><surname>Albers</surname><given-names>Sam</given-names></name>
+      </person-group>
+      <article-title>weathercan: Download and format weather data from Environment and Climate Change Canada</article-title>
+      <source>The Journal of Open Source Software</source>
+      <year iso-8601-date="2018-02-11">2018</year><month>02</month><day>11</day>
+      <volume>3</volume>
+      <issue>22</issue>
+      <uri>http://joss.theoj.org/papers/10.21105/joss.00571</uri>
+      <pub-id pub-id-type="doi">10.21105/joss.00571</pub-id>
+      <fpage>571</fpage>
+      <lpage></lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-rcoreteam2026">
+    <element-citation>
+      <person-group person-group-type="author">
+        <name><surname>R Core Team</surname></name>
+      </person-group>
+      <article-title>R: A language and environment for statistical computing</article-title>
+      <year iso-8601-date="2026">2026</year>
+      <uri>http://www.R-project.org</uri>
+    </element-citation>
+  </ref>
+  <ref id="ref-rstudio2026">
+    <element-citation>
+      <person-group person-group-type="author">
+        <name><surname>RStudio</surname></name>
+      </person-group>
+      <article-title>RStudio: Integrated development environment for r</article-title>
+      <year iso-8601-date="2026">2026</year>
+      <uri>http://www.rstudio.org/</uri>
+    </element-citation>
+  </ref>
+  <ref id="ref-wickham2016">
+    <element-citation publication-type="book">
+      <person-group person-group-type="author">
+        <name><surname>Wickham</surname><given-names>H</given-names></name>
+      </person-group>
+      <source>ggplot2: Elegant graphics for data analysis</source>
+      <publisher-name>Springer-Verlag</publisher-name>
+      <publisher-loc>New York NY U.S.A</publisher-loc>
+      <year iso-8601-date="2016">2016</year>
+    </element-citation>
+  </ref>
+  <ref id="ref-massicotte2023">
+    <element-citation publication-type="book">
+      <person-group person-group-type="author">
+        <name><surname>Massicotte</surname><given-names>Philippe</given-names></name>
+        <name><surname>South</surname><given-names>Andy</given-names></name>
+      </person-group>
+      <source>Rnaturalearth: World map data from natural earth</source>
+      <year iso-8601-date="2023">2023</year>
+      <uri>https://CRAN.R-project.org/package=rnaturalearth</uri>
+      <pub-id pub-id-type="doi">10.32614/CRAN.package.rnaturalearth</pub-id>
+    </element-citation>
+  </ref>
+  <ref id="ref-fellows2023">
+    <element-citation publication-type="book">
+      <person-group person-group-type="author">
+        <name><surname>Fellows</surname><given-names>Ian</given-names></name>
+        <name><surname>JMapViewer library by Jan Peter Stotz</surname></name>
+      </person-group>
+      <source>OpenStreetMap: Access to open street map raster images</source>
+      <year iso-8601-date="2023">2023</year>
+      <uri>https://CRAN.R-project.org/package=OpenStreetMap</uri>
+      <pub-id pub-id-type="doi">10.32614/CRAN.package.OpenStreetMap</pub-id>
+    </element-citation>
+  </ref>
+  <ref id="ref-brooks2017">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Brooks</surname><given-names>Mollie,E.</given-names></name>
+        <name><surname>Kristensen</surname><given-names>Kasper</given-names></name>
+        <name><surname>Benthem</surname><given-names>Koen,J.,van</given-names></name>
+        <name><surname>Magnusson</surname><given-names>Arni</given-names></name>
+        <name><surname>Berg</surname><given-names>Casper,W.</given-names></name>
+        <name><surname>Nielsen</surname><given-names>Anders</given-names></name>
+        <name><surname>Skaug</surname><given-names>Hans,J.</given-names></name>
+        <name><surname>Mächler</surname><given-names>Martin</given-names></name>
+        <name><surname>Bolker</surname><given-names>Benjamin,M.</given-names></name>
+      </person-group>
+      <article-title>glmmTMB Balances Speed and Flexibility Among Packages for Zero-inflated Generalized Linear Mixed Modeling</article-title>
+      <source>The R Journal</source>
+      <year iso-8601-date="2017">2017</year>
+      <volume>9</volume>
+      <issue>2</issue>
+      <uri>https://journal.r-project.org/archive/2017/RJ-2017-066/index.html</uri>
+      <pub-id pub-id-type="doi">10.32614/RJ-2017-066</pub-id>
+      <fpage>378</fpage>
+      <lpage></lpage>
+    </element-citation>
+  </ref>
+</ref-list>
+</back>
+
+<sub-article article-type="notebook" id="nb-1-nb-1">
+<front-stub>
+<title-group>
+<article-title>03 Soil sampling</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<name>
+<surname>Koiter</surname>
+<given-names>Alex</given-names>
+</name>
+<string-name>Alex Koiter</string-name>
+
+</contrib>
+</contrib-group>
+</front-stub>
+
+<body>
+<sec id="load-libraries-nb-1">
+  <title>Load libraries</title>
+  <sec specific-use="notebook-content">
+  <code language="r script">suppressPackageStartupMessages({
+library(tidyverse)
+library(patchwork)
+library(DHARMa)
+library(glmmTMB)
+library(emmeans)
+library(gt)
+})
+  </code>
+  </sec>
+</sec>
+<sec id="read-in-data-nb-1">
+  <title>Read in data</title>
+  <sec specific-use="notebook-content">
+  <code language="r script">data &lt;- read_csv(here::here(&quot;./notebooks/soil_data.csv&quot;))|&gt;
+  mutate(date_fct = as.factor(date))  |&gt;
+  mutate(elevation = fct_relevel(elevation, c(&quot;Upper&quot;, &quot;Middle&quot;, &quot;Lower&quot;, &quot;Riparian&quot;))) |&gt;
+  mutate(depth = fct_relevel(depth, c(&quot;0-5 cm&quot;, &quot;5-10 cm&quot;, &quot;0-10 cm&quot;)))
+  </code>
+  <boxed-text>
+    <preformat>Rows: 124 Columns: 11
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: &quot;,&quot;
+chr  (4): flag_location, elevation, depth, watershed
+dbl  (5): mass, count, n_m2, mass_m2, mass_n
+date (2): date, date_fct
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</preformat>
+  </boxed-text>
+  </sec>
+</sec>
+<sec id="polymer-abundance-0-5-cm-nb-1">
+  <title>Polymer abundance (0-5 cm)</title>
+  <sec id="look-at-data-nb-1">
+    <title>Look at data</title>
+    <sec specific-use="notebook-content">
+    <code language="r script">p1 &lt;- ggplot(data = filter(data, depth == &quot;0-5 cm&quot;), aes(x = elevation, y = n_m2, fill = date_fct)) +
+  geom_boxplot(position = position_dodge2(preserve = &quot;single&quot;)) +
+  theme_bw() +
+  scale_fill_viridis_d() +
+  labs(y = bquote(&quot;Polymer abundance (coatings m&quot;^-2*&quot;)&quot;), x = &quot;Slope position&quot;)
+p1
+    </code>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="soil_sampling_files/figure-jats/unnamed-chunk-3-1.png" />
+    </sec>
+  </sec>
+  <sec id="stats-nb-1">
+    <title>Stats</title>
+    <sec specific-use="notebook-content">
+    <code language="r script">m1 &lt;- glmmTMB(n_m2 ~ elevation * date_fct + (1|flag_location),
+              data = filter(data, depth == &quot;0-5 cm&quot; &amp; elevation != &quot;Riparian&quot;))
+    </code>
+    <boxed-text>
+      <preformat>Warning in finalizeTMB(TMBStruc, obj, fit, h, data.tmb.old): Model convergence
+problem; non-positive-definite Hessian matrix. See vignette('troubleshooting')</preformat>
+    </boxed-text>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">simulateResiduals(m1, n = 1000, plot = TRUE)
+    </code>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="soil_sampling_files/figure-jats/unnamed-chunk-5-1.png" />
+    <boxed-text>
+      <preformat>Object of Class DHARMa with simulated residuals based on 1000 simulations with refit = FALSE . See ?DHARMa::simulateResiduals for help. 
+ 
+Scaled residual values: 0.923 0.552 0.586 0.05 0.992 0.844 0.119 0.336 0.212 0.966 0.204 0.265 0.942 0.217 0.079 0.707 0.06 0.172 0.071 0.985 ...</preformat>
+    </boxed-text>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">car::Anova(m1, type = &quot;III&quot;)
+    </code>
+    <boxed-text>
+      <preformat>Analysis of Deviance Table (Type III Wald chisquare tests)
+
+Response: n_m2
+                     Chisq Df Pr(&gt;Chisq)    
+(Intercept)        41.9747  1  9.246e-11 ***
+elevation           5.8475  2   0.053731 .  
+date_fct           10.3518  2   0.005651 ** 
+elevation:date_fct  3.7667  4   0.438499    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</preformat>
+    </boxed-text>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">summary(m1)
+    </code>
+    <boxed-text>
+      <preformat> Family: gaussian  ( identity )
+Formula:          n_m2 ~ elevation * date_fct + (1 | flag_location)
+Data: filter(data, depth == &quot;0-5 cm&quot; &amp; elevation != &quot;Riparian&quot;)
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+       NA        NA        NA        NA        61 
+
+Random effects:
+
+Conditional model:
+ Groups        Name        Variance  Std.Dev. 
+ flag_location (Intercept) 5.573e-30 2.361e-15
+ Residual                  2.025e+04 1.423e+02
+Number of obs: 72, groups:  flag_location, 24
+
+Dispersion estimate for gaussian family (sigma^2): 2.03e+04 
+
+Conditional model:
+                                   Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept)                          325.99      50.32   6.479 9.25e-11 ***
+elevationMiddle                       62.01      71.16   0.871  0.38351    
+elevationLower                       170.01      71.16   2.389  0.01689 *  
+date_fct2023-05-11                   -12.00      71.16  -0.169  0.86609    
+date_fct2023-09-19                  -204.00      71.16  -2.867  0.00415 ** 
+elevationMiddle:date_fct2023-05-11   -98.01     100.63  -0.974  0.33007    
+elevationLower:date_fct2023-05-11    -31.97     100.63  -0.318  0.75069    
+elevationMiddle:date_fct2023-09-19   -15.97     100.63  -0.159  0.87388    
+elevationLower:date_fct2023-09-19   -122.01     100.63  -1.212  0.22533    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</preformat>
+    </boxed-text>
+    <code language="r script"># Estimated variance for flag_location is essentially zero, removing  random effect
+    </code>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">m1 &lt;- glmmTMB(n_m2 ~ elevation * date_fct ,
+              data = filter(data, depth == &quot;0-5 cm&quot; &amp; elevation != &quot;Riparian&quot;))
+    </code>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">simulateResiduals(m1, n = 1000, plot = TRUE)
+    </code>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="soil_sampling_files/figure-jats/unnamed-chunk-9-1.png" />
+    <boxed-text>
+      <preformat>Object of Class DHARMa with simulated residuals based on 1000 simulations with refit = FALSE . See ?DHARMa::simulateResiduals for help. 
+ 
+Scaled residual values: 0.923 0.552 0.586 0.05 0.992 0.844 0.119 0.336 0.212 0.966 0.204 0.264 0.942 0.217 0.079 0.707 0.06 0.172 0.071 0.985 ...</preformat>
+    </boxed-text>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">car::Anova(m1, type = &quot;III&quot;)
+    </code>
+    <boxed-text>
+      <preformat>Analysis of Deviance Table (Type III Wald chisquare tests)
+
+Response: n_m2
+                     Chisq Df Pr(&gt;Chisq)    
+(Intercept)        41.9777  1  9.232e-11 ***
+elevation           5.8469  2   0.053748 .  
+date_fct           10.3519  2   0.005651 ** 
+elevation:date_fct  3.7642  4   0.438864    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</preformat>
+    </boxed-text>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script"># Removing interaction
+m1 &lt;- glmmTMB(n_m2 ~ elevation + date_fct,
+              data = filter(data, depth == &quot;0-5 cm&quot; &amp; elevation != &quot;Riparian&quot;))
+    </code>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">simulateResiduals(m1, n = 1000, plot = TRUE) 
+    </code>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="soil_sampling_files/figure-jats/unnamed-chunk-12-1.png" />
+    <boxed-text>
+      <preformat>Object of Class DHARMa with simulated residuals based on 1000 simulations with refit = FALSE . See ?DHARMa::simulateResiduals for help. 
+ 
+Scaled residual values: 0.935 0.612 0.627 0.069 0.992 0.851 0.146 0.362 0.157 0.942 0.161 0.215 0.954 0.269 0.115 0.757 0.072 0.197 0.085 0.985 ...</preformat>
+    </boxed-text>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">performance::check_collinearity(m1)
+    </code>
+    <boxed-text>
+      <preformat># Check for Multicollinearity
+
+Low Correlation
+
+      Term VIF      VIF  CI adj. VIF Tolerance
+ elevation   1 [1.00, 1.00]        1         1
+  date_fct   1 [1.00, 1.00]        1         1</preformat>
+    </boxed-text>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">car::Anova(m1, type = &quot;III&quot;)
+    </code>
+    <boxed-text>
+      <preformat>Analysis of Deviance Table (Type III Wald chisquare tests)
+
+Response: n_m2
+              Chisq Df Pr(&gt;Chisq)    
+(Intercept) 85.5228  1  &lt; 2.2e-16 ***
+elevation    8.8659  2    0.01188 *  
+date_fct    38.8340  2  3.692e-09 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</preformat>
+    </boxed-text>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script"># Square root transform
+m1_sqrt &lt;- glmmTMB(sqrt(n_m2) ~ elevation + date_fct,
+                   data = filter(data, depth == &quot;0-5 cm&quot; &amp; elevation != &quot;Riparian&quot;))
+    </code>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">simulateResiduals(m1_sqrt, n = 1000, plot = TRUE) 
+    </code>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="soil_sampling_files/figure-jats/unnamed-chunk-16-1.png" />
+    <boxed-text>
+      <preformat>Object of Class DHARMa with simulated residuals based on 1000 simulations with refit = FALSE . See ?DHARMa::simulateResiduals for help. 
+ 
+Scaled residual values: 0.882 0.615 0.625 0.094 0.98 0.851 0.19 0.449 0.196 0.926 0.184 0.25 0.903 0.329 0.154 0.723 0.069 0.245 0.097 0.965 ...</preformat>
+    </boxed-text>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">performance::check_collinearity(m1_sqrt)
+    </code>
+    <boxed-text>
+      <preformat># Check for Multicollinearity
+
+Low Correlation
+
+      Term VIF      VIF  CI adj. VIF Tolerance
+ elevation   1 [1.00, 1.00]        1         1
+  date_fct   1 [1.00, 1.00]        1         1</preformat>
+    </boxed-text>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">car::Anova(m1_sqrt, type = &quot;III&quot;)
+    </code>
+    <boxed-text>
+      <preformat>Analysis of Deviance Table (Type III Wald chisquare tests)
+
+Response: sqrt(n_m2)
+               Chisq Df Pr(&gt;Chisq)    
+(Intercept) 275.4368  1  &lt; 2.2e-16 ***
+elevation     8.8044  2    0.01225 *  
+date_fct     47.3246  2  5.292e-11 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</preformat>
+    </boxed-text>
+    </sec>
+  </sec>
+  <sec id="pairwise-comparisons-nb-1">
+    <title>Pairwise comparisons</title>
+    <sec specific-use="notebook-content">
+    <code language="r script">em_elev &lt;- emmeans(m1_sqrt, ~ elevation, type = &quot;response&quot;) |&gt; 
+  regrid() |&gt; 
+  contrast(method = &quot;pairwise&quot;, adjust = &quot;fdr&quot;)  |&gt;
+  as.data.frame() |&gt;
+  mutate(type = &quot;Slope Position&quot;)
+
+em_elev # back transformed
+    </code>
+    <boxed-text>
+      <preformat>        contrast   estimate       SE df    t.ratio    p.value           type
+1 Upper - Middle  -18.06178 37.07429 66 -0.4871781 0.62774629 Slope Position
+2  Upper - Lower -112.16079 40.56626 66 -2.7648786 0.02212594 Slope Position
+3 Middle - Lower  -94.09901 41.20269 66 -2.2838076 0.03841204 Slope Position</preformat>
+    </boxed-text>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">em_date &lt;- emmeans(m1_sqrt, ~ date_fct, type = &quot;response&quot;) |&gt; 
+  regrid() |&gt; 
+  contrast(method = &quot;pairwise&quot;, adjust = &quot;fdr&quot;) |&gt;
+  as.data.frame() |&gt;
+  mutate(type = &quot;Sampling Date&quot;) |&gt;
+  mutate(contrast = str_remove_all(contrast, &quot;[()]&quot;))
+
+em_date # back transformed
+    </code>
+    <boxed-text>
+      <preformat>                 contrast estimate       SE df  t.ratio      p.value
+1 2022-10-21 - 2023-05-11  51.4810 45.17452 66 1.139603 2.585710e-01
+2 2022-10-21 - 2023-09-19 241.7163 38.63457 66 6.256476 9.957450e-08
+3 2023-05-11 - 2023-09-19 190.2353 36.66474 66 5.188508 3.299117e-06
+           type
+1 Sampling Date
+2 Sampling Date
+3 Sampling Date</preformat>
+    </boxed-text>
+    <code language="r script">pairs &lt;- em_elev |&gt;
+  bind_rows(em_date) %&gt;%
+  rename(&quot;Contrast&quot; = &quot;contrast&quot;, &quot;Estimate&quot; = &quot;estimate&quot;, &quot;t ratio&quot; = &quot;t.ratio&quot;, &quot;p value&quot; = &quot;p.value&quot;)
+    </code>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">
+pairs |&gt;
+  group_by(type) |&gt;
+  gt() |&gt;
+  fmt_number(columns = c(&quot;Estimate&quot;, &quot;SE&quot;, &quot;t ratio&quot;), decimal = 2)|&gt;
+  fmt_number(columns = c(&quot;p value&quot;), decimal = 3)|&gt;
+  sub_small_vals(threshold = 0.001) |&gt;
+  tab_style(style =  cell_text(weight = &quot;bold&quot;, align = &quot;center&quot;), locations =  cells_row_groups()) |&gt;
+  tab_options(column_labels.font.weight = &quot;bold&quot;)
+    </code>
+    <fig id="tbl-abundance-posthoc-nb-1">
+      <caption><p>Results of the post-hoc pairwise comparisons with a
+      Benjamini-Hochberg p value adjustment for differences in the
+      abundance of polymer coatings (<inline-formula><alternatives>
+      <tex-math><![CDATA[coatings~m^{-2}]]></tex-math>
+      <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>c</mml:mi><mml:mi>o</mml:mi><mml:mi>a</mml:mi><mml:mi>t</mml:mi><mml:mi>i</mml:mi><mml:mi>n</mml:mi><mml:mi>g</mml:mi><mml:mi>s</mml:mi><mml:mspace width="0.222em"></mml:mspace><mml:msup><mml:mi>m</mml:mi><mml:mrow><mml:mi>−</mml:mi><mml:mn>2</mml:mn></mml:mrow></mml:msup></mml:mrow></mml:math></alternatives></inline-formula>)
+      between the three slope poistions and sampling dates. Data were
+      square-root transformed prior to analysis and back-transformed to
+      the original scale for reporting.</p></caption>
+    </fig>
+    </sec>
+  </sec>
+  <sec id="plotting-nb-1">
+    <title>Plotting</title>
+    <sec specific-use="notebook-content">
+    <code language="r script"># Get predictions on the sqrt scale
+preds_elev &lt;- emmeans(m1_sqrt, ~ elevation)
+preds_date &lt;- emmeans(m1_sqrt, ~ date_fct)
+
+# Back-transform manually
+preds_df_elev &lt;- as.data.frame(preds_elev) |&gt;
+  mutate(
+    response = emmean^2,
+    lower    = lower.CL^2,
+    upper    = upper.CL^2
+  )
+
+preds_df_date &lt;- as.data.frame(preds_date) |&gt;
+  mutate(
+    response = emmean^2,
+    lower    = lower.CL^2,
+    upper    = upper.CL^2
+  )
+    </code>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script"># Polymer abundance by elevation and date. Points show raw observations; Points outlined in black and error bars show model predictions with 95% CIs from a GLMM fitted to square-root transformed data, back-transformed to the original scale. Because the riparian area had fewer sampling locations and was only sampled on 2023-09-19 it was excluded from the formal analysis
+
+p1_a &lt;- ggplot(filter(data, depth == &quot;0-5 cm&quot; ), aes(x = elevation, y = n_m2, color = date_fct)) +
+  geom_jitter(position = position_dodge(0.3), alpha = 0.6, size = 2) +
+  geom_errorbar(data = preds_df_elev, 
+                aes(y = response, ymin = lower, ymax = upper),
+                width = 0.15, position = position_dodge(0.3), color = &quot;black&quot;) +
+  geom_point(data = preds_df_elev, aes(y = response),
+             shape = 21, fill = &quot;white&quot;, position = position_dodge(0.3), color = &quot;black&quot;, size = 3) +
+  labs(y = bquote(&quot;Abundance (coatings m&quot;^-2*&quot;)&quot;), x = &quot;Slope position&quot;, color = &quot;Date&quot;, tag = &quot;a)&quot;) +
+  #guides(color = guide_legend(order = 1), fill = guide_legend(order = 1)) +
+  guides(color = guide_legend(nrow = 2)) +
+  theme_bw(base_size = 12)+
+  theme(axis.title.x = element_blank())+ 
+  annotate(&quot;text&quot;, x = &quot;Upper&quot;, y = 800, label = &quot;a&quot;) + 
+  annotate(&quot;text&quot;, x = &quot;Middle&quot;, y = 800, label = &quot;a&quot;) + 
+  annotate(&quot;text&quot;, x = &quot;Lower&quot;, y = 800, label = &quot;b&quot;)
+
+p1_a
+    </code>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="soil_sampling_files/figure-jats/unnamed-chunk-22-1.png" />
+    <code language="r script">p1_b &lt;- ggplot(filter(data, depth == &quot;0-5 cm&quot; ), aes(x = date_fct, y = n_m2, colour = elevation)) +
+  geom_jitter(position = position_dodge(0.3), alpha = 0.6, size = 2) +
+  geom_errorbar(data = preds_df_date, 
+                aes(y = response, ymin = lower, ymax = upper),
+                width = 0.15, position = position_dodge(0.3), color = &quot;black&quot;) +
+  geom_point(data = preds_df_date, aes(y = response),
+             shape = 21, fill = &quot;white&quot;, position = position_dodge(0.3), color = &quot;black&quot;, size = 3) +
+  labs(y = bquote(&quot;Abundance (coatings m&quot;^-2*&quot;)&quot;), x = &quot;Sample date&quot;, color = &quot;Position&quot;, tag = &quot;b)&quot;) +
+  #guides(color = guide_legend(order = 1), fill = guide_legend(order = 1)) +
+  guides(color = guide_legend(nrow = 2)) +
+  theme_bw(base_size = 12) +
+  theme(axis.title.x = element_blank()) +  
+  annotate(&quot;text&quot;, x = &quot;2022-10-21&quot;, y = 800, label = &quot;a&quot;) + 
+  annotate(&quot;text&quot;, x = &quot;2023-05-11&quot;, y = 800, label = &quot;a&quot;) + 
+  annotate(&quot;text&quot;, x = &quot;2023-09-19&quot;, y = 800, label = &quot;b&quot;)
+
+p1_b
+    </code>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="soil_sampling_files/figure-jats/unnamed-chunk-22-2.png" />
+    </sec>
+    <sec id="cell-fig-denisty-surface-nb-1" specific-use="notebook-content">
+    <code language="r script">
+p1_1 &lt;- p1_a + p1_b  + plot_layout(axis = 'collect') &amp; theme(legend.position = 'bottom', legend.title = element_blank())
+p1_1 
+# ggsave(plot = p1_1, filename = here::here(&quot;./Figures/Figure 1.png&quot;), width = 184, height = 100, units = &quot;mm&quot;, dpi = 400)
+    </code>
+    <fig id="fig-denisty-surface-nb-1">
+      <caption><p>Polymer abundance (0-5 cm) by elevation and date.
+      Points show raw observations; Points outlined in black and error
+      bars show model predictions with 95% CIs from a linear model
+      fitted to square-root transformed data, back-transformed to the
+      original scale. Within each plot significant differences
+      (p&lt;0.05) between slope position or sampling dates are denoted
+      with different letters. Because the riparian area had fewer
+      sampling locations and was only sampled on 2023-09-19 it was
+      excluded from the formal analysis</p></caption>
+      <graphic mimetype="image" mime-subtype="png" xlink:href="soil_sampling_files/figure-jats/fig-denisty-surface-1.png" />
+    </fig>
+    </sec>
+  </sec>
+</sec>
+<sec id="polymer-areal-density-0-5-cm-nb-1">
+  <title>Polymer areal density 0-5 cm</title>
+  <sec id="look-at-data-1-nb-1">
+    <title>Look at data</title>
+    <sec specific-use="notebook-content">
+    <code language="r script">p2 &lt;- ggplot(data = filter(data, depth == &quot;0-5 cm&quot;), aes(x = elevation, y = mass_m2, fill = date_fct)) +
+  geom_boxplot(position = position_dodge2(preserve = &quot;single&quot;)) +
+  theme_bw() +
+  scale_fill_viridis_d() +
+  labs(y = bquote(&quot;Polymer areal density (g m&quot;^-2*&quot;)&quot;), x = &quot;Slope position&quot;)
+p2
+    </code>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="soil_sampling_files/figure-jats/unnamed-chunk-23-1.png" />
+    </sec>
+  </sec>
+  <sec id="stats-1-nb-1">
+    <title>Stats</title>
+    <sec specific-use="notebook-content">
+    <code language="r script">m2 &lt;- glmmTMB(mass_m2 ~ elevation * date_fct + (1|flag_location),
+              data = filter(data, depth == &quot;0-5 cm&quot; &amp; elevation != &quot;Riparian&quot;))
+    </code>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">simulateResiduals(m2, n = 1000, plot = TRUE)
+    </code>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="soil_sampling_files/figure-jats/unnamed-chunk-25-1.png" />
+    <boxed-text>
+      <preformat>Object of Class DHARMa with simulated residuals based on 1000 simulations with refit = FALSE . See ?DHARMa::simulateResiduals for help. 
+ 
+Scaled residual values: 0.966 0.334 0.55 0.168 0.969 0.757 0.194 0.486 0.141 0.988 0.227 0.413 0.838 0.21 0.081 0.787 0.124 0.409 0.15 0.797 ...</preformat>
+    </boxed-text>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">car::Anova(m2, type = &quot;III&quot;) 
+    </code>
+    <boxed-text>
+      <preformat>Analysis of Deviance Table (Type III Wald chisquare tests)
+
+Response: mass_m2
+                     Chisq Df Pr(&gt;Chisq)    
+(Intercept)        41.4100  1  1.234e-10 ***
+elevation           6.4290  2   0.040175 *  
+date_fct           11.4822  2   0.003211 ** 
+elevation:date_fct  5.2689  4   0.260799    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</preformat>
+    </boxed-text>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script"># Removing interaction
+m2 &lt;- glmmTMB(mass_m2 ~ elevation + date_fct + (1|flag_location),
+              data = filter(data, depth == &quot;0-5 cm&quot; &amp; elevation != &quot;Riparian&quot;))
+    </code>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">simulateResiduals(m2, n = 1000, plot = TRUE) 
+    </code>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="soil_sampling_files/figure-jats/unnamed-chunk-28-1.png" />
+    <boxed-text>
+      <preformat>Object of Class DHARMa with simulated residuals based on 1000 simulations with refit = FALSE . See ?DHARMa::simulateResiduals for help. 
+ 
+Scaled residual values: 0.975 0.394 0.634 0.211 0.961 0.732 0.194 0.486 0.118 0.975 0.187 0.354 0.878 0.287 0.11 0.838 0.112 0.375 0.143 0.806 ...</preformat>
+    </boxed-text>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">performance::check_collinearity(m2)
+    </code>
+    <boxed-text>
+      <preformat># Check for Multicollinearity
+
+Low Correlation
+
+      Term VIF      VIF  CI adj. VIF Tolerance
+ elevation   1 [1.00, 1.00]        1         1
+  date_fct   1 [1.00, 1.00]        1         1</preformat>
+    </boxed-text>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">car::Anova(m2, type = &quot;III&quot;)
+    </code>
+    <boxed-text>
+      <preformat>Analysis of Deviance Table (Type III Wald chisquare tests)
+
+Response: mass_m2
+              Chisq Df Pr(&gt;Chisq)    
+(Intercept) 71.5435  1  &lt; 2.2e-16 ***
+elevation    7.9335  2    0.01893 *  
+date_fct    48.4580  2  3.003e-11 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</preformat>
+    </boxed-text>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script"># Square root transform
+m2_sqrt &lt;- glmmTMB(sqrt(mass_m2) ~ elevation + date_fct + (1|flag_location),
+              data = filter(data, depth == &quot;0-5 cm&quot; &amp; elevation != &quot;Riparian&quot;))
+    </code>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">simulateResiduals(m2_sqrt, n = 1000, plot = TRUE) 
+    </code>
+    <boxed-text>
+      <preformat>Warning in newton(lsp = lsp, X = G$X, y = G$y, Eb = G$Eb, UrS = G$UrS, L = G$L,
+: Fitting terminated with step failure - check results carefully</preformat>
+    </boxed-text>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="soil_sampling_files/figure-jats/unnamed-chunk-32-1.png" />
+    <boxed-text>
+      <preformat>Object of Class DHARMa with simulated residuals based on 1000 simulations with refit = FALSE . See ?DHARMa::simulateResiduals for help. 
+ 
+Scaled residual values: 0.911 0.456 0.634 0.276 0.937 0.73 0.215 0.512 0.116 0.955 0.198 0.403 0.833 0.322 0.132 0.77 0.121 0.45 0.161 0.813 ...</preformat>
+    </boxed-text>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">performance::check_collinearity(m2_sqrt)
+    </code>
+    <boxed-text>
+      <preformat># Check for Multicollinearity
+
+Low Correlation
+
+      Term VIF      VIF  CI adj. VIF Tolerance
+ elevation   1 [1.00, 1.00]        1         1
+  date_fct   1 [1.00, 1.00]        1         1</preformat>
+    </boxed-text>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">car::Anova(m2_sqrt, type = &quot;III&quot;)
+    </code>
+    <boxed-text>
+      <preformat>Analysis of Deviance Table (Type III Wald chisquare tests)
+
+Response: sqrt(mass_m2)
+               Chisq Df Pr(&gt;Chisq)    
+(Intercept) 248.5740  1  &lt; 2.2e-16 ***
+elevation     7.3091  2    0.02587 *  
+date_fct     62.2984  2  2.965e-14 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</preformat>
+    </boxed-text>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">summary(m2_sqrt)
+    </code>
+    <boxed-text>
+      <preformat> Family: gaussian  ( identity )
+Formula:          sqrt(mass_m2) ~ elevation + date_fct + (1 | flag_location)
+Data: filter(data, depth == &quot;0-5 cm&quot; &amp; elevation != &quot;Riparian&quot;)
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+    -72.8     -56.9      43.4     -86.8        65 
+
+Random effects:
+
+Conditional model:
+ Groups        Name        Variance Std.Dev.
+ flag_location (Intercept) 0.002253 0.04746 
+ Residual                  0.015547 0.12469 
+Number of obs: 72, groups:  flag_location, 24
+
+Dispersion estimate for gaussian family (sigma^2): 0.0155 
+
+Conditional model:
+                   Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept)         0.58169    0.03689  15.766  &lt; 2e-16 ***
+elevationMiddle     0.02966    0.04311   0.688   0.4914    
+elevationLower      0.11245    0.04311   2.608   0.0091 ** 
+date_fct2023-05-11 -0.06722    0.03599  -1.868   0.0618 .  
+date_fct2023-09-19 -0.27266    0.03599  -7.575 3.59e-14 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</preformat>
+    </boxed-text>
+    </sec>
+  </sec>
+  <sec id="pairwise-comparisons-1-nb-1">
+    <title>Pairwise comparisons</title>
+    <sec specific-use="notebook-content">
+    <code language="r script">em_elev1 &lt;- emmeans(m2_sqrt, ~ elevation, type = &quot;response&quot;) |&gt; 
+  regrid() |&gt; 
+  contrast(method = &quot;pairwise&quot;, adjust = &quot;fdr&quot;)|&gt;
+  as.data.frame() |&gt;
+  mutate(type = &quot;Slope Position&quot;)
+
+em_elev1 # back transformed
+    </code>
+    <boxed-text>
+      <preformat>        contrast    estimate         SE  df    z.ratio    p.value
+1 Upper - Middle -0.02866984 0.04168730 Inf -0.6877356 0.49161929
+2  Upper - Lower -0.11798997 0.04549595 Inf -2.5934171 0.02850824
+3 Middle - Lower -0.08932013 0.04665257 Inf -1.9145811 0.08331892
+            type
+1 Slope Position
+2 Slope Position
+3 Slope Position</preformat>
+    </boxed-text>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">em_date1 &lt;- emmeans(m2_sqrt, ~ date_fct, type = &quot;response&quot;) |&gt; 
+  regrid() |&gt; 
+  contrast(method = &quot;pairwise&quot;, adjust = &quot;fdr&quot;)|&gt;
+  as.data.frame() |&gt;
+  mutate(type = &quot;Sampling Date&quot;)|&gt;
+  mutate(contrast = str_remove_all(contrast, &quot;[()]&quot;))
+
+em_date1 # back transformed
+    </code>
+    <boxed-text>
+      <preformat>                 contrast  estimate         SE  df  z.ratio      p.value
+1 2022-10-21 - 2023-05-11 0.0800540 0.04295358 Inf 1.863733 6.235925e-02
+2 2022-10-21 - 2023-09-19 0.2686988 0.03718098 Inf 7.226782 1.483718e-12
+3 2023-05-11 - 2023-09-19 0.1886448 0.03410173 Inf 5.531825 4.753738e-08
+           type
+1 Sampling Date
+2 Sampling Date
+3 Sampling Date</preformat>
+    </boxed-text>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">pairs1 &lt;- em_elev1 |&gt;
+  bind_rows(em_date1) %&gt;%
+  rename(&quot;Contrast&quot; = &quot;contrast&quot;, &quot;Estimate&quot; = &quot;estimate&quot;, &quot;z ratio&quot; = &quot;z.ratio&quot;, &quot;p value&quot; = &quot;p.value&quot;) |&gt;
+  select(-df)
+    </code>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">
+pairs1 |&gt;
+  group_by(type) |&gt;
+  gt() |&gt;
+  fmt_number(columns = c(&quot;Estimate&quot;, &quot;SE&quot;, &quot;z ratio&quot;), decimal = 2)|&gt;
+  fmt_number(columns = c(&quot;p value&quot;), decimal = 3)|&gt;
+  sub_small_vals(threshold = 0.001) |&gt;
+  tab_style(style =  cell_text(weight = &quot;bold&quot;, align = &quot;center&quot;), locations =  cells_row_groups()) |&gt;
+  tab_options(column_labels.font.weight = &quot;bold&quot;)
+    </code>
+    <fig id="tbl-density-posthoc-nb-1">
+      <caption><p>Results of the post-hoc pairwise comparisons with a
+      Benjamini-Hochberg p value adjustment for differences in the mass
+      of polymer coatings (<inline-formula><alternatives>
+      <tex-math><![CDATA[g~m^{-2}]]></tex-math>
+      <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>g</mml:mi><mml:mspace width="0.222em"></mml:mspace><mml:msup><mml:mi>m</mml:mi><mml:mrow><mml:mi>−</mml:mi><mml:mn>2</mml:mn></mml:mrow></mml:msup></mml:mrow></mml:math></alternatives></inline-formula>)
+      between the three slope poistions and sampling dates. Data were
+      square-root transformed prior to analysis and back-transformed to
+      the original scale for reporting.</p></caption>
+    </fig>
+    </sec>
+  </sec>
+  <sec id="plotting-1-nb-1">
+    <title>Plotting</title>
+    <sec specific-use="notebook-content">
+    <code language="r script"># Get predictions on the sqrt scale
+preds_elev1 &lt;- emmeans(m2_sqrt, ~ elevation)
+preds_date1 &lt;- emmeans(m2_sqrt, ~ date_fct)
+
+# Back-transform manually
+preds_df_elev1 &lt;- as.data.frame(preds_elev1) |&gt;
+  mutate(
+    response = emmean^2,
+    lower    = asymp.LCL^2,
+    upper    = asymp.UCL^2
+  )
+
+preds_df_date1 &lt;- as.data.frame(preds_date1) |&gt;
+  mutate(
+    response = emmean^2,
+    lower    = asymp.LCL^2,
+    upper    = asymp.UCL^2
+  )
+    </code>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">p2_a &lt;- ggplot(filter(data, depth == &quot;0-5 cm&quot; ), aes(x = elevation, y = mass_m2, color = date_fct)) +
+  geom_jitter(position = position_dodge(0.3), alpha = 0.6, size = 2) +
+  geom_errorbar(data = preds_df_elev1, 
+                aes(y = response, ymin = lower, ymax = upper),
+                width = 0.15, position = position_dodge(0.3), color = &quot;black&quot;) +
+  geom_point(data = preds_df_elev1, aes(y = response),
+             shape = 21, fill = &quot;white&quot;, position = position_dodge(0.3), color = &quot;black&quot;, size = 3) +
+  labs(y = bquote(&quot;Areal density (g m&quot;^-2*&quot;)&quot;), x = &quot;Slope position&quot;, color = &quot;Date&quot;, tag = &quot;c)&quot;) +
+  #guides(color = guide_legend(order = 1), fill = guide_legend(order = 1)) +
+  guides(color = guide_legend(nrow = 2)) +
+  theme_bw(base_size = 12) +
+  theme(axis.title.x = element_blank())+ 
+  annotate(&quot;text&quot;, x = &quot;Upper&quot;, y = 1, label = &quot;a&quot;) + 
+  annotate(&quot;text&quot;, x = &quot;Middle&quot;, y = 1, label = &quot;a&quot;) + 
+  annotate(&quot;text&quot;, x = &quot;Lower&quot;, y = 1, label = &quot;b&quot;)
+
+p2_a
+    </code>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="soil_sampling_files/figure-jats/unnamed-chunk-40-1.png" />
+    <code language="r script">p2_b &lt;- ggplot(filter(data, depth == &quot;0-5 cm&quot; ), aes(x = date_fct, y = mass_m2, colour = elevation)) +
+  geom_jitter(position = position_dodge(0.3), alpha = 0.6, size = 2) +
+  geom_errorbar(data = preds_df_date1, 
+                aes(y = response, ymin = lower, ymax = upper),
+                width = 0.15, position = position_dodge(0.3), color = &quot;black&quot;) +
+  geom_point(data = preds_df_date1, aes(y = response),
+             shape = 21, fill = &quot;white&quot;, position = position_dodge(0.3), color = &quot;black&quot;, size = 3) +
+  labs(y = bquote(&quot;Areal density (g m&quot;^-2*&quot;)&quot;), x = &quot;Sample date&quot;, color = &quot;Position&quot;, tag = &quot;d)&quot;) +
+  #guides(color = guide_legend(order = 1), fill = guide_legend(order = 1)) +
+  guides(color = guide_legend(nrow = 2)) +
+  theme_bw(base_size = 12) +
+  theme(axis.title.x = element_blank()) +  
+  annotate(&quot;text&quot;, x = &quot;2022-10-21&quot;, y = 1, label = &quot;a&quot;) + 
+  annotate(&quot;text&quot;, x = &quot;2023-05-11&quot;, y = 1, label = &quot;a&quot;) + 
+  annotate(&quot;text&quot;, x = &quot;2023-09-19&quot;, y = 1, label = &quot;b&quot;)
+
+p2_b
+    </code>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="soil_sampling_files/figure-jats/unnamed-chunk-40-2.png" />
+    </sec>
+    <sec id="cell-fig-mass-surface-nb-1" specific-use="notebook-content">
+    <code language="r script">
+p2_1 &lt;- p2_a + p2_b  + plot_layout(axis = 'collect') &amp; theme(legend.position = 'bottom', legend.title = element_blank())
+p2_1 
+# ggsave(plot = p1_2, filename = here::here(&quot;./Figures/Figure 2.png&quot;), width = 184, height = 100, units = &quot;mm&quot;, dpi = 400)
+    </code>
+    <fig id="fig-mass-surface-nb-1">
+      <caption><p>Polymer mass (0-5 cm) by elevation (a) and date (b).
+      Points show raw observations; Points outlined in black and error
+      bars show model predictions with 95% CIs from a linear
+      mixed-effects model fitted to square-root transformed data,
+      back-transformed to the original scale. Within each plot
+      significant differences (p&lt;0.05) between slope position or
+      sampling dates are denoted with different letters. Because the
+      riparian area had fewer sampling locations and was only sampled on
+      2023-09-19 it was excluded from the formal analysis</p></caption>
+      <graphic mimetype="image" mime-subtype="png" xlink:href="soil_sampling_files/figure-jats/fig-mass-surface-1.png" />
+    </fig>
+    </sec>
+  </sec>
+</sec>
+<sec id="combined-figure-nb-1">
+  <title>Combined figure</title>
+  <sec id="cell-fig-poly-surface-nb-1" specific-use="notebook-content">
+  <code language="r script">
+fig_1 &lt;- (p1_a/ p2_a) + plot_layout(axis = 'collect', guides = 'collect') &amp; theme(legend.position = 'bottom', legend.title = element_blank()) | (p1_b / p2_b)  + plot_layout(axis = 'collect', guides = 'collect') &amp; theme(legend.position = 'bottom', legend.title = element_blank())
+fig_1 
+
+# ggsave(plot = fig_1, filename = here::here(&quot;./Figures/Figure 1.png&quot;), width = 184, height = 175, units = &quot;mm&quot;, dpi = 400)
+  </code>
+  <fig id="fig-poly-surface-nb-1">
+    <caption><p>Surface (0-5 cm) polymer areal density (a and b) and
+    abundance (c and d) by elevation and date. Points show raw
+    observations; Points outlined in black and error bars show model
+    predictions with 95% CIs from a model fitted to square-root
+    transformed data, back-transformed to the original scale. Within
+    each plot significant differences (p&lt;0.05) between slope position
+    or sampling dates are denoted with different letters. Because the
+    riparian area had fewer sampling locations and was only sampled on
+    2023-09-19 it was excluded from the statistical
+    analysis</p></caption>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="soil_sampling_files/figure-jats/fig-poly-surface-1.png" />
+  </fig>
+  </sec>
+</sec>
+<sec id="polymer-with-depth-nb-1">
+  <title>Polymer with depth</title>
+  <sec id="look-at-data-2-nb-1">
+    <title>Look at data</title>
+    <sec specific-use="notebook-content">
+    <code language="r script">p3 &lt;- ggplot(data = filter(data, date == &quot;2023-09-19&quot;), aes(x = elevation, y = mass_m2, fill = depth)) +
+  geom_boxplot(position = position_dodge2(preserve = &quot;single&quot;)) +
+  theme_bw() +
+  scale_fill_viridis_d() +
+  labs(y = bquote(&quot;Polymer areal density (g m&quot;^-2*&quot;)&quot;), x = &quot;Slope position&quot;, tag = &quot;a)&quot;) +
+  theme(axis.title.x = element_blank())
+p3
+    </code>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="soil_sampling_files/figure-jats/unnamed-chunk-41-1.png" />
+    <code language="r script">p4 &lt;- ggplot(data = filter(data, date == &quot;2023-09-19&quot;), aes(x = elevation, y = n_m2, fill = depth)) +
+  geom_boxplot(position = position_dodge2(preserve = &quot;single&quot;)) +
+  theme_bw() +
+  scale_fill_viridis_d() +
+  labs(y = bquote(&quot;Polymer abundance (coatings m&quot;^-2*&quot;)&quot;), x = &quot;Slope position&quot;, tag = &quot;b)&quot;) +
+  theme(axis.title.x = element_blank())
+p4
+    </code>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="soil_sampling_files/figure-jats/unnamed-chunk-41-2.png" />
+    </sec>
+  </sec>
+  <sec id="plotting-2-nb-1">
+    <title>Plotting</title>
+    <sec id="cell-fig-depth-nb-1" specific-use="notebook-content">
+    <code language="r script">
+p5 &lt;- p3 + p4  + plot_layout(axis = 'collect', guides = 'collect') &amp; theme(legend.position = 'bottom', legend.title = element_blank())
+p5 
+
+# ggsave(plot = p5, filename = here::here(&quot;./Figures/Figure 2.png&quot;), width = 184, height = 100, units = &quot;mm&quot;, dpi = 400)
+    </code>
+    <fig id="fig-depth-nb-1">
+      <caption><p>Polymer density (a) and abundance (b) for two sampling
+      depths (0-5 and 5-10 cm) and the combined (0-10 cm) by slope
+      position. Samples were collected on 2023-09-19 and no ploymer was
+      detected below 5 cm in the riparian area</p></caption>
+      <graphic mimetype="image" mime-subtype="png" xlink:href="soil_sampling_files/figure-jats/fig-depth-1.png" />
+    </fig>
+    </sec>
+  </sec>
+</sec>
+<sec id="session-info-nb-1">
+  <title>Session info</title>
+  <sec specific-use="notebook-content">
+  <code language="r script">sessioninfo::session_info()
+  </code>
+  <boxed-text>
+    <preformat>─ Session info ───────────────────────────────────────────────────────────────
+ setting  value
+ version  R version 4.5.3 (2026-03-11)
+ os       Ubuntu 24.04.4 LTS
+ system   x86_64, linux-gnu
+ ui       X11
+ language (EN)
+ collate  en_US.UTF-8
+ ctype    en_US.UTF-8
+ tz       America/Winnipeg
+ date     2026-06-18
+ pandoc   3.1.3 @ /usr/bin/ (via rmarkdown)
+ quarto   1.6.39 @ /usr/local/bin/quarto
+
+─ Packages ───────────────────────────────────────────────────────────────────
+ package      * version    date (UTC) lib source
+ abind          1.4-8      2024-09-12 [1] CRAN (R 4.5.0)
+ bit            4.6.0      2025-03-06 [1] CRAN (R 4.5.0)
+ bit64          4.6.0-1    2025-01-16 [1] CRAN (R 4.5.0)
+ boot           1.3-32     2025-08-29 [4] CRAN (R 4.5.2)
+ car            3.1-3      2024-09-27 [1] CRAN (R 4.5.0)
+ carData        3.0-5      2022-01-06 [1] CRAN (R 4.5.0)
+ cli            3.6.6      2026-04-09 [1] CRAN (R 4.5.3)
+ codetools      0.2-20     2024-03-31 [4] CRAN (R 4.4.0)
+ crayon         1.5.3      2024-06-20 [1] CRAN (R 4.5.0)
+ datawizard     1.3.1      2026-04-26 [1] CRAN (R 4.5.3)
+ DHARMa       * 0.5.0      2026-06-01 [1] CRAN (R 4.5.3)
+ digest         0.6.39     2025-11-19 [1] CRAN (R 4.5.3)
+ doParallel     1.0.17     2022-02-07 [1] CRAN (R 4.5.0)
+ dplyr        * 1.2.1      2026-04-03 [1] CRAN (R 4.5.3)
+ emmeans      * 2.0.3      2026-04-09 [1] CRAN (R 4.5.3)
+ estimability   1.5.1      2024-05-12 [1] CRAN (R 4.5.0)
+ evaluate       1.0.5      2025-08-27 [1] CRAN (R 4.5.3)
+ farver         2.1.2      2024-05-13 [1] CRAN (R 4.5.0)
+ fastmap        1.2.0      2024-05-15 [1] CRAN (R 4.5.0)
+ forcats      * 1.0.0      2023-01-29 [1] CRAN (R 4.5.0)
+ foreach        1.5.2      2022-02-02 [1] CRAN (R 4.5.0)
+ Formula        1.2-5      2023-02-24 [1] CRAN (R 4.5.0)
+ fs             2.1.0      2026-04-18 [1] CRAN (R 4.5.3)
+ gap            1.6        2024-08-27 [1] CRAN (R 4.5.0)
+ gap.datasets   0.0.6      2023-08-25 [1] CRAN (R 4.5.0)
+ generics       0.1.4      2025-05-09 [1] CRAN (R 4.5.1)
+ ggplot2      * 4.0.3      2026-04-22 [1] CRAN (R 4.5.3)
+ glmmTMB      * 1.1.14     2026-01-15 [1] CRAN (R 4.5.3)
+ glue           1.8.1      2026-04-17 [1] CRAN (R 4.5.3)
+ gt           * 1.3.0      2026-01-22 [1] CRAN (R 4.5.3)
+ gtable         0.3.6      2024-10-25 [1] CRAN (R 4.5.0)
+ here           1.0.2      2025-09-15 [1] CRAN (R 4.5.1)
+ hms            1.1.3      2023-03-21 [1] CRAN (R 4.5.0)
+ htmltools      0.5.9      2025-12-04 [1] CRAN (R 4.5.3)
+ httpuv         1.6.16     2025-04-16 [1] CRAN (R 4.5.0)
+ insight        1.5.1      2026-05-21 [1] CRAN (R 4.5.3)
+ iterators      1.0.14     2022-02-05 [1] CRAN (R 4.5.0)
+ jsonlite       2.0.0      2025-03-27 [1] CRAN (R 4.5.0)
+ knitr          1.51       2025-12-20 [1] CRAN (R 4.5.3)
+ labeling       0.4.3      2023-08-29 [1] CRAN (R 4.5.0)
+ later          1.4.2      2025-04-08 [1] CRAN (R 4.5.0)
+ lattice        0.22-9     2026-02-09 [4] CRAN (R 4.5.2)
+ lifecycle      1.0.5      2026-01-08 [1] CRAN (R 4.5.3)
+ lme4           1.1-37     2025-03-26 [1] CRAN (R 4.5.0)
+ lubridate    * 1.9.4      2024-12-08 [1] CRAN (R 4.5.0)
+ magrittr       2.0.5      2026-04-04 [1] CRAN (R 4.5.3)
+ MASS           7.3-65     2025-02-28 [4] CRAN (R 4.4.3)
+ Matrix         1.7-4      2025-08-28 [4] CRAN (R 4.5.1)
+ mgcv           1.9-4      2025-11-07 [4] CRAN (R 4.5.2)
+ mime           0.13       2025-03-17 [1] CRAN (R 4.5.0)
+ minqa          1.2.8      2024-08-17 [1] CRAN (R 4.5.0)
+ multcomp       1.4-28     2025-01-29 [1] CRAN (R 4.5.0)
+ mvtnorm        1.3-3      2025-01-10 [1] CRAN (R 4.5.0)
+ nlme           3.1-168    2025-03-31 [4] CRAN (R 4.4.3)
+ nloptr         2.2.1      2025-03-17 [1] CRAN (R 4.5.0)
+ numDeriv       2016.8-1.1 2019-06-06 [1] CRAN (R 4.5.0)
+ patchwork    * 1.3.2      2025-08-25 [1] CRAN (R 4.5.3)
+ performance    0.17.0     2026-05-21 [1] CRAN (R 4.5.3)
+ pillar         1.11.1     2025-09-17 [1] CRAN (R 4.5.3)
+ pkgconfig      2.0.3      2019-09-22 [1] CRAN (R 4.5.0)
+ plyr           1.8.9      2023-10-02 [1] CRAN (R 4.5.0)
+ promises       1.3.2      2024-11-28 [1] CRAN (R 4.5.0)
+ purrr        * 1.2.2      2026-04-10 [1] CRAN (R 4.5.3)
+ qgam           2.0.0      2025-04-10 [1] CRAN (R 4.5.0)
+ R6             2.6.1      2025-02-15 [1] CRAN (R 4.5.0)
+ rbibutils      2.3        2024-10-04 [1] CRAN (R 4.5.0)
+ RColorBrewer   1.1-3      2022-04-03 [1] CRAN (R 4.5.0)
+ Rcpp           1.1.1-1.1  2026-04-24 [1] CRAN (R 4.5.3)
+ Rdpack         2.6.4      2025-04-09 [1] CRAN (R 4.5.0)
+ readr        * 2.1.5      2024-01-10 [1] CRAN (R 4.5.0)
+ reformulas     0.4.4      2026-02-02 [1] CRAN (R 4.5.3)
+ rlang          1.2.0      2026-04-06 [1] CRAN (R 4.5.3)
+ rmarkdown      2.31       2026-03-26 [1] CRAN (R 4.5.3)
+ rprojroot      2.1.1      2025-08-26 [1] CRAN (R 4.5.1)
+ rstudioapi     0.17.1     2024-10-22 [1] CRAN (R 4.5.0)
+ S7             0.2.2      2026-04-22 [1] CRAN (R 4.5.3)
+ sandwich       3.1-1      2024-09-15 [1] CRAN (R 4.5.0)
+ sass           0.4.10     2025-04-11 [1] CRAN (R 4.5.0)
+ scales         1.4.0      2025-04-24 [1] CRAN (R 4.5.0)
+ sessioninfo    1.2.4.9000 2026-06-17 [1] Github (r-lib/sessioninfo@12423b7)
+ shiny          1.10.0     2024-12-14 [1] CRAN (R 4.5.0)
+ stringi        1.8.7      2025-03-27 [1] CRAN (R 4.5.0)
+ stringr      * 1.6.0      2025-11-04 [1] CRAN (R 4.5.1)
+ survival       3.8-6      2026-01-16 [4] CRAN (R 4.5.2)
+ TH.data        1.1-3      2025-01-17 [1] CRAN (R 4.5.0)
+ tibble       * 3.3.1      2026-01-11 [1] CRAN (R 4.5.3)
+ tidyr        * 1.3.2      2025-12-19 [1] CRAN (R 4.5.3)
+ tidyselect     1.2.1      2024-03-11 [1] CRAN (R 4.5.0)
+ tidyverse    * 2.0.0      2023-02-22 [1] CRAN (R 4.5.0)
+ timechange     0.3.0      2024-01-18 [1] CRAN (R 4.5.0)
+ TMB            1.9.17     2025-03-10 [1] CRAN (R 4.5.0)
+ tzdb           0.5.0      2025-03-15 [1] CRAN (R 4.5.0)
+ vctrs          0.7.3      2026-04-11 [1] CRAN (R 4.5.3)
+ viridisLite    0.4.3      2026-02-04 [1] CRAN (R 4.5.3)
+ vroom          1.6.5      2023-12-05 [1] CRAN (R 4.5.0)
+ withr          3.0.2      2024-10-28 [1] CRAN (R 4.5.0)
+ xfun           0.57       2026-03-20 [1] CRAN (R 4.5.3)
+ xml2           1.5.2      2026-01-17 [1] CRAN (R 4.5.3)
+ xtable         1.8-4      2019-04-21 [1] CRAN (R 4.5.0)
+ yaml           2.3.12     2025-12-10 [1] CRAN (R 4.5.3)
+ zoo            1.8-14     2025-04-10 [1] CRAN (R 4.5.0)
+
+ [1] /home/alex/R/x86_64-pc-linux-gnu-library/4.5
+ [2] /usr/local/lib/R/site-library
+ [3] /usr/lib/R/site-library
+ [4] /usr/lib/R/library
+ * ── Packages attached to the search path.
+
+──────────────────────────────────────────────────────────────────────────────</preformat>
+  </boxed-text>
+  </sec>
+</sec>
+</body>
+
+
+
+<back>
+</back>
+
+
+</sub-article>
+<sub-article article-type="notebook" id="nb-2-nb-2">
+<front-stub>
+<title-group>
+<article-title>01 Map of study area</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<name>
+<surname>Koiter</surname>
+<given-names>Alex</given-names>
+</name>
+<string-name>Alex Koiter</string-name>
+
+</contrib>
+</contrib-group>
+</front-stub>
+
+<body>
+<sec id="load-libraries-nb-2">
+  <title>Load Libraries</title>
+  <sec specific-use="notebook-content">
+  <code language="r script">library(tidyverse)
+  </code>
+  <boxed-text>
+    <preformat>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.4     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</preformat>
+  </boxed-text>
+  <code language="r script">library(ggspatial)
+library(sf)
+  </code>
+  <boxed-text>
+    <preformat>Linking to GEOS 3.12.1, GDAL 3.8.4, PROJ 9.4.0; sf_use_s2() is TRUE</preformat>
+  </boxed-text>
+  <code language="r script">library(rnaturalearth)
+library(patchwork)
+library(OpenStreetMap)
+library(janitor)
+  </code>
+  <boxed-text>
+    <preformat>
+Attaching package: 'janitor'
+
+The following objects are masked from 'package:stats':
+
+    chisq.test, fisher.test</preformat>
+  </boxed-text>
+  </sec>
+</sec>
+<sec id="important-coordinates-nb-2">
+  <title>Important coordinates</title>
+  <p>Regional site location</p>
+  <sec specific-use="notebook-content">
+  <code language="r script">site &lt;- st_sfc(st_point(c(-98.364195, 49.338907)), crs = 4326)
+box = c(xmin = -98.371228, xmax = -98.363396, ymax =  49.341214, ymin =  49.335711)
+  </code>
+  </sec>
+  <p>Study sample locations</p>
+  <sec specific-use="notebook-content">
+  <code language="r script">sites &lt;- read_csv(here::here(&quot;./notebooks/sample_locations.csv&quot;))|&gt;
+  clean_names() |&gt;
+  dplyr::select(-latitude, -longitude) |&gt;
+  st_as_sf(coords  = c(&quot;easting&quot;, &quot;northing&quot;), crs = 32614)|&gt;
+  st_transform(crs = 3857) |&gt;
+  mutate(coords = as.data.frame(
+  st_coordinates(.data[[&quot;geometry&quot;]])))|&gt;
+  unnest(&quot;coords&quot;) |&gt;
+  st_drop_geometry() |&gt;
+  mutate(sample_sit = fct_recode(sample_sit, &quot;Upper&quot; = &quot;Upslope&quot;, &quot;Mid&quot; = &quot;Midslope&quot;, &quot;Lower&quot; = &quot;Downslope&quot;)) |&gt;
+  mutate(sample_sit = fct_relevel(sample_sit, &quot;Upper&quot;, &quot;Mid&quot; , &quot;Lower&quot;))
+  </code>
+  <boxed-text>
+    <preformat>Rows: 24 Columns: 8
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: &quot;,&quot;
+chr (5): Label, Field, Sample_Sit, Latitude, Longitude
+dbl (3): Transect, Easting, Northing
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</preformat>
+  </boxed-text>
+  </sec>
+</sec>
+<sec id="canada-nb-2">
+  <title>Canada</title>
+  <sec specific-use="notebook-content">
+  <code language="r script">canada &lt;- ne_states(country = &quot;Canada&quot;, returnclass = &quot;sf&quot;) %&gt;%
+  st_transform(crs = 3348) 
+  </code>
+  </sec>
+</sec>
+<sec id="maps-nb-2">
+  <title>Maps</title>
+  <sec id="canada-1-nb-2">
+    <title>Canada</title>
+    <sec specific-use="notebook-content">
+    <code language="r script">p1 &lt;- ggplot() +
+  theme_bw() +
+  layer_spatial(canada, fill = &quot;white&quot;) +
+  layer_spatial(site, shape = 23, colour = &quot;red&quot;, fill = &quot;red&quot;, size = 2) +
+  theme(axis.text = element_blank(),
+        axis.ticks = element_blank(),
+        axis.title = element_blank(),
+        plot.margin = unit(c(0,0,0,0), &quot;mm&quot;),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        #panel.border = element_blank(),
+        panel.background = element_blank())
+    </code>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">sf_use_s2(FALSE)
+    </code>
+    <boxed-text>
+      <preformat>Spherical geometry (s2) switched off</preformat>
+    </boxed-text>
+    <code language="r script">mb_river &lt;- ne_download(scale = 10,  type = 'rivers_lake_centerlines', category = &quot;physical&quot;, returnclass = &quot;sf&quot;) %&gt;%
+  st_transform(crs = 4326) %&gt;%
+  st_crop(st_bbox(c(xmin = -100, ymin = 48.99267, 
+                    xmax = -95.15399, ymax = 51.399), 
+                  crs = st_crs(.)))
+    </code>
+    <boxed-text>
+      <preformat>Reading layer `ne_10m_rivers_lake_centerlines' from data source 
+  `/tmp/RtmpgsqXPd/ne_10m_rivers_lake_centerlines.shp' using driver `ESRI Shapefile'
+Simple feature collection with 1473 features and 38 fields
+Geometry type: MULTILINESTRING
+Dimension:     XY
+Bounding box:  xmin: -164.9035 ymin: -52.15775 xmax: 177.5204 ymax: 75.79348
+Geodetic CRS:  WGS 84</preformat>
+    </boxed-text>
+    <boxed-text>
+      <preformat>although coordinates are longitude/latitude, st_intersection assumes that they
+are planar</preformat>
+    </boxed-text>
+    <boxed-text>
+      <preformat>Warning: attribute variables are assumed to be spatially constant throughout
+all geometries</preformat>
+    </boxed-text>
+    <code language="r script">mb_lakes &lt;- ne_download(scale = 10,  type = 'lakes', category = &quot;physical&quot;, returnclass = &quot;sf&quot;) %&gt;%
+  st_transform(crs = 4326) %&gt;%
+  st_crop(st_bbox(c(xmin = -100, ymin = 48.99267, 
+                    xmax = -95.15399, ymax = 51.399), 
+                  crs = st_crs(.)))
+    </code>
+    <boxed-text>
+      <preformat>Reading layer `ne_10m_lakes' from data source `/tmp/RtmpgsqXPd/ne_10m_lakes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 1355 features and 41 fields
+Geometry type: MULTIPOLYGON
+Dimension:     XY
+Bounding box:  xmin: -165.9656 ymin: -50.66967 xmax: 177.1544 ymax: 81.95521
+Geodetic CRS:  WGS 84</preformat>
+    </boxed-text>
+    <boxed-text>
+      <preformat>although coordinates are longitude/latitude, st_intersection assumes that they
+are planar</preformat>
+    </boxed-text>
+    <boxed-text>
+      <preformat>Warning: attribute variables are assumed to be spatially constant throughout
+all geometries</preformat>
+    </boxed-text>
+    <code language="r script">mb &lt;- ne_states(country = &quot;Canada&quot;, returnclass = &quot;sf&quot;) %&gt;%
+  filter(name == &quot;Manitoba&quot;) %&gt;%
+  st_transform(crs = 4326) %&gt;%
+  st_crop(st_bbox(c(xmin = -100, ymin = 48.99267, 
+                    xmax = -95.15399, ymax = 51.399), 
+                  crs = st_crs(.)))
+    </code>
+    <boxed-text>
+      <preformat>although coordinates are longitude/latitude, st_intersection assumes that they
+are planar</preformat>
+    </boxed-text>
+    <boxed-text>
+      <preformat>Warning: attribute variables are assumed to be spatially constant throughout
+all geometries</preformat>
+    </boxed-text>
+    <code language="r script">mb_cities &lt;- maps::canada.cities %&gt;%
+  filter(country.etc == &quot;MB&quot;) %&gt;%
+  mutate(name = str_remove(name, &quot; [A-Z]{2}<!-- (F2ED4C6E)[nb-2]:/home/alex/Dropbox/Graduate students/Cameron/Manuscript/soil-plastics/notebooks/maps.qmd -->quot;)) %&gt;%
+  st_as_sf(coords = c(&quot;long&quot;, &quot;lat&quot;), crs = 4326) %&gt;%
+  st_transform(crs = 4326) %&gt;%
+  st_crop(st_bbox(c(xmin = -100, ymin = 48.99267, 
+                    xmax = -95.15399, ymax = 51.399), 
+                  crs = st_crs(.))) %&gt;%
+  filter(pop &gt;5000)
+    </code>
+    <boxed-text>
+      <preformat>although coordinates are longitude/latitude, st_intersection assumes that they
+are planar</preformat>
+    </boxed-text>
+    <boxed-text>
+      <preformat>Warning: attribute variables are assumed to be spatially constant throughout
+all geometries</preformat>
+    </boxed-text>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script"># Create an sf point from the site's coordinates
+site_as_sf &lt;- st_sf(
+  name = &quot;Site&quot;,
+  country.etc = NA_character_,
+  pop = NA_real_,
+  capital = NA_real_,
+  geometry = st_sfc(st_point(c(-98.3642, 49.33891)), crs = 4326)
+)
+
+# Combine with mb_cities
+mb_cities_with_site &lt;- rbind(mb_cities, site_as_sf)
+    </code>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">p4 &lt;- ggplot() +
+  theme_bw() +
+  geom_sf(data = mb, fill = &quot;white&quot;) +
+  geom_sf(data = mb_river, colour = &quot;skyblue4&quot;) +
+  geom_sf(data = mb_lakes, fill = &quot;lightblue&quot;) +
+  geom_sf(data = mb_cities) +
+  ggrepel::geom_label_repel(
+    data = mb_cities_with_site,
+    aes(label = name, geometry = geometry),
+    stat = &quot;sf_coordinates&quot;,
+    min.segment.length = 0,
+    nudge_y = 0.02,
+    size = 2,
+    box.padding = 0.5
+  ) +
+  layer_spatial(site, shape = 23, colour = &quot;red&quot;, fill = &quot;red&quot;, size = 2) +
+  labs(tag = &quot;a)&quot;) +
+  annotation_scale(location = &quot;bl&quot;,
+                   height = unit(0.05, &quot;cm&quot;), 
+                   pad_y = unit(0.5, &quot;cm&quot;),
+                   pad_x = unit(1.1, &quot;cm&quot;)) +
+  annotation_north_arrow(location = &quot;br&quot;, 
+                         height = unit(0.5, &quot;cm&quot;),
+                         width = unit(0.5, &quot;cm&quot;), 
+                   pad_y = unit(0.5, &quot;cm&quot;),
+                   pad_x = unit(1.1, &quot;cm&quot;)) +
+  theme(axis.text = element_blank(),
+        axis.ticks = element_blank(),
+        axis.title = element_blank(),
+        plot.margin = unit(c(0,0,0,0), &quot;mm&quot;),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank())
+p4
+    </code>
+    <boxed-text>
+      <preformat>Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+give correct results for longitude/latitude data</preformat>
+    </boxed-text>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="maps_files/figure-jats/unnamed-chunk-8-1.png" />
+    <code language="r script">#box = c(xmin = , xmax = -, ymax =  , ymin =  )
+    </code>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">map &lt;- openmap(c(49.341, -98.37), c(49.335711, -98.362), zoom = NULL,
+                  type = &quot;esri-imagery&quot;, mergeTiles = TRUE) 
+# 
+# sa_map2 &lt;- openproj(map, projection = &quot;+proj=longlat +datum=WGS84 +no_defs +type=crs&quot;)
+
+p5 &lt;- OpenStreetMap::autoplot.OpenStreetMap(map)  +
+  annotation_scale(
+    location = &quot;bl&quot;,
+    width_hint = 0.25,
+    plot_unit = &quot;m&quot;,         
+    unit_category = &quot;metric&quot;,
+    style = &quot;bar&quot;) +
+  theme_void(base_size = 12) +
+  geom_point(
+    data = sites,
+    aes(x = X, y = Y, fill = sample_sit, shape = factor(transect)),
+    colour = &quot;black&quot;,
+    size = 2.5) +
+  scale_fill_viridis_d(name = &quot;Position&quot;) +
+  scale_shape_manual(values = 21:24, name = &quot;Transect&quot;) +
+  guides(
+    fill = guide_legend(override.aes = list(shape = 21)),
+    shape = guide_legend(override.aes = list(fill = NA))) +
+geom_segment(
+    aes(x = -10950045, y = 6332636, xend = -10950200, yend = 6332150),
+    colour = &quot;black&quot;, linewidth = 0.8, linetype = &quot;dashed&quot;) +
+  # annotate(&quot;label&quot;, x = -10950296, y = 6332115, label = &quot;West&quot;, fill = &quot;lightgray&quot;) +
+  # annotate(&quot;label&quot;, x = -10950016, y = 6332115, label = &quot;East&quot;, fill = &quot;lightgray&quot;) +
+  labs(tag = &quot;b)&quot;) +   
+  theme(legend.position = &quot;bottom&quot;, legend.box = &quot;vertical&quot;) 
+p5
+    </code>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="maps_files/figure-jats/unnamed-chunk-9-1.png" />
+    </sec>
+    <sec id="cell-fig-mapr-nb-2" specific-use="notebook-content">
+    <code language="r script">
+p6 &lt;- (p4 + inset_element(p1, left = 0.6, bottom = 0.6, right = 1, top = 1)) + p5 +  plot_layout(widths = c(1, 1))
+p6
+    </code>
+    <boxed-text>
+      <preformat>Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+give correct results for longitude/latitude data</preformat>
+    </boxed-text>
+    <code language="r script">
+#ggsave(plot = p6, filename = here::here(&quot;./Figures/Figure .png&quot;), width = 170, height = 90, units = &quot;mm&quot;, dpi = 400) 
+    </code>
+    <fig id="fig-mapr-nb-2">
+      <caption><p>Showing a) the location of the study site in southern
+      Manitoba with an inset map of Canada; and b) the locations of the
+      four transects and three slope positions sampled in the East and
+      West watersheds as separted by the dashed line.</p></caption>
+      <graphic mimetype="image" mime-subtype="png" xlink:href="maps_files/figure-jats/fig-mapr-1.png" />
+    </fig>
+    </sec>
+  </sec>
+</sec>
+<sec id="session-info-nb-2">
+  <title>Session info</title>
+  <sec specific-use="notebook-content">
+  <code language="r script">sessioninfo::session_info()
+  </code>
+  <boxed-text>
+    <preformat>─ Session info ───────────────────────────────────────────────────────────────
+ setting  value
+ version  R version 4.5.3 (2026-03-11)
+ os       Ubuntu 24.04.4 LTS
+ system   x86_64, linux-gnu
+ ui       X11
+ language (EN)
+ collate  en_US.UTF-8
+ ctype    en_US.UTF-8
+ tz       America/Winnipeg
+ date     2026-06-18
+ pandoc   3.1.3 @ /usr/bin/ (via rmarkdown)
+ quarto   1.6.39 @ /usr/local/bin/quarto
+
+─ Packages ───────────────────────────────────────────────────────────────────
+ package            * version    date (UTC) lib source
+ bit                  4.6.0      2025-03-06 [1] CRAN (R 4.5.0)
+ bit64                4.6.0-1    2025-01-16 [1] CRAN (R 4.5.0)
+ class                7.3-23     2025-01-01 [4] CRAN (R 4.4.2)
+ classInt             0.4-11     2025-01-08 [1] CRAN (R 4.5.0)
+ cli                  3.6.6      2026-04-09 [1] CRAN (R 4.5.3)
+ codetools            0.2-20     2024-03-31 [4] CRAN (R 4.4.0)
+ crayon               1.5.3      2024-06-20 [1] CRAN (R 4.5.0)
+ DBI                  1.2.3      2024-06-02 [1] CRAN (R 4.5.0)
+ digest               0.6.39     2025-11-19 [1] CRAN (R 4.5.3)
+ dplyr              * 1.2.1      2026-04-03 [1] CRAN (R 4.5.3)
+ e1071                1.7-16     2024-09-16 [1] CRAN (R 4.5.0)
+ evaluate             1.0.5      2025-08-27 [1] CRAN (R 4.5.3)
+ farver               2.1.2      2024-05-13 [1] CRAN (R 4.5.0)
+ fastmap              1.2.0      2024-05-15 [1] CRAN (R 4.5.0)
+ forcats            * 1.0.0      2023-01-29 [1] CRAN (R 4.5.0)
+ generics             0.1.4      2025-05-09 [1] CRAN (R 4.5.1)
+ ggplot2            * 4.0.3      2026-04-22 [1] CRAN (R 4.5.3)
+ ggrepel              0.9.6      2024-09-07 [1] CRAN (R 4.5.0)
+ ggspatial          * 1.1.9      2023-08-17 [1] CRAN (R 4.5.0)
+ glue                 1.8.1      2026-04-17 [1] CRAN (R 4.5.3)
+ gtable               0.3.6      2024-10-25 [1] CRAN (R 4.5.0)
+ here                 1.0.2      2025-09-15 [1] CRAN (R 4.5.1)
+ hms                  1.1.3      2023-03-21 [1] CRAN (R 4.5.0)
+ htmltools            0.5.9      2025-12-04 [1] CRAN (R 4.5.3)
+ httr                 1.4.7      2023-08-15 [1] CRAN (R 4.5.0)
+ janitor            * 2.2.1      2024-12-22 [1] CRAN (R 4.5.0)
+ jsonlite             2.0.0      2025-03-27 [1] CRAN (R 4.5.0)
+ KernSmooth           2.23-26    2025-01-01 [4] CRAN (R 4.4.2)
+ knitr                1.51       2025-12-20 [1] CRAN (R 4.5.3)
+ labeling             0.4.3      2023-08-29 [1] CRAN (R 4.5.0)
+ lattice              0.22-9     2026-02-09 [4] CRAN (R 4.5.2)
+ lifecycle            1.0.5      2026-01-08 [1] CRAN (R 4.5.3)
+ lubridate          * 1.9.4      2024-12-08 [1] CRAN (R 4.5.0)
+ magrittr             2.0.5      2026-04-04 [1] CRAN (R 4.5.3)
+ maps                 3.4.2.1    2024-11-10 [1] CRAN (R 4.5.0)
+ OpenStreetMap      * 0.4.0      2023-10-12 [1] CRAN (R 4.5.0)
+ patchwork          * 1.3.2      2025-08-25 [1] CRAN (R 4.5.3)
+ pillar               1.11.1     2025-09-17 [1] CRAN (R 4.5.3)
+ pkgconfig            2.0.3      2019-09-22 [1] CRAN (R 4.5.0)
+ proxy                0.4-27     2022-06-09 [1] CRAN (R 4.5.0)
+ purrr              * 1.2.2      2026-04-10 [1] CRAN (R 4.5.3)
+ R6                   2.6.1      2025-02-15 [1] CRAN (R 4.5.0)
+ raster               3.6-32     2025-03-28 [1] CRAN (R 4.5.0)
+ RColorBrewer         1.1-3      2022-04-03 [1] CRAN (R 4.5.0)
+ Rcpp                 1.1.1-1.1  2026-04-24 [1] CRAN (R 4.5.3)
+ readr              * 2.1.5      2024-01-10 [1] CRAN (R 4.5.0)
+ rJava                1.0-11     2024-01-26 [1] CRAN (R 4.5.0)
+ rlang                1.2.0      2026-04-06 [1] CRAN (R 4.5.3)
+ rmarkdown            2.31       2026-03-26 [1] CRAN (R 4.5.3)
+ rnaturalearth      * 1.0.1      2023-12-15 [1] CRAN (R 4.5.0)
+ rnaturalearthhires   1.0.0.9000 2025-06-10 [1] Github (ropensci/rnaturalearthhires@153b0ea)
+ rprojroot            2.1.1      2025-08-26 [1] CRAN (R 4.5.1)
+ rstudioapi           0.17.1     2024-10-22 [1] CRAN (R 4.5.0)
+ S7                   0.2.2      2026-04-22 [1] CRAN (R 4.5.3)
+ scales               1.4.0      2025-04-24 [1] CRAN (R 4.5.0)
+ sessioninfo          1.2.4.9000 2026-06-17 [1] Github (r-lib/sessioninfo@12423b7)
+ sf                 * 1.0-20     2025-03-24 [1] CRAN (R 4.5.0)
+ snakecase            0.11.1     2023-08-27 [1] CRAN (R 4.5.0)
+ sp                   2.2-0      2025-02-01 [1] CRAN (R 4.5.0)
+ stringi              1.8.7      2025-03-27 [1] CRAN (R 4.5.0)
+ stringr            * 1.6.0      2025-11-04 [1] CRAN (R 4.5.1)
+ terra                1.8-42     2025-04-02 [1] CRAN (R 4.5.0)
+ tibble             * 3.3.1      2026-01-11 [1] CRAN (R 4.5.3)
+ tidyr              * 1.3.2      2025-12-19 [1] CRAN (R 4.5.3)
+ tidyselect           1.2.1      2024-03-11 [1] CRAN (R 4.5.0)
+ tidyverse          * 2.0.0      2023-02-22 [1] CRAN (R 4.5.0)
+ timechange           0.3.0      2024-01-18 [1] CRAN (R 4.5.0)
+ tzdb                 0.5.0      2025-03-15 [1] CRAN (R 4.5.0)
+ units                0.8-7      2025-03-11 [1] CRAN (R 4.5.0)
+ vctrs                0.7.3      2026-04-11 [1] CRAN (R 4.5.3)
+ viridisLite          0.4.3      2026-02-04 [1] CRAN (R 4.5.3)
+ vroom                1.6.5      2023-12-05 [1] CRAN (R 4.5.0)
+ withr                3.0.2      2024-10-28 [1] CRAN (R 4.5.0)
+ xfun                 0.57       2026-03-20 [1] CRAN (R 4.5.3)
+ yaml                 2.3.12     2025-12-10 [1] CRAN (R 4.5.3)
+
+ [1] /home/alex/R/x86_64-pc-linux-gnu-library/4.5
+ [2] /usr/local/lib/R/site-library
+ [3] /usr/lib/R/site-library
+ [4] /usr/lib/R/library
+ * ── Packages attached to the search path.
+
+──────────────────────────────────────────────────────────────────────────────</preformat>
+  </boxed-text>
+  </sec>
+</sec>
+</body>
+
+
+
+<back>
+</back>
+
+
+</sub-article>
+<sub-article article-type="notebook" id="nb-3-nb-3">
+<front-stub>
+<title-group>
+<article-title>02 Climate and weather</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<name>
+<surname>Koiter</surname>
+<given-names>Alex</given-names>
+</name>
+<string-name>Alex Koiter</string-name>
+
+</contrib>
+</contrib-group>
+</front-stub>
+
+<body>
+<sec id="load-libraries-nb-3">
+  <title>Load libraries</title>
+  <sec specific-use="notebook-content">
+  <code language="r script">suppressPackageStartupMessages({
+  library(tidyverse)
+  library(patchwork)
+  library(weathercan)
+})
+  </code>
+  </sec>
+</sec>
+<sec id="get-the-data-nb-3">
+  <title>Get the data</title>
+  <sec id="find-station_id-and-climate_id-nb-3">
+    <title>Find station_id and climate_id</title>
+    <sec specific-use="notebook-content">
+    <code language="r script">stations_search(coords = c(49.332263, -98.382368), dist = 20, normals_years = &quot;1991-2020&quot;)
+    </code>
+    <boxed-text>
+      <preformat>No stations within 20km. Returning closest 10 records</preformat>
+    </boxed-text>
+    <boxed-text>
+      <preformat># A tibble: 10 × 18
+   prov  station_name station_id climate_id WMO_id TC_id   lat   lon  elev tz   
+   &lt;chr&gt; &lt;chr&gt;             &lt;dbl&gt; &lt;chr&gt;       &lt;dbl&gt; &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;
+ 1 MB    MORDEN CDA …      29593 5021849     71564 XMD    49.2 -98.1  298. Etc/…
+ 2 MB    MORDEN CDA …      29593 5021849     71564 XMD    49.2 -98.1  298. Etc/…
+ 3 MB    MORDEN CDA …      29593 5021849     71564 XMD    49.2 -98.1  298. Etc/…
+ 4 MB    MORDEN CDA         3626 5021848        NA &lt;NA&gt;   49.2 -98.1  298. Etc/…
+ 5 MB    MORDEN CDA         3626 5021848        NA &lt;NA&gt;   49.2 -98.1  298. Etc/…
+ 6 MB    CYPRESS RIV…      48128 5010641     71239 POY    49.6 -99.1  374  Etc/…
+ 7 MB    CYPRESS RIV…      48128 5010641     71239 POY    49.6 -99.1  374  Etc/…
+ 8 MB    CYPRESS RIV…       3481 5010640        NA &lt;NA&gt;   49.6 -99.1  374. Etc/…
+ 9 MB    CYPRESS RIV…       3481 5010640        NA &lt;NA&gt;   49.6 -99.1  374. Etc/…
+10 MB    PORTAGE SOU…      10884 5012324     71851 WPG    49.9 -98.3  273. Etc/…
+# ℹ 8 more variables: interval &lt;fct&gt;, start &lt;dbl&gt;, end &lt;dbl&gt;, normals &lt;lgl&gt;,
+#   normals_1991_2020 &lt;lgl&gt;, normals_1981_2010 &lt;lgl&gt;, normals_1971_2000 &lt;lgl&gt;,
+#   distance &lt;dbl&gt;</preformat>
+    </boxed-text>
+    <code language="r script"># Climate ID 5021849 MORDEN 27.04977 km away
+    </code>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">stations_search(coords = c(49.332263, -98.382368), dist = 20, normals_years = &quot;1981-2010&quot;)
+    </code>
+    <boxed-text>
+      <preformat># A tibble: 4 × 18
+  prov  station_name  station_id climate_id WMO_id TC_id   lat   lon  elev tz   
+  &lt;chr&gt; &lt;chr&gt;              &lt;dbl&gt; &lt;chr&gt;       &lt;dbl&gt; &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;
+1 MB    MIAMI ORCHARD       3622 5021736        NA &lt;NA&gt;   49.4 -98.3  330. Etc/…
+2 MB    MIAMI ORCHARD       3622 5021736        NA &lt;NA&gt;   49.4 -98.3  330. Etc/…
+3 MB    MANITOU STRA…       3614 5021687        NA &lt;NA&gt;   49.2 -98.5  488. Etc/…
+4 MB    MANITOU STRA…       3614 5021687        NA &lt;NA&gt;   49.2 -98.5  488. Etc/…
+# ℹ 8 more variables: interval &lt;fct&gt;, start &lt;dbl&gt;, end &lt;dbl&gt;, normals &lt;lgl&gt;,
+#   normals_1991_2020 &lt;lgl&gt;, normals_1981_2010 &lt;lgl&gt;, normals_1971_2000 &lt;lgl&gt;,
+#   distance &lt;dbl&gt;</preformat>
+    </boxed-text>
+    <code language="r script"># Climate ID 5021736 MIAMI ORCHARD 8.5 km away
+    </code>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">stations_search(coords = c(49.332263, -98.382368), dist = 20, interval = &quot;day&quot;, starts_latest = 2020, ends_earliest = 2024)
+    </code>
+    <boxed-text>
+      <preformat># A tibble: 1 × 18
+  prov  station_name station_id climate_id WMO_id TC_id   lat   lon  elev tz    
+  &lt;chr&gt; &lt;chr&gt;             &lt;dbl&gt; &lt;chr&gt;       &lt;dbl&gt; &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt; 
+1 MB    DEERWOOD RCS      29886 5020725     71840 XDW    49.4 -98.3  341. Etc/G…
+# ℹ 8 more variables: interval &lt;fct&gt;, start &lt;dbl&gt;, end &lt;dbl&gt;, normals &lt;lgl&gt;,
+#   normals_1991_2020 &lt;lgl&gt;, normals_1981_2010 &lt;lgl&gt;, normals_1971_2000 &lt;lgl&gt;,
+#   distance &lt;dbl&gt;</preformat>
+    </boxed-text>
+    <code language="r script"># Station ID 29886 DEERWOOD
+    </code>
+    </sec>
+  </sec>
+</sec>
+<sec id="normals-nb-3">
+  <title>Normals</title>
+  <sec specific-use="notebook-content">
+  <code language="r script">df_normal_miami &lt;-  normals_dl(climate_ids = 5021736, normals_years = &quot;1981-2010&quot;) |&gt;
+  unnest(normals) |&gt;
+  filter(period == &quot;Year&quot;) |&gt;
+  select(precip, rain, )
+  </code>
+  </sec>
+  <sec id="download-nb-3">
+    <title>Download</title>
+    <sec specific-use="notebook-content">
+    <code language="r script">df_normal_morden &lt;- normals_dl(climate_ids = 5021849, normals_years = &quot;current&quot;, measurement_type = c(&quot;Temperature&quot;, &quot;Precipitation&quot;)) |&gt;
+  filter(period_of_record == &quot;Normal&quot;) |&gt;
+  #filter(element_group %in% c(&quot;Precipitation&quot;, &quot;Temperature&quot;)) |&gt;
+  select(period, precipitation_mm, rainfall_mm, daily_average_c)
+    </code>
+    <boxed-text>
+      <preformat>The most current normals available for download by weathercan are '1991-2020'
+Using composite locations: MORDEN</preformat>
+    </boxed-text>
+    <code language="r script">morden_annual &lt;- df_normal_morden |&gt;
+  filter(period == &quot;Year&quot;)|&gt;
+  summarise(precipitation_mm = max(precipitation_mm, na.rm = TRUE), 
+            rainfall_mm = max(rainfall_mm, na.rm = TRUE),
+            daily_average_c = max(daily_average_c, na.rm = TRUE))
+morden_annual
+    </code>
+    <boxed-text>
+      <preformat># A tibble: 1 × 3
+  precipitation_mm rainfall_mm daily_average_c
+             &lt;dbl&gt;       &lt;dbl&gt;           &lt;dbl&gt;
+1             528.        452.               4</preformat>
+    </boxed-text>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">morden_annual$precipitation_mm
+    </code>
+    <boxed-text>
+      <preformat>[1] 527.8</preformat>
+    </boxed-text>
+    <code language="r script">morden_month &lt;- df_normal_morden |&gt;
+  filter(period != &quot;Year&quot;) |&gt;
+  group_by(period) |&gt;
+  summarise(precip = max(precipitation_mm, na.rm = TRUE), 
+            rainfall_mm = max(rainfall_mm, na.rm = TRUE),
+            daily_c = max(daily_average_c, na.rm = TRUE)) |&gt;
+  mutate(date = mdy(paste0(period, &quot;-01-2025&quot;)))
+    </code>
+    </sec>
+  </sec>
+  <sec id="plot-climate-normals-nb-3">
+    <title>Plot Climate Normals</title>
+    <sec specific-use="notebook-content">
+    <code language="r script">p1 &lt;- ggplot() +
+  theme_bw() +
+  geom_segment(data = morden_month, aes(x = date, y = precip/2.25 - 30, xend = date, yend = -30), linewidth = 8, colour =  &quot;skyblue4&quot;) +
+  stat_smooth(data = morden_month, aes(x = date, y = daily_c), method = &quot;loess&quot;, se = FALSE, linewidth = 1, colour =  &quot;black&quot;) +
+  scale_y_continuous(name = expression(&quot;Temperature &quot; ( degree*C)), 
+                     sec.axis = sec_axis(~ (. + 30) * 2.25 , name = &quot;Precipitation (mm)&quot;),
+                     limits = c(-30, 30),
+                     expand = c(0, 0)) +  
+  scale_x_date(date_labels = &quot;%b&quot;, 
+               date_breaks = &quot;1 month&quot;, 
+               #expand = c(0.01,0.01), 
+               name = &quot;&quot;,
+               #limits = (c(as_date(&quot;2025-01-01&quot;), as_date(&quot;2025-12-20&quot;)))
+               ) +
+  annotate(geom=&quot;text&quot;, x = as_date(&quot;2025-01-15&quot;), y = 25, label = &quot;1991-2020 Climate Normals - Morden&quot;,
+           color=&quot;black&quot;, hjust = 0) +
+  annotate(geom=&quot;text&quot;, x = as_date(&quot;2025-01-15&quot;), y = 20, label = &quot;Annual Temp = 4.0 \u00B0C&quot;,
+           color=&quot;black&quot;, hjust = 0) +
+  annotate(geom=&quot;text&quot;, x = as_date(&quot;2025-01-15&quot;), y = 15, label = &quot;Annual Precip = 527.8 mm&quot;,
+           color=&quot;black&quot;, hjust = 0)
+p1
+    </code>
+    <boxed-text>
+      <preformat>`geom_smooth()` using formula = 'y ~ x'</preformat>
+    </boxed-text>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="weather_discharge_files/figure-jats/unnamed-chunk-8-1.png" />
+    </sec>
+  </sec>
+</sec>
+<sec id="study-period-weather-nb-3">
+  <title>Study period weather</title>
+  <sec id="download-1-nb-3">
+    <title>Download</title>
+    <sec specific-use="notebook-content">
+    <code language="r script">df_day &lt;- weather_dl(station_ids = 29886, interval = &quot;day&quot;, start = &quot;2021-10-01&quot;, end = &quot;2023-09-30&quot;) |&gt;
+  select(date, mean_temp, total_precip) |&gt;
+  mutate(water_year = case_when(
+    month(date) &gt;= 10 ~ year(date) + 1,
+    TRUE ~ year(date)
+  )) |&gt;
+  group_by(water_year) %&gt;%
+  mutate(cumul = cumsum(replace_na(total_precip, 0))) %&gt;%
+  ungroup()
+    </code>
+    </sec>
+  </sec>
+  <sec id="sampling-details-nb-3">
+    <title>Sampling details</title>
+    <sec specific-use="notebook-content">
+    <code language="r script">vline_data &lt;- data.frame(
+  water_year = c(2022, 2022, 2023, 2023, 2023, 2023, 2023, 2023),
+  x = as.Date(c(&quot;2022-05-24&quot;, &quot;2022-05-25&quot;, &quot;2022-10-29&quot;, &quot;2023-04-01&quot;, &quot;2022-10-21&quot;, &quot;2023-05-11&quot;, &quot;2023-09-19&quot;, &quot;2023-05-11&quot;))
+)
+
+annotation_data &lt;- data.frame(
+  water_year = c(2022, 2022, 2023, 2023, 2023, 2023, 2023, 2023),
+  x = as.Date(c(&quot;2022-05-24&quot;, &quot;2022-05-25&quot;, &quot;2022-10-29&quot;, &quot;2023-04-01&quot;, &quot;2022-10-21&quot;, &quot;2023-05-11&quot;, &quot;2023-09-19&quot;, &quot;2023-05-11&quot;)), 
+  y = c(35, 0, 35, 35, 35, 35, 35, 0),
+  label = c(&quot;ESN&quot;, &quot;Seeding&quot;, &quot;Tillage&quot;, &quot;Runoff&quot;, &quot;Soil&quot;, &quot;Soil&quot;, &quot;Soil&quot;, &quot;Seeding&quot;)
+) |&gt;
+  mutate(x = case_when(label %in% c(&quot;Seeding&quot;, &quot;Tillage&quot;) ~ x + 11,
+                       TRUE ~ x))
+    </code>
+    </sec>
+  </sec>
+  <sec id="plot-study-weather-nb-3">
+    <title>Plot study weather</title>
+    <sec specific-use="notebook-content">
+    <code language="r script">p2 &lt;- ggplot() +
+  theme_bw() +
+  geom_point(data = df_day, aes(x = date, y = mean_temp, color = ifelse(mean_temp &gt; 0, &quot;#dc2626&quot;, &quot;#2563eb&quot;))) +
+  scale_color_identity() +
+  geom_line(data = df_day, aes(x = date, y = cumul/8 - 35), colour =  &quot;skyblue4&quot;, linewidth = 1) +
+  scale_y_continuous(name = expression(&quot;Temperature &quot; ( degree*C)), 
+                     sec.axis = sec_axis(~ (. + 35) * 8 , name = &quot;Precipitation (mm)&quot;),
+                     #limits = c(-30, 30),
+                     expand = c(0, 0)) +
+  scale_x_date(date_labels = &quot;%b&quot;, date_breaks = &quot;1 month&quot;) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5)) +
+  facet_wrap(~water_year, scales = &quot;free_x&quot;, ncol=1) +
+geom_vline(data = vline_data,
+             aes(xintercept = x),
+             color = &quot;black&quot;, 
+             linewidth = 0.5) +
+ geom_text(data = annotation_data,
+            aes(x = x, y = y, label = label),
+            color = &quot;black&quot;,
+            angle = 90,
+            hjust = 1,
+            vjust = -0.25,
+            inherit.aes = FALSE)
+p2
+    </code>
+    <boxed-text>
+      <preformat>Warning: Removed 6 rows containing missing values or values outside the scale range
+(`geom_point()`).</preformat>
+    </boxed-text>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="weather_discharge_files/figure-jats/unnamed-chunk-11-1.png" />
+    </sec>
+  </sec>
+</sec>
+<sec id="combined-plot-nb-3">
+  <title>Combined plot</title>
+  <sec id="cell-fig-weather-climate-nb-3" specific-use="notebook-content">
+  <code language="r script">
+p1 / p2 + 
+  plot_layout(heights = c(1, 2), axis_title = &quot;collect&quot;) +
+  plot_annotation(tag_levels = &quot;a&quot;, tag_suffix = &quot;)&quot;)
+  </code>
+  <boxed-text>
+    <preformat>`geom_smooth()` using formula = 'y ~ x'</preformat>
+  </boxed-text>
+  <boxed-text>
+    <preformat>Warning: Removed 6 rows containing missing values or values outside the scale range
+(`geom_point()`).</preformat>
+  </boxed-text>
+  <fig id="fig-weather-climate-nb-3">
+    <caption><p>a) Climate Normals (1991-2020) for Morden, MB (Climate
+    ID 5021849), located approximately 30 km from the field site. b)
+    Weather conditions for the 2022 and 2023 water years (Oct 1 - Sept
+    30) for Deerwood, MB (Station ID 29886), located approximately 8 km
+    from the field site. Vertical lines indicate the timing of (1)
+    application of Environmental Smart Nitrogen (ESN) (polymer-coated
+    slow-release urea); (2) seeding and tillage field operations; and
+    (3) collection of soil and runoff samples. Red and blue points
+    indicate average daily temperatures above and below 0 degrees
+    Celsius, respectively.</p></caption>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="weather_discharge_files/figure-jats/fig-weather-climate-1.png" />
+  </fig>
+  </sec>
+</sec>
+<sec id="session-info-nb-3">
+  <title>Session info</title>
+  <sec specific-use="notebook-content">
+  <code language="r script">sessioninfo::session_info()
+  </code>
+  <boxed-text>
+    <preformat>─ Session info ───────────────────────────────────────────────────────────────
+ setting  value
+ version  R version 4.5.3 (2026-03-11)
+ os       Ubuntu 24.04.4 LTS
+ system   x86_64, linux-gnu
+ ui       X11
+ language (EN)
+ collate  en_US.UTF-8
+ ctype    en_US.UTF-8
+ tz       America/Winnipeg
+ date     2026-06-18
+ pandoc   3.1.3 @ /usr/bin/ (via rmarkdown)
+ quarto   1.6.39 @ /usr/local/bin/quarto
+
+─ Packages ───────────────────────────────────────────────────────────────────
+ package      * version    date (UTC) lib source
+ bit            4.6.0      2025-03-06 [1] CRAN (R 4.5.0)
+ bit64          4.6.0-1    2025-01-16 [1] CRAN (R 4.5.0)
+ cachem         1.1.0      2024-05-16 [1] CRAN (R 4.5.0)
+ class          7.3-23     2025-01-01 [4] CRAN (R 4.4.2)
+ classInt       0.4-11     2025-01-08 [1] CRAN (R 4.5.0)
+ cli            3.6.6      2026-04-09 [1] CRAN (R 4.5.3)
+ crayon         1.5.3      2024-06-20 [1] CRAN (R 4.5.0)
+ curl           7.1.0      2026-04-22 [1] CRAN (R 4.5.3)
+ DBI            1.2.3      2024-06-02 [1] CRAN (R 4.5.0)
+ digest         0.6.39     2025-11-19 [1] CRAN (R 4.5.3)
+ dplyr        * 1.2.1      2026-04-03 [1] CRAN (R 4.5.3)
+ e1071          1.7-16     2024-09-16 [1] CRAN (R 4.5.0)
+ evaluate       1.0.5      2025-08-27 [1] CRAN (R 4.5.3)
+ farver         2.1.2      2024-05-13 [1] CRAN (R 4.5.0)
+ fastmap        1.2.0      2024-05-15 [1] CRAN (R 4.5.0)
+ forcats      * 1.0.0      2023-01-29 [1] CRAN (R 4.5.0)
+ generics       0.1.4      2025-05-09 [1] CRAN (R 4.5.1)
+ ggplot2      * 4.0.3      2026-04-22 [1] CRAN (R 4.5.3)
+ glue           1.8.1      2026-04-17 [1] CRAN (R 4.5.3)
+ gtable         0.3.6      2024-10-25 [1] CRAN (R 4.5.0)
+ hms            1.1.3      2023-03-21 [1] CRAN (R 4.5.0)
+ htmltools      0.5.9      2025-12-04 [1] CRAN (R 4.5.3)
+ httr2          1.2.2      2025-12-08 [1] CRAN (R 4.5.3)
+ jsonlite       2.0.0      2025-03-27 [1] CRAN (R 4.5.0)
+ KernSmooth     2.23-26    2025-01-01 [4] CRAN (R 4.4.2)
+ knitr          1.51       2025-12-20 [1] CRAN (R 4.5.3)
+ labeling       0.4.3      2023-08-29 [1] CRAN (R 4.5.0)
+ lattice        0.22-9     2026-02-09 [4] CRAN (R 4.5.2)
+ lifecycle      1.0.5      2026-01-08 [1] CRAN (R 4.5.3)
+ lubridate    * 1.9.4      2024-12-08 [1] CRAN (R 4.5.0)
+ magrittr       2.0.5      2026-04-04 [1] CRAN (R 4.5.3)
+ Matrix         1.7-4      2025-08-28 [4] CRAN (R 4.5.1)
+ memoise        2.0.1      2021-11-26 [1] CRAN (R 4.5.0)
+ mgcv           1.9-4      2025-11-07 [4] CRAN (R 4.5.2)
+ nlme           3.1-168    2025-03-31 [4] CRAN (R 4.4.3)
+ patchwork    * 1.3.2      2025-08-25 [1] CRAN (R 4.5.3)
+ pillar         1.11.1     2025-09-17 [1] CRAN (R 4.5.3)
+ pkgconfig      2.0.3      2019-09-22 [1] CRAN (R 4.5.0)
+ proxy          0.4-27     2022-06-09 [1] CRAN (R 4.5.0)
+ purrr        * 1.2.2      2026-04-10 [1] CRAN (R 4.5.3)
+ R6             2.6.1      2025-02-15 [1] CRAN (R 4.5.0)
+ rappdirs       0.3.4      2026-01-17 [1] CRAN (R 4.5.3)
+ RColorBrewer   1.1-3      2022-04-03 [1] CRAN (R 4.5.0)
+ Rcpp           1.1.1-1.1  2026-04-24 [1] CRAN (R 4.5.3)
+ readr        * 2.1.5      2024-01-10 [1] CRAN (R 4.5.0)
+ rlang          1.2.0      2026-04-06 [1] CRAN (R 4.5.3)
+ rmarkdown      2.31       2026-03-26 [1] CRAN (R 4.5.3)
+ rstudioapi     0.17.1     2024-10-22 [1] CRAN (R 4.5.0)
+ s2             1.1.7      2024-07-17 [1] CRAN (R 4.5.0)
+ S7             0.2.2      2026-04-22 [1] CRAN (R 4.5.3)
+ scales         1.4.0      2025-04-24 [1] CRAN (R 4.5.0)
+ sessioninfo    1.2.4.9000 2026-06-17 [1] Github (r-lib/sessioninfo@12423b7)
+ sf             1.0-20     2025-03-24 [1] CRAN (R 4.5.0)
+ stringi        1.8.7      2025-03-27 [1] CRAN (R 4.5.0)
+ stringr      * 1.6.0      2025-11-04 [1] CRAN (R 4.5.1)
+ tibble       * 3.3.1      2026-01-11 [1] CRAN (R 4.5.3)
+ tidyr        * 1.3.2      2025-12-19 [1] CRAN (R 4.5.3)
+ tidyselect     1.2.1      2024-03-11 [1] CRAN (R 4.5.0)
+ tidyverse    * 2.0.0      2023-02-22 [1] CRAN (R 4.5.0)
+ timechange     0.3.0      2024-01-18 [1] CRAN (R 4.5.0)
+ tzdb           0.5.0      2025-03-15 [1] CRAN (R 4.5.0)
+ units          0.8-7      2025-03-11 [1] CRAN (R 4.5.0)
+ utf8           1.2.6      2025-06-08 [1] CRAN (R 4.5.3)
+ vctrs          0.7.3      2026-04-11 [1] CRAN (R 4.5.3)
+ vroom          1.6.5      2023-12-05 [1] CRAN (R 4.5.0)
+ weathercan   * 1.0.0      2026-06-17 [1] https://ropensci.r-universe.dev (R 4.5.3)
+ withr          3.0.2      2024-10-28 [1] CRAN (R 4.5.0)
+ wk             0.9.4      2024-10-11 [1] CRAN (R 4.5.0)
+ xfun           0.57       2026-03-20 [1] CRAN (R 4.5.3)
+ yaml           2.3.12     2025-12-10 [1] CRAN (R 4.5.3)
+
+ [1] /home/alex/R/x86_64-pc-linux-gnu-library/4.5
+ [2] /usr/local/lib/R/site-library
+ [3] /usr/lib/R/site-library
+ [4] /usr/lib/R/library
+ * ── Packages attached to the search path.
+
+──────────────────────────────────────────────────────────────────────────────</preformat>
+  </boxed-text>
+  </sec>
+</sec>
+</body>
+
+
+
+<back>
+</back>
+
+
+</sub-article>
+
+</article>

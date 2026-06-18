@@ -1,111 +1,233 @@
 ---
-title: La Palma Earthquakes
+title: Distribution and loss of slow-release polymer coatings in an agro-ecosystem
 author:
-  - name: Steve Purves
-    orcid: 0000-0002-0760-5497
+  - name: Alexander J Koiter
+    orcid: 0000-0002-9355-9561
     corresponding: true
-    email: steve@curvenote.com
+    email: koitera@brandonu.ca
     roles:
-      - Investigation
-      - Project administration
-      - Software
+      - Statistics
       - Visualization
+      - Author
     affiliations:
-      - Curvenote
-  - name: Rowan Cockett
-    orcid: 0000-0002-7859-8394
+      - name: Brandon University, Department of Geography and Environment
+        address: 270 18th St
+        city: Brandon
+        state: MB
+        postal-code: R7A 6A9
+  - name: Aaron Glenn
     corresponding: false
-    roles: []
+    email: aaron.glenn@AGR.GC.CA
+    roles:
+      - Principle investigator
+      - Project design
+      - Author
     affiliations:
-      - Curvenote
+      - name: Agriculture and Agri-Food Canada, Brandon Research and Development Centre
+        address: 2701 Grand Valley Road
+        city: Brandon
+        state: MB
+        postal-code: R7A 5Y3
+  - name: Cameron Beaupre
+    corresponding: false
+    email: beauprecameron2@gmail.com
+    roles:
+      - MSc thesis
+      - Sample collection
+      - Lab analysis
+      - Initial data analysis
+      - Initial draft of manuscript
+    affiliations:
+      - name: Brandon University, Masters in Environmental and Life Sciences
+        address: 270 18th St
+        city: Brandon
+        state: MB
+        postal-code: R7A 6A9 
+
+  - name: Henry Wilson
+    corresponding: false
+    email: henry.wilson@AGR.GC.CA
+    roles:
+      - Project design
+      - Hydrology
+      - Author
+    affiliations:
+      - name: Agriculture and Agri-Food Canada, Brandon Research and Development Centre
+        address: 2701 Grand Valley Road
+        city: Brandon
+        state: MB
+        postal-code: R7A 5Y3
+                                
 keywords:
-  - La Palma
-  - Earthquakes
+  - Slow-release fertilizer
+  - Micro-plastic
+  - Fate and transport
+  
 abstract: |
-  In September 2021, a significant jump in seismic activity on the island of La Palma (Canary Islands, Spain) signaled the start of a volcanic crisis that still continues at the time of writing. Earthquake data is continually collected and published by the Instituto Geográphico Nacional (IGN). ...
-plain-language-summary: |
-  Earthquake data for the island of La Palma from the September 2021 eruption is found ...
-key-points:
-  - A web scraping script was developed to pull data from the Instituto Geogràphico Nacional into a machine-readable form for analysis
-  - Earthquake events on La Palma are consistent with the presence of both mantle and crustal reservoirs.
-date: last-modified
+ Abstract goes here
+
+date-modified: last-modified
 bibliography: references.bib
-citation:
-  container-title: Earth and Space Science
 number-sections: true
 ---
 
+## Potential journals
+- Soil and Tillage Research
+  - A Short Communication is a concise but complete description of a limited investigation, which will not be included in a later paper. Short Communications should be as completely documented, both by reference to the literature and description of the experimental procedures employed, as a regular paper. They should not occupy more than 6 printed pages (about 12 manuscript pages, including figures, tables and references).
+  - Pretty sure BU has a publishing agreement so it should be free to publish
+  
+
+
 ## Introduction
 
-```{r}
-eruptions <- c(1492, 1585, 1646, 1677, 1712, 1949, 1971, 2021)
-n_eruptions <- length(eruptions)
-```
+Plastics are extensively used in all aspects of life, including residential, commercial, industrial, agricultural and institutional sectors.
+Through improper disposal, accidental and incidental releases, and intentional placement, plastics have become a widespread pollutant found in every ecosystem.
+This has resulted in global concern surrounding the effects of plastic pollution on ecosystem and human health [@zhang2022].
+Of particular concern, are micro-plastics (MPs) (\<5mm) due to their movement and health impacts within the food chain and their rapid dispersion beyond their initial point of release.
+Despite the ubiquitous distribution of MP pollution across all ecosystem types, the focus has primarily been on marine and freshwater ecosystems [@anderson2017; @lenaker2021] and with an emphasis on urban and industrial sources.
+A 2021 survey of the plastic pollution literature found that only 4% of publications specifically investigated MPs in soils [@weber2021].
+Agriculture and soil have received relatively less attention despite the prevalent use of plastics, including horticultural mulch, twine, bale wrap, product bags and containers, and polymer-coated slow-release fertilizers [@rillig2017].
 
-```{r}
-#| label: fig-timeline
-#| fig-cap: Timeline of recent earthquakes on La Palma
-#| fig-alt: An event plot of the years of the last 8 eruptions on La Palma.
-#| fig-height: 1.5
-#| fig-width: 6
-par(mar = c(3, 1, 1, 1) + 0.1)
-plot(eruptions, rep(0, n_eruptions), 
-  pch = "|", axes = FALSE)
-axis(1)
-box()
-```
+There is currently little information on the concentration, distribution, or the types of plastic in agricultural soil, the effect they have on soil and plant health and the extent as to which agro-ecosytems are a net source of MPs to downstream ecosystems.
+Even within agriculture and soil science disciplines, the focus has largely been on assessing the risks associated with applying municipal biosolids as a soil amendment which have been shown to have higher concentrations of MPs [@crossman2020].
+There is a considerable gap in our understanding of nature of MPs in soils both in terms of the direct impact on the agro-ecosystem health and as a source of MPs to downstream ecosystems.
 
-```{r}
-#| output: false
-avg_years_between_eruptions <- mean(diff(eruptions[-n_eruptions]))
-avg_years_between_eruptions
-```
+Soil erosion, including tillage and surface water runoff actively redistribute MPs across agricultural landscapes [@rehm2024; @wang2024].
+Due to their low density, these buoyant particles are easily transported beyond field boundaries into adjacent environments making agricultural soils a likely source of MPs [@leonard2024].
+Given the lack of basic research on agricultural soil MPs, specifically in cold snowmelt dominated agricultural systems, this is a high-priority research area ([@environmentandclimatechangecanada2020]. The primary purpose of this pilot project was to investigate the fate of polymer coatings from slow-release fertilizers applied to agro-ecosystems in Manitoba, Canada. The objectives of this project were to: 1) characterize the lateral and vertical movement of polymer coatings within surface soils; and 2) quantify the export of polymer coatings from cropland in surface runoff during spring snowmelt.
 
-Based on data up to and including 1971, eruptions on La Palma happen every `{r} round(avg_years_between_eruptions, 1)` years on average.
+## Methods
 
-Studies of the magma systems feeding the volcano, such as @marrero2019, have proposed that there are two main magma reservoirs feeding the Cumbre Vieja volcano; one in the mantle (30-40km depth) which charges and in turn feeds a shallower crustal reservoir (10-20km depth).
+### Site description
 
-Eight eruptions have been recorded since the late 1400s (@fig-timeline).
+The study site is located near the edge of the Manitoba Escarpment in the South Tobacco Creek Watershed (STCW), near the town of Miami, Manitoba, Canada (49.3711°N, 98.2439°W; 445 masl) (@fig-mapr).
+The mean annual temperature is \~4 °C, and the mean annual precipitation is \~530 mm, of which approximately 15% occurs as snow (Environment Canada, 2026; Morden MB, climate ID 5021849, 1991–2020 normals).
+The topography is hummocky to undulating, with slope gradients of approximately 5%.
+Soils are classified as Orthic Dark Grey Chernozems, predominantly of the Dezwood Series.
+The Dezwood Series developed on moderately to strongly calcareous, deep, uniform, loamy mixed shale, limestone, and granite till deposits.
+These soils are often slightly eroded and slightly stony, with medium available water-holding capacity, medium organic matter content, and medium to high natural fertility [@michalyna1988].
 
-Data and methods are discussed in @sec-data-methods.
+{{< embed notebooks/maps.qmd#fig-mapr >}}
 
-Let $x$ denote the number of eruptions in a year. Then, $x$ can be modeled by a Poisson distribution
+The STCW has a long history of being part of a national program aimed at assessing the economic and water quality impacts of different agricultural practices across Canada [@agricultureandagri-foodcanada2011].
+Within the STCW the research site comprises two small paired watersheds that drain to edge-of-field weirs: the east watershed (5.15 ha) and the west watershed (4.16 ha).
+Historically, these watersheds were used to compare runoff and nutrient loading from zero-tillage and conventionally tilled fields [@tiessen2010].
+Both watersheds are now managed under the same practices.
+Polymer-coated urea (Environmental Smart Nitrogen) was broadcast applied at a rate of 110 kg ha^-1^ on 2022-05-24 using a spin spreader and incorporated into the surface soil with the seeding of canola on 2022- 05-25 using an air hoe drill.
+Following canola harvest, the field was tilled to a depth of 10 to 15 cm using a field cultivator on 2022-10-29.
+A conventional fertilizer blend was applied in the spring of 2023 and incorporated into the soil with a single pass of the field cultivator prior to the seeding of spring wheat using the air hoe drill on 2023-05-11 (@fig-weather-climate). ESN’s polymer coating is primarily composed of castor oil and polymethylene polyphenylene isocyanate (PPI), is reported to degrade over approximately 18-24 months in soil, yielding CO~2~, NH~3~, and water (Nutrien, 2018; ESN, 2023).
 
-$$
-p(x) = \frac{e^{-\lambda} \lambda^{x}}{x !}
-$$ {#eq-poisson}
+{{< embed notebooks/weather_discharge.qmd#fig-weather-climate >}}
 
-where $\lambda$ is the rate of eruptions per year. Using @eq-poisson, the probability of an eruption in the next $t$ years can be calculated.
+### Soil sampling and analysis
 
-| Name                 | Year   |
-| -------------------- | ------ |
-| Current              | 2021   |
-| Teneguía             | 1971   |
-| Nambroque            | 1949   |
-| El Charco            | 1712   |
-| Volcán San Antonio   | 1677   |
-| Volcán San Martin    | 1646   |
-| Tajuya near El Paso  | 1585   |
-| Montaña Quemada      | 1492   |
+Soil sampling was conducted at locations established in previous research [@tiessen2010] along four transects in each of the watersheds, with each transect spanning three hillslope positions: upper, mid, and lower slope (@fig-mapr), giving 24 sampling locations in total.
+Samples were collected on three dates: 21 October 2022, 11 May 2023, and 19 September 2023 (@fig-weather-climate).
+Surface soil samples were excavated with a spade from a 25 cm × 25 cm square to a depth of 5 cm, yielding a sample volume of 3125 cm³.
+On 19 September 2023, an additional sample was collected at each location from the 5–10 cm depth interval.
+Two additional surface riparian samples were also collected from each watershed on this date.
 
-: Recent historic eruptions on La Palma {#tbl-history}
+Soil samples were disaggregated by hand into smaller aggregates and air-dried.
+Each sample was further manually disaggregated and sieved sequentially through 2-mm and 1.18-mm meshes.
+Polymer coatings were retrieved from the sieves using tweezers.
+The extracted coatings were cleaned by magnetic stirring in distilled water for 10 minutes at 500 rpm, then filtered and dried at 30 °C.
+The cleaned and dried polymer coatings were counted and collectively weighed using a balance with 0.1 mg resolution.
 
-@tbl-history summarises the eruptions recorded since the colonization of the islands by Europeans in the late 1400s.
+### Runoff and water sampling
 
-![Map of La Palma](images/la-palma-map.png){#fig-map}
+A v-notched weir was installed in the riparian area at the outflow of each watershed.
+The water depth at the weirs was recorded water depth at 5-min intervals using a pressure transducer (Onset HOBO Water Level Data Logger).
+The water depth were then used to calculate flow, based on a standard v-notched weir flow equation (Smith, 1985).
+Throughout the runoff event, staff gauges read manually and from time-lapse photography were used to verify the logger-collected water depth data.
+Measurement of polymer coatings exported by surface runoff occurred on 2023-04-13, and 2023-04-14.
+The weir filters were applied to each weir for a maximum duration of two hours each day and switched twice a day for a total of four measurement periods at each weir over the 2-day runoff event.
+Polymer coatings were collected using a simple filtration system consisting of 1-mm screening was across the upstream side of the v notch Polymers coatings were extracted from the screens using tweezers.
+The Polymers coatings were dried at 30° C, counted and weighed.
+An incremental volume of water was calculated based on the flow rate over a set interval time of 15 minutes.
+The total estimated number of polymer coatings was extrapolated from periodic measurements by multiplying the total accumulated volume of water by the volume-weighted mean concentration of polymer coatings.
+Polymer coating concentration was assumed to be independent of discharge.
 
-La Palma is one of the west most islands in the Volcanic Archipelago of the Canary Islands (@fig-map). 
+$$PC = V \times \frac{\sum_{i=1}^{n} PC_i}{\sum_{i=1}^{n} V_i}$$ {#eq-poly}
 
-{{< embed notebooks/explore-earthquakes.qmd#fig-spatial-plot >}}
+where $PC$ is the total estimated number of polymer coatings over the monitoring period, $V$ is the total accumulated volume of water over the monitoring period (m^3^), $PC_i$ is the number of polymer coatings counted during measurement period $i$, $V_i$ is the volume of water that passed during measurement period $i$ (m^3^), and $n$ is the number of measurement periods.
 
-@fig-spatial-plot shows the location of recent Earthquakes on La Palma.
+### Statistical analysis
 
-## Data & Methods {#sec-data-methods}
+All statistical analysis, plotting, and mapping were undertaken using the R Statistical Software (v4.5.3); @rcoreteam2026), through the RStudio Integrated Development Environment (v2026.05.1; [@rstudio2026] ).
+All plots and maps were created using the R package `ggplot2` (v4.0.3; @wickham2016).
+Country and regional maps were created using data from the `rnaturalearth` package [@massicotte2023] and other maps using ESRI imagery and the `OpenStreetMap` package [@fellows2023] .
+Weather data and climate normal data was retrieved from ECCC using `weathercan` package (v1.0.0; @e.lazerte2018).
+Four Linear Mixed Models (R package `glmmTMB` v1.1.14; @brooks2017) were used to investigate the effect of hillslope position and sampling date (including interaction) on the abundance (number of coatings) and areal density (mass of polymer per unit area).
+Sample location was included as a random factor to control for the repeated measures over time.
 
-## Conclusion
+## Results and Discussion
+
+### In-field abundance and distribution
+
+In the statistical model investigating polymer abundance, the estimated variance for the random factor of sampling location was effectively zero, and this factor was removed from the model.
+No significant interaction between sampling date and hillslope position was detected for the abundance or density of polymer coatings in the 0-5 cm layer.
+Both slope position and sampling date had a significant effect (p \< 0.05) on the abundance and density of polymer coatings (@fig-poly-surface).
+Post-hoc pairwise comparisons showed that lower slope positions had significantly higher abundance, exceeding the upper positions by 112 and the mid positions by 94 coatings (@fig-poly-surface and @tbl-abundance-posthoc).
+Density followed a similar pattern, with the lower slope exceeding the upper positions by 0.12 g m⁻² and the mid positions by 0.09 g m⁻² (@fig-poly-surface and @tbl-density-posthoc).
+
+The downslope increase in polymer quantities could relate to movement via overland flow, as the buoyant nature of the coatings makes them easy to transport.
+Tillage erosion may also move coatings downslope with the soil.
+The overall reduction in polymer in surface soils over time may result from loss beyond the field boundary through overland flow.
+However, vertical movement below 5 cm likely accounts for much of this loss in surface MPs over time, as field operations including seeding and tillage mix the plow layer, resulting in downward movement despite surface application. This is supported by data showing similar polymer abundance and areal densities in both the 0-5 and 5-10 cm sampling depths (@fig-depth).
+Lastly, the reduction in polymer density may also be attributed to decomposition of the polymer over time. The relatively small loss also suggests that the polymer coatings may be more persistent beyonf 24 months in the soil environment and repeat applications of polymer coated fertilizers are likely to lead to accumulation of coatings.
+
+{{< embed notebooks/soil_sampling.qmd#fig-poly-surface >}}
+
+{{< embed notebooks/soil_sampling.qmd#tbl-abundance-posthoc >}}
+
+{{< embed notebooks/soil_sampling.qmd#tbl-density-posthoc >}}
+
+{{< embed notebooks/soil_sampling.qmd#fig-depth >}}
+
+
+The distribution of MPs in soil within agro-ecosystems is dynamic in both space and time, and continued research in this area must account for both dimensions when developing research ideas and sampling strategies. Currently, few guidelines or established sampling protocols are in place. The results of this study suggest that a transect approach along the catena is likely to capture the topographically driven variability, yielding high informational value with lower effort compared to a grid or random sampling approach. The results also demonstrate the importance of sampling depth. While the surface layer (0-5 cm) is important for investigating loss through surface processes, a complete inventory is needed for long-term studies. At a minimum, sampling should extend to the depth of the deepest tillage operation, but preferential flow paths and bioturbation may carry MPs deeper into the soil profile. Ideally incremental depth sampling is used to characterize the concentration of MPs with depth. In this study, the fertilizer was broadcast applied, resulting in a relatively uniform horizontal distribution of MPs; however, where fertilizer is banded, sampling must span the full width of the bands to account for the concentrated horizontal distribution of MPs.
+
+Beyond sampling strategy, additional work is needed to examine temporal and spatial patterns of other types and sources of agricultural MPs. Much of the literature on microplastics has focused on soils receiving biosolids, which often contain substantial amounts of plastics. On many farms in Manitoba, biosolids are not used as a soil amendment; however, the sources of MPs are instead on-farm uses (e.g., bale wrap, twine, bags/containers) or external sources through atmospheric deposition or overland flooding. In these cases, concentrations are likely to be very low, adding further challenges to quantifying and identifying MPs. Nonetheless, the dynamic nature observed with the polymer coatings in this study is likely transferable to a wide range of plastic types and sizes.
+
+### Runoff and loss
+
+Agricultural soils can serve as a long-term source of microplastics (MPs) to downstream ecosystems. Although concentrations in agricultural soil may be low, the extensive area of farmland means the total load can be considerable. In snowmelt-dominated regions like Manitoba, the snowmelt period is when the greatest losses are likely to occur; however, during this time, riparian areas have frozen soils and dormant vegetation, reducing their filtering capabilities and making riparian buffers less effective as a management practice for mitigating MP loss. Quantifying MPs in agricultural runoff presents methodological challenges: low concentrations necessitate filtering large volumes of runoff, and traditional automatic water samplers are likely insufficient for this purpose. While the simple screens used in this study allowed for large volumes of water to be filtered, this method has some limitations. Clogging with organic debris (e.g., crop residues) and sediment is an issue, and freezing of water on the screen during frequent freeze-thaw cycles similarly impedes flow. Further, the large mesh size used only captures larger MPs, and smaller MPs are not represented. Better edge-of-field runoff sampling approaches are needed for these types of conditions and to capture the full range of MP sizes. Lastly, this study did not investigate the role of shorter-duration, high-intensity rain events during the summer months as a potential pathway for MP export.
+
+## Conclusions
+
+Polymer coatings from slow-release fertilizers showed clear spatial and temporal dynamics, with evidence of downslope movement and export to downstream environments, demonstrating that agricultural soils can serve as a source of MPs. Soil sampling designs and research questions must account for this spatial and temporal variability, and developing best practices for sampling MPs in agricultural settings should be a research priority. The findings of this study are likely applicable to other types of agricultural plastics, which may show similar transport dynamics. Edge-of-field sampling in cold climates presents particular challenges, as low concentrations require filtering large volumes of runoff and freeze-thaw conditions and debris impede water flow through sampling equipment, highlighting the need for improved sampling approaches that can reliably quantify MP export under these conditions. As plastic inputs to agricultural landscapes continue to grow, whether from on-farm use or external sources, characterizing and managing MP movement through the landscape will be essential to effectively quantify and mitigate their broader environmental impact.
+
+## Acknowledgments {.unnumbered}
+
+Special thanks and recognition for the field and technical support from ...
+
+## Statements and declarations {.unnumbered}
+
+### Funding {.unnumbered}
+
+This research was supported by ...
+
+### Competing interests {.unnumbered}
+
+The authors have no competing interests to declare that are relevant to the content of this article.
+
+### Data and code availability {.unnumbered}
+
+Data and source code for analysis and manuscript available on GitHub: <https://github.com/alex-koiter/soil-plastics>
+
+Additional information, including analytical notebooks with details of the analysis and intermediate steps, is available online: <https://alexkoiter.ca/soil-plastics/>
+
+### Author contributions {.unnumbered}
+
+**C Beaupre** Methodology; Investigation; Data curation; Formal analysis; Writing - Original Draft; Writing - Review & Editing
+
+**A Glenn**: Conceptualization; Funding acquisition; Methodology; Investigation; Data curation; Formal analysis; Writing - Original Draft; Writing – review and editing; Project administration
+
+**A Koiter**: Conceptualization; Methodology; Investigation; Data curation; Formal analysis; Visualization; Writing - Original Draft; Writing – review and editing; Software
+
+**H Wilson**: Methodology; Formal analysis; Writing - Review & Editing
 
 ## References {.unnumbered}
 
-:::{#refs}
-
+::: {#refs}
 :::
