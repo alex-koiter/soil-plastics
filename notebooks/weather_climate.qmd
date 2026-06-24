@@ -57,6 +57,12 @@ morden_annual <- df_normal_morden |>
             rainfall_mm = max(rainfall_mm, na.rm = TRUE),
             daily_average_c = max(daily_average_c, na.rm = TRUE))
 morden_annual
+
+
+oct_mar <- df_normal_morden |>
+  filter(period %in% c("Oct", "Nov", "Dec", "Jan", "Feb", "Mar"))|>
+  summarise(precipitation_mm = sum(precipitation_mm, na.rm = TRUE))
+oct_mar
 ```
 
 ```{r}

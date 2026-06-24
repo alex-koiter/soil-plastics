@@ -275,7 +275,7 @@ Sciences</institution>
     practices. Polymer-coated urea (Environmental Smart Nitrogen) was
     broadcast applied at a rate of 110 kg ha<sup>-1</sup> on 2022-05-24
     using a spin spreader and incorporated into the surface soil with
-    the seeding of canola on 2022- 05-25 using an air hoe drill.
+    the seeding of canola on 2022-05-25 using an air hoe drill.
     Following canola harvest, the field was tilled to a depth of 10 to
     15 cm using a field cultivator on 2022-10-29. A conventional
     fertilizer blend was applied in the spring of 2023 and incorporated
@@ -283,9 +283,11 @@ Sciences</institution>
     the seeding of spring wheat using the air hoe drill on 2023-05-11
     (<xref alt="Figure 2" rid="fig-weather-climate">Figure 2</xref>).
     ESN’s polymer coating is primarily composed of castor oil and
-    polymethylene polyphenylene isocyanate (PPI), is reported to degrade
-    over approximately 18-24 months in soil, yielding CO<sub>2</sub>,
-    NH<sub>3</sub>, and water (Nutrien, 2018; ESN, 2023).</p>
+    polymethylene polyphenylene isocyanate. This flexible and permeable
+    polymer coating is designed to release Nitrogen in response to soil
+    temperatures to more closely match the demand of the crop reducing
+    the potential losses through denitrification, volatilization, and
+    leaching. (Nutrien, 2018; ESN, 2023).</p>
     <fig id="fig-weather-climate">
       <caption><p>Figure 2: a) Climate Normals (1991-2020) for Morden,
       MB (Climate ID 5021849), located approximately 30 km from the
@@ -297,7 +299,7 @@ Sciences</institution>
       tillage field operations; and (3) collection of soil and runoff
       samples. Red and blue points indicate average daily temperatures
       above and below 0 degrees Celsius, respectively.</p></caption>
-      <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/notebooks-weather_discharge-fig-weather-climate-output-2.png" />
+      <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/notebooks-weather_climate-fig-weather-climate-output-2.png" />
     </fig>
   </sec>
   <sec id="soil-sampling-and-analysis">
@@ -677,6 +679,85 @@ Sciences</institution>
   </sec>
   <sec id="runoff-and-loss">
     <title>3.2 Runoff and loss</title>
+    <p>The long-term normal annual precipitation is 527 mm. The year of
+    application (2022) received near-normal precipitation, while the
+    2023 water year was notably drier, accumulating only 250 mm. In
+    particular, late fall and winter precipitation (October 1 to March
+    31) was substantially below average, totaling 50 mm in 2023
+    (<xref alt="Figure 5" rid="fig-discharge">Figure 5</xref>) compared
+    to the long-term average of 141 mm for this period. During the 2023
+    spring runoff period, the West watershed (5.15 ha) had a higher
+    volume-weighted mean concentration of 0.071 coatings m⁻³, resulting
+    in an estimated 171 total coatings exported despite a lower
+    accumulated runoff volume of 2,424 m³
+    (<xref alt="Table 3" rid="tbl-runoff">Table 3</xref>). In contrast,
+    the East watershed (4.16 ha) produced nearly twice the runoff (4,675
+    m³) but had a lower concentration of 0.027 coatings m⁻³, exporting
+    an estimated 126 coatings
+    (<xref alt="Table 3" rid="tbl-runoff">Table 3</xref>). Overall,
+    concentration rather than runoff volume was the primary driver of
+    total coatings export between the two watersheds. The manual
+    measurements made as part of this study sampled only a small portion
+    of the runoff event, missing the larger peaks in the hydrograph. By
+    missing peak runoff, these measurements provided a limited overall
+    characterization of both concentration and total coating loss.
+    Additionally, the drier conditions in 2023 resulted in lower runoff
+    volumes, potentially accounting for the small numbers of coatings
+    observed. Future studies should sample across various parts of the
+    hydrograph and across a range of spring snowmelt conditions,
+    including wet and dry years, flashy and subdued hydrographs, and
+    varying frequencies of freeze-thaw cycles. This broader approach
+    would better capture the role of environmental conditions and runoff
+    volumes on the transport and export of polymer coatings and other
+    MPs.</p>
+    <fig id="fig-discharge">
+      <caption><p>Figure 5: Discharge for the East and West watersheds
+      during the spring snowmelt period in April 2023. Shaded regions
+      indicate the four sampling periods for polymer
+      coatings.</p></caption>
+      <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/notebooks-04_Discharge-fig-discharge-output-1.png" />
+    </fig>
+    <fig id="tbl-runoff">
+      <caption><p>Table 3: Estimated total ploymer coating export from
+      West and East watersheds, based on accumulated runoff volume and
+      volume-weighted mean concentration.</p></caption>
+      <table-wrap>
+        <table>
+          <thead>
+            <tr>
+              <th id="watershed" scope="col">Watershed</th>
+              <th id="area" scope="col">Area (ha)</th>
+              <th id="total_Q" scope="col">Accumulated runoff (m3)</th>
+              <th id="conc" scope="col">Concentration (Coatings
+              m-3)<named-content content-type="gt_footnote_marks"><sup>*</sup></named-content></th>
+              <th id="total" scope="col">Total coatings exported</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <td colspan="5"><named-content content-type="gt_footnote_marks"><sup>*</sup></named-content>
+              Volume-weighted mean concentration</td>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <td headers="watershed">West</td>
+              <td headers="area">5.15</td>
+              <td headers="total_Q">2,424</td>
+              <td headers="conc">0.071</td>
+              <td headers="total">171</td>
+            </tr>
+            <tr>
+              <td headers="watershed">East</td>
+              <td headers="area">4.16</td>
+              <td headers="total_Q">4,675</td>
+              <td headers="conc">0.027</td>
+              <td headers="total">126</td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+    </fig>
     <p>Agricultural soils can serve as a long-term source of
     microplastics (MPs) to downstream ecosystems. Although
     concentrations in agricultural soil may be low, the extensive area
@@ -696,10 +777,14 @@ Sciences</institution>
     screen during frequent freeze-thaw cycles similarly impedes flow.
     Further, the large mesh size used only captures larger MPs, and
     smaller MPs are not represented. Better edge-of-field runoff
-    sampling approaches are needed for these types of conditions and to
-    capture the full range of MP sizes. Lastly, this study did not
-    investigate the role of shorter-duration, high-intensity rain events
-    during the summer months as a potential pathway for MP export.</p>
+    sampling approaches are needed for these types of conditions to
+    capture the full range of MP sizes. In particular, automated
+    sampling systems are required to fully characterize all parts of the
+    hydrograph, as manual grab sampling is unlikely to capture the
+    rapidly changing flow conditions and associated MP concentrations
+    throughout the runoff event. Lastly, this study did not investigate
+    the role of shorter-duration, high-intensity rain events during the
+    summer months as a potential pathway for MP export.</p>
   </sec>
 </sec>
 <sec id="conclusions">
@@ -2055,7 +2140,7 @@ p5
 <sub-article article-type="notebook" id="nb-2-nb-2">
 <front-stub>
 <title-group>
-<article-title>01 Map of study area</article-title>
+<article-title>04 Discharage</article-title>
 </title-group>
 <contrib-group>
 <contrib contrib-type="author">
@@ -2071,6 +2156,174 @@ p5
 
 <body>
 <sec id="load-libraries-nb-2">
+  <title>Load libraries</title>
+  <sec specific-use="notebook-content">
+  <code language="r script">suppressPackageStartupMessages({
+  library(tidyverse)
+  library(gt)
+})
+  </code>
+  </sec>
+</sec>
+<sec id="load-data-nb-2">
+  <title>Load data</title>
+  <sec specific-use="notebook-content">
+  <code language="r script">discharge &lt;- read_csv(here::here(&quot;./notebooks/discharge.csv&quot;)) |&gt;
+  mutate(volume_m3 = q * 60*15/1000) |&gt;
+  mutate(q_m3s = q / 1000) |&gt;
+  group_by(watershed) |&gt;
+  filter(date_time &gt;= ymd_hms(&quot;2023-04-11 06:00:00&quot;, tz = &quot;UTC&quot;), date_time &lt; ymd_hms(&quot;2023-04-15 00:00:00&quot;, tz = &quot;UTC&quot;)) |&gt;
+  ungroup()
+  </code>
+  <boxed-text>
+    <preformat>Rows: 9216 Columns: 3
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: &quot;,&quot;
+chr  (1): watershed
+dbl  (1): q
+dttm (1): date_time
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</preformat>
+  </boxed-text>
+  </sec>
+</sec>
+<sec id="plastic-counts-nb-2">
+  <title>Plastic counts</title>
+  <sec specific-use="notebook-content">
+  <code language="r script">sampling &lt;- tibble(
+  start = ymd_hms(c(
+    &quot;2023-04-13 10:00:00&quot;,
+    &quot;2023-04-13 10:00:00&quot;,
+    &quot;2023-04-13 12:00:00&quot;,
+    &quot;2023-04-13 12:00:00&quot;,
+    &quot;2023-04-14 10:00:00&quot;,
+    &quot;2023-04-14 10:00:00&quot;,
+    &quot;2023-04-14 12:00:00&quot;,
+    &quot;2023-04-14 12:00:00&quot;
+  )),
+  end = ymd_hms(c(
+    &quot;2023-04-13 11:45:00&quot;,
+    &quot;2023-04-13 11:30:00&quot;,
+    &quot;2023-04-13 13:30:00&quot;,
+    &quot;2023-04-13 12:45:00&quot;,
+    &quot;2023-04-14 11:45:00&quot;,
+    &quot;2023-04-14 11:45:00&quot;,
+    &quot;2023-04-14 13:45:00&quot;,
+    &quot;2023-04-14 13:45:00&quot;
+  )),
+  watershed = c(&quot;East&quot;, &quot;West&quot;, &quot;East&quot;, &quot;West&quot;, &quot;East&quot;, &quot;West&quot;, &quot;East&quot;, &quot;West&quot;),
+  count = c(3, 3, 2, 3, 1, 0, 1, 2),
+  period = c(1, 1, 2, 2, 3, 3, 4, 4)
+)
+
+results &lt;- discharge |&gt;
+  inner_join(
+    sampling,
+    join_by(watershed, date_time &gt;= start, date_time &lt;= end)
+  ) |&gt;
+summarise(volume = sum(volume_m3), 
+          count = max(count),
+          .by = c(watershed, period)) |&gt;
+  summarise(volume = sum(volume), 
+          count = sum(count),
+          .by = c(watershed)) |&gt;
+  mutate(conc =  count/volume)
+  </code>
+  </sec>
+</sec>
+<sec id="pc-estimation-nb-2">
+  <title>PC estimation</title>
+  <sec specific-use="notebook-content">
+  <code language="r script">
+estimate &lt;- discharge |&gt;
+  summarise(total_Q = sum(volume_m3), .by = watershed) |&gt;
+  full_join(results) |&gt;
+  mutate(total = conc * total_Q) |&gt;
+  mutate(area = case_when(watershed == &quot;West&quot; ~ 5.15,
+                          watershed == &quot;East&quot; ~ 4.16)) |&gt;
+  select(watershed, area, total_Q, conc, total)
+  </code>
+  <boxed-text>
+    <preformat>Joining with `by = join_by(watershed)`</preformat>
+  </boxed-text>
+  <code language="r script">
+estimate |&gt;
+  gt() |&gt;
+  cols_label(watershed = &quot;Watershed&quot;,
+    area = &quot;Area (ha)&quot;,
+    total_Q = md(&quot;Accumulated runoff (m&lt;sup&gt;3&lt;/sup&gt;)&quot;),
+    conc = md(&quot;Concentration (Coatings m&lt;sup&gt;-3&lt;/sup&gt;)&quot;),
+    total = &quot;Total coatings exported&quot;) |&gt;
+    fmt_number(columns = c(total_Q, total), decimals = 0) |&gt;
+  fmt_number(columns = conc, decimals = 3) |&gt;
+  tab_footnote(
+    footnote = &quot;Volume-weighted mean concentration&quot;,
+    locations = cells_column_labels(columns = conc)) |&gt;
+  opt_footnote_marks(marks = &quot;standard&quot;)
+  </code>
+  <fig id="tbl-runoff-nb-2">
+    <caption><p>Estimated total ploymer coating export from West and
+    East watersheds, based on accumulated runoff volume and
+    volume-weighted mean concentration.</p></caption>
+  </fig>
+  </sec>
+</sec>
+<sec id="plot-discharge-nb-2">
+  <title>plot discharge</title>
+  <sec id="cell-fig-discharge-nb-2" specific-use="notebook-content">
+  <code language="r script">
+ggplot(data = discharge, aes(x = date_time, y = q_m3s)) +
+  geom_rect(data = sampling,
+            aes(xmin = start, xmax = end + minutes(15), ymin = -Inf,ymax = Inf,
+            fill = factor(period)), alpha = 0.2, inherit.aes = FALSE) +
+  geom_line() +
+  theme_bw() +
+  scale_x_datetime(date_breaks = &quot;6 hours&quot;, date_labels = &quot;%b %d %H:%M&quot;, expand = c(0,0)) +
+  scale_y_continuous(expand = c(0.001,0)) +
+  theme_bw() +
+  facet_wrap(~watershed) +
+  labs(x = NULL, y = expression(Discharge~(m^3~s^-1)),
+       fill = &quot;Sampling period&quot;)  +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),
+        legend.position = &quot;bottom&quot;)
+  </code>
+  <fig id="fig-discharge-nb-2">
+    <caption><p>Discharge for the East and West watersheds during the
+    spring snowmelt period in April 2023. Shaded regions indicate the
+    four sampling periods for polymer coatings.</p></caption>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="04_Discharge_files/figure-jats/fig-discharge-1.png" />
+  </fig>
+  </sec>
+</sec>
+</body>
+
+
+
+<back>
+</back>
+
+
+</sub-article>
+<sub-article article-type="notebook" id="nb-3-nb-3">
+<front-stub>
+<title-group>
+<article-title>01 Map of study area</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<name>
+<surname>Koiter</surname>
+<given-names>Alex</given-names>
+</name>
+<string-name>Alex Koiter</string-name>
+
+</contrib>
+</contrib-group>
+</front-stub>
+
+<body>
+<sec id="load-libraries-nb-3">
   <title>Load Libraries</title>
   <sec specific-use="notebook-content">
   <code language="r script">library(tidyverse)
@@ -2108,7 +2361,7 @@ The following objects are masked from 'package:stats':
   </boxed-text>
   </sec>
 </sec>
-<sec id="important-coordinates-nb-2">
+<sec id="important-coordinates-nb-3">
   <title>Important coordinates</title>
   <p>Regional site location</p>
   <sec specific-use="notebook-content">
@@ -2142,7 +2395,7 @@ dbl (3): Transect, Easting, Northing
   </boxed-text>
   </sec>
 </sec>
-<sec id="canada-nb-2">
+<sec id="canada-nb-3">
   <title>Canada</title>
   <sec specific-use="notebook-content">
   <code language="r script">canada &lt;- ne_states(country = &quot;Canada&quot;, returnclass = &quot;sf&quot;) %&gt;%
@@ -2150,9 +2403,9 @@ dbl (3): Transect, Easting, Northing
   </code>
   </sec>
 </sec>
-<sec id="maps-nb-2">
+<sec id="maps-nb-3">
   <title>Maps</title>
-  <sec id="canada-1-nb-2">
+  <sec id="canada-1-nb-3">
     <title>Canada</title>
     <sec specific-use="notebook-content">
     <code language="r script">p1 &lt;- ggplot() +
@@ -2237,7 +2490,7 @@ all geometries</preformat>
     </boxed-text>
     <code language="r script">mb_cities &lt;- maps::canada.cities %&gt;%
   filter(country.etc == &quot;MB&quot;) %&gt;%
-  mutate(name = str_remove(name, &quot; [A-Z]{2}<!-- (F2ED4C6E)[nb-2]:/home/alex/Dropbox/Graduate students/Cameron/Manuscript/soil-plastics/notebooks/maps.qmd -->quot;)) %&gt;%
+  mutate(name = str_remove(name, &quot; [A-Z]{2}<!-- (F2ED4C6E)[nb-3]:/home/alex/Dropbox/Graduate students/Cameron/Manuscript/soil-plastics/notebooks/maps.qmd -->quot;)) %&gt;%
   st_as_sf(coords = c(&quot;long&quot;, &quot;lat&quot;), crs = 4326) %&gt;%
   st_transform(crs = 4326) %&gt;%
   st_crop(st_bbox(c(xmin = -100, ymin = 48.99267, 
@@ -2348,7 +2601,7 @@ p5
     </code>
     <graphic mimetype="image" mime-subtype="png" xlink:href="maps_files/figure-jats/unnamed-chunk-9-1.png" />
     </sec>
-    <sec id="cell-fig-mapr-nb-2" specific-use="notebook-content">
+    <sec id="cell-fig-mapr-nb-3" specific-use="notebook-content">
     <code language="r script">
 p6 &lt;- (p4 + inset_element(p1, left = 0.6, bottom = 0.6, right = 1, top = 1)) + p5 +  plot_layout(widths = c(1, 1))
 p6
@@ -2360,7 +2613,7 @@ give correct results for longitude/latitude data</preformat>
     <code language="r script">
 #ggsave(plot = p6, filename = here::here(&quot;./Figures/Figure .png&quot;), width = 170, height = 90, units = &quot;mm&quot;, dpi = 400) 
     </code>
-    <fig id="fig-mapr-nb-2">
+    <fig id="fig-mapr-nb-3">
       <caption><p>Showing a) the location of the study site in southern
       Manitoba with an inset map of Canada; and b) the locations of the
       four transects and three slope positions sampled in the East and
@@ -2370,7 +2623,7 @@ give correct results for longitude/latitude data</preformat>
     </sec>
   </sec>
 </sec>
-<sec id="session-info-nb-2">
+<sec id="session-info-nb-3">
   <title>Session info</title>
   <sec specific-use="notebook-content">
   <code language="r script">sessioninfo::session_info()
@@ -2487,7 +2740,7 @@ give correct results for longitude/latitude data</preformat>
 
 
 </sub-article>
-<sub-article article-type="notebook" id="nb-3-nb-3">
+<sub-article article-type="notebook" id="nb-4-nb-4">
 <front-stub>
 <title-group>
 <article-title>02 Climate and weather</article-title>
@@ -2505,7 +2758,7 @@ give correct results for longitude/latitude data</preformat>
 </front-stub>
 
 <body>
-<sec id="load-libraries-nb-3">
+<sec id="load-libraries-nb-4">
   <title>Load libraries</title>
   <sec specific-use="notebook-content">
   <code language="r script">suppressPackageStartupMessages({
@@ -2516,9 +2769,9 @@ give correct results for longitude/latitude data</preformat>
   </code>
   </sec>
 </sec>
-<sec id="get-the-data-nb-3">
+<sec id="get-the-data-nb-4">
   <title>Get the data</title>
-  <sec id="find-station_id-and-climate_id-nb-3">
+  <sec id="find-station_id-and-climate_id-nb-4">
     <title>Find station_id and climate_id</title>
     <sec specific-use="notebook-content">
     <code language="r script">stations_search(coords = c(49.332263, -98.382368), dist = 20, normals_years = &quot;1991-2020&quot;)
@@ -2582,7 +2835,7 @@ give correct results for longitude/latitude data</preformat>
     </sec>
   </sec>
 </sec>
-<sec id="normals-nb-3">
+<sec id="normals-nb-4">
   <title>Normals</title>
   <sec specific-use="notebook-content">
   <code language="r script">df_normal_miami &lt;-  normals_dl(climate_ids = 5021736, normals_years = &quot;1981-2010&quot;) |&gt;
@@ -2591,7 +2844,7 @@ give correct results for longitude/latitude data</preformat>
   select(precip, rain, )
   </code>
   </sec>
-  <sec id="download-nb-3">
+  <sec id="download-nb-4">
     <title>Download</title>
     <sec specific-use="notebook-content">
     <code language="r script">df_normal_morden &lt;- normals_dl(climate_ids = 5021849, normals_years = &quot;current&quot;, measurement_type = c(&quot;Temperature&quot;, &quot;Precipitation&quot;)) |&gt;
@@ -2616,6 +2869,17 @@ morden_annual
              &lt;dbl&gt;       &lt;dbl&gt;           &lt;dbl&gt;
 1             528.        452.               4</preformat>
     </boxed-text>
+    <code language="r script">oct_mar &lt;- df_normal_morden |&gt;
+  filter(period %in% c(&quot;Oct&quot;, &quot;Nov&quot;, &quot;Dec&quot;, &quot;Jan&quot;, &quot;Feb&quot;, &quot;Mar&quot;))|&gt;
+  summarise(precipitation_mm = sum(precipitation_mm, na.rm = TRUE))
+oct_mar
+    </code>
+    <boxed-text>
+      <preformat># A tibble: 1 × 1
+  precipitation_mm
+             &lt;dbl&gt;
+1              141</preformat>
+    </boxed-text>
     </sec>
     <sec specific-use="notebook-content">
     <code language="r script">morden_annual$precipitation_mm
@@ -2633,7 +2897,7 @@ morden_annual
     </code>
     </sec>
   </sec>
-  <sec id="plot-climate-normals-nb-3">
+  <sec id="plot-climate-normals-nb-4">
     <title>Plot Climate Normals</title>
     <sec specific-use="notebook-content">
     <code language="r script">p1 &lt;- ggplot() +
@@ -2661,13 +2925,13 @@ p1
     <boxed-text>
       <preformat>`geom_smooth()` using formula = 'y ~ x'</preformat>
     </boxed-text>
-    <graphic mimetype="image" mime-subtype="png" xlink:href="weather_discharge_files/figure-jats/unnamed-chunk-8-1.png" />
+    <graphic mimetype="image" mime-subtype="png" xlink:href="weather_climate_files/figure-jats/unnamed-chunk-8-1.png" />
     </sec>
   </sec>
 </sec>
-<sec id="study-period-weather-nb-3">
+<sec id="study-period-weather-nb-4">
   <title>Study period weather</title>
-  <sec id="download-1-nb-3">
+  <sec id="download-1-nb-4">
     <title>Download</title>
     <sec specific-use="notebook-content">
     <code language="r script">df_day &lt;- weather_dl(station_ids = 29886, interval = &quot;day&quot;, start = &quot;2021-10-01&quot;, end = &quot;2023-09-30&quot;) |&gt;
@@ -2682,7 +2946,7 @@ p1
     </code>
     </sec>
   </sec>
-  <sec id="sampling-details-nb-3">
+  <sec id="sampling-details-nb-4">
     <title>Sampling details</title>
     <sec specific-use="notebook-content">
     <code language="r script">vline_data &lt;- data.frame(
@@ -2701,7 +2965,7 @@ annotation_data &lt;- data.frame(
     </code>
     </sec>
   </sec>
-  <sec id="plot-study-weather-nb-3">
+  <sec id="plot-study-weather-nb-4">
     <title>Plot study weather</title>
     <sec specific-use="notebook-content">
     <code language="r script">p2 &lt;- ggplot() +
@@ -2733,13 +2997,13 @@ p2
       <preformat>Warning: Removed 6 rows containing missing values or values outside the scale range
 (`geom_point()`).</preformat>
     </boxed-text>
-    <graphic mimetype="image" mime-subtype="png" xlink:href="weather_discharge_files/figure-jats/unnamed-chunk-11-1.png" />
+    <graphic mimetype="image" mime-subtype="png" xlink:href="weather_climate_files/figure-jats/unnamed-chunk-11-1.png" />
     </sec>
   </sec>
 </sec>
-<sec id="combined-plot-nb-3">
+<sec id="combined-plot-nb-4">
   <title>Combined plot</title>
-  <sec id="cell-fig-weather-climate-nb-3" specific-use="notebook-content">
+  <sec id="cell-fig-weather-climate-nb-4" specific-use="notebook-content">
   <code language="r script">
 p1 / p2 + 
   plot_layout(heights = c(1, 2), axis_title = &quot;collect&quot;) +
@@ -2752,7 +3016,7 @@ p1 / p2 +
     <preformat>Warning: Removed 6 rows containing missing values or values outside the scale range
 (`geom_point()`).</preformat>
   </boxed-text>
-  <fig id="fig-weather-climate-nb-3">
+  <fig id="fig-weather-climate-nb-4">
     <caption><p>a) Climate Normals (1991-2020) for Morden, MB (Climate
     ID 5021849), located approximately 30 km from the field site. b)
     Weather conditions for the 2022 and 2023 water years (Oct 1 - Sept
@@ -2763,11 +3027,11 @@ p1 / p2 +
     (3) collection of soil and runoff samples. Red and blue points
     indicate average daily temperatures above and below 0 degrees
     Celsius, respectively.</p></caption>
-    <graphic mimetype="image" mime-subtype="png" xlink:href="weather_discharge_files/figure-jats/fig-weather-climate-1.png" />
+    <graphic mimetype="image" mime-subtype="png" xlink:href="weather_climate_files/figure-jats/fig-weather-climate-1.png" />
   </fig>
   </sec>
 </sec>
-<sec id="session-info-nb-3">
+<sec id="session-info-nb-4">
   <title>Session info</title>
   <sec specific-use="notebook-content">
   <code language="r script">sessioninfo::session_info()
@@ -2783,7 +3047,7 @@ p1 / p2 +
  collate  en_US.UTF-8
  ctype    en_US.UTF-8
  tz       America/Winnipeg
- date     2026-06-18
+ date     2026-06-24
  pandoc   3.1.3 @ /usr/bin/ (via rmarkdown)
  quarto   1.6.39 @ /usr/local/bin/quarto
 

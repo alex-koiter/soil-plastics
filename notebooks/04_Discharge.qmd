@@ -1,0 +1,125 @@
+---
+title: "04 Discharage"
+author: "Alex Koiter"
+html-table-processing: none
+---
+
+## Load libraries
+
+```{r}
+suppressPackageStartupMessages({
+  library(tidyverse)
+  library(gt)
+})
+```
+
+## Load data
+```{r}
+discharge <- read_csv(here::here("./notebooks/discharge.csv")) |>
+  mutate(volume_m3 = q * 60*15/1000) |>
+  mutate(q_m3s = q / 1000) |>
+  group_by(watershed) |>
+  filter(date_time >= ymd_hms("2023-04-11 06:00:00", tz = "UTC"), date_time < ymd_hms("2023-04-15 00:00:00", tz = "UTC")) |>
+  ungroup()
+```
+
+
+
+## Plastic counts
+```{r}
+sampling <- tibble(
+  start = ymd_hms(c(
+    "2023-04-13 10:00:00",
+    "2023-04-13 10:00:00",
+    "2023-04-13 12:00:00",
+    "2023-04-13 12:00:00",
+    "2023-04-14 10:00:00",
+    "2023-04-14 10:00:00",
+    "2023-04-14 12:00:00",
+    "2023-04-14 12:00:00"
+  )),
+  end = ymd_hms(c(
+    "2023-04-13 11:45:00",
+    "2023-04-13 11:30:00",
+    "2023-04-13 13:30:00",
+    "2023-04-13 12:45:00",
+    "2023-04-14 11:45:00",
+    "2023-04-14 11:45:00",
+    "2023-04-14 13:45:00",
+    "2023-04-14 13:45:00"
+  )),
+  watershed = c("East", "West", "East", "West", "East", "West", "East", "West"),
+  count = c(3, 3, 2, 3, 1, 0, 1, 2),
+  period = c(1, 1, 2, 2, 3, 3, 4, 4)
+)
+
+results <- discharge |>
+  inner_join(
+    sampling,
+    join_by(watershed, date_time >= start, date_time <= end)
+  ) |>
+summarise(volume = sum(volume_m3), 
+          count = max(count),
+          .by = c(watershed, period)) |>
+  summarise(volume = sum(volume), 
+          count = sum(count),
+          .by = c(watershed)) |>
+  mutate(conc =  count/volume)
+```
+
+
+## PC estimation
+
+```{r}
+#| label: tbl-runoff
+#| tbl-cap: Estimated total ploymer coating export from West and East watersheds, based on accumulated runoff volume and volume-weighted mean concentration.
+
+
+estimate <- discharge |>
+  summarise(total_Q = sum(volume_m3), .by = watershed) |>
+  full_join(results) |>
+  mutate(total = conc * total_Q) |>
+  mutate(area = case_when(watershed == "West" ~ 5.15,
+                          watershed == "East" ~ 4.16)) |>
+  select(watershed, area, total_Q, conc, total)
+
+estimate |>
+  gt() |>
+  cols_label(watershed = "Watershed",
+    area = "Area (ha)",
+    total_Q = md("Accumulated runoff (m<sup>3</sup>)"),
+    conc = md("Concentration (Coatings m<sup>-3</sup>)"),
+    total = "Total coatings exported") |>
+    fmt_number(columns = c(total_Q, total), decimals = 0) |>
+  fmt_number(columns = conc, decimals = 3) |>
+  tab_footnote(
+    footnote = "Volume-weighted mean concentration",
+    locations = cells_column_labels(columns = conc)) |>
+  opt_footnote_marks(marks = "standard")
+```
+
+## plot discharge
+```{r}
+#| label: fig-discharge
+#| fig-cap: "Discharge for the East and West watersheds during the spring snowmelt period in April 2023. Shaded regions indicate the four sampling periods for polymer coatings."
+#| fig-dpi: 300
+
+
+
+ggplot(data = discharge, aes(x = date_time, y = q_m3s)) +
+  geom_rect(data = sampling,
+            aes(xmin = start, xmax = end + minutes(15), ymin = -Inf,ymax = Inf,
+            fill = factor(period)), alpha = 0.2, inherit.aes = FALSE) +
+  geom_line() +
+  theme_bw() +
+  scale_x_datetime(date_breaks = "6 hours", date_labels = "%b %d %H:%M", expand = c(0,0)) +
+  scale_y_continuous(expand = c(0.001,0)) +
+  theme_bw() +
+  facet_wrap(~watershed) +
+  labs(x = NULL, y = expression(Discharge~(m^3~s^-1)),
+       fill = "Sampling period")  +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),
+        legend.position = "bottom")
+```
+
+
