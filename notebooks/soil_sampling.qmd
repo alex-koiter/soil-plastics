@@ -139,7 +139,7 @@ pairs <- em_elev |>
 
 ```{r}
 #| label: tbl-abundance-posthoc
-#| tbl-cap: Results of the post-hoc pairwise comparisons with a Benjamini-Hochberg p value adjustment for differences in the abundance of polymer coatings ($coatings~m^{-2}$) between the three slope poistions and sampling dates. Data were square-root transformed prior to analysis and back-transformed to the original scale for reporting.
+#| tbl-cap: Results of the post-hoc pairwise comparisons with a Benjamini-Hochberg p value adjustment for differences in the abundance of polymer coatings ($coatings~m^{-2}$) between the three slope positions and sampling dates. Data were square-root transformed prior to analysis and back-transformed to the original scale for reporting.
 
 
 pairs |>
@@ -334,7 +334,7 @@ pairs1 <- em_elev1 |>
 
 ```{r}
 #| label: tbl-density-posthoc
-#| tbl-cap: Results of the post-hoc pairwise comparisons with a Benjamini-Hochberg p value adjustment for differences in the mass of polymer coatings ($g~m^{-2}$) between the three slope poistions and sampling dates. Data were square-root transformed prior to analysis and back-transformed to the original scale for reporting.
+#| tbl-cap: Results of the post-hoc pairwise comparisons with a Benjamini-Hochberg p value adjustment for differences in the mass of polymer coatings ($g~m^{-2}$) between the three slope positions and sampling dates. Data were square-root transformed prior to analysis and back-transformed to the original scale for reporting.
 
 
 pairs1 |>

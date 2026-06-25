@@ -219,7 +219,7 @@
        <p>Alex Koiter</p>
 <section id="load-libraries" class="level2">
 <h2 class="anchored" data-anchor-id="load-libraries">Load libraries</h2>
-<div class="cell-container"><div class="cell-decorator"><pre>In [1]:</pre></div><div id="bb56d356-b5d2-4f49-b7c2-03e20fefd616" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [1]:</pre></div><div id="5af75260-f8fa-495e-96a1-921d3867dc58" class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>suppressPackageStartupMessages({</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  library(tidyverse)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  library(gt)</span>
@@ -228,7 +228,7 @@
 </section>
 <section id="load-data" class="level2">
 <h2 class="anchored" data-anchor-id="load-data">Load data</h2>
-<div class="cell-container"><div class="cell-decorator"><pre>In [2]:</pre></div><div id="1177e49f-2248-41d5-9561-1d241b3953df" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [2]:</pre></div><div id="e17865f2-9bd9-425d-9f50-6dfeb5309ea8" class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>discharge <span class="op">&lt;-</span> read_csv(here::here(<span class="st">"./notebooks/discharge.csv"</span>)) <span class="op">|&gt;</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  mutate(volume_m3 <span class="op">=</span> q <span class="op">*</span> <span class="dv">60</span><span class="op">*</span><span class="dv">15</span><span class="op">/</span><span class="dv">1000</span>) <span class="op">|&gt;</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  mutate(q_m3s <span class="op">=</span> q <span class="op">/</span> <span class="dv">1000</span>) <span class="op">|&gt;</span></span>
@@ -250,7 +250,7 @@ dttm (1): date_time
 </section>
 <section id="plastic-counts" class="level2">
 <h2 class="anchored" data-anchor-id="plastic-counts">Plastic counts</h2>
-<div class="cell-container"><div class="cell-decorator"><pre>In [3]:</pre></div><div id="d3f563b0-1647-4f54-88c8-62874d6a037e" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [3]:</pre></div><div id="93841527-e81e-44d2-b370-9878db82db6d" class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>sampling <span class="op">&lt;-</span> tibble(</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  start <span class="op">=</span> ymd_hms(c(</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"2023-04-13 10:00:00"</span>,</span>

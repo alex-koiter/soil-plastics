@@ -512,7 +512,7 @@ edge-of-field monitoring in cold regions.</p>
       the abundance of polymer coatings (<inline-formula><alternatives>
       <tex-math><![CDATA[coatings~m^{-2}]]></tex-math>
       <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>c</mml:mi><mml:mi>o</mml:mi><mml:mi>a</mml:mi><mml:mi>t</mml:mi><mml:mi>i</mml:mi><mml:mi>n</mml:mi><mml:mi>g</mml:mi><mml:mi>s</mml:mi><mml:mspace width="0.222em"></mml:mspace><mml:msup><mml:mi>m</mml:mi><mml:mrow><mml:mi>−</mml:mi><mml:mn>2</mml:mn></mml:mrow></mml:msup></mml:mrow></mml:math></alternatives></inline-formula>)
-      between the three slope poistions and sampling dates. Data were
+      between the three slope positions and sampling dates. Data were
       square-root transformed prior to analysis and back-transformed to
       the original scale for reporting.</p></caption>
       <table-wrap>
@@ -600,7 +600,7 @@ edge-of-field monitoring in cold regions.</p>
       the mass of polymer coatings (<inline-formula><alternatives>
       <tex-math><![CDATA[g~m^{-2}]]></tex-math>
       <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>g</mml:mi><mml:mspace width="0.222em"></mml:mspace><mml:msup><mml:mi>m</mml:mi><mml:mrow><mml:mi>−</mml:mi><mml:mn>2</mml:mn></mml:mrow></mml:msup></mml:mrow></mml:math></alternatives></inline-formula>)
-      between the three slope poistions and sampling dates. Data were
+      between the three slope positions and sampling dates. Data were
       square-root transformed prior to analysis and back-transformed to
       the original scale for reporting.</p></caption>
       <table-wrap>
@@ -1804,7 +1804,7 @@ pairs |&gt;
       abundance of polymer coatings (<inline-formula><alternatives>
       <tex-math><![CDATA[coatings~m^{-2}]]></tex-math>
       <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>c</mml:mi><mml:mi>o</mml:mi><mml:mi>a</mml:mi><mml:mi>t</mml:mi><mml:mi>i</mml:mi><mml:mi>n</mml:mi><mml:mi>g</mml:mi><mml:mi>s</mml:mi><mml:mspace width="0.222em"></mml:mspace><mml:msup><mml:mi>m</mml:mi><mml:mrow><mml:mi>−</mml:mi><mml:mn>2</mml:mn></mml:mrow></mml:msup></mml:mrow></mml:math></alternatives></inline-formula>)
-      between the three slope poistions and sampling dates. Data were
+      between the three slope positions and sampling dates. Data were
       square-root transformed prior to analysis and back-transformed to
       the original scale for reporting.</p></caption>
     </fig>
@@ -2136,7 +2136,7 @@ pairs1 |&gt;
       of polymer coatings (<inline-formula><alternatives>
       <tex-math><![CDATA[g~m^{-2}]]></tex-math>
       <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>g</mml:mi><mml:mspace width="0.222em"></mml:mspace><mml:msup><mml:mi>m</mml:mi><mml:mrow><mml:mi>−</mml:mi><mml:mn>2</mml:mn></mml:mrow></mml:msup></mml:mrow></mml:math></alternatives></inline-formula>)
-      between the three slope poistions and sampling dates. Data were
+      between the three slope positions and sampling dates. Data were
       square-root transformed prior to analysis and back-transformed to
       the original scale for reporting.</p></caption>
     </fig>
@@ -2310,7 +2310,7 @@ p5
  collate  en_US.UTF-8
  ctype    en_US.UTF-8
  tz       America/Winnipeg
- date     2026-06-18
+ date     2026-06-25
  pandoc   3.1.3 @ /usr/bin/ (via rmarkdown)
  quarto   1.6.39 @ /usr/local/bin/quarto
 

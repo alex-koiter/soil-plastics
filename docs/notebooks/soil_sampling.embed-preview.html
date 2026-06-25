@@ -237,7 +237,7 @@
        <p>Alex Koiter</p>
 <section id="load-libraries" class="level2">
 <h2 class="anchored" data-anchor-id="load-libraries">Load libraries</h2>
-<div class="cell-container"><div class="cell-decorator"><pre>In [1]:</pre></div><div id="92aaffb7-a92c-4707-979c-004430ae4989" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [1]:</pre></div><div id="07a1e8fe-2308-4690-9759-33baec3aaf68" class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>suppressPackageStartupMessages({</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>library(tidyverse)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>library(patchwork)</span>
@@ -250,7 +250,7 @@
 </section>
 <section id="read-in-data" class="level2">
 <h2 class="anchored" data-anchor-id="read-in-data">Read in data</h2>
-<div class="cell-container"><div class="cell-decorator"><pre>In [2]:</pre></div><div id="f78f03e2-f5d2-4901-9d96-6d048d87add2" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [2]:</pre></div><div id="6ae25579-8d46-41b1-8577-48292b66177d" class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">&lt;-</span> read_csv(here::here(<span class="st">"./notebooks/soil_data.csv"</span>))<span class="op">|&gt;</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  mutate(date_fct <span class="op">=</span> <span class="im">as</span>.factor(date))  <span class="op">|&gt;</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  mutate(elevation <span class="op">=</span> fct_relevel(elevation, c(<span class="st">"Upper"</span>, <span class="st">"Middle"</span>, <span class="st">"Lower"</span>, <span class="st">"Riparian"</span>))) <span class="op">|&gt;</span></span>
@@ -272,7 +272,7 @@ date (2): date, date_fct
 <h2 class="anchored" data-anchor-id="polymer-abundance-0-5-cm">Polymer abundance (0-5 cm)</h2>
 <section id="look-at-data" class="level3">
 <h3 class="anchored" data-anchor-id="look-at-data">Look at data</h3>
-<div class="cell-container"><div class="cell-decorator"><pre>In [3]:</pre></div><div id="a97ccb2a-b8bf-4c89-89c5-deda46198986" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [3]:</pre></div><div id="43466662-3c69-417e-b599-69965f2c0e87" class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>p1 <span class="op">&lt;-</span> ggplot(data <span class="op">=</span> <span class="bu">filter</span>(data, depth <span class="op">==</span> <span class="st">"0-5 cm"</span>), aes(x <span class="op">=</span> elevation, y <span class="op">=</span> n_m2, fill <span class="op">=</span> date_fct)) <span class="op">+</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  geom_boxplot(position <span class="op">=</span> position_dodge2(preserve <span class="op">=</span> <span class="st">"single"</span>)) <span class="op">+</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  theme_bw() <span class="op">+</span></span>
@@ -290,7 +290,7 @@ date (2): date, date_fct
 </section>
 <section id="stats" class="level3">
 <h3 class="anchored" data-anchor-id="stats">Stats</h3>
-<div class="cell-container"><div class="cell-decorator"><pre>In [4]:</pre></div><div id="cd006dcb-0de7-42d3-8b62-f2eb23234c47" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [4]:</pre></div><div id="ea268846-9a27-4b13-9bee-02193456bbce" class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>m1 <span class="op">&lt;-</span> glmmTMB(n_m2 <span class="op">~</span> elevation <span class="op">*</span> date_fct <span class="op">+</span> (<span class="dv">1</span><span class="op">|</span>flag_location),</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>              data <span class="op">=</span> <span class="bu">filter</span>(data, depth <span class="op">==</span> <span class="st">"0-5 cm"</span> <span class="op">&amp;</span> elevation <span class="op">!=</span> <span class="st">"Riparian"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
@@ -298,7 +298,7 @@ date (2): date, date_fct
 problem; non-positive-definite Hessian matrix. See vignette('troubleshooting')</code></pre>
 </div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [5]:</pre></div><div id="843a64c0-64cf-4808-87b9-8160e9c677ed" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [5]:</pre></div><div id="9be2befc-1dd7-4167-a54c-000f07e0c12d" class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>simulateResiduals(m1, n <span class="op">=</span> <span class="dv">1000</span>, plot <span class="op">=</span> TRUE)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div class="">
@@ -313,7 +313,7 @@ problem; non-positive-definite Hessian matrix. See vignette('troubleshooting')</
 Scaled residual values: 0.923 0.552 0.586 0.05 0.992 0.844 0.119 0.336 0.212 0.966 0.204 0.265 0.942 0.217 0.079 0.707 0.06 0.172 0.071 0.985 ...</code></pre>
 </div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [6]:</pre></div><div id="ddc5d682-741c-40b3-958b-9309ecbd0110" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [6]:</pre></div><div id="96e14f19-97f4-4b1d-a7a4-5c29d94d2aa6" class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>car::Anova(m1, <span class="bu">type</span> <span class="op">=</span> <span class="st">"III"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Analysis of Deviance Table (Type III Wald chisquare tests)
@@ -328,7 +328,7 @@ elevation:date_fct  3.7667  4   0.438499
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [7]:</pre></div><div id="70b6fca5-edf3-482a-ba30-590f49f4ecaf" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [7]:</pre></div><div id="1712da45-c608-465a-a33c-c0ba7d48ff28" class="cell">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>summary(m1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> Family: gaussian  ( identity )
@@ -363,11 +363,11 @@ elevationLower:date_fct2023-09-19   -122.01     100.63  -1.212  0.22533
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [8]:</pre></div><div id="50e12313-ea80-40e2-9be2-43fbbbead059" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [8]:</pre></div><div id="002a07e2-6741-4007-baa0-e2748b5b06e6" class="cell">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>m1 <span class="op">&lt;-</span> glmmTMB(n_m2 <span class="op">~</span> elevation <span class="op">*</span> date_fct ,</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>              data <span class="op">=</span> <span class="bu">filter</span>(data, depth <span class="op">==</span> <span class="st">"0-5 cm"</span> <span class="op">&amp;</span> elevation <span class="op">!=</span> <span class="st">"Riparian"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [9]:</pre></div><div id="4411957a-0dc3-480e-b44d-745da9d6faec" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [9]:</pre></div><div id="554b5db4-acb0-4b78-9514-79c1bc590781" class="cell">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>simulateResiduals(m1, n <span class="op">=</span> <span class="dv">1000</span>, plot <span class="op">=</span> TRUE)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div class="">
@@ -382,7 +382,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 Scaled residual values: 0.923 0.552 0.586 0.05 0.992 0.844 0.119 0.336 0.212 0.966 0.204 0.264 0.942 0.217 0.079 0.707 0.06 0.172 0.071 0.985 ...</code></pre>
 </div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [10]:</pre></div><div id="873c24f9-914a-4808-9efb-8629db75dcaa" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [10]:</pre></div><div id="6fe9e675-43aa-49ff-95c3-78f521ac5d4b" class="cell">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>car::Anova(m1, <span class="bu">type</span> <span class="op">=</span> <span class="st">"III"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Analysis of Deviance Table (Type III Wald chisquare tests)
@@ -397,12 +397,12 @@ elevation:date_fct  3.7642  4   0.438864
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [11]:</pre></div><div id="5e724f4a-38b8-434e-8122-2d3524a35e79" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [11]:</pre></div><div id="00b2d598-7b27-4b19-8757-21226084eed6" class="cell">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Removing interaction</span></span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>m1 <span class="op">&lt;-</span> glmmTMB(n_m2 <span class="op">~</span> elevation <span class="op">+</span> date_fct,</span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>              data <span class="op">=</span> <span class="bu">filter</span>(data, depth <span class="op">==</span> <span class="st">"0-5 cm"</span> <span class="op">&amp;</span> elevation <span class="op">!=</span> <span class="st">"Riparian"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [12]:</pre></div><div id="f8f2a802-e908-48ef-bff4-91548a1dc473" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [12]:</pre></div><div id="fe59d86f-3348-4071-8363-fd6e9ce12f58" class="cell">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>simulateResiduals(m1, n <span class="op">=</span> <span class="dv">1000</span>, plot <span class="op">=</span> TRUE) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div class="">
@@ -417,7 +417,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 Scaled residual values: 0.935 0.612 0.627 0.069 0.992 0.851 0.146 0.362 0.157 0.942 0.161 0.215 0.954 0.269 0.115 0.757 0.072 0.197 0.085 0.985 ...</code></pre>
 </div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [13]:</pre></div><div id="a4d8ce8a-2eda-4bdf-b106-244e0b7183e6" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [13]:</pre></div><div id="bb1e5ed8-085e-463f-9400-18734fd2b05d" class="cell">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>performance::check_collinearity(m1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># Check for Multicollinearity
@@ -429,7 +429,7 @@ Low Correlation
   date_fct   1 [1.00, 1.00]        1         1</code></pre>
 </div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [14]:</pre></div><div id="2a7f70da-22ac-4e1a-9354-df7a422be75e" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [14]:</pre></div><div id="ca809e5d-bcc1-4c25-9641-52d5e20e4ca1" class="cell">
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>car::Anova(m1, <span class="bu">type</span> <span class="op">=</span> <span class="st">"III"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Analysis of Deviance Table (Type III Wald chisquare tests)
@@ -443,12 +443,12 @@ date_fct    38.8340  2  3.692e-09 ***
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [15]:</pre></div><div id="0374df41-96fc-40c5-8c45-66705cd53339" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [15]:</pre></div><div id="5676a05f-9bdb-40c9-82ee-640f70ea0c04" class="cell">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Square root transform</span></span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>m1_sqrt <span class="op">&lt;-</span> glmmTMB(sqrt(n_m2) <span class="op">~</span> elevation <span class="op">+</span> date_fct,</span>
 <span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>                   data <span class="op">=</span> <span class="bu">filter</span>(data, depth <span class="op">==</span> <span class="st">"0-5 cm"</span> <span class="op">&amp;</span> elevation <span class="op">!=</span> <span class="st">"Riparian"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [16]:</pre></div><div id="d47942d0-3415-446c-bc5b-8b46b26d42b0" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [16]:</pre></div><div id="7ec8c941-5e24-4136-9c06-8ec5a0b66a0e" class="cell">
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>simulateResiduals(m1_sqrt, n <span class="op">=</span> <span class="dv">1000</span>, plot <span class="op">=</span> TRUE) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div class="">
@@ -463,7 +463,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 Scaled residual values: 0.882 0.615 0.625 0.094 0.98 0.851 0.19 0.449 0.196 0.926 0.184 0.25 0.903 0.329 0.154 0.723 0.069 0.245 0.097 0.965 ...</code></pre>
 </div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [17]:</pre></div><div id="c3927781-9816-48a1-8f51-d00967a87297" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [17]:</pre></div><div id="47cc570c-7d6a-4840-86c2-22e31b5da4d8" class="cell">
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>performance::check_collinearity(m1_sqrt)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># Check for Multicollinearity
@@ -475,7 +475,7 @@ Low Correlation
   date_fct   1 [1.00, 1.00]        1         1</code></pre>
 </div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [18]:</pre></div><div id="ecae173c-ec79-46a2-9d36-c443bbd342a4" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [18]:</pre></div><div id="196fc651-bd28-4d1a-b146-db73a25c48d5" class="cell">
 <div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>car::Anova(m1_sqrt, <span class="bu">type</span> <span class="op">=</span> <span class="st">"III"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Analysis of Deviance Table (Type III Wald chisquare tests)
@@ -492,7 +492,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </section>
 <section id="pairwise-comparisons" class="level3">
 <h3 class="anchored" data-anchor-id="pairwise-comparisons">Pairwise comparisons</h3>
-<div class="cell-container"><div class="cell-decorator"><pre>In [19]:</pre></div><div id="5bbb7731-fc22-425b-b4d7-e150895024f2" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [19]:</pre></div><div id="ef098ecf-9c1d-41f8-a5b1-a161a062b88d" class="cell">
 <div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>em_elev <span class="op">&lt;-</span> emmeans(m1_sqrt, <span class="op">~</span> elevation, <span class="bu">type</span> <span class="op">=</span> <span class="st">"response"</span>) <span class="op">|&gt;</span> </span>
 <span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>  regrid() <span class="op">|&gt;</span> </span>
 <span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>  contrast(method <span class="op">=</span> <span class="st">"pairwise"</span>, adjust <span class="op">=</span> <span class="st">"fdr"</span>)  <span class="op">|&gt;</span></span>
@@ -507,7 +507,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 3 Middle - Lower  -94.09901 41.20269 66 -2.2838076 0.03841204 Slope Position</code></pre>
 </div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [20]:</pre></div><div id="b119269c-6f8f-4983-8d90-457abb2e6b08" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [20]:</pre></div><div id="e4c9b43d-aaf0-4a46-be1b-680959b36404" class="cell">
 <div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>em_date <span class="op">&lt;-</span> emmeans(m1_sqrt, <span class="op">~</span> date_fct, <span class="bu">type</span> <span class="op">=</span> <span class="st">"response"</span>) <span class="op">|&gt;</span> </span>
 <span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>  regrid() <span class="op">|&gt;</span> </span>
 <span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>  contrast(method <span class="op">=</span> <span class="st">"pairwise"</span>, adjust <span class="op">=</span> <span class="st">"fdr"</span>) <span class="op">|&gt;</span></span>
@@ -539,27 +539,27 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a>  tab_options(column_labels.font.weight <span class="op">=</span> <span class="st">"bold"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div><div id="tbl-abundance-posthoc" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-abundance-posthoc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;1: Results of the post-hoc pairwise comparisons with a Benjamini-Hochberg p value adjustment for differences in the abundance of polymer coatings (<span class="math inline">\(coatings~m^{-2}\)</span>) between the three slope poistions and sampling dates. Data were square-root transformed prior to analysis and back-transformed to the original scale for reporting.
+Table&nbsp;1: Results of the post-hoc pairwise comparisons with a Benjamini-Hochberg p value adjustment for differences in the abundance of polymer coatings (<span class="math inline">\(coatings~m^{-2}\)</span>) between the three slope positions and sampling dates. Data were square-root transformed prior to analysis and back-transformed to the original scale for reporting.
 </figcaption>
 <div aria-describedby="tbl-abundance-posthoc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output cell-output-display">
-<div id="dagoqyumpr" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#dagoqyumpr table {
+<div id="jphwvcgaeh" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#jphwvcgaeh table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#dagoqyumpr thead, #dagoqyumpr tbody, #dagoqyumpr tfoot, #dagoqyumpr tr, #dagoqyumpr td, #dagoqyumpr th {
+#jphwvcgaeh thead, #jphwvcgaeh tbody, #jphwvcgaeh tfoot, #jphwvcgaeh tr, #jphwvcgaeh td, #jphwvcgaeh th {
   border-style: none;
 }
 
-#dagoqyumpr p {
+#jphwvcgaeh p {
   margin: 0;
   padding: 0;
 }
 
-#dagoqyumpr .gt_table {
+#jphwvcgaeh .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -585,12 +585,12 @@ Table&nbsp;1: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   border-left-color: #D3D3D3;
 }
 
-#dagoqyumpr .gt_caption {
+#jphwvcgaeh .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#dagoqyumpr .gt_title {
+#jphwvcgaeh .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -602,7 +602,7 @@ Table&nbsp;1: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   border-bottom-width: 0;
 }
 
-#dagoqyumpr .gt_subtitle {
+#jphwvcgaeh .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -614,7 +614,7 @@ Table&nbsp;1: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   border-top-width: 0;
 }
 
-#dagoqyumpr .gt_heading {
+#jphwvcgaeh .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -626,13 +626,13 @@ Table&nbsp;1: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   border-right-color: #D3D3D3;
 }
 
-#dagoqyumpr .gt_bottom_border {
+#jphwvcgaeh .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#dagoqyumpr .gt_col_headings {
+#jphwvcgaeh .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -647,7 +647,7 @@ Table&nbsp;1: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   border-right-color: #D3D3D3;
 }
 
-#dagoqyumpr .gt_col_heading {
+#jphwvcgaeh .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -667,7 +667,7 @@ Table&nbsp;1: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   overflow-x: hidden;
 }
 
-#dagoqyumpr .gt_column_spanner_outer {
+#jphwvcgaeh .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -679,15 +679,15 @@ Table&nbsp;1: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   padding-right: 4px;
 }
 
-#dagoqyumpr .gt_column_spanner_outer:first-child {
+#jphwvcgaeh .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#dagoqyumpr .gt_column_spanner_outer:last-child {
+#jphwvcgaeh .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#dagoqyumpr .gt_column_spanner {
+#jphwvcgaeh .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -699,11 +699,11 @@ Table&nbsp;1: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   width: 100%;
 }
 
-#dagoqyumpr .gt_spanner_row {
+#jphwvcgaeh .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#dagoqyumpr .gt_group_heading {
+#jphwvcgaeh .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -729,7 +729,7 @@ Table&nbsp;1: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   text-align: left;
 }
 
-#dagoqyumpr .gt_empty_group_heading {
+#jphwvcgaeh .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -744,15 +744,15 @@ Table&nbsp;1: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   vertical-align: middle;
 }
 
-#dagoqyumpr .gt_from_md > :first-child {
+#jphwvcgaeh .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#dagoqyumpr .gt_from_md > :last-child {
+#jphwvcgaeh .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#dagoqyumpr .gt_row {
+#jphwvcgaeh .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -771,7 +771,7 @@ Table&nbsp;1: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   overflow-x: hidden;
 }
 
-#dagoqyumpr .gt_stub {
+#jphwvcgaeh .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -784,7 +784,7 @@ Table&nbsp;1: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   padding-right: 5px;
 }
 
-#dagoqyumpr .gt_stub_row_group {
+#jphwvcgaeh .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -798,15 +798,15 @@ Table&nbsp;1: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   vertical-align: top;
 }
 
-#dagoqyumpr .gt_row_group_first td {
+#jphwvcgaeh .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#dagoqyumpr .gt_row_group_first th {
+#jphwvcgaeh .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#dagoqyumpr .gt_summary_row {
+#jphwvcgaeh .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -816,16 +816,16 @@ Table&nbsp;1: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   padding-right: 5px;
 }
 
-#dagoqyumpr .gt_first_summary_row {
+#jphwvcgaeh .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#dagoqyumpr .gt_first_summary_row.thick {
+#jphwvcgaeh .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#dagoqyumpr .gt_last_summary_row {
+#jphwvcgaeh .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -835,7 +835,7 @@ Table&nbsp;1: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   border-bottom-color: #D3D3D3;
 }
 
-#dagoqyumpr .gt_grand_summary_row {
+#jphwvcgaeh .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -845,7 +845,7 @@ Table&nbsp;1: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   padding-right: 5px;
 }
 
-#dagoqyumpr .gt_first_grand_summary_row {
+#jphwvcgaeh .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -855,7 +855,7 @@ Table&nbsp;1: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   border-top-color: #D3D3D3;
 }
 
-#dagoqyumpr .gt_last_grand_summary_row_top {
+#jphwvcgaeh .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -865,11 +865,11 @@ Table&nbsp;1: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   border-bottom-color: #D3D3D3;
 }
 
-#dagoqyumpr .gt_striped {
+#jphwvcgaeh .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#dagoqyumpr .gt_table_body {
+#jphwvcgaeh .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -878,7 +878,7 @@ Table&nbsp;1: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   border-bottom-color: #D3D3D3;
 }
 
-#dagoqyumpr .gt_footnotes {
+#jphwvcgaeh .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -892,7 +892,7 @@ Table&nbsp;1: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   border-right-color: #D3D3D3;
 }
 
-#dagoqyumpr .gt_footnote {
+#jphwvcgaeh .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -901,7 +901,7 @@ Table&nbsp;1: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   padding-right: 5px;
 }
 
-#dagoqyumpr .gt_sourcenotes {
+#jphwvcgaeh .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -915,7 +915,7 @@ Table&nbsp;1: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   border-right-color: #D3D3D3;
 }
 
-#dagoqyumpr .gt_sourcenote {
+#jphwvcgaeh .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -923,72 +923,72 @@ Table&nbsp;1: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   padding-right: 5px;
 }
 
-#dagoqyumpr .gt_left {
+#jphwvcgaeh .gt_left {
   text-align: left;
 }
 
-#dagoqyumpr .gt_center {
+#jphwvcgaeh .gt_center {
   text-align: center;
 }
 
-#dagoqyumpr .gt_right {
+#jphwvcgaeh .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#dagoqyumpr .gt_font_normal {
+#jphwvcgaeh .gt_font_normal {
   font-weight: normal;
 }
 
-#dagoqyumpr .gt_font_bold {
+#jphwvcgaeh .gt_font_bold {
   font-weight: bold;
 }
 
-#dagoqyumpr .gt_font_italic {
+#jphwvcgaeh .gt_font_italic {
   font-style: italic;
 }
 
-#dagoqyumpr .gt_super {
+#jphwvcgaeh .gt_super {
   font-size: 65%;
 }
 
-#dagoqyumpr .gt_footnote_marks {
+#jphwvcgaeh .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#dagoqyumpr .gt_asterisk {
+#jphwvcgaeh .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#dagoqyumpr .gt_indent_1 {
+#jphwvcgaeh .gt_indent_1 {
   text-indent: 5px;
 }
 
-#dagoqyumpr .gt_indent_2 {
+#jphwvcgaeh .gt_indent_2 {
   text-indent: 10px;
 }
 
-#dagoqyumpr .gt_indent_3 {
+#jphwvcgaeh .gt_indent_3 {
   text-indent: 15px;
 }
 
-#dagoqyumpr .gt_indent_4 {
+#jphwvcgaeh .gt_indent_4 {
   text-indent: 20px;
 }
 
-#dagoqyumpr .gt_indent_5 {
+#jphwvcgaeh .gt_indent_5 {
   text-indent: 25px;
 }
 
-#dagoqyumpr .katex-display {
+#jphwvcgaeh .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#dagoqyumpr div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#jphwvcgaeh div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1071,7 +1071,7 @@ Table&nbsp;1: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
 </section>
 <section id="plotting" class="level3">
 <h3 class="anchored" data-anchor-id="plotting">Plotting</h3>
-<div class="cell-container"><div class="cell-decorator"><pre>In [23]:</pre></div><div id="070fca8e-0d61-48eb-987e-4eb4ca97f5ce" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [23]:</pre></div><div id="e18ee54e-e378-44e7-b81b-d277201ff8cb" class="cell">
 <div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get predictions on the sqrt scale</span></span>
 <span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>preds_elev <span class="op">&lt;-</span> emmeans(m1_sqrt, <span class="op">~</span> elevation)</span>
 <span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>preds_date <span class="op">&lt;-</span> emmeans(m1_sqrt, <span class="op">~</span> date_fct)</span>
@@ -1091,7 +1091,7 @@ Table&nbsp;1: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
 <span id="cb37-17"><a href="#cb37-17" aria-hidden="true" tabindex="-1"></a>    upper    <span class="op">=</span> upper.CL<span class="op">^</span><span class="dv">2</span></span>
 <span id="cb37-18"><a href="#cb37-18" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [24]:</pre></div><div id="2f8aef01-7d26-42bb-bf42-7dcffacd7ae5" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [24]:</pre></div><div id="c09bc706-142e-4551-ad8a-6c808ea83086" class="cell">
 <div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Polymer abundance by elevation and date. Points show raw observations; Points outlined in black and error bars show model predictions with 95% CIs from a GLMM fitted to square-root transformed data, back-transformed to the original scale. Because the riparian area had fewer sampling locations and was only sampled on 2023-09-19 it was excluded from the formal analysis</span></span>
 <span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>p1_a <span class="op">&lt;-</span> ggplot(<span class="bu">filter</span>(data, depth <span class="op">==</span> <span class="st">"0-5 cm"</span> ), aes(x <span class="op">=</span> elevation, y <span class="op">=</span> n_m2, color <span class="op">=</span> date_fct)) <span class="op">+</span></span>
@@ -1149,7 +1149,7 @@ Figure&nbsp;1: Polymer abundance (0-5 cm) by elevation and date. Points show raw
 <h2 class="anchored" data-anchor-id="polymer-areal-density-0-5-cm">Polymer areal density 0-5 cm</h2>
 <section id="look-at-data-1" class="level3">
 <h3 class="anchored" data-anchor-id="look-at-data-1">Look at data</h3>
-<div class="cell-container"><div class="cell-decorator"><pre>In [26]:</pre></div><div id="39cd4fa6-d1ce-4d89-9b02-70f3d23f01d6" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [26]:</pre></div><div id="acbc3f88-4d9d-4cbc-a59f-3b4342084c0f" class="cell">
 <div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>p2 <span class="op">&lt;-</span> ggplot(data <span class="op">=</span> <span class="bu">filter</span>(data, depth <span class="op">==</span> <span class="st">"0-5 cm"</span>), aes(x <span class="op">=</span> elevation, y <span class="op">=</span> mass_m2, fill <span class="op">=</span> date_fct)) <span class="op">+</span></span>
 <span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>  geom_boxplot(position <span class="op">=</span> position_dodge2(preserve <span class="op">=</span> <span class="st">"single"</span>)) <span class="op">+</span></span>
 <span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>  theme_bw() <span class="op">+</span></span>
@@ -1167,11 +1167,11 @@ Figure&nbsp;1: Polymer abundance (0-5 cm) by elevation and date. Points show raw
 </section>
 <section id="stats-1" class="level3">
 <h3 class="anchored" data-anchor-id="stats-1">Stats</h3>
-<div class="cell-container"><div class="cell-decorator"><pre>In [27]:</pre></div><div id="b6d9d439-cfac-47c7-b389-64c8aab0a5eb" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [27]:</pre></div><div id="57311a8f-af10-475a-bb9a-4208f1839418" class="cell">
 <div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>m2 <span class="op">&lt;-</span> glmmTMB(mass_m2 <span class="op">~</span> elevation <span class="op">*</span> date_fct <span class="op">+</span> (<span class="dv">1</span><span class="op">|</span>flag_location),</span>
 <span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>              data <span class="op">=</span> <span class="bu">filter</span>(data, depth <span class="op">==</span> <span class="st">"0-5 cm"</span> <span class="op">&amp;</span> elevation <span class="op">!=</span> <span class="st">"Riparian"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [28]:</pre></div><div id="a7970094-dbd0-4b59-964e-8ee8d1fddb34" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [28]:</pre></div><div id="5e6fb2ba-864c-4a25-9fbe-78e0b53a2feb" class="cell">
 <div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>simulateResiduals(m2, n <span class="op">=</span> <span class="dv">1000</span>, plot <span class="op">=</span> TRUE)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div class="">
@@ -1186,7 +1186,7 @@ Figure&nbsp;1: Polymer abundance (0-5 cm) by elevation and date. Points show raw
 Scaled residual values: 0.966 0.334 0.55 0.168 0.969 0.757 0.194 0.486 0.141 0.988 0.227 0.413 0.838 0.21 0.081 0.787 0.124 0.409 0.15 0.797 ...</code></pre>
 </div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [29]:</pre></div><div id="cf5bd4ce-b4b4-4773-acd5-301eef9150b1" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [29]:</pre></div><div id="60c93f2c-f638-413e-8529-6eb32f502126" class="cell">
 <div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>car::Anova(m2, <span class="bu">type</span> <span class="op">=</span> <span class="st">"III"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Analysis of Deviance Table (Type III Wald chisquare tests)
@@ -1201,12 +1201,12 @@ elevation:date_fct  5.2689  4   0.260799
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [30]:</pre></div><div id="e0b2ce5d-39c3-4ec7-9cbb-6ebdca42a03c" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [30]:</pre></div><div id="509cbc39-5b30-460f-b29e-abf8342c4409" class="cell">
 <div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Removing interaction</span></span>
 <span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>m2 <span class="op">&lt;-</span> glmmTMB(mass_m2 <span class="op">~</span> elevation <span class="op">+</span> date_fct <span class="op">+</span> (<span class="dv">1</span><span class="op">|</span>flag_location),</span>
 <span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>              data <span class="op">=</span> <span class="bu">filter</span>(data, depth <span class="op">==</span> <span class="st">"0-5 cm"</span> <span class="op">&amp;</span> elevation <span class="op">!=</span> <span class="st">"Riparian"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [31]:</pre></div><div id="a876a936-bdb7-4f80-be5c-e4186f3dbe72" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [31]:</pre></div><div id="665c2308-3d08-4541-9622-6a09755aadb8" class="cell">
 <div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>simulateResiduals(m2, n <span class="op">=</span> <span class="dv">1000</span>, plot <span class="op">=</span> TRUE) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div class="">
@@ -1221,7 +1221,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 Scaled residual values: 0.975 0.394 0.634 0.211 0.961 0.732 0.194 0.486 0.118 0.975 0.187 0.354 0.878 0.287 0.11 0.838 0.112 0.375 0.143 0.806 ...</code></pre>
 </div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [32]:</pre></div><div id="0e7b789e-8775-4649-bd75-57310499f1eb" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [32]:</pre></div><div id="fb67af5a-4a87-43af-a3d0-b9939bd9c280" class="cell">
 <div class="sourceCode cell-code" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>performance::check_collinearity(m2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># Check for Multicollinearity
@@ -1233,7 +1233,7 @@ Low Correlation
   date_fct   1 [1.00, 1.00]        1         1</code></pre>
 </div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [33]:</pre></div><div id="d5ca1ce4-675a-4051-94f5-4cee8c3e3ca4" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [33]:</pre></div><div id="2a6c6312-ec8c-41b8-b9e6-9b4398ba81ff" class="cell">
 <div class="sourceCode cell-code" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>car::Anova(m2, <span class="bu">type</span> <span class="op">=</span> <span class="st">"III"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Analysis of Deviance Table (Type III Wald chisquare tests)
@@ -1247,12 +1247,12 @@ date_fct    48.4580  2  3.003e-11 ***
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [34]:</pre></div><div id="ad82d4ea-8f6c-40a9-a71c-bb2615fbfc21" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [34]:</pre></div><div id="9d68cb82-b5cd-4e67-9a7b-874a2038def1" class="cell">
 <div class="sourceCode cell-code" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Square root transform</span></span>
 <span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>m2_sqrt <span class="op">&lt;-</span> glmmTMB(sqrt(mass_m2) <span class="op">~</span> elevation <span class="op">+</span> date_fct <span class="op">+</span> (<span class="dv">1</span><span class="op">|</span>flag_location),</span>
 <span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a>              data <span class="op">=</span> <span class="bu">filter</span>(data, depth <span class="op">==</span> <span class="st">"0-5 cm"</span> <span class="op">&amp;</span> elevation <span class="op">!=</span> <span class="st">"Riparian"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [35]:</pre></div><div id="eda3ab34-f2c1-4d51-a776-b3cbc66e51c4" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [35]:</pre></div><div id="951f210d-2702-4861-bd97-48734b8550c4" class="cell">
 <div class="sourceCode cell-code" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>simulateResiduals(m2_sqrt, n <span class="op">=</span> <span class="dv">1000</span>, plot <span class="op">=</span> TRUE) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning in newton(lsp = lsp, X = G$X, y = G$y, Eb = G$Eb, UrS = G$UrS, L = G$L,
@@ -1271,7 +1271,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 Scaled residual values: 0.911 0.456 0.634 0.276 0.937 0.73 0.215 0.512 0.116 0.955 0.198 0.403 0.833 0.322 0.132 0.77 0.121 0.45 0.161 0.813 ...</code></pre>
 </div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [36]:</pre></div><div id="beb51435-b8b2-4ca8-a147-bf9e1eba9403" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [36]:</pre></div><div id="ec150930-895b-49d5-8707-b1a6f3e522bd" class="cell">
 <div class="sourceCode cell-code" id="cb57"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>performance::check_collinearity(m2_sqrt)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># Check for Multicollinearity
@@ -1283,7 +1283,7 @@ Low Correlation
   date_fct   1 [1.00, 1.00]        1         1</code></pre>
 </div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [37]:</pre></div><div id="8a373260-5cb3-4f35-bff5-ce7c258a6b75" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [37]:</pre></div><div id="4523d381-8439-4e45-9712-ec2ac8ee0763" class="cell">
 <div class="sourceCode cell-code" id="cb59"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a>car::Anova(m2_sqrt, <span class="bu">type</span> <span class="op">=</span> <span class="st">"III"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Analysis of Deviance Table (Type III Wald chisquare tests)
@@ -1297,7 +1297,7 @@ date_fct     62.2984  2  2.965e-14 ***
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [38]:</pre></div><div id="ad105211-f10b-43a6-9676-26f8b25d28c8" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [38]:</pre></div><div id="78ba48ca-4ebd-4bf3-8ae4-9e3c3fe3050d" class="cell">
 <div class="sourceCode cell-code" id="cb61"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a>summary(m2_sqrt)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> Family: gaussian  ( identity )
@@ -1331,7 +1331,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </section>
 <section id="pairwise-comparisons-1" class="level3">
 <h3 class="anchored" data-anchor-id="pairwise-comparisons-1">Pairwise comparisons</h3>
-<div class="cell-container"><div class="cell-decorator"><pre>In [39]:</pre></div><div id="b3e9e268-7a01-4a2a-8c56-b89937dbb994" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [39]:</pre></div><div id="90dfbfa4-877c-405b-8675-280ab6868c53" class="cell">
 <div class="sourceCode cell-code" id="cb63"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a>em_elev1 <span class="op">&lt;-</span> emmeans(m2_sqrt, <span class="op">~</span> elevation, <span class="bu">type</span> <span class="op">=</span> <span class="st">"response"</span>) <span class="op">|&gt;</span> </span>
 <span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a>  regrid() <span class="op">|&gt;</span> </span>
 <span id="cb63-3"><a href="#cb63-3" aria-hidden="true" tabindex="-1"></a>  contrast(method <span class="op">=</span> <span class="st">"pairwise"</span>, adjust <span class="op">=</span> <span class="st">"fdr"</span>)<span class="op">|&gt;</span></span>
@@ -1350,7 +1350,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 3 Slope Position</code></pre>
 </div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [40]:</pre></div><div id="aa5de903-c58b-45f5-9817-8d69a1b3118e" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [40]:</pre></div><div id="5c37fbf2-100c-4649-b210-5b7f1a8b639b" class="cell">
 <div class="sourceCode cell-code" id="cb65"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a>em_date1 <span class="op">&lt;-</span> emmeans(m2_sqrt, <span class="op">~</span> date_fct, <span class="bu">type</span> <span class="op">=</span> <span class="st">"response"</span>) <span class="op">|&gt;</span> </span>
 <span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a>  regrid() <span class="op">|&gt;</span> </span>
 <span id="cb65-3"><a href="#cb65-3" aria-hidden="true" tabindex="-1"></a>  contrast(method <span class="op">=</span> <span class="st">"pairwise"</span>, adjust <span class="op">=</span> <span class="st">"fdr"</span>)<span class="op">|&gt;</span></span>
@@ -1370,7 +1370,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 3 Sampling Date</code></pre>
 </div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [41]:</pre></div><div id="7838b25f-b2e8-461d-ac28-dc26701b2470" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [41]:</pre></div><div id="aa31c68c-8901-45ea-a770-974a99d76724" class="cell">
 <div class="sourceCode cell-code" id="cb67"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a>pairs1 <span class="op">&lt;-</span> em_elev1 <span class="op">|&gt;</span></span>
 <span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a>  bind_rows(em_date1) <span class="op">%&gt;%</span></span>
 <span id="cb67-3"><a href="#cb67-3" aria-hidden="true" tabindex="-1"></a>  rename(<span class="st">"Contrast"</span> <span class="op">=</span> <span class="st">"contrast"</span>, <span class="st">"Estimate"</span> <span class="op">=</span> <span class="st">"estimate"</span>, <span class="st">"z ratio"</span> <span class="op">=</span> <span class="st">"z.ratio"</span>, <span class="st">"p value"</span> <span class="op">=</span> <span class="st">"p.value"</span>) <span class="op">|&gt;</span></span>
@@ -1388,27 +1388,27 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <span id="cb68-8"><a href="#cb68-8" aria-hidden="true" tabindex="-1"></a>  tab_options(column_labels.font.weight <span class="op">=</span> <span class="st">"bold"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div><div id="tbl-density-posthoc" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-density-posthoc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;2: Results of the post-hoc pairwise comparisons with a Benjamini-Hochberg p value adjustment for differences in the mass of polymer coatings (<span class="math inline">\(g~m^{-2}\)</span>) between the three slope poistions and sampling dates. Data were square-root transformed prior to analysis and back-transformed to the original scale for reporting.
+Table&nbsp;2: Results of the post-hoc pairwise comparisons with a Benjamini-Hochberg p value adjustment for differences in the mass of polymer coatings (<span class="math inline">\(g~m^{-2}\)</span>) between the three slope positions and sampling dates. Data were square-root transformed prior to analysis and back-transformed to the original scale for reporting.
 </figcaption>
 <div aria-describedby="tbl-density-posthoc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output cell-output-display">
-<div id="wtfitkecfw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#wtfitkecfw table {
+<div id="zjugnopdgt" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#zjugnopdgt table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#wtfitkecfw thead, #wtfitkecfw tbody, #wtfitkecfw tfoot, #wtfitkecfw tr, #wtfitkecfw td, #wtfitkecfw th {
+#zjugnopdgt thead, #zjugnopdgt tbody, #zjugnopdgt tfoot, #zjugnopdgt tr, #zjugnopdgt td, #zjugnopdgt th {
   border-style: none;
 }
 
-#wtfitkecfw p {
+#zjugnopdgt p {
   margin: 0;
   padding: 0;
 }
 
-#wtfitkecfw .gt_table {
+#zjugnopdgt .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1434,12 +1434,12 @@ Table&nbsp;2: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   border-left-color: #D3D3D3;
 }
 
-#wtfitkecfw .gt_caption {
+#zjugnopdgt .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#wtfitkecfw .gt_title {
+#zjugnopdgt .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1451,7 +1451,7 @@ Table&nbsp;2: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   border-bottom-width: 0;
 }
 
-#wtfitkecfw .gt_subtitle {
+#zjugnopdgt .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1463,7 +1463,7 @@ Table&nbsp;2: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   border-top-width: 0;
 }
 
-#wtfitkecfw .gt_heading {
+#zjugnopdgt .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1475,13 +1475,13 @@ Table&nbsp;2: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   border-right-color: #D3D3D3;
 }
 
-#wtfitkecfw .gt_bottom_border {
+#zjugnopdgt .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#wtfitkecfw .gt_col_headings {
+#zjugnopdgt .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1496,7 +1496,7 @@ Table&nbsp;2: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   border-right-color: #D3D3D3;
 }
 
-#wtfitkecfw .gt_col_heading {
+#zjugnopdgt .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1516,7 +1516,7 @@ Table&nbsp;2: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   overflow-x: hidden;
 }
 
-#wtfitkecfw .gt_column_spanner_outer {
+#zjugnopdgt .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1528,15 +1528,15 @@ Table&nbsp;2: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   padding-right: 4px;
 }
 
-#wtfitkecfw .gt_column_spanner_outer:first-child {
+#zjugnopdgt .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#wtfitkecfw .gt_column_spanner_outer:last-child {
+#zjugnopdgt .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#wtfitkecfw .gt_column_spanner {
+#zjugnopdgt .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1548,11 +1548,11 @@ Table&nbsp;2: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   width: 100%;
 }
 
-#wtfitkecfw .gt_spanner_row {
+#zjugnopdgt .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#wtfitkecfw .gt_group_heading {
+#zjugnopdgt .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1578,7 +1578,7 @@ Table&nbsp;2: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   text-align: left;
 }
 
-#wtfitkecfw .gt_empty_group_heading {
+#zjugnopdgt .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1593,15 +1593,15 @@ Table&nbsp;2: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   vertical-align: middle;
 }
 
-#wtfitkecfw .gt_from_md > :first-child {
+#zjugnopdgt .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#wtfitkecfw .gt_from_md > :last-child {
+#zjugnopdgt .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#wtfitkecfw .gt_row {
+#zjugnopdgt .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1620,7 +1620,7 @@ Table&nbsp;2: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   overflow-x: hidden;
 }
 
-#wtfitkecfw .gt_stub {
+#zjugnopdgt .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1633,7 +1633,7 @@ Table&nbsp;2: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   padding-right: 5px;
 }
 
-#wtfitkecfw .gt_stub_row_group {
+#zjugnopdgt .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1647,15 +1647,15 @@ Table&nbsp;2: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   vertical-align: top;
 }
 
-#wtfitkecfw .gt_row_group_first td {
+#zjugnopdgt .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#wtfitkecfw .gt_row_group_first th {
+#zjugnopdgt .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#wtfitkecfw .gt_summary_row {
+#zjugnopdgt .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1665,16 +1665,16 @@ Table&nbsp;2: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   padding-right: 5px;
 }
 
-#wtfitkecfw .gt_first_summary_row {
+#zjugnopdgt .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#wtfitkecfw .gt_first_summary_row.thick {
+#zjugnopdgt .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#wtfitkecfw .gt_last_summary_row {
+#zjugnopdgt .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1684,7 +1684,7 @@ Table&nbsp;2: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   border-bottom-color: #D3D3D3;
 }
 
-#wtfitkecfw .gt_grand_summary_row {
+#zjugnopdgt .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1694,7 +1694,7 @@ Table&nbsp;2: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   padding-right: 5px;
 }
 
-#wtfitkecfw .gt_first_grand_summary_row {
+#zjugnopdgt .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1704,7 +1704,7 @@ Table&nbsp;2: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   border-top-color: #D3D3D3;
 }
 
-#wtfitkecfw .gt_last_grand_summary_row_top {
+#zjugnopdgt .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1714,11 +1714,11 @@ Table&nbsp;2: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   border-bottom-color: #D3D3D3;
 }
 
-#wtfitkecfw .gt_striped {
+#zjugnopdgt .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#wtfitkecfw .gt_table_body {
+#zjugnopdgt .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1727,7 +1727,7 @@ Table&nbsp;2: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   border-bottom-color: #D3D3D3;
 }
 
-#wtfitkecfw .gt_footnotes {
+#zjugnopdgt .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1741,7 +1741,7 @@ Table&nbsp;2: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   border-right-color: #D3D3D3;
 }
 
-#wtfitkecfw .gt_footnote {
+#zjugnopdgt .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1750,7 +1750,7 @@ Table&nbsp;2: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   padding-right: 5px;
 }
 
-#wtfitkecfw .gt_sourcenotes {
+#zjugnopdgt .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1764,7 +1764,7 @@ Table&nbsp;2: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   border-right-color: #D3D3D3;
 }
 
-#wtfitkecfw .gt_sourcenote {
+#zjugnopdgt .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1772,72 +1772,72 @@ Table&nbsp;2: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
   padding-right: 5px;
 }
 
-#wtfitkecfw .gt_left {
+#zjugnopdgt .gt_left {
   text-align: left;
 }
 
-#wtfitkecfw .gt_center {
+#zjugnopdgt .gt_center {
   text-align: center;
 }
 
-#wtfitkecfw .gt_right {
+#zjugnopdgt .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#wtfitkecfw .gt_font_normal {
+#zjugnopdgt .gt_font_normal {
   font-weight: normal;
 }
 
-#wtfitkecfw .gt_font_bold {
+#zjugnopdgt .gt_font_bold {
   font-weight: bold;
 }
 
-#wtfitkecfw .gt_font_italic {
+#zjugnopdgt .gt_font_italic {
   font-style: italic;
 }
 
-#wtfitkecfw .gt_super {
+#zjugnopdgt .gt_super {
   font-size: 65%;
 }
 
-#wtfitkecfw .gt_footnote_marks {
+#zjugnopdgt .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#wtfitkecfw .gt_asterisk {
+#zjugnopdgt .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#wtfitkecfw .gt_indent_1 {
+#zjugnopdgt .gt_indent_1 {
   text-indent: 5px;
 }
 
-#wtfitkecfw .gt_indent_2 {
+#zjugnopdgt .gt_indent_2 {
   text-indent: 10px;
 }
 
-#wtfitkecfw .gt_indent_3 {
+#zjugnopdgt .gt_indent_3 {
   text-indent: 15px;
 }
 
-#wtfitkecfw .gt_indent_4 {
+#zjugnopdgt .gt_indent_4 {
   text-indent: 20px;
 }
 
-#wtfitkecfw .gt_indent_5 {
+#zjugnopdgt .gt_indent_5 {
   text-indent: 25px;
 }
 
-#wtfitkecfw .katex-display {
+#zjugnopdgt .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#wtfitkecfw div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#zjugnopdgt div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1913,7 +1913,7 @@ Table&nbsp;2: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
 </section>
 <section id="plotting-1" class="level3">
 <h3 class="anchored" data-anchor-id="plotting-1">Plotting</h3>
-<div class="cell-container"><div class="cell-decorator"><pre>In [44]:</pre></div><div id="0cec48dd-21e7-49e9-95c5-0e9fc422c986" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [44]:</pre></div><div id="198ac51c-16fb-4485-a4d1-62c89f53c9c1" class="cell">
 <div class="sourceCode cell-code" id="cb69"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get predictions on the sqrt scale</span></span>
 <span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a>preds_elev1 <span class="op">&lt;-</span> emmeans(m2_sqrt, <span class="op">~</span> elevation)</span>
 <span id="cb69-3"><a href="#cb69-3" aria-hidden="true" tabindex="-1"></a>preds_date1 <span class="op">&lt;-</span> emmeans(m2_sqrt, <span class="op">~</span> date_fct)</span>
@@ -1933,7 +1933,7 @@ Table&nbsp;2: Results of the post-hoc pairwise comparisons with a Benjamini-Hoch
 <span id="cb69-17"><a href="#cb69-17" aria-hidden="true" tabindex="-1"></a>    upper    <span class="op">=</span> asymp.UCL<span class="op">^</span><span class="dv">2</span></span>
 <span id="cb69-18"><a href="#cb69-18" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [45]:</pre></div><div id="fd6791b3-107e-49c9-9cf3-c526cdfd25f1" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [45]:</pre></div><div id="a2e6eb2f-63e7-4596-badb-c430ac805ff1" class="cell">
 <div class="sourceCode cell-code" id="cb70"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a>p2_a <span class="op">&lt;-</span> ggplot(<span class="bu">filter</span>(data, depth <span class="op">==</span> <span class="st">"0-5 cm"</span> ), aes(x <span class="op">=</span> elevation, y <span class="op">=</span> mass_m2, color <span class="op">=</span> date_fct)) <span class="op">+</span></span>
 <span id="cb70-2"><a href="#cb70-2" aria-hidden="true" tabindex="-1"></a>  geom_jitter(position <span class="op">=</span> position_dodge(<span class="fl">0.3</span>), alpha <span class="op">=</span> <span class="fl">0.6</span>, size <span class="op">=</span> <span class="dv">2</span>) <span class="op">+</span></span>
 <span id="cb70-3"><a href="#cb70-3" aria-hidden="true" tabindex="-1"></a>  geom_errorbar(data <span class="op">=</span> preds_df_elev1, </span>
@@ -2010,7 +2010,7 @@ Figure&nbsp;3: Surface (0-5 cm) polymer areal density (a and b) and abundance (c
 <h2 class="anchored" data-anchor-id="polymer-with-depth">Polymer with depth</h2>
 <section id="look-at-data-2" class="level3">
 <h3 class="anchored" data-anchor-id="look-at-data-2">Look at data</h3>
-<div class="cell-container"><div class="cell-decorator"><pre>In [48]:</pre></div><div id="81760ae1-ec0f-44a0-abf4-a167687fbcd5" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [48]:</pre></div><div id="56f98348-3541-4a12-aacf-3e232d686c9d" class="cell">
 <div class="sourceCode cell-code" id="cb73"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a>p3 <span class="op">&lt;-</span> ggplot(data <span class="op">=</span> <span class="bu">filter</span>(data, date <span class="op">==</span> <span class="st">"2023-09-19"</span>), aes(x <span class="op">=</span> elevation, y <span class="op">=</span> mass_m2, fill <span class="op">=</span> depth)) <span class="op">+</span></span>
 <span id="cb73-2"><a href="#cb73-2" aria-hidden="true" tabindex="-1"></a>  geom_boxplot(position <span class="op">=</span> position_dodge2(preserve <span class="op">=</span> <span class="st">"single"</span>)) <span class="op">+</span></span>
 <span id="cb73-3"><a href="#cb73-3" aria-hidden="true" tabindex="-1"></a>  theme_bw() <span class="op">+</span></span>
@@ -2058,7 +2058,7 @@ Figure&nbsp;4: Polymer density (a) and abundance (b) for two sampling depths (0-
 </section>
 <section id="session-info" class="level2">
 <h2 class="anchored" data-anchor-id="session-info">Session info</h2>
-<div class="cell-container"><div class="cell-decorator"><pre>In [50]:</pre></div><div id="70005bc8-853d-4e7f-ab90-689efca18678" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [50]:</pre></div><div id="1bada684-ecd9-403b-acfd-e7016fbebd1a" class="cell">
 <div class="sourceCode cell-code" id="cb75"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a>sessioninfo::session_info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>─ Session info ───────────────────────────────────────────────────────────────
@@ -2071,7 +2071,7 @@ Figure&nbsp;4: Polymer density (a) and abundance (b) for two sampling depths (0-
  collate  en_US.UTF-8
  ctype    en_US.UTF-8
  tz       America/Winnipeg
- date     2026-06-18
+ date     2026-06-25
  pandoc   3.1.3 @ /usr/bin/ (via rmarkdown)
  quarto   1.6.39 @ /usr/local/bin/quarto
 
