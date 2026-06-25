@@ -230,7 +230,7 @@
        <p>Alex Koiter</p>
 <section id="load-libraries" class="level2">
 <h2 class="anchored" data-anchor-id="load-libraries">Load libraries</h2>
-<div class="cell-container"><div class="cell-decorator"><pre>In [1]:</pre></div><div id="366f1fff-acb2-4f0d-8c0e-1f8758f0e772" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [1]:</pre></div><div id="8cdeb848-561f-49d2-8d10-c5b8d8b7bc0d" class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>suppressPackageStartupMessages({</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  library(tidyverse)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  library(patchwork)</span>
@@ -242,7 +242,7 @@
 <h2 class="anchored" data-anchor-id="get-the-data">Get the data</h2>
 <section id="find-station_id-and-climate_id" class="level3">
 <h3 class="anchored" data-anchor-id="find-station_id-and-climate_id">Find station_id and climate_id</h3>
-<div class="cell-container"><div class="cell-decorator"><pre>In [2]:</pre></div><div id="d41ecf92-ccc6-4502-b9e4-2eb0f62bdecf" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [2]:</pre></div><div id="9aee6a7c-3330-4bf1-a990-3df77c21e054" class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>stations_search(coords <span class="op">=</span> c(<span class="fl">49.332263</span>, <span class="op">-</span><span class="fl">98.382368</span>), dist <span class="op">=</span> <span class="dv">20</span>, normals_years <span class="op">=</span> <span class="st">"1991-2020"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>No stations within 20km. Returning closest 10 records</code></pre>
@@ -266,7 +266,7 @@
 #   distance &lt;dbl&gt;</code></pre>
 </div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [3]:</pre></div><div id="ee5866a4-fedb-40e8-9139-c66db716e9c6" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [3]:</pre></div><div id="c7d8e61a-2c28-4858-a13a-ff6af8a033fa" class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>stations_search(coords <span class="op">=</span> c(<span class="fl">49.332263</span>, <span class="op">-</span><span class="fl">98.382368</span>), dist <span class="op">=</span> <span class="dv">20</span>, normals_years <span class="op">=</span> <span class="st">"1981-2010"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 4 × 18
@@ -281,7 +281,7 @@
 #   distance &lt;dbl&gt;</code></pre>
 </div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [4]:</pre></div><div id="8456cff3-aa3d-4d73-8af3-97dcc68e01bc" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [4]:</pre></div><div id="7219697e-75b1-4810-bd2d-1f11865f715d" class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>stations_search(coords <span class="op">=</span> c(<span class="fl">49.332263</span>, <span class="op">-</span><span class="fl">98.382368</span>), dist <span class="op">=</span> <span class="dv">20</span>, interval <span class="op">=</span> <span class="st">"day"</span>, starts_latest <span class="op">=</span> <span class="dv">2020</span>, ends_earliest <span class="op">=</span> <span class="dv">2024</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 18
@@ -297,7 +297,7 @@
 </section>
 <section id="normals" class="level2">
 <h2 class="anchored" data-anchor-id="normals">Normals</h2>
-<div class="cell-container"><div class="cell-decorator"><pre>In [5]:</pre></div><div id="f67a5be3-5210-4a1e-be63-7c9d2d19bbc7" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [5]:</pre></div><div id="ae3ac75d-c3e2-474f-8261-d61097a54cfd" class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>df_normal_miami <span class="op">&lt;-</span>  normals_dl(climate_ids <span class="op">=</span> <span class="dv">5021736</span>, normals_years <span class="op">=</span> <span class="st">"1981-2010"</span>) <span class="op">|&gt;</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  unnest(normals) <span class="op">|&gt;</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="bu">filter</span>(period <span class="op">==</span> <span class="st">"Year"</span>) <span class="op">|&gt;</span></span>
@@ -305,7 +305,7 @@
 </div></div>
 <section id="download" class="level3">
 <h3 class="anchored" data-anchor-id="download">Download</h3>
-<div class="cell-container"><div class="cell-decorator"><pre>In [6]:</pre></div><div id="fe93e56f-5482-4194-b66b-3f18f65b5ac2" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [6]:</pre></div><div id="41240163-7586-4783-8ca9-b1cb77ac0050" class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>df_normal_morden <span class="op">&lt;-</span> normals_dl(climate_ids <span class="op">=</span> <span class="dv">5021849</span>, normals_years <span class="op">=</span> <span class="st">"current"</span>, measurement_type <span class="op">=</span> c(<span class="st">"Temperature"</span>, <span class="st">"Precipitation"</span>)) <span class="op">|&gt;</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="bu">filter</span>(period_of_record <span class="op">==</span> <span class="st">"Normal"</span>) <span class="op">|&gt;</span></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="co">#filter(element_group %in% c("Precipitation", "Temperature")) |&gt;</span></span>
@@ -324,7 +324,7 @@ Using composite locations: MORDEN</code></pre>
 1              141</code></pre>
 </div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [7]:</pre></div><div id="29a7f999-c2e1-4722-bfff-fda51888e59b" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [7]:</pre></div><div id="ba5ac16d-a9ce-4741-9a8a-9970255a2c25" class="cell">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>morden_annual$precipitation_mm</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 527.8</code></pre>
@@ -333,28 +333,29 @@ Using composite locations: MORDEN</code></pre>
 </section>
 <section id="plot-climate-normals" class="level3">
 <h3 class="anchored" data-anchor-id="plot-climate-normals">Plot Climate Normals</h3>
-<div class="cell-container"><div class="cell-decorator"><pre>In [8]:</pre></div><div id="ae42d082-e00b-437c-9261-1d38a74472ba" class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>p1 <span class="op">&lt;-</span> ggplot() <span class="op">+</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  theme_bw() <span class="op">+</span></span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  geom_segment(data <span class="op">=</span> morden_month, aes(x <span class="op">=</span> date, y <span class="op">=</span> precip<span class="op">/</span><span class="fl">2.25</span> <span class="op">-</span> <span class="dv">30</span>, xend <span class="op">=</span> date, yend <span class="op">=</span> <span class="op">-</span><span class="dv">30</span>), linewidth <span class="op">=</span> <span class="dv">8</span>, colour <span class="op">=</span>  <span class="st">"skyblue4"</span>) <span class="op">+</span></span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  stat_smooth(data <span class="op">=</span> morden_month, aes(x <span class="op">=</span> date, y <span class="op">=</span> daily_c), method <span class="op">=</span> <span class="st">"loess"</span>, se <span class="op">=</span> FALSE, linewidth <span class="op">=</span> <span class="dv">1</span>, colour <span class="op">=</span>  <span class="st">"black"</span>) <span class="op">+</span></span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  scale_y_continuous(name <span class="op">=</span> expression(<span class="st">"Temperature "</span> ( degree<span class="op">*</span>C)), </span>
-<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>                     sec.axis <span class="op">=</span> sec_axis(<span class="op">~</span> (. <span class="op">+</span> <span class="dv">30</span>) <span class="op">*</span> <span class="fl">2.25</span> , name <span class="op">=</span> <span class="st">"Precipitation (mm)"</span>),</span>
-<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>                     limits <span class="op">=</span> c(<span class="op">-</span><span class="dv">30</span>, <span class="dv">30</span>),</span>
-<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>                     expand <span class="op">=</span> c(<span class="dv">0</span>, <span class="dv">0</span>)) <span class="op">+</span>  </span>
-<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>  scale_x_date(date_labels <span class="op">=</span> <span class="st">"%b"</span>, </span>
-<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>               date_breaks <span class="op">=</span> <span class="st">"1 month"</span>, </span>
-<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>               <span class="co">#expand = c(0.01,0.01), </span></span>
-<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>               name <span class="op">=</span> <span class="st">""</span>,</span>
-<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>               <span class="co">#limits = (c(as_date("2025-01-01"), as_date("2025-12-20")))</span></span>
-<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>               ) <span class="op">+</span></span>
-<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>  annotate(geom<span class="op">=</span><span class="st">"text"</span>, x <span class="op">=</span> as_date(<span class="st">"2025-01-15"</span>), y <span class="op">=</span> <span class="dv">25</span>, label <span class="op">=</span> <span class="st">"1991-2020 Climate Normals - Morden"</span>,</span>
-<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>           color<span class="op">=</span><span class="st">"black"</span>, hjust <span class="op">=</span> <span class="dv">0</span>) <span class="op">+</span></span>
-<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>  annotate(geom<span class="op">=</span><span class="st">"text"</span>, x <span class="op">=</span> as_date(<span class="st">"2025-01-15"</span>), y <span class="op">=</span> <span class="dv">20</span>, label <span class="op">=</span> <span class="st">"Annual Temp = 4.0 </span><span class="ch">\u00B0</span><span class="st">C"</span>,</span>
-<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>           color<span class="op">=</span><span class="st">"black"</span>, hjust <span class="op">=</span> <span class="dv">0</span>) <span class="op">+</span></span>
-<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>  annotate(geom<span class="op">=</span><span class="st">"text"</span>, x <span class="op">=</span> as_date(<span class="st">"2025-01-15"</span>), y <span class="op">=</span> <span class="dv">15</span>, label <span class="op">=</span> <span class="st">"Annual Precip = 527.8 mm"</span>,</span>
-<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>           color<span class="op">=</span><span class="st">"black"</span>, hjust <span class="op">=</span> <span class="dv">0</span>)</span>
-<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>p1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [8]:</pre></div><div id="b0342a6c-edf4-439e-a0c1-f970cb4ef13a" class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Climate Normals (1991-2020) for Morden, MB (Climate ID 5021849), located approximately 30 km from the field site.</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>p1 <span class="op">&lt;-</span> ggplot() <span class="op">+</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  theme_bw(base_size <span class="op">=</span> <span class="dv">12</span>) <span class="op">+</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  geom_segment(data <span class="op">=</span> morden_month, aes(x <span class="op">=</span> date, y <span class="op">=</span> precip<span class="op">/</span><span class="fl">2.25</span> <span class="op">-</span> <span class="dv">30</span>, xend <span class="op">=</span> date, yend <span class="op">=</span> <span class="op">-</span><span class="dv">30</span>), linewidth <span class="op">=</span> <span class="dv">8</span>, colour <span class="op">=</span>  <span class="st">"skyblue4"</span>) <span class="op">+</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  stat_smooth(data <span class="op">=</span> morden_month, aes(x <span class="op">=</span> date, y <span class="op">=</span> daily_c), method <span class="op">=</span> <span class="st">"loess"</span>, se <span class="op">=</span> FALSE, linewidth <span class="op">=</span> <span class="dv">1</span>, colour <span class="op">=</span>  <span class="st">"black"</span>) <span class="op">+</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>  scale_y_continuous(name <span class="op">=</span> expression(<span class="st">"Temperature "</span> ( degree<span class="op">*</span>C)), </span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>                     sec.axis <span class="op">=</span> sec_axis(<span class="op">~</span> (. <span class="op">+</span> <span class="dv">30</span>) <span class="op">*</span> <span class="fl">2.25</span> , name <span class="op">=</span> <span class="st">"Precipitation (mm)"</span>),</span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>                     limits <span class="op">=</span> c(<span class="op">-</span><span class="dv">30</span>, <span class="dv">30</span>),</span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>                     expand <span class="op">=</span> c(<span class="dv">0</span>, <span class="dv">0</span>)) <span class="op">+</span>  </span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>  scale_x_date(date_labels <span class="op">=</span> <span class="st">"%b"</span>, </span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>               date_breaks <span class="op">=</span> <span class="st">"1 month"</span>, </span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>               <span class="co">#expand = c(0.01,0.01), </span></span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>               name <span class="op">=</span> <span class="st">""</span>,</span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>               <span class="co">#limits = (c(as_date("2025-01-01"), as_date("2025-12-20")))</span></span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>               ) <span class="op">+</span></span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>  annotate(geom<span class="op">=</span><span class="st">"text"</span>, x <span class="op">=</span> as_date(<span class="st">"2025-01-01"</span>), y <span class="op">=</span> <span class="dv">25</span>, label <span class="op">=</span> <span class="st">"1991-2020 Climate Normals - Morden"</span>,</span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>           color<span class="op">=</span><span class="st">"black"</span>, hjust <span class="op">=</span> <span class="dv">0</span>) <span class="op">+</span></span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>  annotate(geom<span class="op">=</span><span class="st">"text"</span>, x <span class="op">=</span> as_date(<span class="st">"2025-01-01"</span>), y <span class="op">=</span> <span class="dv">20</span>, label <span class="op">=</span> <span class="st">"Annual Temp = 4.0 </span><span class="ch">\u00B0</span><span class="st">C"</span>,</span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>           color<span class="op">=</span><span class="st">"black"</span>, hjust <span class="op">=</span> <span class="dv">0</span>) <span class="op">+</span></span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>  annotate(geom<span class="op">=</span><span class="st">"text"</span>, x <span class="op">=</span> as_date(<span class="st">"2025-01-01"</span>), y <span class="op">=</span> <span class="dv">15</span>, label <span class="op">=</span> <span class="st">"Annual Precip = 527.8 mm"</span>,</span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>           color<span class="op">=</span><span class="st">"black"</span>, hjust <span class="op">=</span> <span class="dv">0</span>)</span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a>p1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
 </div>
@@ -372,7 +373,7 @@ Using composite locations: MORDEN</code></pre>
 <h2 class="anchored" data-anchor-id="study-period-weather">Study period weather</h2>
 <section id="download-1" class="level3">
 <h3 class="anchored" data-anchor-id="download-1">Download</h3>
-<div class="cell-container"><div class="cell-decorator"><pre>In [9]:</pre></div><div id="a4faa24c-8236-43c2-bbb5-b07945290ba2" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [9]:</pre></div><div id="a605f319-1ac7-4be0-b2de-cc99e3a7e927" class="cell">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>df_day <span class="op">&lt;-</span> weather_dl(station_ids <span class="op">=</span> <span class="dv">29886</span>, interval <span class="op">=</span> <span class="st">"day"</span>, start <span class="op">=</span> <span class="st">"2021-10-01"</span>, end <span class="op">=</span> <span class="st">"2023-09-30"</span>) <span class="op">|&gt;</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  select(date, mean_temp, total_precip) <span class="op">|&gt;</span></span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  mutate(water_year <span class="op">=</span> case_when(</span>
@@ -386,7 +387,7 @@ Using composite locations: MORDEN</code></pre>
 </section>
 <section id="sampling-details" class="level3">
 <h3 class="anchored" data-anchor-id="sampling-details">Sampling details</h3>
-<div class="cell-container"><div class="cell-decorator"><pre>In [10]:</pre></div><div id="760d96eb-1b98-4e92-9bc1-b9d642710f91" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [10]:</pre></div><div id="503b852f-19ad-4c31-aad0-1ce578607915" class="cell">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>vline_data <span class="op">&lt;-</span> data.frame(</span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  water_year <span class="op">=</span> c(<span class="dv">2022</span>, <span class="dv">2022</span>, <span class="dv">2023</span>, <span class="dv">2023</span>, <span class="dv">2023</span>, <span class="dv">2023</span>, <span class="dv">2023</span>, <span class="dv">2023</span>),</span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  x <span class="op">=</span> <span class="im">as</span>.Date(c(<span class="st">"2022-05-24"</span>, <span class="st">"2022-05-25"</span>, <span class="st">"2022-10-29"</span>, <span class="st">"2023-04-01"</span>, <span class="st">"2022-10-21"</span>, <span class="st">"2023-05-11"</span>, <span class="st">"2023-09-19"</span>, <span class="st">"2023-05-11"</span>))</span>
@@ -404,7 +405,7 @@ Using composite locations: MORDEN</code></pre>
 </section>
 <section id="plot-study-weather" class="level3">
 <h3 class="anchored" data-anchor-id="plot-study-weather">Plot study weather</h3>
-<div class="cell-container"><div class="cell-decorator"><pre>In [11]:</pre></div><div id="5ee3f628-fb43-46a8-8088-358ff39bd403" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [11]:</pre></div><div id="cell-fig-weather-climate" class="cell" data-fig-dpi="300">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>p2 <span class="op">&lt;-</span> ggplot() <span class="op">+</span></span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  theme_bw() <span class="op">+</span></span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>  geom_point(data <span class="op">=</span> df_day, aes(x <span class="op">=</span> date, y <span class="op">=</span> mean_temp, color <span class="op">=</span> ifelse(mean_temp <span class="op">&gt;</span> <span class="dv">0</span>, <span class="st">"#dc2626"</span>, <span class="st">"#2563eb"</span>))) <span class="op">+</span></span>
@@ -434,9 +435,14 @@ Using composite locations: MORDEN</code></pre>
 (`geom_point()`).</code></pre>
 </div>
 <div class="cell-output cell-output-display">
-<div class="">
-<figure class="figure">
-<p class=""><a href="weather_climate.embed_files/figure-html/cell-12-output-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="weather_climate.embed_files/figure-html/cell-12-output-2.png" class="img-fluid figure-img"></a></p>
+<div id="fig-weather-climate" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-weather-climate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
+<a href="weather_climate.embed_files/figure-html/fig-weather-climate-output-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;1: Weather conditions for the 2022 and 2023 water years (Oct 1 - Sept 30) for Deerwood, MB (Station ID 29886), located approximately 8 km from the field site. Vertical lines indicate the timing of (1) application of Environmental Smart Nitrogen (ESN) (polymer-coated slow-release urea); (2) seeding and tillage field operations; and (3) collection of soil and runoff samples. Red and blue points indicate average daily temperatures above and below 0 degrees Celsius, respectively."><img src="weather_climate.embed_files/figure-html/fig-weather-climate-output-2.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-weather-climate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Weather conditions for the 2022 and 2023 water years (Oct 1 - Sept 30) for Deerwood, MB (Station ID 29886), located approximately 8 km from the field site. Vertical lines indicate the timing of (1) application of Environmental Smart Nitrogen (ESN) (polymer-coated slow-release urea); (2) seeding and tillage field operations; and (3) collection of soil and runoff samples. Red and blue points indicate average daily temperatures above and below 0 degrees Celsius, respectively.
+</figcaption>
 </figure>
 </div>
 </div>
@@ -445,7 +451,7 @@ Using composite locations: MORDEN</code></pre>
 </section>
 <section id="combined-plot" class="level2">
 <h2 class="anchored" data-anchor-id="combined-plot">Combined plot</h2>
-<div class="cell-container"><div class="cell-decorator"><pre>In [12]:</pre></div><div id="cell-fig-weather-climate" class="cell" data-fig-height="10" data-fig-dpi="300">
+<div class="cell-container"><div class="cell-decorator"><pre>In [12]:</pre></div><div id="d604a4c1-6c71-42f7-97f4-2a2cd9d15f8f" class="cell">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>p1 <span class="op">/</span> p2 <span class="op">+</span> </span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  plot_layout(heights <span class="op">=</span> c(<span class="dv">1</span>, <span class="dv">2</span>), axis_title <span class="op">=</span> <span class="st">"collect"</span>) <span class="op">+</span></span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>  plot_annotation(tag_levels <span class="op">=</span> <span class="st">"a"</span>, tag_suffix <span class="op">=</span> <span class="st">")"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -454,14 +460,9 @@ Using composite locations: MORDEN</code></pre>
 (`geom_point()`).</code></pre>
 </div>
 <div class="cell-output cell-output-display">
-<div id="fig-weather-climate" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-weather-climate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
-<a href="weather_climate.embed_files/figure-html/fig-weather-climate-output-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figure&nbsp;1: a) Climate Normals (1991-2020) for Morden, MB (Climate ID 5021849), located approximately 30 km from the field site. b) Weather conditions for the 2022 and 2023 water years (Oct 1 - Sept 30) for Deerwood, MB (Station ID 29886), located approximately 8 km from the field site. Vertical lines indicate the timing of (1) application of Environmental Smart Nitrogen (ESN) (polymer-coated slow-release urea); (2) seeding and tillage field operations; and (3) collection of soil and runoff samples. Red and blue points indicate average daily temperatures above and below 0 degrees Celsius, respectively."><img src="weather_climate.embed_files/figure-html/fig-weather-climate-output-2.png" class="img-fluid figure-img"></a>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-weather-climate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: a) Climate Normals (1991-2020) for Morden, MB (Climate ID 5021849), located approximately 30 km from the field site. b) Weather conditions for the 2022 and 2023 water years (Oct 1 - Sept 30) for Deerwood, MB (Station ID 29886), located approximately 8 km from the field site. Vertical lines indicate the timing of (1) application of Environmental Smart Nitrogen (ESN) (polymer-coated slow-release urea); (2) seeding and tillage field operations; and (3) collection of soil and runoff samples. Red and blue points indicate average daily temperatures above and below 0 degrees Celsius, respectively.
-</figcaption>
+<div class="">
+<figure class="figure">
+<p class=""><a href="weather_climate.embed_files/figure-html/cell-13-output-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="weather_climate.embed_files/figure-html/cell-13-output-2.png" class="img-fluid figure-img"></a></p>
 </figure>
 </div>
 </div>
@@ -469,7 +470,7 @@ Figure&nbsp;1: a) Climate Normals (1991-2020) for Morden, MB (Climate ID 5021849
 </section>
 <section id="session-info" class="level2">
 <h2 class="anchored" data-anchor-id="session-info">Session info</h2>
-<div class="cell-container"><div class="cell-decorator"><pre>In [13]:</pre></div><div id="9c9261df-25cc-450b-ade2-8497e7b2de0d" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [13]:</pre></div><div id="5192648d-cc46-4044-bcd6-5c392a499bb4" class="cell">
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>sessioninfo::session_info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>─ Session info ───────────────────────────────────────────────────────────────
@@ -482,7 +483,7 @@ Figure&nbsp;1: a) Climate Normals (1991-2020) for Morden, MB (Climate ID 5021849
  collate  en_US.UTF-8
  ctype    en_US.UTF-8
  tz       America/Winnipeg
- date     2026-06-24
+ date     2026-06-25
  pandoc   3.1.3 @ /usr/bin/ (via rmarkdown)
  quarto   1.6.39 @ /usr/local/bin/quarto
 

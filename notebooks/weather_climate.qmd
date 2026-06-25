@@ -79,8 +79,9 @@ morden_month <- df_normal_morden |>
 
 ### Plot Climate Normals
 ```{r}
+#Climate Normals (1991-2020) for Morden, MB (Climate ID 5021849), located approximately 30 km from the field site.
 p1 <- ggplot() +
-  theme_bw() +
+  theme_bw(base_size = 12) +
   geom_segment(data = morden_month, aes(x = date, y = precip/2.25 - 30, xend = date, yend = -30), linewidth = 8, colour =  "skyblue4") +
   stat_smooth(data = morden_month, aes(x = date, y = daily_c), method = "loess", se = FALSE, linewidth = 1, colour =  "black") +
   scale_y_continuous(name = expression("Temperature " ( degree*C)), 
@@ -93,13 +94,16 @@ p1 <- ggplot() +
                name = "",
                #limits = (c(as_date("2025-01-01"), as_date("2025-12-20")))
                ) +
-  annotate(geom="text", x = as_date("2025-01-15"), y = 25, label = "1991-2020 Climate Normals - Morden",
+  annotate(geom="text", x = as_date("2025-01-01"), y = 25, label = "1991-2020 Climate Normals - Morden",
            color="black", hjust = 0) +
-  annotate(geom="text", x = as_date("2025-01-15"), y = 20, label = "Annual Temp = 4.0 \u00B0C",
+  annotate(geom="text", x = as_date("2025-01-01"), y = 20, label = "Annual Temp = 4.0 \u00B0C",
            color="black", hjust = 0) +
-  annotate(geom="text", x = as_date("2025-01-15"), y = 15, label = "Annual Precip = 527.8 mm",
+  annotate(geom="text", x = as_date("2025-01-01"), y = 15, label = "Annual Precip = 527.8 mm",
            color="black", hjust = 0)
 p1
+
+#ggsave(plot = p1, filename = here::here("./Figures/Climate_normal.png"), width = 200, height = 150, units = "mm", dpi = 300) 
+
 ```
 
 
@@ -139,6 +143,10 @@ annotation_data <- data.frame(
 
 ### Plot study weather
 ```{r}
+#| label: fig-weather-climate
+#| fig-dpi: 300
+#| fig-cap: " Weather conditions for the 2022 and 2023 water years (Oct 1 - Sept 30) for Deerwood, MB (Station ID 29886), located approximately 8 km from the field site. Vertical lines indicate the timing of (1) application of Environmental Smart Nitrogen (ESN) (polymer-coated slow-release urea); (2) seeding and tillage field operations; and (3) collection of soil and runoff samples. Red and blue points indicate average daily temperatures above and below 0 degrees Celsius, respectively."
+#| 
 p2 <- ggplot() +
   theme_bw() +
   geom_point(data = df_day, aes(x = date, y = mean_temp, color = ifelse(mean_temp > 0, "#dc2626", "#2563eb"))) +
@@ -169,11 +177,6 @@ p2
 ## Combined plot
 
 ```{r}
-#| label: fig-weather-climate
-#| fig-height: 10
-#| fig-dpi: 300
-#| fig-cap: "a) Climate Normals (1991-2020) for Morden, MB (Climate ID 5021849), located approximately 30 km from the field site. b) Weather conditions for the 2022 and 2023 water years (Oct 1 - Sept 30) for Deerwood, MB (Station ID 29886), located approximately 8 km from the field site. Vertical lines indicate the timing of (1) application of Environmental Smart Nitrogen (ESN) (polymer-coated slow-release urea); (2) seeding and tillage field operations; and (3) collection of soil and runoff samples. Red and blue points indicate average daily temperatures above and below 0 degrees Celsius, respectively."
-
 
 p1 / p2 + 
   plot_layout(heights = c(1, 2), axis_title = "collect") +

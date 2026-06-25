@@ -128,12 +128,33 @@ Sciences</institution>
 
 
 <abstract>
-<p>Abstract goes here</p>
+<p>Polymer-coated slow-release fertilizers are a deliberate and
+quantifiable input of microplastics to agricultural soils, yet their
+fate in cold, snowmelt-dominated agro-ecosystems remains poorly
+charaterized. This pilot study investigated the in-field distribution
+and edge-of-field export of polymer fertilizer coatings applied to two
+small agricultural watersheds in south-central Manitoba, Canada. Surface
+soils (0-5 cm) were sampled along hillslope transects at multiple dates
+following a single application, and spring snowmelt runoff was monitored
+at watershed outlets. Results showed that hillslope position and time
+since application significantly affected coating abundance and areal
+density, with lower slope positions accumulating more coatings than
+upper positions, consistent with downslope transport. Coatings persisted
+in surface soils over ~18 months with modest losses, and comparable
+abundances across 0-5 and 5-10 cm intervals indicating vertical mixing
+within the plow layer. During snowmelt, small amounts of coatings were
+exported from both watersheds. These findings demonstrate that
+agricultural soils can serve as a long-term source of microplastics to
+downstream ecosystems and highlight the need for sampling protocols that
+account for spatial and temporal variability, as well as improved
+edge-of-field monitoring in cold regions.</p>
 </abstract>
 <kwd-group kwd-group-type="author">
 <kwd>Slow-release fertilizer</kwd>
 <kwd>Micro-plastic</kwd>
 <kwd>Fate and transport</kwd>
+<kwd>Snowmelt runoff</kwd>
+<kwd>Agro-ecosystem</kwd>
 </kwd-group>
 
 
@@ -144,30 +165,6 @@ Sciences</institution>
 </front>
 
 <body>
-<sec id="potential-journals">
-  <title>Potential journals</title>
-  <list list-type="bullet">
-    <list-item>
-      <p>Soil and Tillage Research</p>
-      <list list-type="bullet">
-        <list-item>
-          <p>A Short Communication is a concise but complete description
-          of a limited investigation, which will not be included in a
-          later paper. Short Communications should be as completely
-          documented, both by reference to the literature and
-          description of the experimental procedures employed, as a
-          regular paper. They should not occupy more than 6 printed
-          pages (about 12 manuscript pages, including figures, tables
-          and references).</p>
-        </list-item>
-        <list-item>
-          <p>Pretty sure BU has a publishing agreement so it should be
-          free to publish</p>
-        </list-item>
-      </list>
-    </list-item>
-  </list>
-</sec>
 <sec id="introduction">
   <title>1 Introduction</title>
   <p>Plastics are extensively used in all aspects of life, including
@@ -199,17 +196,24 @@ Sciences</institution>
   (<xref alt="Rillig, Ingraffia, and Souza Machado 2017" rid="ref-rillig2017" ref-type="bibr">Rillig,
   Ingraffia, and Souza Machado 2017</xref>).</p>
   <p>There is currently little information on the concentration,
-  distribution, or the types of plastic in agricultural soil, the effect
+  distribution, or types of plastic in agricultural soil, the effect
   they have on soil and plant health and the extent as to which
-  agro-ecosytems are a net source of MPs to downstream ecosystems. Even
-  within agriculture and soil science disciplines, the focus has largely
-  been on assessing the risks associated with applying municipal
-  biosolids as a soil amendment which have been shown to have higher
-  concentrations of MPs
+  agro-ecosystems are a net source of MPs to downstream ecosystems
+  (<xref alt="Chinyo et al. 2026" rid="ref-chinyo2026" ref-type="bibr">Chinyo
+  et al. 2026</xref>). Even within agriculture and soil science
+  disciplines, the focus has largely been on assessing the risks
+  associated with applying municipal biosolids as a soil amendment which
+  have been shown to have higher concentrations of MPs
   (<xref alt="Crossman et al. 2020" rid="ref-crossman2020" ref-type="bibr">Crossman
-  et al. 2020</xref>). There is a considerable gap in our understanding
-  of nature of MPs in soils both in terms of the direct impact on the
-  agro-ecosystem health and as a source of MPs to downstream
+  et al. 2020</xref>). In terms of deliberate applications to
+  agricultural soil, polymer-coated slow-release fertilizers represent a
+  large input of MPs. While these slow-release fertilizers improve
+  nitrogen-use efficiency, the low rates of degradation coupled with
+  repeated applications lead to accumulation within the soil
+  (<xref alt="Isakov et al. 2025" rid="ref-isakov2025" ref-type="bibr">Isakov
+  et al. 2025</xref>). There is a considerable gap in our understanding
+  of the nature of MPs in soils both in terms of the direct impact on
+  the agro-ecosystem health and as a source of MPs to downstream
   ecosystems.</p>
   <p>Soil erosion, including tillage and surface water runoff actively
   redistribute MPs across agricultural landscapes
@@ -223,14 +227,17 @@ Sciences</institution>
   Ravi, and Mohanty 2024</xref>). Given the lack of basic research on
   agricultural soil MPs, specifically in cold snowmelt dominated
   agricultural systems, this is a high-priority research area
-  ((<xref alt="Environment, Climate Change Canada, and Health Canada 2020" rid="ref-environmentandclimatechangecanada2020" ref-type="bibr">Environment,
+  (<xref alt="Environment, Climate Change Canada, and Health Canada 2020" rid="ref-environmentandclimatechangecanada2020" ref-type="bibr">Environment,
   Climate Change Canada, and Health Canada 2020</xref>). The primary
   purpose of this pilot project was to investigate the fate of polymer
   coatings from slow-release fertilizers applied to agro-ecosystems in
-  Manitoba, Canada. The objectives of this project were to: 1)
-  characterize the lateral and vertical movement of polymer coatings
-  within surface soils; and 2) quantify the export of polymer coatings
-  from cropland in surface runoff during spring snowmelt.</p>
+  Manitoba, Canada. Because these coatings are applied in known
+  quantities, locations, and timings, they are an ideal model plastic
+  input for investigating the fate of agricultural MPs. The objectives
+  of this project were to: 1) characterize the lateral and vertical
+  movement of polymer coatings within surface soils; and 2) estimate the
+  export of polymer coatings from cropland in surface runoff during
+  spring snowmelt.</p>
 </sec>
 <sec id="methods">
   <title>2 Methods</title>
@@ -241,9 +248,12 @@ Sciences</institution>
     town of Miami, Manitoba, Canada (49.3711°N, 98.2439°W; 445 masl)
     (<xref alt="Figure 1" rid="fig-mapr">Figure 1</xref>). The mean
     annual temperature is ~4 °C, and the mean annual precipitation is
-    ~530 mm, of which approximately 15% occurs as snow (Environment
-    Canada, 2026; Morden MB, climate ID 5021849, 1991–2020 normals). The
-    topography is hummocky to undulating, with slope gradients of
+    527 mm, of which approximately 15% occurs as snow (Environment and
+    Climate Change Canada
+    (<xref alt="2026" rid="ref-environmentandclimatechangecanada2026" ref-type="bibr">2026</xref>);
+    Morden MB, climate ID 5021849, 1991–2020 normals;
+    <xref alt="Figure S1" rid="suppfig-climate-normals">Figure S1</xref>).
+    The topography is hummocky to undulating, with slope gradients of
     approximately 5%. Soils are classified as Orthic Dark Grey
     Chernozems, predominantly of the Dezwood Series. The Dezwood Series
     developed on moderately to strongly calcareous, deep, uniform, loamy
@@ -267,32 +277,34 @@ Sciences</institution>
     (<xref alt="Agriculture and Agri-Food Canada 2011" rid="ref-agricultureandagri-foodcanada2011" ref-type="bibr">Agriculture
     and Agri-Food Canada 2011</xref>). Within the STCW the research site
     comprises two small paired watersheds that drain to edge-of-field
-    weirs: the east watershed (5.15 ha) and the west watershed (4.16
+    weirs: the west watershed (5.15 ha) and the east watershed (4.16
     ha). Historically, these watersheds were used to compare runoff and
     nutrient loading from zero-tillage and conventionally tilled fields
     (<xref alt="Tiessen et al. 2010" rid="ref-tiessen2010" ref-type="bibr">Tiessen
     et al. 2010</xref>). Both watersheds are now managed under the same
-    practices. Polymer-coated urea (Environmental Smart Nitrogen) was
-    broadcast applied at a rate of 110 kg ha<sup>-1</sup> on 2022-05-24
-    using a spin spreader and incorporated into the surface soil with
-    the seeding of canola on 2022-05-25 using an air hoe drill.
-    Following canola harvest, the field was tilled to a depth of 10 to
-    15 cm using a field cultivator on 2022-10-29. A conventional
-    fertilizer blend was applied in the spring of 2023 and incorporated
-    into the soil with a single pass of the field cultivator prior to
-    the seeding of spring wheat using the air hoe drill on 2023-05-11
+    practices. Polymer-coated urea (Environmental Smart Nitrogen (ESN);
+    Nutrien Ltd.
+    (<xref alt="2022" rid="ref-nutrien_esn_datasheet_2022" ref-type="bibr">2022</xref>))
+    was broadcast applied at a rate of 110 kg ha<sup>-1</sup> on
+    2022-05-24 using a spin spreader and incorporated into the surface
+    soil with the seeding of canola on 2022-05-25 using an air hoe
+    drill. Following canola harvest, the field was tilled to a depth of
+    10 to 15 cm using a field cultivator on 2022-10-29. A conventional
+    fertilizer blend (not polymer coated) was applied in the spring of
+    2023 and incorporated into the soil with a single pass of the field
+    cultivator prior to the seeding of spring wheat using the air hoe
+    drill on 2023-05-11
     (<xref alt="Figure 2" rid="fig-weather-climate">Figure 2</xref>).
     ESN’s polymer coating is primarily composed of castor oil and
-    polymethylene polyphenylene isocyanate. This flexible and permeable
-    polymer coating is designed to release Nitrogen in response to soil
-    temperatures to more closely match the demand of the crop reducing
-    the potential losses through denitrification, volatilization, and
-    leaching. (Nutrien, 2018; ESN, 2023).</p>
+    polymethylene polyphenylene isocyanate [Nutrien Ltd.
+    (<xref alt="2026" rid="ref-nutrien_esn_2026" ref-type="bibr">2026</xref>)].
+    This polymer coating is designed to release nitrogen in response to
+    soil temperatures to more closely match the demand of the crop
+    reducing the potential losses through denitrification,
+    volatilization, and leaching.</p>
     <fig id="fig-weather-climate">
-      <caption><p>Figure 2: a) Climate Normals (1991-2020) for Morden,
-      MB (Climate ID 5021849), located approximately 30 km from the
-      field site. b) Weather conditions for the 2022 and 2023 water
-      years (Oct 1 - Sept 30) for Deerwood, MB (Station ID 29886),
+      <caption><p>Figure 2: Weather conditions for the 2022 and 2023
+      water years (Oct 1 - Sept 30) for Deerwood, MB (Station ID 29886),
       located approximately 8 km from the field site. Vertical lines
       indicate the timing of (1) application of Environmental Smart
       Nitrogen (ESN) (polymer-coated slow-release urea); (2) seeding and
@@ -333,25 +345,25 @@ Sciences</institution>
     <title>2.3 Runoff and water sampling</title>
     <p>A v-notched weir was installed in the riparian area at the
     outflow of each watershed. The water depth at the weirs was recorded
-    water depth at 5-min intervals using a pressure transducer (Onset
-    HOBO Water Level Data Logger). The water depth were then used to
-    calculate flow, based on a standard v-notched weir flow equation
-    (Smith, 1985). Throughout the runoff event, staff gauges read
-    manually and from time-lapse photography were used to verify the
-    logger-collected water depth data. Measurement of polymer coatings
-    exported by surface runoff occurred on 2023-04-13, and 2023-04-14.
-    The weir filters were applied to each weir for a maximum duration of
-    two hours each day and switched twice a day for a total of four
-    measurement periods at each weir over the 2-day runoff event.
-    Polymer coatings were collected using a simple filtration system
-    consisting of 1-mm screening was across the upstream side of the v
-    notch Polymers coatings were extracted from the screens using
-    tweezers. The Polymers coatings were dried at 30° C, counted and
-    weighed. An incremental volume of water was calculated based on the
-    flow rate over a set interval time of 15 minutes. The total
-    estimated number of polymer coatings was extrapolated from periodic
-    measurements by multiplying the total accumulated volume of water by
-    the volume-weighted mean concentration of polymer coatings. Polymer
+    at 5-min intervals using a pressure transducer (Onset HOBO Water
+    Level Data Logger). The water depth were then used to calculate
+    flow, based on a standard v-notched weir flow equation (Smith,
+    1985). Throughout the runoff event, staff gauges read manually and
+    from time-lapse photography were used to verify the logger-collected
+    water depth data. Measurement of polymer coatings exported by
+    surface runoff occurred on 2023-04-13, and 2023-04-14. Polymer
+    coatings were collected from the runoff using a simple filtration
+    system consisting of 1-mm screening set across the upstream side of
+    the v notch. These screens were deployed for a maximum duration of
+    two hours and switched twice a day for a total of four measurement
+    periods at each watershed weir over the spring runoff event.
+    Polymers coatings were extracted from the screens using tweezers.
+    The Polymers coatings were dried at 30° C, counted and weighed. An
+    incremental volume of water was calculated based on the flow rate
+    over a set interval time of 15 minutes. The total estimated number
+    of polymer coatings was extrapolated from periodic measurements by
+    multiplying the total accumulated volume of water by the
+    volume-weighted mean concentration of polymer coatings. Polymer
     coating concentration was assumed to be independent of
     discharge.</p>
     <p><styled-content id="eq-poly"><disp-formula><alternatives>
@@ -400,19 +412,33 @@ Sciences</institution>
     and South 2023</xref>) and other maps using ESRI imagery and the
     <monospace>OpenStreetMap</monospace> package
     (<xref alt="Fellows and JMapViewer library by Jan Peter Stotz 2023" rid="ref-fellows2023" ref-type="bibr">Fellows
-    and JMapViewer library by Jan Peter Stotz 2023</xref>) . Weather
-    data and climate normal data was retrieved from ECCC using
-    <monospace>weathercan</monospace> package (v1.0.0; E. LaZerte and
-    Albers
+    and JMapViewer library by Jan Peter Stotz 2023</xref>). Weather data
+    and climate normal data was retrieved from Environment and Climate
+    Change Canada
+    (<xref alt="2026" rid="ref-environmentandclimatechangecanada2026" ref-type="bibr">2026</xref>)
+    using <monospace>weathercan</monospace> package (v1.0.0; E. LaZerte
+    and Albers
     (<xref alt="2018" rid="ref-e.lazerte2018" ref-type="bibr">2018</xref>)).
-    Four Linear Mixed Models (R package <monospace>glmmTMB</monospace>
+    Two Linear Mixed Models (R package <monospace>glmmTMB</monospace>
     v1.1.14; Brooks et al.
     (<xref alt="2017" rid="ref-brooks2017" ref-type="bibr">2017</xref>))
     were used to investigate the effect of hillslope position and
     sampling date (including interaction) on the abundance (number of
     coatings) and areal density (mass of polymer per unit area). Sample
     location was included as a random factor to control for the repeated
-    measures over time.</p>
+    measures over time. When a main effect was significant, post-hoc
+    pairwise comparisons with a Benjamini-Hochberg p-value adjustment
+    was used (<monospace>emmeans</monospace> v2.0.3; Lenth
+    (<xref alt="2024" rid="ref-lenth2024" ref-type="bibr">2024</xref>)
+    ). Model assumptions were assessed using DHARMa residual plots
+    (<monospace>DHARMa</monospace> v0.5.0; Hartig
+    (<xref alt="2022" rid="ref-hartig2022" ref-type="bibr">2022</xref>)),
+    main effects were tested for collinearity
+    (<monospace>performance</monospace> v0.17.0; Lüdecke et al.
+    (<xref alt="2021" rid="ref-ludecke2021" ref-type="bibr">2021</xref>)),
+    and results were presented as type III ANOVA
+    (<monospace>car</monospace> v3.1.3; Fox and Weisberg
+    (<xref alt="2019" rid="ref-fox2019" ref-type="bibr">2019</xref>)).</p>
   </sec>
 </sec>
 <sec id="results-and-discussion">
@@ -424,36 +450,48 @@ Sciences</institution>
     effectively zero, and this factor was removed from the model. No
     significant interaction between sampling date and hillslope position
     was detected for the abundance or density of polymer coatings in the
-    0-5 cm layer. Both slope position and sampling date had a
-    significant effect (p &lt; 0.05) on the abundance and density of
-    polymer coatings
+    0-5 cm layer and this term was removed from the model. Both slope
+    position and sampling date had a significant effect (p &lt; 0.05) on
+    the abundance and density of polymer coatings
     (<xref alt="Figure 3" rid="fig-poly-surface">Figure 3</xref>).
     Post-hoc pairwise comparisons showed that lower slope positions had
     significantly higher abundance, exceeding the upper positions by 112
-    and the mid positions by 94 coatings
+    coatings m⁻² and the mid positions by 94 coatings m⁻²
     (<xref alt="Figure 3" rid="fig-poly-surface">Figure 3</xref> and
     <xref alt="Table 1" rid="tbl-abundance-posthoc">Table 1</xref>).
     Density followed a similar pattern, with the lower slope exceeding
     the upper positions by 0.12 g m⁻² and the mid positions by 0.09 g
     m⁻² (<xref alt="Figure 3" rid="fig-poly-surface">Figure 3</xref> and
-    <xref alt="Table 2" rid="tbl-density-posthoc">Table 2</xref>).</p>
+    <xref alt="Table 2" rid="tbl-density-posthoc">Table 2</xref>). There
+    were some coatings observed in the riparian area surface soil,
+    despite receiving no direct application
+    (<xref alt="Figure 3" rid="fig-poly-surface">Figure 3</xref>).</p>
     <p>The downslope increase in polymer quantities could relate to
     movement via overland flow, as the buoyant nature of the coatings
-    makes them easy to transport. Tillage erosion may also move coatings
-    downslope with the soil. The overall reduction in polymer in surface
+    makes them easy to transport
+    (<xref alt="Severe et al. 2025" rid="ref-severe2025" ref-type="bibr">Severe
+    et al. 2025</xref>;
+    <xref alt="Rehm et al. 2021" rid="ref-rehm2021" ref-type="bibr">Rehm
+    et al. 2021</xref>). Similarly, tillage erosion may also move
+    coatings downslope with the soil
+    (<xref alt="Maqbool et al. 2024" rid="ref-maqbool2024" ref-type="bibr">Maqbool
+    et al. 2024</xref>). The overall reduction in polymer in surface
     soils over time may result from loss beyond the field boundary
     through overland flow. However, vertical movement below 5 cm likely
-    accounts for much of this loss in surface MPs over time, as field
-    operations including seeding and tillage mix the plow layer,
-    resulting in downward movement despite surface application. This is
-    supported by data showing similar polymer abundance and areal
-    densities in both the 0-5 and 5-10 cm sampling depths
+    accounts for much of this observed loss in surface MPs over time, as
+    field operations including seeding and tillage mix the plow layer,
+    resulting in downward movement despite surface application. No
+    coatings were observed below 5 cm within the riparian area,
+    supporting the conclusion that tillage is the primary driver of
+    vertical coating distribution. This is supported by data showing
+    similar polymer abundance and areal densities in both the 0-5 and
+    5-10 cm sampling depths
     (<xref alt="Figure 4" rid="fig-depth">Figure 4</xref>). Lastly, the
     reduction in polymer density may also be attributed to decomposition
-    of the polymer over time. The relatively small loss also suggests
-    that the polymer coatings may be more persistent beyonf 24 months in
-    the soil environment and repeat applications of polymer coated
-    fertilizers are likely to lead to accumulation of coatings.</p>
+    of the polymer over time. The relatively small loss is consistent
+    with coating persistence in the soil environment and repeat
+    applications of polymer coated fertilizers are likely to lead to
+    accumulation of coatings.</p>
     <fig id="fig-poly-surface">
       <caption><p>Figure 3: Surface (0-5 cm) polymer areal density (a
       and b) and abundance (c and d) by elevation and date. Points show
@@ -647,22 +685,25 @@ Sciences</institution>
     in both space and time, and continued research in this area must
     account for both dimensions when developing research ideas and
     sampling strategies. Currently, few guidelines or established
-    sampling protocols are in place. The results of this study suggest
-    that a transect approach along the catena is likely to capture the
-    topographically driven variability, yielding high informational
-    value with lower effort compared to a grid or random sampling
-    approach. The results also demonstrate the importance of sampling
-    depth. While the surface layer (0-5 cm) is important for
-    investigating loss through surface processes, a complete inventory
-    is needed for long-term studies. At a minimum, sampling should
-    extend to the depth of the deepest tillage operation, but
-    preferential flow paths and bioturbation may carry MPs deeper into
-    the soil profile. Ideally incremental depth sampling is used to
-    characterize the concentration of MPs with depth. In this study, the
-    fertilizer was broadcast applied, resulting in a relatively uniform
-    horizontal distribution of MPs; however, where fertilizer is banded,
-    sampling must span the full width of the bands to account for the
-    concentrated horizontal distribution of MPs.</p>
+    sampling protocols are in place
+    (<xref alt="Chia et al. 2024" rid="ref-chia2024" ref-type="bibr">Chia
+    et al. 2024</xref>). The results of this study suggest that a
+    transect approach along the catena is likely to capture the
+    topographically driven variability, providing detailed information
+    with lower effort compared to a grid or random sampling approach.
+    The results also demonstrate the importance of sampling depth. While
+    the surface layer (0-5 cm) is important for investigating loss
+    through surface processes, a complete inventory is needed for
+    long-term studies. At a minimum, sampling should extend to the depth
+    of the deepest tillage operation, but preferential flow paths and
+    bioturbation may carry MPs deeper into the soil profile. Ideally
+    incremental depth sampling is used to characterize the concentration
+    of MPs with depth to provide a full inventory. In this study, the
+    polymer coated fertilizer was broadcast applied, resulting in a
+    relatively uniform horizontal distribution of MPs; however, where
+    fertilizer is banded, sampling must span the full width of the bands
+    to account for the concentrated horizontal distribution of polymer
+    coatings.</p>
     <p>Beyond sampling strategy, additional work is needed to examine
     temporal and spatial patterns of other types and sources of
     agricultural MPs. Much of the literature on microplastics has
@@ -671,10 +712,14 @@ Sciences</institution>
     biosolids are not used as a soil amendment; however, the sources of
     MPs are instead on-farm uses (e.g., bale wrap, twine,
     bags/containers) or external sources through atmospheric deposition
-    or overland flooding. In these cases, concentrations are likely to
-    be very low, adding further challenges to quantifying and
-    identifying MPs. Nonetheless, the dynamic nature observed with the
-    polymer coatings in this study is likely transferable to a wide
+    or overland flooding
+    (<xref alt="Chinyo et al. 2026" rid="ref-chinyo2026" ref-type="bibr">Chinyo
+    et al. 2026</xref>). In these cases, concentrations are likely to be
+    very low, adding further challenges to quantifying and identifying
+    MPs
+    (<xref alt="Piehl et al. 2018" rid="ref-piehl2018" ref-type="bibr">Piehl
+    et al. 2018</xref>). Nonetheless, the dynamic nature observed with
+    the polymer coatings in this study is likely transferable to a wide
     range of plastic types and sizes.</p>
   </sec>
   <sec id="runoff-and-loss">
@@ -759,32 +804,34 @@ Sciences</institution>
       </table-wrap>
     </fig>
     <p>Agricultural soils can serve as a long-term source of
-    microplastics (MPs) to downstream ecosystems. Although
-    concentrations in agricultural soil may be low, the extensive area
-    of farmland means the total load can be considerable. In
-    snowmelt-dominated regions like Manitoba, the snowmelt period is
-    when the greatest losses are likely to occur; however, during this
-    time, riparian areas have frozen soils and dormant vegetation,
-    reducing their filtering capabilities and making riparian buffers
-    less effective as a management practice for mitigating MP loss.
-    Quantifying MPs in agricultural runoff presents methodological
-    challenges: low concentrations necessitate filtering large volumes
-    of runoff, and traditional automatic water samplers are likely
-    insufficient for this purpose. While the simple screens used in this
-    study allowed for large volumes of water to be filtered, this method
-    has some limitations. Clogging with organic debris (e.g., crop
-    residues) and sediment is an issue, and freezing of water on the
-    screen during frequent freeze-thaw cycles similarly impedes flow.
-    Further, the large mesh size used only captures larger MPs, and
-    smaller MPs are not represented. Better edge-of-field runoff
-    sampling approaches are needed for these types of conditions to
-    capture the full range of MP sizes. In particular, automated
-    sampling systems are required to fully characterize all parts of the
-    hydrograph, as manual grab sampling is unlikely to capture the
-    rapidly changing flow conditions and associated MP concentrations
-    throughout the runoff event. Lastly, this study did not investigate
-    the role of shorter-duration, high-intensity rain events during the
-    summer months as a potential pathway for MP export.</p>
+    microplastics (MPs) to downstream ecosystems
+    (<xref alt="Rehm et al. 2021" rid="ref-rehm2021" ref-type="bibr">Rehm
+    et al. 2021</xref>). Although concentrations in agricultural soil
+    may be low, the extensive area of farmland means the total load can
+    be considerable. In snowmelt-dominated regions like Manitoba, the
+    snowmelt period is when the greatest losses are likely to occur;
+    however, during this time, riparian areas have frozen soils and
+    dormant vegetation, reducing their filtering capabilities and making
+    riparian buffers less effective as a management practice for
+    mitigating MP loss. Quantifying MPs in agricultural runoff presents
+    methodological challenges: low concentrations necessitate filtering
+    large volumes of runoff, and traditional automatic water samplers
+    are likely insufficient for this purpose. While the simple screens
+    used in this study allowed for large volumes of water to be
+    filtered, this method has some limitations. Clogging with organic
+    debris (e.g., crop residues) and sediment is an issue, and freezing
+    of water on the screen during frequent freeze-thaw cycles similarly
+    impedes flow. Further, the large mesh size used only captures larger
+    MPs, and smaller MPs are not represented in this study. Better
+    edge-of-field runoff sampling approaches are needed for these types
+    of conditions to capture the full range of MP sizes. In particular,
+    automated sampling systems are required to fully characterize all
+    parts of the hydrograph, as manual grab sampling is unlikely to
+    capture the rapidly changing flow conditions and associated MP
+    concentrations throughout the runoff event. Lastly, this study did
+    not investigate the role of shorter-duration, high-intensity rain
+    events during the summer months as a potential pathway for MP
+    export.</p>
   </sec>
 </sec>
 <sec id="conclusions">
@@ -792,12 +839,13 @@ Sciences</institution>
   <p>Polymer coatings from slow-release fertilizers showed clear spatial
   and temporal dynamics, with evidence of downslope movement and export
   to downstream environments, demonstrating that agricultural soils can
-  serve as a source of MPs. Soil sampling designs and research questions
-  must account for this spatial and temporal variability, and developing
-  best practices for sampling MPs in agricultural settings should be a
-  research priority. The findings of this study are likely applicable to
-  other types of agricultural plastics, which may show similar transport
-  dynamics. Edge-of-field sampling in cold climates presents particular
+  serve as a long-term source of MPs. Soil sampling and edge of field
+  runoff designs and research questions must account for this spatial
+  and temporal variability, and developing best practices for sampling
+  MPs in agricultural settings should be a research priority. The
+  findings of this study are likely applicable to other types of
+  agricultural plastics, which may show similar transport dynamics.
+  Edge-of-field sampling in cold climates presents particular
   challenges, as low concentrations require filtering large volumes of
   runoff and freeze-thaw conditions and debris impede water flow through
   sampling equipment, highlighting the need for improved sampling
@@ -849,11 +897,21 @@ Sciences</institution>
     Review &amp; Editing</p>
   </sec>
 </sec>
+<sec id="references">
+  <title>References</title>
+</sec>
+<sec id="supplemental-materials">
+  <title>Supplemental materials</title>
+  <fig id="suppfig-climate-normals">
+    <caption><p>Figure S1</p></caption>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="./Figures/Climate_normal.png" />
+  </fig>
+</sec>
 </body>
 
 <back>
 <ref-list>
-  <title>References</title>
+  <title></title>
   <ref id="ref-agricultureandagri-foodcanada2011">
     <element-citation>
       <person-group person-group-type="author">
@@ -1176,6 +1234,238 @@ Sciences</institution>
       <pub-id pub-id-type="doi">10.32614/RJ-2017-066</pub-id>
       <fpage>378</fpage>
       <lpage></lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-chinyo2026">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Chinyo</surname><given-names>Munny</given-names></name>
+        <name><surname>Bisht</surname><given-names>Kalpana</given-names></name>
+        <name><surname>Taku</surname><given-names>Meniari</given-names></name>
+        <name><surname>Nandipamu</surname><given-names>Tony Manoj</given-names></name>
+        <name><surname>Akash</surname></name>
+        <name><surname>Singh</surname><given-names>Shubham</given-names></name>
+        <name><surname>Mehrotra</surname><given-names>Riya</given-names></name>
+        <name><surname>Singh</surname><given-names>Sampurna Nand</given-names></name>
+        <name><surname>Srivastava</surname><given-names>Hritik</given-names></name>
+        <name><surname>Mazeed</surname><given-names>Abdul</given-names></name>
+        <name><surname>Tewary</surname><given-names>Priyanka</given-names></name>
+        <name><surname>Kumar</surname><given-names>Sandeep</given-names></name>
+      </person-group>
+      <article-title>Microplastics in agriculture: Hidden soil contaminants, sustainability risks and policy pathways</article-title>
+      <source>Journal of Agriculture and Food Research</source>
+      <year iso-8601-date="2026-07-01">2026</year><month>07</month><day>01</day>
+      <volume>29</volume>
+      <uri>https://www.sciencedirect.com/science/article/pii/S266615432600459X</uri>
+      <pub-id pub-id-type="doi">10.1016/j.jafr.2026.103089</pub-id>
+      <fpage>103089</fpage>
+      <lpage></lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-isakov2025">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Isakov</surname><given-names>Vladimir</given-names></name>
+        <name><surname>Vlasova</surname><given-names>Elena</given-names></name>
+        <name><surname>Forer</surname><given-names>Vladislav</given-names></name>
+        <name><surname>Kenny</surname><given-names>Jose</given-names></name>
+        <name><surname>Lyulin</surname><given-names>Sergey</given-names></name>
+      </person-group>
+      <article-title>Analysis of Slow-Released Fertilisers as a Source of Microplastics</article-title>
+      <source>Land</source>
+      <year iso-8601-date="2025-01">2025</year><month>01</month>
+      <volume>14</volume>
+      <issue>1</issue>
+      <uri>https://www.mdpi.com/2073-445X/14/1/38</uri>
+      <pub-id pub-id-type="doi">10.3390/land14010038</pub-id>
+      <fpage>38</fpage>
+      <lpage></lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-rehm2021">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Rehm</surname><given-names>Raphael</given-names></name>
+        <name><surname>Zeyer</surname><given-names>Tabea</given-names></name>
+        <name><surname>Schmidt</surname><given-names>Arthur</given-names></name>
+        <name><surname>Fiener</surname><given-names>Peter</given-names></name>
+      </person-group>
+      <article-title>Soil erosion as transport pathway of microplastic from agriculture soils to aquatic ecosystems</article-title>
+      <source>Science of The Total Environment</source>
+      <year iso-8601-date="2021-11-15">2021</year><month>11</month><day>15</day>
+      <volume>795</volume>
+      <uri>https://www.sciencedirect.com/science/article/pii/S0048969721038468</uri>
+      <pub-id pub-id-type="doi">10.1016/j.scitotenv.2021.148774</pub-id>
+      <fpage>148774</fpage>
+      <lpage></lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-severe2025">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Severe</surname><given-names>Emilee</given-names></name>
+        <name><surname>Surridge</surname><given-names>Ben W. J.</given-names></name>
+        <name><surname>Fiener</surname><given-names>Peter</given-names></name>
+        <name><surname>Coogan</surname><given-names>Michael P.</given-names></name>
+        <name><surname>Platel</surname><given-names>Rachel H.</given-names></name>
+        <name><surname>James</surname><given-names>Mike R.</given-names></name>
+        <name><surname>Quinton</surname><given-names>John</given-names></name>
+      </person-group>
+      <article-title>The transport of microplastics from soil in response to surface runoff and splash erosion</article-title>
+      <source>Environmental Science &amp; Technology</source>
+      <year iso-8601-date="2025-07-15">2025</year><month>07</month><day>15</day>
+      <volume>59</volume>
+      <issue>27</issue>
+      <uri>https://doi.org/10.1021/acs.est.5c04795</uri>
+      <pub-id pub-id-type="doi">10.1021/acs.est.5c04795</pub-id>
+      <fpage>14063</fpage>
+      <lpage>14074</lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-maqbool2024">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Maqbool</surname><given-names>Ahsan</given-names></name>
+        <name><surname>Guzmán</surname><given-names>Gema</given-names></name>
+        <name><surname>Fiener</surname><given-names>Peter</given-names></name>
+        <name><surname>Wilken</surname><given-names>Florian</given-names></name>
+        <name><surname>Soriano</surname><given-names>María-Auxiliadora</given-names></name>
+        <name><surname>Gómez</surname><given-names>José A.</given-names></name>
+      </person-group>
+      <article-title>Tracing macroplastics redistribution and fragmentation by tillage translocation</article-title>
+      <source>Journal of Hazardous Materials</source>
+      <year iso-8601-date="2024-09-15">2024</year><month>09</month><day>15</day>
+      <volume>477</volume>
+      <uri>https://www.sciencedirect.com/science/article/pii/S0304389424018971</uri>
+      <pub-id pub-id-type="doi">10.1016/j.jhazmat.2024.135318</pub-id>
+      <fpage>135318</fpage>
+      <lpage></lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-chia2024">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Chia</surname><given-names>Rogers Wainkwa</given-names></name>
+        <name><surname>Lee</surname><given-names>Jin-Yong</given-names></name>
+        <name><surname>Cha</surname><given-names>Jihye</given-names></name>
+        <name><surname>Rodríguez-Seijo</surname><given-names>Andrés</given-names></name>
+      </person-group>
+      <article-title>Methods of soil sampling for microplastic analysis: a review</article-title>
+      <source>Environmental Chemistry Letters</source>
+      <year iso-8601-date="2024-02-01">2024</year><month>02</month><day>01</day>
+      <volume>22</volume>
+      <issue>1</issue>
+      <uri>https://doi.org/10.1007/s10311-023-01652-9</uri>
+      <pub-id pub-id-type="doi">10.1007/s10311-023-01652-9</pub-id>
+      <fpage>227</fpage>
+      <lpage>238</lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-piehl2018">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Piehl</surname><given-names>Sarah</given-names></name>
+        <name><surname>Leibner</surname><given-names>Anna</given-names></name>
+        <name><surname>Löder</surname><given-names>Martin G. J.</given-names></name>
+        <name><surname>Dris</surname><given-names>Rachid</given-names></name>
+        <name><surname>Bogner</surname><given-names>Christina</given-names></name>
+        <name><surname>Laforsch</surname><given-names>Christian</given-names></name>
+      </person-group>
+      <article-title>Identification and quantification of macro- and microplastics on an agricultural farmland</article-title>
+      <source>Scientific Reports</source>
+      <year iso-8601-date="2018-12-18">2018</year><month>12</month><day>18</day>
+      <volume>8</volume>
+      <issue>1</issue>
+      <uri>https://www.nature.com/articles/s41598-018-36172-y</uri>
+      <pub-id pub-id-type="doi">10.1038/s41598-018-36172-y</pub-id>
+      <fpage>17950</fpage>
+      <lpage></lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-lenth2024">
+    <element-citation publication-type="book">
+      <person-group person-group-type="author">
+        <name><surname>Lenth</surname><given-names>Russell V.</given-names></name>
+      </person-group>
+      <source>Emmeans: Estimated marginal means, aka least-squares means</source>
+      <year iso-8601-date="2024">2024</year>
+      <uri>https://CRAN.R-project.org/package=emmeans</uri>
+    </element-citation>
+  </ref>
+  <ref id="ref-hartig2022">
+    <element-citation publication-type="book">
+      <person-group person-group-type="author">
+        <name><surname>Hartig</surname><given-names>Florian</given-names></name>
+      </person-group>
+      <source>DHARMa: Residual diagnostics for hierarchical (multi-level / mixed) regression models</source>
+      <year iso-8601-date="2022">2022</year>
+      <uri>https://CRAN.R-project.org/package=DHARMa</uri>
+    </element-citation>
+  </ref>
+  <ref id="ref-ludecke2021">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Lüdecke</surname><given-names>Daniel</given-names></name>
+        <name><surname>Ben-Shachar</surname><given-names>Mattan S.</given-names></name>
+        <name><surname>Patil</surname><given-names>Indrajeet</given-names></name>
+        <name><surname>Waggoner</surname><given-names>Philip</given-names></name>
+        <name><surname>Makowski</surname><given-names>Dominique</given-names></name>
+      </person-group>
+      <article-title>performance: An R package for assessment, comparison and testing of statistical models</article-title>
+      <source>Journal of Open Source Software</source>
+      <year iso-8601-date="2021">2021</year>
+      <volume>6</volume>
+      <issue>60</issue>
+      <pub-id pub-id-type="doi">10.21105/joss.03139</pub-id>
+      <fpage>3139</fpage>
+      <lpage></lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-fox2019">
+    <element-citation publication-type="book">
+      <person-group person-group-type="author">
+        <name><surname>Fox</surname><given-names>John</given-names></name>
+        <name><surname>Weisberg</surname><given-names>Sanford</given-names></name>
+      </person-group>
+      <source>An R companion to applied regression</source>
+      <publisher-name>Sage</publisher-name>
+      <publisher-loc>Thousand Oaks CA</publisher-loc>
+      <year iso-8601-date="2019">2019</year>
+      <edition>Third</edition>
+      <uri>https://socialsciences.mcmaster.ca/jfox/Books/Companion/</uri>
+    </element-citation>
+  </ref>
+  <ref id="ref-environmentandclimatechangecanada2026">
+    <element-citation>
+      <person-group person-group-type="author">
+        <name><surname>Environment</surname></name>
+        <name><surname>Climate Change Canada</surname></name>
+      </person-group>
+      <article-title>Canadian Climate Normals</article-title>
+      <year iso-8601-date="2026">2026</year>
+      <uri>https://climate.weather.gc.ca/climate_normals/index_e.html</uri>
+    </element-citation>
+  </ref>
+  <ref id="ref-nutrien_esn_2026">
+    <element-citation>
+      <person-group person-group-type="author">
+        <string-name>Nutrien Ltd.</string-name>
+      </person-group>
+      <article-title>Safety data sheet: ESN® polymer coated urea 44-0-0</article-title>
+      <publisher-name>https://products.nutrien.com/docs/3705</publisher-name>
+      <year iso-8601-date="2026-01">2026</year><month>01</month>
+      <uri>https://products.nutrien.com/docs/3705</uri>
+    </element-citation>
+  </ref>
+  <ref id="ref-nutrien_esn_datasheet_2022">
+    <element-citation>
+      <person-group person-group-type="author">
+        <string-name>Nutrien Ltd.</string-name>
+      </person-group>
+      <article-title>Fertilizer product data sheet: ESN polymer coated urea 44-0-0</article-title>
+      <publisher-name>https://products.nutrien.com/docs/811</publisher-name>
+      <year iso-8601-date="2022-12">2022</year><month>12</month>
+      <uri>https://products.nutrien.com/docs/811</uri>
     </element-citation>
   </ref>
 </ref-list>
@@ -2900,8 +3190,9 @@ oct_mar
   <sec id="plot-climate-normals-nb-4">
     <title>Plot Climate Normals</title>
     <sec specific-use="notebook-content">
-    <code language="r script">p1 &lt;- ggplot() +
-  theme_bw() +
+    <code language="r script">#Climate Normals (1991-2020) for Morden, MB (Climate ID 5021849), located approximately 30 km from the field site.
+p1 &lt;- ggplot() +
+  theme_bw(base_size = 12) +
   geom_segment(data = morden_month, aes(x = date, y = precip/2.25 - 30, xend = date, yend = -30), linewidth = 8, colour =  &quot;skyblue4&quot;) +
   stat_smooth(data = morden_month, aes(x = date, y = daily_c), method = &quot;loess&quot;, se = FALSE, linewidth = 1, colour =  &quot;black&quot;) +
   scale_y_continuous(name = expression(&quot;Temperature &quot; ( degree*C)), 
@@ -2914,11 +3205,11 @@ oct_mar
                name = &quot;&quot;,
                #limits = (c(as_date(&quot;2025-01-01&quot;), as_date(&quot;2025-12-20&quot;)))
                ) +
-  annotate(geom=&quot;text&quot;, x = as_date(&quot;2025-01-15&quot;), y = 25, label = &quot;1991-2020 Climate Normals - Morden&quot;,
+  annotate(geom=&quot;text&quot;, x = as_date(&quot;2025-01-01&quot;), y = 25, label = &quot;1991-2020 Climate Normals - Morden&quot;,
            color=&quot;black&quot;, hjust = 0) +
-  annotate(geom=&quot;text&quot;, x = as_date(&quot;2025-01-15&quot;), y = 20, label = &quot;Annual Temp = 4.0 \u00B0C&quot;,
+  annotate(geom=&quot;text&quot;, x = as_date(&quot;2025-01-01&quot;), y = 20, label = &quot;Annual Temp = 4.0 \u00B0C&quot;,
            color=&quot;black&quot;, hjust = 0) +
-  annotate(geom=&quot;text&quot;, x = as_date(&quot;2025-01-15&quot;), y = 15, label = &quot;Annual Precip = 527.8 mm&quot;,
+  annotate(geom=&quot;text&quot;, x = as_date(&quot;2025-01-01&quot;), y = 15, label = &quot;Annual Precip = 527.8 mm&quot;,
            color=&quot;black&quot;, hjust = 0)
 p1
     </code>
@@ -2926,6 +3217,8 @@ p1
       <preformat>`geom_smooth()` using formula = 'y ~ x'</preformat>
     </boxed-text>
     <graphic mimetype="image" mime-subtype="png" xlink:href="weather_climate_files/figure-jats/unnamed-chunk-8-1.png" />
+    <code language="r script">#ggsave(plot = p1, filename = here::here(&quot;./Figures/Climate_normal.png&quot;), width = 200, height = 150, units = &quot;mm&quot;, dpi = 300) 
+    </code>
     </sec>
   </sec>
 </sec>
@@ -2967,8 +3260,9 @@ annotation_data &lt;- data.frame(
   </sec>
   <sec id="plot-study-weather-nb-4">
     <title>Plot study weather</title>
-    <sec specific-use="notebook-content">
-    <code language="r script">p2 &lt;- ggplot() +
+    <sec id="cell-fig-weather-climate-nb-4" specific-use="notebook-content">
+    <code language="r script">#| 
+p2 &lt;- ggplot() +
   theme_bw() +
   geom_point(data = df_day, aes(x = date, y = mean_temp, color = ifelse(mean_temp &gt; 0, &quot;#dc2626&quot;, &quot;#2563eb&quot;))) +
   scale_color_identity() +
@@ -2997,15 +3291,24 @@ p2
       <preformat>Warning: Removed 6 rows containing missing values or values outside the scale range
 (`geom_point()`).</preformat>
     </boxed-text>
-    <graphic mimetype="image" mime-subtype="png" xlink:href="weather_climate_files/figure-jats/unnamed-chunk-11-1.png" />
+    <fig id="fig-weather-climate-nb-4">
+      <caption><p>Weather conditions for the 2022 and 2023 water years
+      (Oct 1 - Sept 30) for Deerwood, MB (Station ID 29886), located
+      approximately 8 km from the field site. Vertical lines indicate
+      the timing of (1) application of Environmental Smart Nitrogen
+      (ESN) (polymer-coated slow-release urea); (2) seeding and tillage
+      field operations; and (3) collection of soil and runoff samples.
+      Red and blue points indicate average daily temperatures above and
+      below 0 degrees Celsius, respectively.</p></caption>
+      <graphic mimetype="image" mime-subtype="png" xlink:href="weather_climate_files/figure-jats/fig-weather-climate-1.png" />
+    </fig>
     </sec>
   </sec>
 </sec>
 <sec id="combined-plot-nb-4">
   <title>Combined plot</title>
-  <sec id="cell-fig-weather-climate-nb-4" specific-use="notebook-content">
-  <code language="r script">
-p1 / p2 + 
+  <sec specific-use="notebook-content">
+  <code language="r script">p1 / p2 + 
   plot_layout(heights = c(1, 2), axis_title = &quot;collect&quot;) +
   plot_annotation(tag_levels = &quot;a&quot;, tag_suffix = &quot;)&quot;)
   </code>
@@ -3016,19 +3319,7 @@ p1 / p2 +
     <preformat>Warning: Removed 6 rows containing missing values or values outside the scale range
 (`geom_point()`).</preformat>
   </boxed-text>
-  <fig id="fig-weather-climate-nb-4">
-    <caption><p>a) Climate Normals (1991-2020) for Morden, MB (Climate
-    ID 5021849), located approximately 30 km from the field site. b)
-    Weather conditions for the 2022 and 2023 water years (Oct 1 - Sept
-    30) for Deerwood, MB (Station ID 29886), located approximately 8 km
-    from the field site. Vertical lines indicate the timing of (1)
-    application of Environmental Smart Nitrogen (ESN) (polymer-coated
-    slow-release urea); (2) seeding and tillage field operations; and
-    (3) collection of soil and runoff samples. Red and blue points
-    indicate average daily temperatures above and below 0 degrees
-    Celsius, respectively.</p></caption>
-    <graphic mimetype="image" mime-subtype="png" xlink:href="weather_climate_files/figure-jats/fig-weather-climate-1.png" />
-  </fig>
+  <graphic mimetype="image" mime-subtype="png" xlink:href="weather_climate_files/figure-jats/unnamed-chunk-11-1.png" />
   </sec>
 </sec>
 <sec id="session-info-nb-4">
@@ -3047,7 +3338,7 @@ p1 / p2 +
  collate  en_US.UTF-8
  ctype    en_US.UTF-8
  tz       America/Winnipeg
- date     2026-06-24
+ date     2026-06-25
  pandoc   3.1.3 @ /usr/bin/ (via rmarkdown)
  quarto   1.6.39 @ /usr/local/bin/quarto
 
