@@ -11,8 +11,8 @@ and Interchange DTD v1.2 20190208//EN" "JATS-archivearticle1.dtd">
 
 
 <title-group>
-<article-title>Distribution and loss of slow-release polymer coatings in
-an agro-ecosystem</article-title>
+<article-title>Soil distribution and snowmelt-driven export of polymer
+fertilizer coatings in a cold-climate agro-ecosystem</article-title>
 </title-group>
 
 <contrib-group>
@@ -174,61 +174,60 @@ edge-of-field monitoring in cold regions.</p>
   pollutant found in every ecosystem. This has resulted in global
   concern surrounding the effects of plastic pollution on ecosystem and
   human health
-  (<xref alt="Zhang et al. 2022" rid="ref-zhang2022" ref-type="bibr">Zhang
-  et al. 2022</xref>). Of particular concern, are micro-plastics (MPs)
+  (<xref alt="Zhang et al., 2022" rid="ref-zhang2022" ref-type="bibr">Zhang
+  et al., 2022</xref>). Of particular concern, are micro-plastics (MPs)
   (&lt;5mm) due to their movement and health impacts within the food
   chain and their rapid dispersion beyond their initial point of
   release. Despite the ubiquitous distribution of MP pollution across
   all ecosystem types, the focus has primarily been on marine and
   freshwater ecosystems
-  (<xref alt="Anderson et al. 2017" rid="ref-anderson2017" ref-type="bibr">Anderson
-  et al. 2017</xref>;
-  <xref alt="Lenaker, Corsi, and Mason 2021" rid="ref-lenaker2021" ref-type="bibr">Lenaker,
-  Corsi, and Mason 2021</xref>) and with an emphasis on urban and
-  industrial sources. A 2021 survey of the plastic pollution literature
-  found that only 4% of publications specifically investigated MPs in
-  soils
-  (<xref alt="Weber et al. 2021" rid="ref-weber2021" ref-type="bibr">Weber
-  et al. 2021</xref>). Agriculture and soil have received relatively
+  (<xref alt="Anderson et al., 2017" rid="ref-anderson2017" ref-type="bibr">Anderson
+  et al., 2017</xref>;
+  <xref alt="Lenaker et al., 2021" rid="ref-lenaker2021" ref-type="bibr">Lenaker
+  et al., 2021</xref>) and with an emphasis on urban and industrial
+  sources. A 2021 survey of the plastic pollution literature found that
+  only 4% of publications specifically investigated MPs in soils
+  (<xref alt="Weber et al., 2021" rid="ref-weber2021" ref-type="bibr">Weber
+  et al., 2021</xref>). Agriculture and soil have received relatively
   less attention despite the prevalent use of plastics, including
   horticultural mulch, twine, bale wrap, product bags and containers,
   and polymer-coated slow-release fertilizers
-  (<xref alt="Rillig, Ingraffia, and Souza Machado 2017" rid="ref-rillig2017" ref-type="bibr">Rillig,
-  Ingraffia, and Souza Machado 2017</xref>).</p>
+  (<xref alt="Rillig et al., 2017" rid="ref-rillig2017" ref-type="bibr">Rillig
+  et al., 2017</xref>).</p>
   <p>There is currently little information on the concentration,
   distribution, or types of plastic in agricultural soil, the effect
   they have on soil and plant health and the extent as to which
   agro-ecosystems are a net source of MPs to downstream ecosystems
-  (<xref alt="Chinyo et al. 2026" rid="ref-chinyo2026" ref-type="bibr">Chinyo
-  et al. 2026</xref>). Even within agriculture and soil science
+  (<xref alt="Chinyo et al., 2026" rid="ref-chinyo2026" ref-type="bibr">Chinyo
+  et al., 2026</xref>). Even within agriculture and soil science
   disciplines, the focus has largely been on assessing the risks
   associated with applying municipal biosolids as a soil amendment which
   have been shown to have higher concentrations of MPs
-  (<xref alt="Crossman et al. 2020" rid="ref-crossman2020" ref-type="bibr">Crossman
-  et al. 2020</xref>). In terms of deliberate applications to
+  (<xref alt="Crossman et al., 2020" rid="ref-crossman2020" ref-type="bibr">Crossman
+  et al., 2020</xref>). In terms of deliberate applications to
   agricultural soil, polymer-coated slow-release fertilizers represent a
   large input of MPs. While these slow-release fertilizers improve
   nitrogen-use efficiency, the low rates of degradation coupled with
   repeated applications lead to accumulation within the soil
-  (<xref alt="Isakov et al. 2025" rid="ref-isakov2025" ref-type="bibr">Isakov
-  et al. 2025</xref>). There is a considerable gap in our understanding
+  (<xref alt="Isakov et al., 2025" rid="ref-isakov2025" ref-type="bibr">Isakov
+  et al., 2025</xref>). There is a considerable gap in our understanding
   of the nature of MPs in soils both in terms of the direct impact on
   the agro-ecosystem health and as a source of MPs to downstream
   ecosystems.</p>
   <p>Soil erosion, including tillage and surface water runoff actively
   redistribute MPs across agricultural landscapes
-  (<xref alt="Rehm and Fiener 2024" rid="ref-rehm2024" ref-type="bibr">Rehm
-  and Fiener 2024</xref>;
-  <xref alt="Wang et al. 2024" rid="ref-wang2024" ref-type="bibr">Wang
-  et al. 2024</xref>). Due to their low density, these buoyant particles
-  are easily transported beyond field boundaries into adjacent
+  (<xref alt="Rehm and Fiener, 2024" rid="ref-rehm2024" ref-type="bibr">Rehm
+  and Fiener, 2024</xref>;
+  <xref alt="Wang et al., 2024" rid="ref-wang2024" ref-type="bibr">Wang
+  et al., 2024</xref>). Due to their low density, these buoyant
+  particles are easily transported beyond field boundaries into adjacent
   environments making agricultural soils a likely source of MPs
-  (<xref alt="Leonard, Ravi, and Mohanty 2024" rid="ref-leonard2024" ref-type="bibr">Leonard,
-  Ravi, and Mohanty 2024</xref>). Given the lack of basic research on
-  agricultural soil MPs, specifically in cold snowmelt dominated
-  agricultural systems, this is a high-priority research area
-  (<xref alt="Environment, Climate Change Canada, and Health Canada 2020" rid="ref-environmentandclimatechangecanada2020" ref-type="bibr">Environment,
-  Climate Change Canada, and Health Canada 2020</xref>). The primary
+  (<xref alt="Leonard et al., 2024" rid="ref-leonard2024" ref-type="bibr">Leonard
+  et al., 2024</xref>). Given the lack of basic research on agricultural
+  soil MPs, specifically in cold snowmelt dominated agricultural
+  systems, this is a high-priority research area
+  (<xref alt="Environment and Climate Change Canada and Health Canada, 2020" rid="ref-environmentandclimatechangecanada2020" ref-type="bibr">Environment
+  and Climate Change Canada and Health Canada, 2020</xref>). The primary
   purpose of this pilot project was to investigate the fate of polymer
   coatings from slow-release fertilizers applied to agro-ecosystems in
   Manitoba, Canada. Because these coatings are applied in known
@@ -261,8 +260,8 @@ edge-of-field monitoring in cold regions.</p>
     often slightly eroded and slightly stony, with medium available
     water-holding capacity, medium organic matter content, and medium to
     high natural fertility
-    (<xref alt="Michalyna, Podolsky, and St. Jacques 1988" rid="ref-michalyna1988" ref-type="bibr">Michalyna,
-    Podolsky, and St. Jacques 1988</xref>).</p>
+    (<xref alt="Michalyna et al., 1988" rid="ref-michalyna1988" ref-type="bibr">Michalyna
+    et al., 1988</xref>).</p>
     <fig id="fig-mapr">
       <caption><p>Figure 1: Showing a) the location of the study site in
       southern Manitoba with an inset map of Canada; and b) the
@@ -274,14 +273,15 @@ edge-of-field monitoring in cold regions.</p>
     <p>The STCW has a long history of being part of a national program
     aimed at assessing the economic and water quality impacts of
     different agricultural practices across Canada
-    (<xref alt="Agriculture and Agri-Food Canada 2011" rid="ref-agricultureandagri-foodcanada2011" ref-type="bibr">Agriculture
-    and Agri-Food Canada 2011</xref>). Within the STCW the research site
-    comprises two small paired watersheds that drain to edge-of-field
-    weirs: the west watershed (5.15 ha) and the east watershed (4.16
-    ha). Historically, these watersheds were used to compare runoff and
-    nutrient loading from zero-tillage and conventionally tilled fields
-    (<xref alt="Tiessen et al. 2010" rid="ref-tiessen2010" ref-type="bibr">Tiessen
-    et al. 2010</xref>). Both watersheds are now managed under the same
+    (<xref alt="Agriculture and Agri-Food Canada, 2008" rid="ref-agricultureandagri-foodcanada2011" ref-type="bibr">Agriculture
+    and Agri-Food Canada, 2008</xref>). Within the STCW the research
+    site comprises two small paired watersheds that drain to
+    edge-of-field weirs: the west watershed (5.15 ha) and the east
+    watershed (4.16 ha). Historically, these watersheds were used to
+    compare runoff and nutrient loading from zero-tillage and
+    conventionally tilled fields
+    (<xref alt="Tiessen et al., 2010" rid="ref-tiessen2010" ref-type="bibr">Tiessen
+    et al., 2010</xref>). Both watersheds are now managed under the same
     practices. Polymer-coated urea (Environmental Smart Nitrogen (ESN);
     Nutrien Ltd.
     (<xref alt="2022" rid="ref-nutrien_esn_datasheet_2022" ref-type="bibr">2022</xref>))
@@ -296,12 +296,12 @@ edge-of-field monitoring in cold regions.</p>
     drill on 2023-05-11
     (<xref alt="Figure 2" rid="fig-weather-climate">Figure 2</xref>).
     ESN’s polymer coating is primarily composed of castor oil and
-    polymethylene polyphenylene isocyanate [Nutrien Ltd.
-    (<xref alt="2026" rid="ref-nutrien_esn_2026" ref-type="bibr">2026</xref>)].
-    This polymer coating is designed to release nitrogen in response to
-    soil temperatures to more closely match the demand of the crop
-    reducing the potential losses through denitrification,
-    volatilization, and leaching.</p>
+    polymethylene polyphenylene isocyanate
+    (<xref alt="Nutrien Ltd., 2026" rid="ref-nutrien_esn_2026" ref-type="bibr">Nutrien
+    Ltd., 2026</xref>). This polymer coating is designed to release
+    nitrogen in response to soil temperatures to more closely match the
+    demand of the crop reducing the potential losses through
+    denitrification, volatilization, and leaching.</p>
     <fig id="fig-weather-climate">
       <caption><p>Figure 2: Weather conditions for the 2022 and 2023
       water years (Oct 1 - Sept 30) for Deerwood, MB (Station ID 29886),
@@ -318,8 +318,8 @@ edge-of-field monitoring in cold regions.</p>
     <title>2.2 Soil sampling and analysis</title>
     <p>Soil sampling was conducted at locations established in previous
     research
-    (<xref alt="Tiessen et al. 2010" rid="ref-tiessen2010" ref-type="bibr">Tiessen
-    et al. 2010</xref>) along four transects in each of the watersheds,
+    (<xref alt="Tiessen et al., 2010" rid="ref-tiessen2010" ref-type="bibr">Tiessen
+    et al., 2010</xref>) along four transects in each of the watersheds,
     with each transect spanning three hillslope positions: upper, mid,
     and lower slope
     (<xref alt="Figure 1" rid="fig-mapr">Figure 1</xref>), giving 24
@@ -347,23 +347,24 @@ edge-of-field monitoring in cold regions.</p>
     outflow of each watershed. The water depth at the weirs was recorded
     at 5-min intervals using a pressure transducer (Onset HOBO Water
     Level Data Logger). The water depth were then used to calculate
-    flow, based on a standard v-notched weir flow equation (Smith,
-    1985). Throughout the runoff event, staff gauges read manually and
-    from time-lapse photography were used to verify the logger-collected
-    water depth data. Measurement of polymer coatings exported by
-    surface runoff occurred on 2023-04-13, and 2023-04-14. Polymer
-    coatings were collected from the runoff using a simple filtration
-    system consisting of 1-mm screening set across the upstream side of
-    the v notch. These screens were deployed for a maximum duration of
-    two hours and switched twice a day for a total of four measurement
-    periods at each watershed weir over the spring runoff event.
-    Polymers coatings were extracted from the screens using tweezers.
-    The Polymers coatings were dried at 30° C, counted and weighed. An
-    incremental volume of water was calculated based on the flow rate
-    over a set interval time of 15 minutes. The total estimated number
-    of polymer coatings was extrapolated from periodic measurements by
-    multiplying the total accumulated volume of water by the
-    volume-weighted mean concentration of polymer coatings. Polymer
+    flow, based on a standard v-notched weir flow equation
+    (<xref alt="ASTM International, 1992" rid="ref-astm_d5242_92" ref-type="bibr">ASTM
+    International, 1992</xref>). Throughout the runoff event, staff
+    gauges read manually and from time-lapse photography were used to
+    verify the logger-collected water depth data. Measurement of polymer
+    coatings exported by surface runoff occurred on 2023-04-13, and
+    2023-04-14. Polymer coatings were collected from the runoff using a
+    simple filtration system consisting of 1-mm screening set across the
+    upstream side of the v notch. These screens were deployed for a
+    maximum duration of two hours and switched twice a day for a total
+    of four measurement periods at each watershed weir over the spring
+    runoff event. Polymers coatings were extracted from the screens
+    using tweezers. The Polymers coatings were dried at 30° C, counted
+    and weighed. An incremental volume of water was calculated based on
+    the flow rate over a set interval time of 15 minutes. The total
+    estimated number of polymer coatings was extrapolated from periodic
+    measurements by multiplying the total accumulated volume of water by
+    the volume-weighted mean concentration of polymer coatings. Polymer
     coating concentration was assumed to be independent of
     discharge.</p>
     <p><styled-content id="eq-poly"><disp-formula><alternatives>
@@ -402,19 +403,19 @@ edge-of-field monitoring in cold regions.</p>
     using the R Statistical Software (v4.5.3); R Core Team
     (<xref alt="2026" rid="ref-rcoreteam2026" ref-type="bibr">2026</xref>)),
     through the RStudio Integrated Development Environment (v2026.05.1;
-    (<xref alt="RStudio 2026" rid="ref-rstudio2026" ref-type="bibr">RStudio
+    (<xref alt="RStudio, 2026" rid="ref-rstudio2026" ref-type="bibr">RStudio,
     2026</xref>) ). All plots and maps were created using the R package
     <monospace>ggplot2</monospace> (v4.0.3; Wickham
     (<xref alt="2016" rid="ref-wickham2016" ref-type="bibr">2016</xref>)).
     Country and regional maps were created using data from the
     <monospace>rnaturalearth</monospace> package
-    (<xref alt="Massicotte and South 2023" rid="ref-massicotte2023" ref-type="bibr">Massicotte
-    and South 2023</xref>) and other maps using ESRI imagery and the
+    (<xref alt="Massicotte and South, 2023" rid="ref-massicotte2023" ref-type="bibr">Massicotte
+    and South, 2023</xref>) and other maps using ESRI imagery and the
     <monospace>OpenStreetMap</monospace> package
-    (<xref alt="Fellows and JMapViewer library by Jan Peter Stotz 2023" rid="ref-fellows2023" ref-type="bibr">Fellows
-    and JMapViewer library by Jan Peter Stotz 2023</xref>). Weather data
-    and climate normal data was retrieved from Environment and Climate
-    Change Canada
+    (<xref alt="Fellows and JMapViewer library by Jan Peter Stotz, 2023" rid="ref-fellows2023" ref-type="bibr">Fellows
+    and JMapViewer library by Jan Peter Stotz, 2023</xref>). Weather
+    data and climate normal data was retrieved from Environment and
+    Climate Change Canada
     (<xref alt="2026" rid="ref-environmentandclimatechangecanada2026" ref-type="bibr">2026</xref>)
     using <monospace>weathercan</monospace> package (v1.0.0; E. LaZerte
     and Albers
@@ -469,13 +470,13 @@ edge-of-field monitoring in cold regions.</p>
     <p>The downslope increase in polymer quantities could relate to
     movement via overland flow, as the buoyant nature of the coatings
     makes them easy to transport
-    (<xref alt="Severe et al. 2025" rid="ref-severe2025" ref-type="bibr">Severe
-    et al. 2025</xref>;
-    <xref alt="Rehm et al. 2021" rid="ref-rehm2021" ref-type="bibr">Rehm
-    et al. 2021</xref>). Similarly, tillage erosion may also move
+    (<xref alt="Rehm et al., 2021" rid="ref-rehm2021" ref-type="bibr">Rehm
+    et al., 2021</xref>;
+    <xref alt="Severe et al., 2025" rid="ref-severe2025" ref-type="bibr">Severe
+    et al., 2025</xref>). Similarly, tillage erosion may also move
     coatings downslope with the soil
-    (<xref alt="Maqbool et al. 2024" rid="ref-maqbool2024" ref-type="bibr">Maqbool
-    et al. 2024</xref>). The overall reduction in polymer in surface
+    (<xref alt="Maqbool et al., 2024" rid="ref-maqbool2024" ref-type="bibr">Maqbool
+    et al., 2024</xref>). The overall reduction in polymer in surface
     soils over time may result from loss beyond the field boundary
     through overland flow. However, vertical movement below 5 cm likely
     accounts for much of this observed loss in surface MPs over time, as
@@ -686,8 +687,8 @@ edge-of-field monitoring in cold regions.</p>
     account for both dimensions when developing research ideas and
     sampling strategies. Currently, few guidelines or established
     sampling protocols are in place
-    (<xref alt="Chia et al. 2024" rid="ref-chia2024" ref-type="bibr">Chia
-    et al. 2024</xref>). The results of this study suggest that a
+    (<xref alt="Chia et al., 2024" rid="ref-chia2024" ref-type="bibr">Chia
+    et al., 2024</xref>). The results of this study suggest that a
     transect approach along the catena is likely to capture the
     topographically driven variability, providing detailed information
     with lower effort compared to a grid or random sampling approach.
@@ -713,12 +714,12 @@ edge-of-field monitoring in cold regions.</p>
     MPs are instead on-farm uses (e.g., bale wrap, twine,
     bags/containers) or external sources through atmospheric deposition
     or overland flooding
-    (<xref alt="Chinyo et al. 2026" rid="ref-chinyo2026" ref-type="bibr">Chinyo
-    et al. 2026</xref>). In these cases, concentrations are likely to be
-    very low, adding further challenges to quantifying and identifying
-    MPs
-    (<xref alt="Piehl et al. 2018" rid="ref-piehl2018" ref-type="bibr">Piehl
-    et al. 2018</xref>). Nonetheless, the dynamic nature observed with
+    (<xref alt="Chinyo et al., 2026" rid="ref-chinyo2026" ref-type="bibr">Chinyo
+    et al., 2026</xref>). In these cases, concentrations are likely to
+    be very low, adding further challenges to quantifying and
+    identifying MPs
+    (<xref alt="Piehl et al., 2018" rid="ref-piehl2018" ref-type="bibr">Piehl
+    et al., 2018</xref>). Nonetheless, the dynamic nature observed with
     the polymer coatings in this study is likely transferable to a wide
     range of plastic types and sizes.</p>
   </sec>
@@ -805,8 +806,8 @@ edge-of-field monitoring in cold regions.</p>
     </fig>
     <p>Agricultural soils can serve as a long-term source of
     microplastics (MPs) to downstream ecosystems
-    (<xref alt="Rehm et al. 2021" rid="ref-rehm2021" ref-type="bibr">Rehm
-    et al. 2021</xref>). Although concentrations in agricultural soil
+    (<xref alt="Rehm et al., 2021" rid="ref-rehm2021" ref-type="bibr">Rehm
+    et al., 2021</xref>). Although concentrations in agricultural soil
     may be low, the extensive area of farmland means the total load can
     be considerable. In snowmelt-dominated regions like Manitoba, the
     snowmelt period is when the greatest losses are likely to occur;
@@ -859,7 +860,7 @@ edge-of-field monitoring in cold regions.</p>
 <sec id="acknowledgments">
   <title>Acknowledgments</title>
   <p>Special thanks and recognition for the field and technical support
-  from …</p>
+  from C Jackson and J Griffith. Also</p>
 </sec>
 <sec id="statements-and-declarations">
   <title>Statements and declarations</title>
@@ -919,8 +920,8 @@ edge-of-field monitoring in cold regions.</p>
         <name><surname>Agri-Food Canada</surname></name>
       </person-group>
       <article-title>South tobacco creek/steppler watershed fact sheet</article-title>
-      <year iso-8601-date="2011">2011</year>
-      <uri>http://www.agr.gc.ca</uri>
+      <year iso-8601-date="2008">2008</year>
+      <uri>https://publications.gc.ca/collections/collection_2022/aac-aafc/A15-10313-2008-eng.pdf</uri>
     </element-citation>
   </ref>
   <ref id="ref-michalyna1988">
@@ -930,7 +931,7 @@ edge-of-field monitoring in cold regions.</p>
         <name><surname>Podolsky</surname><given-names>G</given-names></name>
         <name><surname>St. Jacques</surname><given-names>E</given-names></name>
       </person-group>
-      <article-title>Soils of the rural municipalities of grey, dufferin, roland, thompson and part of stanley</article-title>
+      <article-title>Soils of the rural municipalities of Grey, Dufferin, Roland, Thompson and part of Stanley</article-title>
       <year iso-8601-date="1988">1988</year>
     </element-citation>
   </ref>
@@ -1129,9 +1130,7 @@ edge-of-field monitoring in cold regions.</p>
   <ref id="ref-environmentandclimatechangecanada2020">
     <element-citation publication-type="report">
       <person-group person-group-type="author">
-        <name><surname>Environment</surname></name>
-        <name><surname>Climate Change Canada</surname></name>
-        <name><surname>Health Canada</surname></name>
+        <string-name>Environment and Climate Change Canada and Health Canada</string-name>
       </person-group>
       <article-title>Science assessment of plastic pollution</article-title>
       <year iso-8601-date="2020">2020</year>
@@ -1438,8 +1437,7 @@ edge-of-field monitoring in cold regions.</p>
   <ref id="ref-environmentandclimatechangecanada2026">
     <element-citation>
       <person-group person-group-type="author">
-        <name><surname>Environment</surname></name>
-        <name><surname>Climate Change Canada</surname></name>
+        <string-name>Environment and Climate Change Canada</string-name>
       </person-group>
       <article-title>Canadian Climate Normals</article-title>
       <year iso-8601-date="2026">2026</year>
@@ -1466,6 +1464,18 @@ edge-of-field monitoring in cold regions.</p>
       <publisher-name>https://products.nutrien.com/docs/811</publisher-name>
       <year iso-8601-date="2022-12">2022</year><month>12</month>
       <uri>https://products.nutrien.com/docs/811</uri>
+    </element-citation>
+  </ref>
+  <ref id="ref-astm_d5242_92">
+    <element-citation publication-type="report">
+      <person-group person-group-type="author">
+        <string-name>ASTM International</string-name>
+      </person-group>
+      <article-title>Standard test method for open-channel flow measurement of water with thin-plate weirs</article-title>
+      <publisher-name>ASTM International</publisher-name>
+      <publisher-loc>West Conshohocken, PA</publisher-loc>
+      <year iso-8601-date="1992">1992</year>
+      <uri>https://www.astm.org/d5242-92r01.html</uri>
     </element-citation>
   </ref>
 </ref-list>

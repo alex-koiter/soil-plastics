@@ -230,7 +230,7 @@
        <p>Alex Koiter</p>
 <section id="load-libraries" class="level2">
 <h2 class="anchored" data-anchor-id="load-libraries">Load libraries</h2>
-<div class="cell-container"><div class="cell-decorator"><pre>In [1]:</pre></div><div id="8cdeb848-561f-49d2-8d10-c5b8d8b7bc0d" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [1]:</pre></div><div id="5dca03c9-7f1e-4b8a-b03b-6268d09c464a" class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>suppressPackageStartupMessages({</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  library(tidyverse)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  library(patchwork)</span>
@@ -242,7 +242,7 @@
 <h2 class="anchored" data-anchor-id="get-the-data">Get the data</h2>
 <section id="find-station_id-and-climate_id" class="level3">
 <h3 class="anchored" data-anchor-id="find-station_id-and-climate_id">Find station_id and climate_id</h3>
-<div class="cell-container"><div class="cell-decorator"><pre>In [2]:</pre></div><div id="9aee6a7c-3330-4bf1-a990-3df77c21e054" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [2]:</pre></div><div id="90f308e0-796d-4dd4-bb59-93f18c0124c2" class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>stations_search(coords <span class="op">=</span> c(<span class="fl">49.332263</span>, <span class="op">-</span><span class="fl">98.382368</span>), dist <span class="op">=</span> <span class="dv">20</span>, normals_years <span class="op">=</span> <span class="st">"1991-2020"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>No stations within 20km. Returning closest 10 records</code></pre>
@@ -266,7 +266,7 @@
 #   distance &lt;dbl&gt;</code></pre>
 </div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [3]:</pre></div><div id="c7d8e61a-2c28-4858-a13a-ff6af8a033fa" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [3]:</pre></div><div id="97020231-15a9-499b-bbea-0c659eff1a26" class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>stations_search(coords <span class="op">=</span> c(<span class="fl">49.332263</span>, <span class="op">-</span><span class="fl">98.382368</span>), dist <span class="op">=</span> <span class="dv">20</span>, normals_years <span class="op">=</span> <span class="st">"1981-2010"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 4 × 18
@@ -281,7 +281,7 @@
 #   distance &lt;dbl&gt;</code></pre>
 </div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [4]:</pre></div><div id="7219697e-75b1-4810-bd2d-1f11865f715d" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [4]:</pre></div><div id="8108a539-cb92-4eea-9a97-7b4de20fffcc" class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>stations_search(coords <span class="op">=</span> c(<span class="fl">49.332263</span>, <span class="op">-</span><span class="fl">98.382368</span>), dist <span class="op">=</span> <span class="dv">20</span>, interval <span class="op">=</span> <span class="st">"day"</span>, starts_latest <span class="op">=</span> <span class="dv">2020</span>, ends_earliest <span class="op">=</span> <span class="dv">2024</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 18
@@ -297,7 +297,7 @@
 </section>
 <section id="normals" class="level2">
 <h2 class="anchored" data-anchor-id="normals">Normals</h2>
-<div class="cell-container"><div class="cell-decorator"><pre>In [5]:</pre></div><div id="ae3ac75d-c3e2-474f-8261-d61097a54cfd" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [5]:</pre></div><div id="72467bbf-7ab3-47fd-87b4-e319ebfc3342" class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>df_normal_miami <span class="op">&lt;-</span>  normals_dl(climate_ids <span class="op">=</span> <span class="dv">5021736</span>, normals_years <span class="op">=</span> <span class="st">"1981-2010"</span>) <span class="op">|&gt;</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  unnest(normals) <span class="op">|&gt;</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="bu">filter</span>(period <span class="op">==</span> <span class="st">"Year"</span>) <span class="op">|&gt;</span></span>
@@ -305,7 +305,7 @@
 </div></div>
 <section id="download" class="level3">
 <h3 class="anchored" data-anchor-id="download">Download</h3>
-<div class="cell-container"><div class="cell-decorator"><pre>In [6]:</pre></div><div id="41240163-7586-4783-8ca9-b1cb77ac0050" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [6]:</pre></div><div id="26373ef5-dca1-4b55-aae5-0c1269c6986b" class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>df_normal_morden <span class="op">&lt;-</span> normals_dl(climate_ids <span class="op">=</span> <span class="dv">5021849</span>, normals_years <span class="op">=</span> <span class="st">"current"</span>, measurement_type <span class="op">=</span> c(<span class="st">"Temperature"</span>, <span class="st">"Precipitation"</span>)) <span class="op">|&gt;</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="bu">filter</span>(period_of_record <span class="op">==</span> <span class="st">"Normal"</span>) <span class="op">|&gt;</span></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="co">#filter(element_group %in% c("Precipitation", "Temperature")) |&gt;</span></span>
@@ -324,7 +324,7 @@ Using composite locations: MORDEN</code></pre>
 1              141</code></pre>
 </div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [7]:</pre></div><div id="ba5ac16d-a9ce-4741-9a8a-9970255a2c25" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [7]:</pre></div><div id="8e678b82-d11e-46ba-9494-968ab7c5581a" class="cell">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>morden_annual$precipitation_mm</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 527.8</code></pre>
@@ -333,7 +333,7 @@ Using composite locations: MORDEN</code></pre>
 </section>
 <section id="plot-climate-normals" class="level3">
 <h3 class="anchored" data-anchor-id="plot-climate-normals">Plot Climate Normals</h3>
-<div class="cell-container"><div class="cell-decorator"><pre>In [8]:</pre></div><div id="b0342a6c-edf4-439e-a0c1-f970cb4ef13a" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [8]:</pre></div><div id="43d4e060-ba98-4371-a2ef-6bcbdf514313" class="cell">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Climate Normals (1991-2020) for Morden, MB (Climate ID 5021849), located approximately 30 km from the field site.</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>p1 <span class="op">&lt;-</span> ggplot() <span class="op">+</span></span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  theme_bw(base_size <span class="op">=</span> <span class="dv">12</span>) <span class="op">+</span></span>
@@ -373,7 +373,7 @@ Using composite locations: MORDEN</code></pre>
 <h2 class="anchored" data-anchor-id="study-period-weather">Study period weather</h2>
 <section id="download-1" class="level3">
 <h3 class="anchored" data-anchor-id="download-1">Download</h3>
-<div class="cell-container"><div class="cell-decorator"><pre>In [9]:</pre></div><div id="a605f319-1ac7-4be0-b2de-cc99e3a7e927" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [9]:</pre></div><div id="feee840b-0d81-4cd4-815b-6b38bb477ff1" class="cell">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>df_day <span class="op">&lt;-</span> weather_dl(station_ids <span class="op">=</span> <span class="dv">29886</span>, interval <span class="op">=</span> <span class="st">"day"</span>, start <span class="op">=</span> <span class="st">"2021-10-01"</span>, end <span class="op">=</span> <span class="st">"2023-09-30"</span>) <span class="op">|&gt;</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  select(date, mean_temp, total_precip) <span class="op">|&gt;</span></span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  mutate(water_year <span class="op">=</span> case_when(</span>
@@ -387,7 +387,7 @@ Using composite locations: MORDEN</code></pre>
 </section>
 <section id="sampling-details" class="level3">
 <h3 class="anchored" data-anchor-id="sampling-details">Sampling details</h3>
-<div class="cell-container"><div class="cell-decorator"><pre>In [10]:</pre></div><div id="503b852f-19ad-4c31-aad0-1ce578607915" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [10]:</pre></div><div id="91fe189a-8ce2-4059-92fd-fee58dbdc2d4" class="cell">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>vline_data <span class="op">&lt;-</span> data.frame(</span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  water_year <span class="op">=</span> c(<span class="dv">2022</span>, <span class="dv">2022</span>, <span class="dv">2023</span>, <span class="dv">2023</span>, <span class="dv">2023</span>, <span class="dv">2023</span>, <span class="dv">2023</span>, <span class="dv">2023</span>),</span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  x <span class="op">=</span> <span class="im">as</span>.Date(c(<span class="st">"2022-05-24"</span>, <span class="st">"2022-05-25"</span>, <span class="st">"2022-10-29"</span>, <span class="st">"2023-04-01"</span>, <span class="st">"2022-10-21"</span>, <span class="st">"2023-05-11"</span>, <span class="st">"2023-09-19"</span>, <span class="st">"2023-05-11"</span>))</span>
@@ -451,7 +451,7 @@ Figure&nbsp;1: Weather conditions for the 2022 and 2023 water years (Oct 1 - Sep
 </section>
 <section id="combined-plot" class="level2">
 <h2 class="anchored" data-anchor-id="combined-plot">Combined plot</h2>
-<div class="cell-container"><div class="cell-decorator"><pre>In [12]:</pre></div><div id="d604a4c1-6c71-42f7-97f4-2a2cd9d15f8f" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [12]:</pre></div><div id="07bd2cef-df2c-4cc7-8a30-c546f2111342" class="cell">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>p1 <span class="op">/</span> p2 <span class="op">+</span> </span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  plot_layout(heights <span class="op">=</span> c(<span class="dv">1</span>, <span class="dv">2</span>), axis_title <span class="op">=</span> <span class="st">"collect"</span>) <span class="op">+</span></span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>  plot_annotation(tag_levels <span class="op">=</span> <span class="st">"a"</span>, tag_suffix <span class="op">=</span> <span class="st">")"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -470,7 +470,7 @@ Figure&nbsp;1: Weather conditions for the 2022 and 2023 water years (Oct 1 - Sep
 </section>
 <section id="session-info" class="level2">
 <h2 class="anchored" data-anchor-id="session-info">Session info</h2>
-<div class="cell-container"><div class="cell-decorator"><pre>In [13]:</pre></div><div id="5192648d-cc46-4044-bcd6-5c392a499bb4" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [13]:</pre></div><div id="b4b533c9-d009-4bd9-af2f-09fdc2a63873" class="cell">
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>sessioninfo::session_info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>─ Session info ───────────────────────────────────────────────────────────────

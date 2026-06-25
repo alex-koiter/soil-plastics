@@ -220,7 +220,7 @@
        <p>Alex Koiter</p>
 <section id="load-libraries" class="level2">
 <h2 class="anchored" data-anchor-id="load-libraries">Load Libraries</h2>
-<div class="cell-container"><div class="cell-decorator"><pre>In [1]:</pre></div><div id="1df6e7bc-2b90-4623-9419-e877962d076d" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [1]:</pre></div><div id="bb4d1229-73ea-4799-93c2-218d685e95e3" class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>library(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
@@ -244,12 +244,12 @@ The following objects are masked from 'package:stats':
 <section id="important-coordinates" class="level2">
 <h2 class="anchored" data-anchor-id="important-coordinates">Important coordinates</h2>
 <p>Regional site location</p>
-<div class="cell-container"><div class="cell-decorator"><pre>In [2]:</pre></div><div id="6917546e-a4c0-4d1e-a0ea-4000b99f4fe2" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [2]:</pre></div><div id="321005e9-d40f-468d-bb62-279e8c324f5a" class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>site <span class="op">&lt;-</span> st_sfc(st_point(c(<span class="op">-</span><span class="fl">98.364195</span>, <span class="fl">49.338907</span>)), crs <span class="op">=</span> <span class="dv">4326</span>)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>box <span class="op">=</span> c(xmin <span class="op">=</span> <span class="op">-</span><span class="fl">98.371228</span>, xmax <span class="op">=</span> <span class="op">-</span><span class="fl">98.363396</span>, ymax <span class="op">=</span>  <span class="fl">49.341214</span>, ymin <span class="op">=</span>  <span class="fl">49.335711</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
 <p>Study sample locations</p>
-<div class="cell-container"><div class="cell-decorator"><pre>In [3]:</pre></div><div id="98a7b21e-3cdc-4f73-80dd-c6fe8404c47c" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [3]:</pre></div><div id="7417a6f0-7631-4ecb-9700-61ffc4010800" class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>sites <span class="op">&lt;-</span> read_csv(here::here(<span class="st">"./notebooks/sample_locations.csv"</span>))<span class="op">|&gt;</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  clean_names() <span class="op">|&gt;</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  dplyr::select(<span class="op">-</span>latitude, <span class="op">-</span>longitude) <span class="op">|&gt;</span></span>
@@ -275,7 +275,7 @@ dbl (3): Transect, Easting, Northing
 </section>
 <section id="canada" class="level2">
 <h2 class="anchored" data-anchor-id="canada">Canada</h2>
-<div class="cell-container"><div class="cell-decorator"><pre>In [4]:</pre></div><div id="4f89c1fe-0515-443b-a3e3-81db5479b93c" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [4]:</pre></div><div id="47a650e7-aea6-4b80-bd26-5819510631a7" class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>canada <span class="op">&lt;-</span> ne_states(country <span class="op">=</span> <span class="st">"Canada"</span>, returnclass <span class="op">=</span> <span class="st">"sf"</span>) <span class="op">%&gt;%</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  st_transform(crs <span class="op">=</span> <span class="dv">3348</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
@@ -284,7 +284,7 @@ dbl (3): Transect, Easting, Northing
 <h2 class="anchored" data-anchor-id="maps">Maps</h2>
 <section id="canada-1" class="level3">
 <h3 class="anchored" data-anchor-id="canada-1">Canada</h3>
-<div class="cell-container"><div class="cell-decorator"><pre>In [5]:</pre></div><div id="4a5a6c95-23de-4452-b083-d49790a31861" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [5]:</pre></div><div id="86cabe2c-e175-46f1-bec6-e6553415bbfd" class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>p1 <span class="op">&lt;-</span> ggplot() <span class="op">+</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  theme_bw() <span class="op">+</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  layer_spatial(canada, fill <span class="op">=</span> <span class="st">"white"</span>) <span class="op">+</span></span>
@@ -298,7 +298,7 @@ dbl (3): Transect, Easting, Northing
 <span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>        <span class="co">#panel.border = element_blank(),</span></span>
 <span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>        panel.background <span class="op">=</span> element_blank())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [6]:</pre></div><div id="2874597a-8496-42c0-bded-109cb8a97b8b" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [6]:</pre></div><div id="bda7b42b-13af-4ced-ae51-986361a02517" class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>sf_use_s2(FALSE)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Spherical geometry (s2) switched off</code></pre>
@@ -335,7 +335,7 @@ are planarWarning: attribute variables are assumed to be spatially constant thro
 all geometries</code></pre>
 </div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [7]:</pre></div><div id="b5ae55b0-5ae9-4607-83a7-99b12996c71f" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [7]:</pre></div><div id="583a1cbb-e177-4e5e-8bab-93f79e700a3b" class="cell">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create an sf point from the site's coordinates</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>site_as_sf <span class="op">&lt;-</span> st_sf(</span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  name <span class="op">=</span> <span class="st">"Site"</span>,</span>
@@ -348,7 +348,7 @@ all geometries</code></pre>
 <span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Combine with mb_cities</span></span>
 <span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>mb_cities_with_site <span class="op">&lt;-</span> rbind(mb_cities, site_as_sf)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [8]:</pre></div><div id="7f511967-7351-4b8b-b3fe-51a0167cd1df" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [8]:</pre></div><div id="65c5a95d-eafe-42f9-873b-c4bc74d835ab" class="cell">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>p4 <span class="op">&lt;-</span> ggplot() <span class="op">+</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  theme_bw() <span class="op">+</span></span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  geom_sf(data <span class="op">=</span> mb, fill <span class="op">=</span> <span class="st">"white"</span>) <span class="op">+</span></span>
@@ -396,7 +396,7 @@ give correct results for longitude/latitude data</code></pre>
 </div>
 </div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [9]:</pre></div><div id="f90835a4-dbec-4a9c-90f2-8a5d68747b6e" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [9]:</pre></div><div id="ecf6fa62-dd23-4a24-a32f-5681a4be4e56" class="cell">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="bu">map</span> <span class="op">&lt;-</span> openmap(c(<span class="fl">49.341</span>, <span class="op">-</span><span class="fl">98.37</span>), c(<span class="fl">49.335711</span>, <span class="op">-</span><span class="fl">98.362</span>), zoom <span class="op">=</span> NULL,</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>                  <span class="bu">type</span> <span class="op">=</span> <span class="st">"esri-imagery"</span>, mergeTiles <span class="op">=</span> TRUE) </span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="co"># </span></span>
@@ -460,7 +460,7 @@ Figure&nbsp;1: Showing a) the location of the study site in southern Manitoba wi
 </section>
 <section id="session-info" class="level2">
 <h2 class="anchored" data-anchor-id="session-info">Session info</h2>
-<div class="cell-container"><div class="cell-decorator"><pre>In [11]:</pre></div><div id="6306ea47-d917-4969-a23c-5a5b0bdc06eb" class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [11]:</pre></div><div id="029653aa-9430-4407-8554-cf07316427e6" class="cell">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>sessioninfo::session_info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>─ Session info ───────────────────────────────────────────────────────────────
