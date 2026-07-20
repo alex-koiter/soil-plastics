@@ -194,7 +194,7 @@ p5
 #| fig-dpi: 300
 #| fig-width: 6.69
 #| fig-height: 3.54
-#| fig-cap: "Showing a) the location of the study site in southern Manitoba with an inset map of Canada; and b) the locations of the four transects and three slope positions sampled in the East and West watersheds as separted by the dashed line."
+#| fig-cap: "Showing a) the location of the study site in southern Manitoba with an inset map of Canada; and b) the locations of the four transects and three slope positions sampled in the East and West watersheds as separated by the dashed line."
    
 p6 <- (p4 + inset_element(p1, left = 0.6, bottom = 0.6, right = 1, top = 1)) + p5 +  plot_layout(widths = c(1, 1))
 p6

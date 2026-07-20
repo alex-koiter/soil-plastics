@@ -131,23 +131,24 @@ Sciences</institution>
 <p>Polymer-coated slow-release fertilizers are a deliberate and
 quantifiable input of microplastics to agricultural soils, yet their
 fate in cold, snowmelt-dominated agro-ecosystems remains poorly
-charaterized. This pilot study investigated the in-field distribution
-and edge-of-field export of polymer fertilizer coatings applied to two
-small agricultural watersheds in south-central Manitoba, Canada. Surface
-soils (0-5 cm) were sampled along hillslope transects at multiple dates
-following a single application, and spring snowmelt runoff was monitored
-at watershed outlets. Results showed that hillslope position and time
-since application significantly affected coating abundance and areal
-density, with lower slope positions accumulating more coatings than
-upper positions, consistent with downslope transport. Coatings persisted
-in surface soils over ~18 months with modest losses, and comparable
-abundances across 0-5 and 5-10 cm intervals indicating vertical mixing
-within the plow layer. During snowmelt, small amounts of coatings were
-exported from both watersheds. These findings demonstrate that
-agricultural soils can serve as a long-term source of microplastics to
-downstream ecosystems and highlight the need for sampling protocols that
-account for spatial and temporal variability, as well as improved
-edge-of-field monitoring in cold regions.</p>
+characterized This pilot study investigated the in-field distribution
+and snowmelt export of polymer fertilizer coatings applied to two small
+agricultural watersheds in south-central Manitoba, Canada. Surface soils
+(0-5 cm) were sampled along hillslope transects at multiple dates
+following a single application, and spring snowmelt runoff was collected
+at the edge-of-field outlet of two small watersheds. Results showed that
+hillslope position and time since application significantly affected
+coating abundance and areal density, with lower slope positions
+accumulating more coatings than upper positions, consistent with
+downslope transport. Coatings persisted in surface soils over ~18 months
+with modest losses, and comparable abundances across 0-5 and 5-10 cm
+depth intervals indicating vertical mixing within the plow layer. During
+snowmelt, small amounts of coatings were exported with runoff from both
+watersheds. These findings demonstrate that agricultural soils can serve
+as a multi-year source of microplastics to downstream ecosystems and
+highlight the need for sampling protocols that account for spatial and
+temporal variability, as well as improved edge-of-field monitoring in
+cold regions to determine potential long-term impacts.</p>
 </abstract>
 <kwd-group kwd-group-type="author">
 <kwd>Slow-release fertilizer</kwd>
@@ -185,8 +186,9 @@ edge-of-field monitoring in cold regions.</p>
   et al., 2017</xref>;
   <xref alt="Lenaker et al., 2021" rid="ref-lenaker2021" ref-type="bibr">Lenaker
   et al., 2021</xref>) and with an emphasis on urban and industrial
-  sources. A 2021 survey of the plastic pollution literature found that
-  only 4% of publications specifically investigated MPs in soils
+  wastewater sources. A 2021 survey of the plastic pollution literature
+  found that only 4% of publications specifically investigated MPs in
+  soils
   (<xref alt="Weber et al., 2021" rid="ref-weber2021" ref-type="bibr">Weber
   et al., 2021</xref>). Agriculture and soil have received relatively
   less attention despite the prevalent use of plastics, including
@@ -197,7 +199,7 @@ edge-of-field monitoring in cold regions.</p>
   <p>There is currently little information on the concentration,
   distribution, or types of plastic in agricultural soil, the effect
   they have on soil and plant health and the extent as to which
-  agro-ecosystems are a net source of MPs to downstream ecosystems
+  agro-ecosystems may act as a source of MPs to downstream ecosystems
   (<xref alt="Chinyo et al., 2026" rid="ref-chinyo2026" ref-type="bibr">Chinyo
   et al., 2026</xref>). Even within agriculture and soil science
   disciplines, the focus has largely been on assessing the risks
@@ -207,8 +209,8 @@ edge-of-field monitoring in cold regions.</p>
   et al., 2020</xref>). In terms of deliberate applications to
   agricultural soil, polymer-coated slow-release fertilizers represent a
   large input of MPs. While these slow-release fertilizers improve
-  nitrogen-use efficiency, the low rates of degradation coupled with
-  repeated applications lead to accumulation within the soil
+  nitrogen-use efficiency, the low rates of plastic degradation coupled
+  with repeated applications lead to accumulation within the soil
   (<xref alt="Isakov et al., 2025" rid="ref-isakov2025" ref-type="bibr">Isakov
   et al., 2025</xref>). There is a considerable gap in our understanding
   of the nature of MPs in soils both in terms of the direct impact on
@@ -233,10 +235,10 @@ edge-of-field monitoring in cold regions.</p>
   Manitoba, Canada. Because these coatings are applied in known
   quantities, locations, and timings, they are an ideal model plastic
   input for investigating the fate of agricultural MPs. The objectives
-  of this project were to: 1) characterize the lateral and vertical
-  movement of polymer coatings within surface soils; and 2) estimate the
-  export of polymer coatings from cropland in surface runoff during
-  spring snowmelt.</p>
+  of this study were to: 1) characterize the lateral and vertical
+  movement of polymer coatings within surface soils; and 2) quantify the
+  potential for export of polymer coatings from cropland in surface
+  runoff during spring snowmelt.</p>
 </sec>
 <sec id="methods">
   <title>2 Methods</title>
@@ -266,7 +268,7 @@ edge-of-field monitoring in cold regions.</p>
       <caption><p>Figure 1: Showing a) the location of the study site in
       southern Manitoba with an inset map of Canada; and b) the
       locations of the four transects and three slope positions sampled
-      in the East and West watersheds as separted by the dashed
+      in the East and West watersheds as separated by the dashed
       line.</p></caption>
       <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/notebooks-maps-fig-mapr-output-2.png" />
     </fig>
@@ -282,18 +284,20 @@ edge-of-field monitoring in cold regions.</p>
     conventionally tilled fields
     (<xref alt="Tiessen et al., 2010" rid="ref-tiessen2010" ref-type="bibr">Tiessen
     et al., 2010</xref>). Both watersheds are now managed under the same
-    practices. Polymer-coated urea (Environmental Smart Nitrogen (ESN);
-    Nutrien Ltd.
+    tillage practices. Polymer-coated urea (Environmental Smart Nitrogen
+    (ESN); Nutrien Ltd.
     (<xref alt="2022" rid="ref-nutrien_esn_datasheet_2022" ref-type="bibr">2022</xref>))
     was broadcast applied at a rate of 110 kg ha<sup>-1</sup> on
     2022-05-24 using a spin spreader and incorporated into the surface
     soil with the seeding of canola on 2022-05-25 using an air hoe
-    drill. Following canola harvest, the field was tilled to a depth of
-    10 to 15 cm using a field cultivator on 2022-10-29. A conventional
-    fertilizer blend (not polymer coated) was applied in the spring of
-    2023 and incorporated into the soil with a single pass of the field
-    cultivator prior to the seeding of spring wheat using the air hoe
-    drill on 2023-05-11
+    drill. The drill, equipped with shovels, provided soil disturbance
+    comparable to a cultivator pass, and packer wheels ensured close
+    soil-to-ESN contact. Following canola harvest, the field was tilled
+    to a depth of 10 to 15 cm using a field cultivator on 2022-10-29. A
+    conventional fertilizer blend (not polymer coated) was applied in
+    the spring of 2023 and incorporated into the soil with a single pass
+    of the field cultivator prior to the seeding of spring wheat using
+    the air hoe drill on 2023-05-11
     (<xref alt="Figure 2" rid="fig-weather-climate">Figure 2</xref>).
     ESN’s polymer coating is primarily composed of castor oil and
     polymethylene polyphenylene isocyanate
@@ -310,7 +314,9 @@ edge-of-field monitoring in cold regions.</p>
       Nitrogen (ESN) (polymer-coated slow-release urea); (2) seeding and
       tillage field operations; and (3) collection of soil and runoff
       samples. Red and blue points indicate average daily temperatures
-      above and below 0 degrees Celsius, respectively.</p></caption>
+      above and below 0 degrees Celsius, respectively. The blue line
+      indicates cumulative precipitation over the hydrologic
+      year.</p></caption>
       <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/notebooks-weather_climate-fig-weather-climate-output-2.png" />
     </fig>
   </sec>
@@ -329,9 +335,10 @@ edge-of-field monitoring in cold regions.</p>
     Surface soil samples were excavated with a spade from a 25 cm × 25
     cm square to a depth of 5 cm, yielding a sample volume of 3125 cm³.
     On 19 September 2023, an additional sample was collected at each
-    location from the 5–10 cm depth interval. Two additional surface
-    riparian samples were also collected from each watershed on this
-    date.</p>
+    location from the 5–10 cm depth interval. On this date, two
+    additional surface riparian samples were also collected from the
+    grassed area between the edge of the cultivated field and the
+    v-notch weir.</p>
     <p>Soil samples were disaggregated by hand into smaller aggregates
     and air-dried. Each sample was further manually disaggregated and
     sieved sequentially through 2-mm and 1.18-mm meshes. Polymer
@@ -343,33 +350,45 @@ edge-of-field monitoring in cold regions.</p>
   </sec>
   <sec id="runoff-and-water-sampling">
     <title>2.3 Runoff and water sampling</title>
-    <p>A v-notched weir was installed in the riparian area at the
-    outflow of each watershed. The water depth at the weirs was recorded
-    at 5-min intervals using a pressure transducer (Onset HOBO Water
-    Level Data Logger). The water depth were then used to calculate
-    flow, based on a standard v-notched weir flow equation
+    <p>Sharp crested 90° V-notch weirs were present at the edge-of-field
+    outlets of two small watersheds draining the study field.
+    Measurement of flow at these sites has been ongoing for over 2
+    decades, primarily in support of research to characterized factors
+    controlling nutrient transport, with methods initially detailed in
+    Tiessen et al. (2010). For the present study period, water depth at
+    the weirs was recorded at 5-min intervals using a pressure
+    transducer (Onset HOBO Water Level Data Logger). The water depth
+    were then used to calculate flow, based on a standard V-notched weir
+    flow equation
     (<xref alt="ASTM International, 1992" rid="ref-astm_d5242_92" ref-type="bibr">ASTM
     International, 1992</xref>). Throughout the runoff event, staff
-    gauges read manually and from time-lapse photography were used to
-    verify the logger-collected water depth data. Measurement of polymer
+    gauges read manually during in person visits and from time-lapse
+    photography were used to calibrate the logger-collected water depth
+    data to depth from base of the V-notch weir. During regularly
+    scheduled site visits for maintenance, collection of polymer
     coatings exported by surface runoff occurred on 2023-04-13, and
     2023-04-14. Polymer coatings were collected from the runoff using a
     simple filtration system consisting of 1-mm screening set across the
     upstream side of the v notch. These screens were deployed for a
     maximum duration of two hours and switched twice a day for a total
-    of four measurement periods at each watershed weir over the spring
-    runoff event. Polymers coatings were extracted from the screens
-    using tweezers. The Polymers coatings were dried at 30° C, counted
-    and weighed. An incremental volume of water was calculated based on
-    the flow rate over a set interval time of 15 minutes. The total
-    estimated number of polymer coatings was extrapolated from periodic
-    measurements by multiplying the total accumulated volume of water by
-    the volume-weighted mean concentration of polymer coatings. Polymer
+    of four measurement periods at each weir over the spring runoff
+    event. Polymer coatings were extracted from the screens using
+    tweezers. The polymer coatings were dried at 30° C, counted and
+    weighed. A cumulative volume of water exported over each time period
+    of sampling for polymer coatings was calculated. An estimate of
+    volume-weighted mean concentration was calculated for each watershed
+    by dividing the total number of polymer coatings collected during
+    all sampling intervals by the total volume runoff measured during
+    those intervals (coatings m⁻³). The total number of polymer coatings
+    exported over the course of snowmelt was extrapolated by multiplying
+    the total accumulated volume of water by the volume-weighted mean
+    concentration of polymer coatings
+    (<xref alt="Equation 1" rid="eq-poly">Equation 1</xref>). Polymer
     coating concentration was assumed to be independent of
     discharge.</p>
     <p><styled-content id="eq-poly"><disp-formula><alternatives>
     <tex-math><![CDATA[PC = V \times \frac{\sum_{i=1}^{n} PC_i}{\sum_{i=1}^{n} V_i} \qquad(1)]]></tex-math>
-    <mml:math display="block" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>P</mml:mi><mml:mi>C</mml:mi><mml:mo>=</mml:mo><mml:mi>V</mml:mi><mml:mo>×</mml:mo><mml:mfrac><mml:mrow><mml:munderover><mml:mo>∑</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>n</mml:mi></mml:munderover><mml:mi>P</mml:mi><mml:msub><mml:mi>C</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow><mml:mrow><mml:munderover><mml:mo>∑</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>n</mml:mi></mml:munderover><mml:msub><mml:mi>V</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:mfrac><mml:mspace width="2.0em"></mml:mspace><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow></mml:mrow></mml:math></alternatives></disp-formula></styled-content></p>
+    <mml:math display="block" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>P</mml:mi><mml:mi>C</mml:mi><mml:mo>=</mml:mo><mml:mi>V</mml:mi><mml:mo>×</mml:mo><mml:mfrac><mml:mrow><mml:munderover><mml:mo>∑</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>n</mml:mi></mml:munderover><mml:mi>P</mml:mi><mml:msub><mml:mi>C</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow><mml:mrow><mml:munderover><mml:mo>∑</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>n</mml:mi></mml:munderover><mml:msub><mml:mi>V</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:mfrac><mml:mspace width="2.0em"></mml:mspace><mml:mo stretchy="false" form="prefix">(</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="false" form="postfix">)</mml:mo></mml:mrow></mml:math></alternatives></disp-formula></styled-content></p>
     <p>where <inline-formula><alternatives>
     <tex-math><![CDATA[PC]]></tex-math>
     <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>P</mml:mi><mml:mi>C</mml:mi></mml:mrow></mml:math></alternatives></inline-formula>
@@ -679,7 +698,8 @@ edge-of-field monitoring in cold regions.</p>
       <caption><p>Figure 4: Polymer density (a) and abundance (b) for
       two sampling depths (0-5 and 5-10 cm) and the combined (0-10 cm)
       by slope position. Samples were collected on 2023-09-19 and no
-      ploymer was detected below 5 cm in the riparian area</p></caption>
+      polymer was detected below 5 cm in the riparian
+      area.</p></caption>
       <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/notebooks-soil_sampling-fig-depth-output-1.png" />
     </fig>
     <p>The distribution of MPs in soil within agro-ecosystems is dynamic
@@ -709,11 +729,13 @@ edge-of-field monitoring in cold regions.</p>
     temporal and spatial patterns of other types and sources of
     agricultural MPs. Much of the literature on microplastics has
     focused on soils receiving biosolids, which often contain
-    substantial amounts of plastics. On many farms in Manitoba,
-    biosolids are not used as a soil amendment; however, the sources of
-    MPs are instead on-farm uses (e.g., bale wrap, twine,
-    bags/containers) or external sources through atmospheric deposition
-    or overland flooding
+    substantial amounts of plastics. On farms in Manitoba, biosolids are
+    used as a soil amendment only in close proximity to certain
+    wastewater treatment facilities; however, other sources of MPs are
+    used more broadly on-farm (e.g., polymer coated fertilizers, bale
+    wrap, twine, bags/containers). There are also external sources of
+    plastics delivered to agricultural soils through atmospheric
+    deposition or overland flooding
     (<xref alt="Chinyo et al., 2026" rid="ref-chinyo2026" ref-type="bibr">Chinyo
     et al., 2026</xref>). In these cases, concentrations are likely to
     be very low, adding further challenges to quantifying and
@@ -746,16 +768,17 @@ edge-of-field monitoring in cold regions.</p>
     measurements made as part of this study sampled only a small portion
     of the runoff event, missing the larger peaks in the hydrograph. By
     missing peak runoff, these measurements provided a limited overall
-    characterization of both concentration and total coating loss.
-    Additionally, the drier conditions in 2023 resulted in lower runoff
-    volumes, potentially accounting for the small numbers of coatings
-    observed. Future studies should sample across various parts of the
-    hydrograph and across a range of spring snowmelt conditions,
-    including wet and dry years, flashy and subdued hydrographs, and
-    varying frequencies of freeze-thaw cycles. This broader approach
-    would better capture the role of environmental conditions and runoff
-    volumes on the transport and export of polymer coatings and other
-    MPs.</p>
+    characterization of both concentration and total coating loss, but
+    do indicate mobility of detectable amounts of microplastics from
+    fertilizer coatings during snowmelt. Additionally, the drier
+    conditions in 2023 resulted in lower runoff volumes, potentially
+    accounting for the small numbers of coatings observed. Future
+    studies should sample across various parts of the hydrograph and
+    across a range of spring snowmelt conditions, including wet and dry
+    years, flashy and subdued hydrographs, and varying frequencies of
+    freeze-thaw cycles. This broader approach would better capture the
+    role of environmental conditions and runoff volumes on the transport
+    and export of polymer coatings and other MPs.</p>
     <fig id="fig-discharge">
       <caption><p>Figure 5: Discharge for the East and West watersheds
       during the spring snowmelt period in April 2023. Shaded regions
@@ -764,9 +787,10 @@ edge-of-field monitoring in cold regions.</p>
       <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/notebooks-04_Discharge-fig-discharge-output-1.png" />
     </fig>
     <fig id="tbl-runoff">
-      <caption><p>Table 3: Estimated total ploymer coating export from
-      West and East watersheds, based on accumulated runoff volume and
-      volume-weighted mean concentration.</p></caption>
+      <caption><p>Table 3: Estimated total polymer coating export from
+      West and East watersheds over the course of snowmelt in 2023,
+      based on accumulated runoff volume and volume-weighted mean
+      concentration.</p></caption>
       <table-wrap>
         <table>
           <thead>
@@ -810,15 +834,18 @@ edge-of-field monitoring in cold regions.</p>
     et al., 2021</xref>). Although concentrations in agricultural soil
     may be low, the extensive area of farmland means the total load can
     be considerable. In snowmelt-dominated regions like Manitoba, the
-    snowmelt period is when the greatest losses are likely to occur;
-    however, during this time, riparian areas have frozen soils and
-    dormant vegetation, reducing their filtering capabilities and making
-    riparian buffers less effective as a management practice for
-    mitigating MP loss. Quantifying MPs in agricultural runoff presents
-    methodological challenges: low concentrations necessitate filtering
-    large volumes of runoff, and traditional automatic water samplers
-    are likely insufficient for this purpose. While the simple screens
-    used in this study allowed for large volumes of water to be
+    snowmelt period is when the greatest losses are likely to
+    occur;however, during this time, frozen soils and altered surface
+    structure (e.g., dormant, compressed, or harvested vegetation, snow
+    and ice cover) may change the physical conditions that control MP
+    retention compared to the growing season. The effectiveness of
+    riparian buffers for capturing buoyant MPs, whose retention is
+    driven primarily by physical processes, remains a research priority
+    for this critical period. Quantifying MPs in agricultural runoff
+    presents methodological challenges: low concentrations necessitate
+    filtering large volumes of runoff, and traditional automatic water
+    samplers are likely insufficient for this purpose. While the simple
+    screens used in this study allowed for large volumes of water to be
     filtered, this method has some limitations. Clogging with organic
     debris (e.g., crop residues) and sediment is an issue, and freezing
     of water on the screen during frequent freeze-thaw cycles similarly
@@ -829,10 +856,32 @@ edge-of-field monitoring in cold regions.</p>
     automated sampling systems are required to fully characterize all
     parts of the hydrograph, as manual grab sampling is unlikely to
     capture the rapidly changing flow conditions and associated MP
-    concentrations throughout the runoff event. Lastly, this study did
-    not investigate the role of shorter-duration, high-intensity rain
-    events during the summer months as a potential pathway for MP
-    export.</p>
+    concentrations throughout the runoff event. However, based on the
+    detection of MPs near the water surface during in snowmelt in the
+    present study, any automated systems will have to compensate for
+    buoyancy and likely uneven vertical distribution of MPs in the water
+    column. Lastly, this study did not investigate the role of
+    shorter-duration, high-intensity rain events during the summer
+    months as a potential pathway for MP export.</p>
+    <p>Identifying the mechanisms of MP loss during snowmelt and other
+    runoff events remains a research priority. Investigating whether MPs
+    are co-transported with suspended solids would provide insights into
+    whether the same factors (e.g., overland flow velocity, surface
+    roughness) control the transport of MPs and soil particles. Small
+    plot, soil flume-based, and rainfall simulator experiments have
+    shown the preferential transport of MPs due to their buoyancy and
+    shape
+    (<xref alt="Rehm et al., 2021" rid="ref-rehm2021" ref-type="bibr">Rehm
+    et al., 2021</xref>;
+    <xref alt="Severe et al., 2025" rid="ref-severe2025" ref-type="bibr">Severe
+    et al., 2025</xref>), suggesting that MPs likely behave differently
+    than soil particles during runoff events. However, long-term
+    in-field observations are needed to validate whether these patterns
+    hold under field conditions across a range of hydrologic and
+    climatic conditions. Such field-based studies could clarify MP
+    transport dynamics and help identify management strategies that are
+    effective not only for MP mitigation but also for controlling
+    erosion and nutrient loss.</p>
   </sec>
 </sec>
 <sec id="conclusions">
@@ -860,13 +909,15 @@ edge-of-field monitoring in cold regions.</p>
 <sec id="acknowledgments">
   <title>Acknowledgments</title>
   <p>Special thanks and recognition for the field and technical support
-  from C Jackson and J Griffith. Also</p>
+  from C Jackson and the cooperating producers at the South Tobacco
+  Creek twin watershed site.</p>
 </sec>
 <sec id="statements-and-declarations">
   <title>Statements and declarations</title>
   <sec id="funding">
     <title>Funding</title>
-    <p>This research was supported by …</p>
+    <p>This research was supported by the Agriculture and Agri-Food
+    Canada Living Laboratories Initiative.</p>
   </sec>
   <sec id="competing-interests">
     <title>Competing interests</title>
@@ -894,8 +945,8 @@ edge-of-field monitoring in cold regions.</p>
     <p><bold>A Koiter</bold>: Conceptualization; Methodology;
     Investigation; Data curation; Formal analysis; Visualization;
     Writing - Original Draft; Writing – review and editing; Software</p>
-    <p><bold>H Wilson</bold>: Methodology; Formal analysis; Writing -
-    Review &amp; Editing</p>
+    <p><bold>H Wilson</bold>: Methodology; Data curation; Formal
+    analysis; Writing - Review &amp; Editing</p>
   </sec>
 </sec>
 <sec id="references">
@@ -904,7 +955,9 @@ edge-of-field monitoring in cold regions.</p>
 <sec id="supplemental-materials">
   <title>Supplemental materials</title>
   <fig id="suppfig-climate-normals">
-    <caption><p>Figure S1</p></caption>
+    <caption><p>Figure S1: Climate Normals (1991-2020) for Morden, MB
+    (Climate ID 5021849), located approximately 30 km from the field
+    site.</p></caption>
     <graphic mimetype="image" mime-subtype="png" xlink:href="./Figures/Climate_normal.png" />
   </fig>
 </sec>
@@ -1145,7 +1198,7 @@ edge-of-field monitoring in cold regions.</p>
         <name><surname>E. LaZerte</surname><given-names>Stefanie</given-names></name>
         <name><surname>Albers</surname><given-names>Sam</given-names></name>
       </person-group>
-      <article-title>weathercan: Download and format weather data from Environment and Climate Change Canada</article-title>
+      <article-title>Weathercan: Download and format weather data from environment and climate change canada</article-title>
       <source>The Journal of Open Source Software</source>
       <year iso-8601-date="2018-02-11">2018</year><month>02</month><day>11</day>
       <volume>3</volume>
@@ -1224,7 +1277,7 @@ edge-of-field monitoring in cold regions.</p>
         <name><surname>Mächler</surname><given-names>Martin</given-names></name>
         <name><surname>Bolker</surname><given-names>Benjamin,M.</given-names></name>
       </person-group>
-      <article-title>glmmTMB Balances Speed and Flexibility Among Packages for Zero-inflated Generalized Linear Mixed Modeling</article-title>
+      <article-title>glmmTMB balances speed and flexibility among packages for zero-inflated generalized linear mixed modeling</article-title>
       <source>The R Journal</source>
       <year iso-8601-date="2017">2017</year>
       <volume>9</volume>
@@ -1270,7 +1323,7 @@ edge-of-field monitoring in cold regions.</p>
         <name><surname>Kenny</surname><given-names>Jose</given-names></name>
         <name><surname>Lyulin</surname><given-names>Sergey</given-names></name>
       </person-group>
-      <article-title>Analysis of Slow-Released Fertilisers as a Source of Microplastics</article-title>
+      <article-title>Analysis of slow-released fertilisers as a source of microplastics</article-title>
       <source>Land</source>
       <year iso-8601-date="2025-01">2025</year><month>01</month>
       <volume>14</volume>
@@ -1349,7 +1402,7 @@ edge-of-field monitoring in cold regions.</p>
         <name><surname>Cha</surname><given-names>Jihye</given-names></name>
         <name><surname>Rodríguez-Seijo</surname><given-names>Andrés</given-names></name>
       </person-group>
-      <article-title>Methods of soil sampling for microplastic analysis: a review</article-title>
+      <article-title>Methods of soil sampling for microplastic analysis: A review</article-title>
       <source>Environmental Chemistry Letters</source>
       <year iso-8601-date="2024-02-01">2024</year><month>02</month><day>01</day>
       <volume>22</volume>
@@ -1484,7 +1537,7 @@ edge-of-field monitoring in cold regions.</p>
 <sub-article article-type="notebook" id="nb-1-nb-1">
 <front-stub>
 <title-group>
-<article-title>03 Soil sampling</article-title>
+<article-title>04 Discharage</article-title>
 </title-group>
 <contrib-group>
 <contrib contrib-type="author">
@@ -1503,6 +1556,610 @@ edge-of-field monitoring in cold regions.</p>
   <title>Load libraries</title>
   <sec specific-use="notebook-content">
   <code language="r script">suppressPackageStartupMessages({
+  library(tidyverse)
+  library(gt)
+})
+  </code>
+  </sec>
+</sec>
+<sec id="load-data-nb-1">
+  <title>Load data</title>
+  <sec specific-use="notebook-content">
+  <code language="r script">discharge &lt;- read_csv(here::here(&quot;./notebooks/discharge.csv&quot;)) |&gt;
+  mutate(volume_m3 = q * 60*15/1000) |&gt;
+  mutate(q_m3s = q / 1000) |&gt;
+  group_by(watershed) |&gt;
+  filter(date_time &gt;= ymd_hms(&quot;2023-04-11 06:00:00&quot;, tz = &quot;UTC&quot;), date_time &lt; ymd_hms(&quot;2023-04-15 00:00:00&quot;, tz = &quot;UTC&quot;)) |&gt;
+  ungroup()
+  </code>
+  <boxed-text>
+    <preformat>Rows: 9216 Columns: 3
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: &quot;,&quot;
+chr  (1): watershed
+dbl  (1): q
+dttm (1): date_time
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</preformat>
+  </boxed-text>
+  </sec>
+</sec>
+<sec id="plastic-counts-nb-1">
+  <title>Plastic counts</title>
+  <sec specific-use="notebook-content">
+  <code language="r script">sampling &lt;- tibble(
+  start = ymd_hms(c(
+    &quot;2023-04-13 10:00:00&quot;,
+    &quot;2023-04-13 10:00:00&quot;,
+    &quot;2023-04-13 12:00:00&quot;,
+    &quot;2023-04-13 12:00:00&quot;,
+    &quot;2023-04-14 10:00:00&quot;,
+    &quot;2023-04-14 10:00:00&quot;,
+    &quot;2023-04-14 12:00:00&quot;,
+    &quot;2023-04-14 12:00:00&quot;
+  )),
+  end = ymd_hms(c(
+    &quot;2023-04-13 11:45:00&quot;,
+    &quot;2023-04-13 11:30:00&quot;,
+    &quot;2023-04-13 13:30:00&quot;,
+    &quot;2023-04-13 12:45:00&quot;,
+    &quot;2023-04-14 11:45:00&quot;,
+    &quot;2023-04-14 11:45:00&quot;,
+    &quot;2023-04-14 13:45:00&quot;,
+    &quot;2023-04-14 13:45:00&quot;
+  )),
+  watershed = c(&quot;East&quot;, &quot;West&quot;, &quot;East&quot;, &quot;West&quot;, &quot;East&quot;, &quot;West&quot;, &quot;East&quot;, &quot;West&quot;),
+  count = c(3, 3, 2, 3, 1, 0, 1, 2),
+  period = c(1, 1, 2, 2, 3, 3, 4, 4)
+)
+
+results &lt;- discharge |&gt;
+  inner_join(
+    sampling,
+    join_by(watershed, date_time &gt;= start, date_time &lt;= end)
+  ) |&gt;
+summarise(volume = sum(volume_m3), 
+          count = max(count),
+          .by = c(watershed, period)) |&gt;
+  summarise(volume = sum(volume), 
+          count = sum(count),
+          .by = c(watershed)) |&gt;
+  mutate(conc =  count/volume)
+  </code>
+  </sec>
+</sec>
+<sec id="pc-estimation-nb-1">
+  <title>PC estimation</title>
+  <sec specific-use="notebook-content">
+  <code language="r script">
+estimate &lt;- discharge |&gt;
+  summarise(total_Q = sum(volume_m3), .by = watershed) |&gt;
+  full_join(results) |&gt;
+  mutate(total = conc * total_Q) |&gt;
+  mutate(area = case_when(watershed == &quot;West&quot; ~ 5.15,
+                          watershed == &quot;East&quot; ~ 4.16)) |&gt;
+  select(watershed, area, total_Q, conc, total)
+  </code>
+  <boxed-text>
+    <preformat>Joining with `by = join_by(watershed)`</preformat>
+  </boxed-text>
+  <code language="r script">
+estimate |&gt;
+  gt() |&gt;
+  cols_label(watershed = &quot;Watershed&quot;,
+    area = &quot;Area (ha)&quot;,
+    total_Q = md(&quot;Accumulated runoff (m&lt;sup&gt;3&lt;/sup&gt;)&quot;),
+    conc = md(&quot;Concentration (Coatings m&lt;sup&gt;-3&lt;/sup&gt;)&quot;),
+    total = &quot;Total coatings exported&quot;) |&gt;
+    fmt_number(columns = c(total_Q, total), decimals = 0) |&gt;
+  fmt_number(columns = conc, decimals = 3) |&gt;
+  tab_footnote(
+    footnote = &quot;Volume-weighted mean concentration&quot;,
+    locations = cells_column_labels(columns = conc)) |&gt;
+  opt_footnote_marks(marks = &quot;standard&quot;)
+  </code>
+  <fig id="tbl-runoff-nb-1">
+    <caption><p>Estimated total polymer coating export from West and
+    East watersheds over the course of snowmelt in 2023, based on
+    accumulated runoff volume and volume-weighted mean
+    concentration.</p></caption>
+  </fig>
+  </sec>
+</sec>
+<sec id="plot-discharge-nb-1">
+  <title>plot discharge</title>
+  <sec id="cell-fig-discharge-nb-1" specific-use="notebook-content">
+  <code language="r script">
+ggplot(data = discharge, aes(x = date_time, y = q_m3s)) +
+  geom_rect(data = sampling,
+            aes(xmin = start, xmax = end + minutes(15), ymin = -Inf,ymax = Inf,
+            fill = factor(period)), alpha = 0.2, inherit.aes = FALSE) +
+  geom_line() +
+  theme_bw() +
+  scale_x_datetime(date_breaks = &quot;6 hours&quot;, date_labels = &quot;%b %d %H:%M&quot;, expand = c(0,0)) +
+  scale_y_continuous(expand = c(0.001,0)) +
+  theme_bw() +
+  facet_wrap(~watershed) +
+  labs(x = NULL, y = expression(Discharge~(m^3~s^-1)),
+       fill = &quot;Sampling period&quot;)  +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),
+        legend.position = &quot;bottom&quot;)
+  </code>
+  <fig id="fig-discharge-nb-1">
+    <caption><p>Discharge for the East and West watersheds during the
+    spring snowmelt period in April 2023. Shaded regions indicate the
+    four sampling periods for polymer coatings.</p></caption>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="04_Discharge_files/figure-jats/fig-discharge-1.png" />
+  </fig>
+  </sec>
+</sec>
+</body>
+
+
+
+<back>
+</back>
+
+
+</sub-article>
+<sub-article article-type="notebook" id="nb-2-nb-2">
+<front-stub>
+<title-group>
+<article-title>01 Map of study area</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<name>
+<surname>Koiter</surname>
+<given-names>Alex</given-names>
+</name>
+<string-name>Alex Koiter</string-name>
+
+</contrib>
+</contrib-group>
+</front-stub>
+
+<body>
+<sec id="load-libraries-nb-2">
+  <title>Load Libraries</title>
+  <sec specific-use="notebook-content">
+  <code language="r script">library(tidyverse)
+  </code>
+  <boxed-text>
+    <preformat>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.4     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</preformat>
+  </boxed-text>
+  <code language="r script">library(ggspatial)
+library(sf)
+  </code>
+  <boxed-text>
+    <preformat>Linking to GEOS 3.12.1, GDAL 3.8.4, PROJ 9.4.0; sf_use_s2() is TRUE</preformat>
+  </boxed-text>
+  <code language="r script">library(rnaturalearth)
+library(patchwork)
+library(OpenStreetMap)
+library(janitor)
+  </code>
+  <boxed-text>
+    <preformat>
+Attaching package: 'janitor'
+
+The following objects are masked from 'package:stats':
+
+    chisq.test, fisher.test</preformat>
+  </boxed-text>
+  </sec>
+</sec>
+<sec id="important-coordinates-nb-2">
+  <title>Important coordinates</title>
+  <p>Regional site location</p>
+  <sec specific-use="notebook-content">
+  <code language="r script">site &lt;- st_sfc(st_point(c(-98.364195, 49.338907)), crs = 4326)
+box = c(xmin = -98.371228, xmax = -98.363396, ymax =  49.341214, ymin =  49.335711)
+  </code>
+  </sec>
+  <p>Study sample locations</p>
+  <sec specific-use="notebook-content">
+  <code language="r script">sites &lt;- read_csv(here::here(&quot;./notebooks/sample_locations.csv&quot;))|&gt;
+  clean_names() |&gt;
+  dplyr::select(-latitude, -longitude) |&gt;
+  st_as_sf(coords  = c(&quot;easting&quot;, &quot;northing&quot;), crs = 32614)|&gt;
+  st_transform(crs = 3857) |&gt;
+  mutate(coords = as.data.frame(
+  st_coordinates(.data[[&quot;geometry&quot;]])))|&gt;
+  unnest(&quot;coords&quot;) |&gt;
+  st_drop_geometry() |&gt;
+  mutate(sample_sit = fct_recode(sample_sit, &quot;Upper&quot; = &quot;Upslope&quot;, &quot;Mid&quot; = &quot;Midslope&quot;, &quot;Lower&quot; = &quot;Downslope&quot;)) |&gt;
+  mutate(sample_sit = fct_relevel(sample_sit, &quot;Upper&quot;, &quot;Mid&quot; , &quot;Lower&quot;))
+  </code>
+  <boxed-text>
+    <preformat>Rows: 24 Columns: 8
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: &quot;,&quot;
+chr (5): Label, Field, Sample_Sit, Latitude, Longitude
+dbl (3): Transect, Easting, Northing
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</preformat>
+  </boxed-text>
+  </sec>
+</sec>
+<sec id="canada-nb-2">
+  <title>Canada</title>
+  <sec specific-use="notebook-content">
+  <code language="r script">canada &lt;- ne_states(country = &quot;Canada&quot;, returnclass = &quot;sf&quot;) %&gt;%
+  st_transform(crs = 3348) 
+  </code>
+  </sec>
+</sec>
+<sec id="maps-nb-2">
+  <title>Maps</title>
+  <sec id="canada-1-nb-2">
+    <title>Canada</title>
+    <sec specific-use="notebook-content">
+    <code language="r script">p1 &lt;- ggplot() +
+  theme_bw() +
+  layer_spatial(canada, fill = &quot;white&quot;) +
+  layer_spatial(site, shape = 23, colour = &quot;red&quot;, fill = &quot;red&quot;, size = 2) +
+  theme(axis.text = element_blank(),
+        axis.ticks = element_blank(),
+        axis.title = element_blank(),
+        plot.margin = unit(c(0,0,0,0), &quot;mm&quot;),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        #panel.border = element_blank(),
+        panel.background = element_blank())
+    </code>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">sf_use_s2(FALSE)
+    </code>
+    <boxed-text>
+      <preformat>Spherical geometry (s2) switched off</preformat>
+    </boxed-text>
+    <code language="r script">mb_river &lt;- ne_download(scale = 10,  type = 'rivers_lake_centerlines', category = &quot;physical&quot;, returnclass = &quot;sf&quot;) %&gt;%
+  st_transform(crs = 4326) %&gt;%
+  st_crop(st_bbox(c(xmin = -100, ymin = 48.99267, 
+                    xmax = -95.15399, ymax = 51.399), 
+                  crs = st_crs(.)))
+    </code>
+    <boxed-text>
+      <preformat>Reading layer `ne_10m_rivers_lake_centerlines' from data source 
+  `/tmp/RtmpmziDiv/ne_10m_rivers_lake_centerlines.shp' using driver `ESRI Shapefile'
+Simple feature collection with 1473 features and 38 fields
+Geometry type: MULTILINESTRING
+Dimension:     XY
+Bounding box:  xmin: -164.9035 ymin: -52.15775 xmax: 177.5204 ymax: 75.79348
+Geodetic CRS:  WGS 84</preformat>
+    </boxed-text>
+    <boxed-text>
+      <preformat>although coordinates are longitude/latitude, st_intersection assumes that they
+are planar</preformat>
+    </boxed-text>
+    <boxed-text>
+      <preformat>Warning: attribute variables are assumed to be spatially constant throughout
+all geometries</preformat>
+    </boxed-text>
+    <code language="r script">mb_lakes &lt;- ne_download(scale = 10,  type = 'lakes', category = &quot;physical&quot;, returnclass = &quot;sf&quot;) %&gt;%
+  st_transform(crs = 4326) %&gt;%
+  st_crop(st_bbox(c(xmin = -100, ymin = 48.99267, 
+                    xmax = -95.15399, ymax = 51.399), 
+                  crs = st_crs(.)))
+    </code>
+    <boxed-text>
+      <preformat>Reading layer `ne_10m_lakes' from data source `/tmp/RtmpmziDiv/ne_10m_lakes.shp' using driver `ESRI Shapefile'
+Simple feature collection with 1355 features and 41 fields
+Geometry type: MULTIPOLYGON
+Dimension:     XY
+Bounding box:  xmin: -165.9656 ymin: -50.66967 xmax: 177.1544 ymax: 81.95521
+Geodetic CRS:  WGS 84</preformat>
+    </boxed-text>
+    <boxed-text>
+      <preformat>although coordinates are longitude/latitude, st_intersection assumes that they
+are planar</preformat>
+    </boxed-text>
+    <boxed-text>
+      <preformat>Warning: attribute variables are assumed to be spatially constant throughout
+all geometries</preformat>
+    </boxed-text>
+    <code language="r script">mb &lt;- ne_states(country = &quot;Canada&quot;, returnclass = &quot;sf&quot;) %&gt;%
+  filter(name == &quot;Manitoba&quot;) %&gt;%
+  st_transform(crs = 4326) %&gt;%
+  st_crop(st_bbox(c(xmin = -100, ymin = 48.99267, 
+                    xmax = -95.15399, ymax = 51.399), 
+                  crs = st_crs(.)))
+    </code>
+    <boxed-text>
+      <preformat>although coordinates are longitude/latitude, st_intersection assumes that they
+are planar</preformat>
+    </boxed-text>
+    <boxed-text>
+      <preformat>Warning: attribute variables are assumed to be spatially constant throughout
+all geometries</preformat>
+    </boxed-text>
+    <code language="r script">mb_cities &lt;- maps::canada.cities %&gt;%
+  filter(country.etc == &quot;MB&quot;) %&gt;%
+  mutate(name = str_remove(name, &quot; [A-Z]{2}$&quot;)) %&gt;%
+  st_as_sf(coords = c(&quot;long&quot;, &quot;lat&quot;), crs = 4326) %&gt;%
+  st_transform(crs = 4326) %&gt;%
+  st_crop(st_bbox(c(xmin = -100, ymin = 48.99267, 
+                    xmax = -95.15399, ymax = 51.399), 
+                  crs = st_crs(.))) %&gt;%
+  filter(pop &gt;5000)
+    </code>
+    <boxed-text>
+      <preformat>although coordinates are longitude/latitude, st_intersection assumes that they
+are planar</preformat>
+    </boxed-text>
+    <boxed-text>
+      <preformat>Warning: attribute variables are assumed to be spatially constant throughout
+all geometries</preformat>
+    </boxed-text>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script"># Create an sf point from the site's coordinates
+site_as_sf &lt;- st_sf(
+  name = &quot;Site&quot;,
+  country.etc = NA_character_,
+  pop = NA_real_,
+  capital = NA_real_,
+  geometry = st_sfc(st_point(c(-98.3642, 49.33891)), crs = 4326)
+)
+
+# Combine with mb_cities
+mb_cities_with_site &lt;- rbind(mb_cities, site_as_sf)
+    </code>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">p4 &lt;- ggplot() +
+  theme_bw() +
+  geom_sf(data = mb, fill = &quot;white&quot;) +
+  geom_sf(data = mb_river, colour = &quot;skyblue4&quot;) +
+  geom_sf(data = mb_lakes, fill = &quot;lightblue&quot;) +
+  geom_sf(data = mb_cities) +
+  ggrepel::geom_label_repel(
+    data = mb_cities_with_site,
+    aes(label = name, geometry = geometry),
+    stat = &quot;sf_coordinates&quot;,
+    min.segment.length = 0,
+    nudge_y = 0.02,
+    size = 2,
+    box.padding = 0.5
+  ) +
+  layer_spatial(site, shape = 23, colour = &quot;red&quot;, fill = &quot;red&quot;, size = 2) +
+  labs(tag = &quot;a)&quot;) +
+  annotation_scale(location = &quot;bl&quot;,
+                   height = unit(0.05, &quot;cm&quot;), 
+                   pad_y = unit(0.5, &quot;cm&quot;),
+                   pad_x = unit(1.1, &quot;cm&quot;)) +
+  annotation_north_arrow(location = &quot;br&quot;, 
+                         height = unit(0.5, &quot;cm&quot;),
+                         width = unit(0.5, &quot;cm&quot;), 
+                   pad_y = unit(0.5, &quot;cm&quot;),
+                   pad_x = unit(1.1, &quot;cm&quot;)) +
+  theme(axis.text = element_blank(),
+        axis.ticks = element_blank(),
+        axis.title = element_blank(),
+        plot.margin = unit(c(0,0,0,0), &quot;mm&quot;),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank())
+p4
+    </code>
+    <boxed-text>
+      <preformat>Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+give correct results for longitude/latitude data</preformat>
+    </boxed-text>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="maps_files/figure-jats/unnamed-chunk-8-1.png" />
+    <code language="r script">#box = c(xmin = , xmax = -, ymax =  , ymin =  )
+    </code>
+    </sec>
+    <sec specific-use="notebook-content">
+    <code language="r script">map &lt;- openmap(c(49.341, -98.37), c(49.335711, -98.362), zoom = NULL,
+                  type = &quot;esri-imagery&quot;, mergeTiles = TRUE) 
+# 
+# sa_map2 &lt;- openproj(map, projection = &quot;+proj=longlat +datum=WGS84 +no_defs +type=crs&quot;)
+
+p5 &lt;- OpenStreetMap::autoplot.OpenStreetMap(map)  +
+  annotation_scale(
+    location = &quot;bl&quot;,
+    width_hint = 0.25,
+    plot_unit = &quot;m&quot;,         
+    unit_category = &quot;metric&quot;,
+    style = &quot;bar&quot;) +
+  theme_void(base_size = 12) +
+  geom_point(
+    data = sites,
+    aes(x = X, y = Y, fill = sample_sit, shape = factor(transect)),
+    colour = &quot;black&quot;,
+    size = 2.5) +
+  scale_fill_viridis_d(name = &quot;Position&quot;) +
+  scale_shape_manual(values = 21:24, name = &quot;Transect&quot;) +
+  guides(
+    fill = guide_legend(override.aes = list(shape = 21)),
+    shape = guide_legend(override.aes = list(fill = NA))) +
+geom_segment(
+    aes(x = -10950045, y = 6332636, xend = -10950200, yend = 6332150),
+    colour = &quot;black&quot;, linewidth = 0.8, linetype = &quot;dashed&quot;) +
+  # annotate(&quot;label&quot;, x = -10950296, y = 6332115, label = &quot;West&quot;, fill = &quot;lightgray&quot;) +
+  # annotate(&quot;label&quot;, x = -10950016, y = 6332115, label = &quot;East&quot;, fill = &quot;lightgray&quot;) +
+  labs(tag = &quot;b)&quot;) +   
+  theme(legend.position = &quot;bottom&quot;, legend.box = &quot;vertical&quot;) 
+p5
+    </code>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="maps_files/figure-jats/unnamed-chunk-9-1.png" />
+    </sec>
+    <sec id="cell-fig-mapr-nb-2" specific-use="notebook-content">
+    <code language="r script">
+p6 &lt;- (p4 + inset_element(p1, left = 0.6, bottom = 0.6, right = 1, top = 1)) + p5 +  plot_layout(widths = c(1, 1))
+p6
+    </code>
+    <boxed-text>
+      <preformat>Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+give correct results for longitude/latitude data</preformat>
+    </boxed-text>
+    <code language="r script">
+#ggsave(plot = p6, filename = here::here(&quot;./Figures/Figure .png&quot;), width = 170, height = 90, units = &quot;mm&quot;, dpi = 400) 
+    </code>
+    <fig id="fig-mapr-nb-2">
+      <caption><p>Showing a) the location of the study site in southern
+      Manitoba with an inset map of Canada; and b) the locations of the
+      four transects and three slope positions sampled in the East and
+      West watersheds as separated by the dashed line.</p></caption>
+      <graphic mimetype="image" mime-subtype="png" xlink:href="maps_files/figure-jats/fig-mapr-1.png" />
+    </fig>
+    </sec>
+  </sec>
+</sec>
+<sec id="session-info-nb-2">
+  <title>Session info</title>
+  <sec specific-use="notebook-content">
+  <code language="r script">sessioninfo::session_info()
+  </code>
+  <boxed-text>
+    <preformat>─ Session info ───────────────────────────────────────────────────────────────
+ setting  value
+ version  R version 4.5.3 (2026-03-11)
+ os       Ubuntu 24.04.4 LTS
+ system   x86_64, linux-gnu
+ ui       X11
+ language (EN)
+ collate  en_US.UTF-8
+ ctype    en_US.UTF-8
+ tz       America/Winnipeg
+ date     2026-06-25
+ pandoc   3.1.3 @ /usr/bin/ (via rmarkdown)
+ quarto   1.6.39 @ /usr/local/bin/quarto
+
+─ Packages ───────────────────────────────────────────────────────────────────
+ package            * version    date (UTC) lib source
+ bit                  4.6.0      2025-03-06 [1] CRAN (R 4.5.0)
+ bit64                4.6.0-1    2025-01-16 [1] CRAN (R 4.5.0)
+ class                7.3-23     2025-01-01 [4] CRAN (R 4.4.2)
+ classInt             0.4-11     2025-01-08 [1] CRAN (R 4.5.0)
+ cli                  3.6.6      2026-04-09 [1] CRAN (R 4.5.3)
+ codetools            0.2-20     2024-03-31 [4] CRAN (R 4.4.0)
+ crayon               1.5.3      2024-06-20 [1] CRAN (R 4.5.0)
+ DBI                  1.2.3      2024-06-02 [1] CRAN (R 4.5.0)
+ digest               0.6.39     2025-11-19 [1] CRAN (R 4.5.3)
+ dplyr              * 1.2.1      2026-04-03 [1] CRAN (R 4.5.3)
+ e1071                1.7-16     2024-09-16 [1] CRAN (R 4.5.0)
+ evaluate             1.0.5      2025-08-27 [1] CRAN (R 4.5.3)
+ farver               2.1.2      2024-05-13 [1] CRAN (R 4.5.0)
+ fastmap              1.2.0      2024-05-15 [1] CRAN (R 4.5.0)
+ forcats            * 1.0.0      2023-01-29 [1] CRAN (R 4.5.0)
+ generics             0.1.4      2025-05-09 [1] CRAN (R 4.5.1)
+ ggplot2            * 4.0.3      2026-04-22 [1] CRAN (R 4.5.3)
+ ggrepel              0.9.6      2024-09-07 [1] CRAN (R 4.5.0)
+ ggspatial          * 1.1.9      2023-08-17 [1] CRAN (R 4.5.0)
+ glue                 1.8.1      2026-04-17 [1] CRAN (R 4.5.3)
+ gtable               0.3.6      2024-10-25 [1] CRAN (R 4.5.0)
+ here                 1.0.2      2025-09-15 [1] CRAN (R 4.5.1)
+ hms                  1.1.3      2023-03-21 [1] CRAN (R 4.5.0)
+ htmltools            0.5.9      2025-12-04 [1] CRAN (R 4.5.3)
+ httr                 1.4.7      2023-08-15 [1] CRAN (R 4.5.0)
+ janitor            * 2.2.1      2024-12-22 [1] CRAN (R 4.5.0)
+ jsonlite             2.0.0      2025-03-27 [1] CRAN (R 4.5.0)
+ KernSmooth           2.23-26    2025-01-01 [4] CRAN (R 4.4.2)
+ knitr                1.51       2025-12-20 [1] CRAN (R 4.5.3)
+ labeling             0.4.3      2023-08-29 [1] CRAN (R 4.5.0)
+ lattice              0.22-9     2026-02-09 [4] CRAN (R 4.5.2)
+ lifecycle            1.0.5      2026-01-08 [1] CRAN (R 4.5.3)
+ lubridate          * 1.9.4      2024-12-08 [1] CRAN (R 4.5.0)
+ magrittr             2.0.5      2026-04-04 [1] CRAN (R 4.5.3)
+ maps                 3.4.2.1    2024-11-10 [1] CRAN (R 4.5.0)
+ OpenStreetMap      * 0.4.0      2023-10-12 [1] CRAN (R 4.5.0)
+ patchwork          * 1.3.2      2025-08-25 [1] CRAN (R 4.5.3)
+ pillar               1.11.1     2025-09-17 [1] CRAN (R 4.5.3)
+ pkgconfig            2.0.3      2019-09-22 [1] CRAN (R 4.5.0)
+ proxy                0.4-27     2022-06-09 [1] CRAN (R 4.5.0)
+ purrr              * 1.2.2      2026-04-10 [1] CRAN (R 4.5.3)
+ R6                   2.6.1      2025-02-15 [1] CRAN (R 4.5.0)
+ raster               3.6-32     2025-03-28 [1] CRAN (R 4.5.0)
+ RColorBrewer         1.1-3      2022-04-03 [1] CRAN (R 4.5.0)
+ Rcpp                 1.1.1-1.1  2026-04-24 [1] CRAN (R 4.5.3)
+ readr              * 2.1.5      2024-01-10 [1] CRAN (R 4.5.0)
+ rJava                1.0-11     2024-01-26 [1] CRAN (R 4.5.0)
+ rlang                1.2.0      2026-04-06 [1] CRAN (R 4.5.3)
+ rmarkdown            2.31       2026-03-26 [1] CRAN (R 4.5.3)
+ rnaturalearth      * 1.0.1      2023-12-15 [1] CRAN (R 4.5.0)
+ rnaturalearthhires   1.0.0.9000 2025-06-10 [1] Github (ropensci/rnaturalearthhires@153b0ea)
+ rprojroot            2.1.1      2025-08-26 [1] CRAN (R 4.5.1)
+ rstudioapi           0.17.1     2024-10-22 [1] CRAN (R 4.5.0)
+ S7                   0.2.2      2026-04-22 [1] CRAN (R 4.5.3)
+ scales               1.4.0      2025-04-24 [1] CRAN (R 4.5.0)
+ sessioninfo          1.2.4.9000 2026-06-17 [1] Github (r-lib/sessioninfo@12423b7)
+ sf                 * 1.0-20     2025-03-24 [1] CRAN (R 4.5.0)
+ snakecase            0.11.1     2023-08-27 [1] CRAN (R 4.5.0)
+ sp                   2.2-0      2025-02-01 [1] CRAN (R 4.5.0)
+ stringi              1.8.7      2025-03-27 [1] CRAN (R 4.5.0)
+ stringr            * 1.6.0      2025-11-04 [1] CRAN (R 4.5.1)
+ terra                1.8-42     2025-04-02 [1] CRAN (R 4.5.0)
+ tibble             * 3.3.1      2026-01-11 [1] CRAN (R 4.5.3)
+ tidyr              * 1.3.2      2025-12-19 [1] CRAN (R 4.5.3)
+ tidyselect           1.2.1      2024-03-11 [1] CRAN (R 4.5.0)
+ tidyverse          * 2.0.0      2023-02-22 [1] CRAN (R 4.5.0)
+ timechange           0.3.0      2024-01-18 [1] CRAN (R 4.5.0)
+ tzdb                 0.5.0      2025-03-15 [1] CRAN (R 4.5.0)
+ units                0.8-7      2025-03-11 [1] CRAN (R 4.5.0)
+ vctrs                0.7.3      2026-04-11 [1] CRAN (R 4.5.3)
+ viridisLite          0.4.3      2026-02-04 [1] CRAN (R 4.5.3)
+ vroom                1.6.5      2023-12-05 [1] CRAN (R 4.5.0)
+ withr                3.0.2      2024-10-28 [1] CRAN (R 4.5.0)
+ xfun                 0.57       2026-03-20 [1] CRAN (R 4.5.3)
+ yaml                 2.3.12     2025-12-10 [1] CRAN (R 4.5.3)
+
+ [1] /home/alex/R/x86_64-pc-linux-gnu-library/4.5
+ [2] /usr/local/lib/R/site-library
+ [3] /usr/lib/R/site-library
+ [4] /usr/lib/R/library
+ * ── Packages attached to the search path.
+
+──────────────────────────────────────────────────────────────────────────────</preformat>
+  </boxed-text>
+  </sec>
+</sec>
+</body>
+
+
+
+<back>
+</back>
+
+
+</sub-article>
+<sub-article article-type="notebook" id="nb-3-nb-3">
+<front-stub>
+<title-group>
+<article-title>03 Soil sampling</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<name>
+<surname>Koiter</surname>
+<given-names>Alex</given-names>
+</name>
+<string-name>Alex Koiter</string-name>
+
+</contrib>
+</contrib-group>
+</front-stub>
+
+<body>
+<sec id="load-libraries-nb-3">
+  <title>Load libraries</title>
+  <sec specific-use="notebook-content">
+  <code language="r script">suppressPackageStartupMessages({
 library(tidyverse)
 library(patchwork)
 library(DHARMa)
@@ -1513,7 +2170,7 @@ library(gt)
   </code>
   </sec>
 </sec>
-<sec id="read-in-data-nb-1">
+<sec id="read-in-data-nb-3">
   <title>Read in data</title>
   <sec specific-use="notebook-content">
   <code language="r script">data &lt;- read_csv(here::here(&quot;./notebooks/soil_data.csv&quot;))|&gt;
@@ -1534,9 +2191,9 @@ date (2): date, date_fct
   </boxed-text>
   </sec>
 </sec>
-<sec id="polymer-abundance-0-5-cm-nb-1">
+<sec id="polymer-abundance-0-5-cm-nb-3">
   <title>Polymer abundance (0-5 cm)</title>
-  <sec id="look-at-data-nb-1">
+  <sec id="look-at-data-nb-3">
     <title>Look at data</title>
     <sec specific-use="notebook-content">
     <code language="r script">p1 &lt;- ggplot(data = filter(data, depth == &quot;0-5 cm&quot;), aes(x = elevation, y = n_m2, fill = date_fct)) +
@@ -1549,16 +2206,12 @@ p1
     <graphic mimetype="image" mime-subtype="png" xlink:href="soil_sampling_files/figure-jats/unnamed-chunk-3-1.png" />
     </sec>
   </sec>
-  <sec id="stats-nb-1">
+  <sec id="stats-nb-3">
     <title>Stats</title>
     <sec specific-use="notebook-content">
     <code language="r script">m1 &lt;- glmmTMB(n_m2 ~ elevation * date_fct + (1|flag_location),
               data = filter(data, depth == &quot;0-5 cm&quot; &amp; elevation != &quot;Riparian&quot;))
     </code>
-    <boxed-text>
-      <preformat>Warning in finalizeTMB(TMBStruc, obj, fit, h, data.tmb.old): Model convergence
-problem; non-positive-definite Hessian matrix. See vignette('troubleshooting')</preformat>
-    </boxed-text>
     </sec>
     <sec specific-use="notebook-content">
     <code language="r script">simulateResiduals(m1, n = 1000, plot = TRUE)
@@ -1573,6 +2226,11 @@ Scaled residual values: 0.923 0.552 0.586 0.05 0.992 0.844 0.119 0.336 0.212 0.9
     <sec specific-use="notebook-content">
     <code language="r script">car::Anova(m1, type = &quot;III&quot;)
     </code>
+    <boxed-text>
+      <preformat>Registered S3 method overwritten by 'car':
+  method           from
+  na.action.merMod lme4</preformat>
+    </boxed-text>
     <boxed-text>
       <preformat>Analysis of Deviance Table (Type III Wald chisquare tests)
 
@@ -1595,7 +2253,7 @@ Formula:          n_m2 ~ elevation * date_fct + (1 | flag_location)
 Data: filter(data, depth == &quot;0-5 cm&quot; &amp; elevation != &quot;Riparian&quot;)
 
       AIC       BIC    logLik -2*log(L)  df.resid 
-       NA        NA        NA        NA        61 
+    940.3     965.3    -459.1     918.3        61 
 
 Random effects:
 
@@ -1723,9 +2381,9 @@ Scaled residual values: 0.882 0.615 0.625 0.094 0.98 0.851 0.19 0.449 0.196 0.92
 
 Low Correlation
 
-      Term VIF      VIF  CI adj. VIF Tolerance
- elevation   1 [1.00, 1.00]        1         1
-  date_fct   1 [1.00, 1.00]        1         1</preformat>
+      Term  VIF  VIF 95% CI adj. VIF Tolerance Tolerance 95% CI
+ elevation 1.00 [1.00, Inf]        1      1.00     [0.00, 1.00]
+  date_fct 1.00 [1.00, Inf]        1      1.00     [0.00, 1.00]</preformat>
     </boxed-text>
     </sec>
     <sec specific-use="notebook-content">
@@ -1744,7 +2402,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</preformat>
     </boxed-text>
     </sec>
   </sec>
-  <sec id="pairwise-comparisons-nb-1">
+  <sec id="pairwise-comparisons-nb-3">
     <title>Pairwise comparisons</title>
     <sec specific-use="notebook-content">
     <code language="r script">em_elev &lt;- emmeans(m1_sqrt, ~ elevation, type = &quot;response&quot;) |&gt; 
@@ -1798,7 +2456,7 @@ pairs |&gt;
   tab_style(style =  cell_text(weight = &quot;bold&quot;, align = &quot;center&quot;), locations =  cells_row_groups()) |&gt;
   tab_options(column_labels.font.weight = &quot;bold&quot;)
     </code>
-    <fig id="tbl-abundance-posthoc-nb-1">
+    <fig id="tbl-abundance-posthoc-nb-3">
       <caption><p>Results of the post-hoc pairwise comparisons with a
       Benjamini-Hochberg p value adjustment for differences in the
       abundance of polymer coatings (<inline-formula><alternatives>
@@ -1810,7 +2468,7 @@ pairs |&gt;
     </fig>
     </sec>
   </sec>
-  <sec id="plotting-nb-1">
+  <sec id="plotting-nb-3">
     <title>Plotting</title>
     <sec specific-use="notebook-content">
     <code language="r script"># Get predictions on the sqrt scale
@@ -1834,7 +2492,7 @@ preds_df_date &lt;- as.data.frame(preds_date) |&gt;
     </code>
     </sec>
     <sec specific-use="notebook-content">
-    <code language="r script"># Polymer abundance by elevation and date. Points show raw observations; Points outlined in black and error bars show model predictions with 95% CIs from a GLMM fitted to square-root transformed data, back-transformed to the original scale. Because the riparian area had fewer sampling locations and was only sampled on 2023-09-19 it was excluded from the formal analysis
+    <code language="r script"># Polymer abundance by elevation and date. Points show raw observations; Points outlined in black and error bars show model predictions with 95% CIs from a GLMM fitted to square-root transformed data, back-transformed to the original scale. Because the riparian area had fewer sampling locations and was only sampled on 2023-09-19 it was excluded from the formal analysis.
 
 p1_a &lt;- ggplot(filter(data, depth == &quot;0-5 cm&quot; ), aes(x = elevation, y = n_m2, color = date_fct)) +
   geom_jitter(position = position_dodge(0.3), alpha = 0.6, size = 2) +
@@ -1875,13 +2533,13 @@ p1_b
     </code>
     <graphic mimetype="image" mime-subtype="png" xlink:href="soil_sampling_files/figure-jats/unnamed-chunk-22-2.png" />
     </sec>
-    <sec id="cell-fig-denisty-surface-nb-1" specific-use="notebook-content">
+    <sec id="cell-fig-denisty-surface-nb-3" specific-use="notebook-content">
     <code language="r script">
 p1_1 &lt;- p1_a + p1_b  + plot_layout(axis = 'collect') &amp; theme(legend.position = 'bottom', legend.title = element_blank())
 p1_1 
 # ggsave(plot = p1_1, filename = here::here(&quot;./Figures/Figure 1.png&quot;), width = 184, height = 100, units = &quot;mm&quot;, dpi = 400)
     </code>
-    <fig id="fig-denisty-surface-nb-1">
+    <fig id="fig-denisty-surface-nb-3">
       <caption><p>Polymer abundance (0-5 cm) by elevation and date.
       Points show raw observations; Points outlined in black and error
       bars show model predictions with 95% CIs from a linear model
@@ -1890,15 +2548,15 @@ p1_1
       (p&lt;0.05) between slope position or sampling dates are denoted
       with different letters. Because the riparian area had fewer
       sampling locations and was only sampled on 2023-09-19 it was
-      excluded from the formal analysis</p></caption>
+      excluded from the formal analysis.</p></caption>
       <graphic mimetype="image" mime-subtype="png" xlink:href="soil_sampling_files/figure-jats/fig-denisty-surface-1.png" />
     </fig>
     </sec>
   </sec>
 </sec>
-<sec id="polymer-areal-density-0-5-cm-nb-1">
+<sec id="polymer-areal-density-0-5-cm-nb-3">
   <title>Polymer areal density 0-5 cm</title>
-  <sec id="look-at-data-1-nb-1">
+  <sec id="look-at-data-1-nb-3">
     <title>Look at data</title>
     <sec specific-use="notebook-content">
     <code language="r script">p2 &lt;- ggplot(data = filter(data, depth == &quot;0-5 cm&quot;), aes(x = elevation, y = mass_m2, fill = date_fct)) +
@@ -1911,7 +2569,7 @@ p2
     <graphic mimetype="image" mime-subtype="png" xlink:href="soil_sampling_files/figure-jats/unnamed-chunk-23-1.png" />
     </sec>
   </sec>
-  <sec id="stats-1-nb-1">
+  <sec id="stats-1-nb-3">
     <title>Stats</title>
     <sec specific-use="notebook-content">
     <code language="r script">m2 &lt;- glmmTMB(mass_m2 ~ elevation * date_fct + (1|flag_location),
@@ -1997,10 +2655,6 @@ m2_sqrt &lt;- glmmTMB(sqrt(mass_m2) ~ elevation + date_fct + (1|flag_location),
     <sec specific-use="notebook-content">
     <code language="r script">simulateResiduals(m2_sqrt, n = 1000, plot = TRUE) 
     </code>
-    <boxed-text>
-      <preformat>Warning in newton(lsp = lsp, X = G$X, y = G$y, Eb = G$Eb, UrS = G$UrS, L = G$L,
-: Fitting terminated with step failure - check results carefully</preformat>
-    </boxed-text>
     <graphic mimetype="image" mime-subtype="png" xlink:href="soil_sampling_files/figure-jats/unnamed-chunk-32-1.png" />
     <boxed-text>
       <preformat>Object of Class DHARMa with simulated residuals based on 1000 simulations with refit = FALSE . See ?DHARMa::simulateResiduals for help. 
@@ -2069,7 +2723,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</preformat>
     </boxed-text>
     </sec>
   </sec>
-  <sec id="pairwise-comparisons-1-nb-1">
+  <sec id="pairwise-comparisons-1-nb-3">
     <title>Pairwise comparisons</title>
     <sec specific-use="notebook-content">
     <code language="r script">em_elev1 &lt;- emmeans(m2_sqrt, ~ elevation, type = &quot;response&quot;) |&gt; 
@@ -2130,7 +2784,7 @@ pairs1 |&gt;
   tab_style(style =  cell_text(weight = &quot;bold&quot;, align = &quot;center&quot;), locations =  cells_row_groups()) |&gt;
   tab_options(column_labels.font.weight = &quot;bold&quot;)
     </code>
-    <fig id="tbl-density-posthoc-nb-1">
+    <fig id="tbl-density-posthoc-nb-3">
       <caption><p>Results of the post-hoc pairwise comparisons with a
       Benjamini-Hochberg p value adjustment for differences in the mass
       of polymer coatings (<inline-formula><alternatives>
@@ -2142,7 +2796,7 @@ pairs1 |&gt;
     </fig>
     </sec>
   </sec>
-  <sec id="plotting-1-nb-1">
+  <sec id="plotting-1-nb-3">
     <title>Plotting</title>
     <sec specific-use="notebook-content">
     <code language="r script"># Get predictions on the sqrt scale
@@ -2205,13 +2859,13 @@ p2_b
     </code>
     <graphic mimetype="image" mime-subtype="png" xlink:href="soil_sampling_files/figure-jats/unnamed-chunk-40-2.png" />
     </sec>
-    <sec id="cell-fig-mass-surface-nb-1" specific-use="notebook-content">
+    <sec id="cell-fig-mass-surface-nb-3" specific-use="notebook-content">
     <code language="r script">
 p2_1 &lt;- p2_a + p2_b  + plot_layout(axis = 'collect') &amp; theme(legend.position = 'bottom', legend.title = element_blank())
 p2_1 
 # ggsave(plot = p1_2, filename = here::here(&quot;./Figures/Figure 2.png&quot;), width = 184, height = 100, units = &quot;mm&quot;, dpi = 400)
     </code>
-    <fig id="fig-mass-surface-nb-1">
+    <fig id="fig-mass-surface-nb-3">
       <caption><p>Polymer mass (0-5 cm) by elevation (a) and date (b).
       Points show raw observations; Points outlined in black and error
       bars show model predictions with 95% CIs from a linear
@@ -2226,16 +2880,16 @@ p2_1
     </sec>
   </sec>
 </sec>
-<sec id="combined-figure-nb-1">
+<sec id="combined-figure-nb-3">
   <title>Combined figure</title>
-  <sec id="cell-fig-poly-surface-nb-1" specific-use="notebook-content">
+  <sec id="cell-fig-poly-surface-nb-3" specific-use="notebook-content">
   <code language="r script">
 fig_1 &lt;- (p1_a/ p2_a) + plot_layout(axis = 'collect', guides = 'collect') &amp; theme(legend.position = 'bottom', legend.title = element_blank()) | (p1_b / p2_b)  + plot_layout(axis = 'collect', guides = 'collect') &amp; theme(legend.position = 'bottom', legend.title = element_blank())
 fig_1 
 
 # ggsave(plot = fig_1, filename = here::here(&quot;./Figures/Figure 1.png&quot;), width = 184, height = 175, units = &quot;mm&quot;, dpi = 400)
   </code>
-  <fig id="fig-poly-surface-nb-1">
+  <fig id="fig-poly-surface-nb-3">
     <caption><p>Surface (0-5 cm) polymer areal density (a and b) and
     abundance (c and d) by elevation and date. Points show raw
     observations; Points outlined in black and error bars show model
@@ -2250,9 +2904,9 @@ fig_1
   </fig>
   </sec>
 </sec>
-<sec id="polymer-with-depth-nb-1">
+<sec id="polymer-with-depth-nb-3">
   <title>Polymer with depth</title>
-  <sec id="look-at-data-2-nb-1">
+  <sec id="look-at-data-2-nb-3">
     <title>Look at data</title>
     <sec specific-use="notebook-content">
     <code language="r script">p3 &lt;- ggplot(data = filter(data, date == &quot;2023-09-19&quot;), aes(x = elevation, y = mass_m2, fill = depth)) +
@@ -2275,650 +2929,21 @@ p4
     <graphic mimetype="image" mime-subtype="png" xlink:href="soil_sampling_files/figure-jats/unnamed-chunk-41-2.png" />
     </sec>
   </sec>
-  <sec id="plotting-2-nb-1">
+  <sec id="plotting-2-nb-3">
     <title>Plotting</title>
-    <sec id="cell-fig-depth-nb-1" specific-use="notebook-content">
+    <sec id="cell-fig-depth-nb-3" specific-use="notebook-content">
     <code language="r script">
 p5 &lt;- p3 + p4  + plot_layout(axis = 'collect', guides = 'collect') &amp; theme(legend.position = 'bottom', legend.title = element_blank())
 p5 
 
 # ggsave(plot = p5, filename = here::here(&quot;./Figures/Figure 2.png&quot;), width = 184, height = 100, units = &quot;mm&quot;, dpi = 400)
     </code>
-    <fig id="fig-depth-nb-1">
+    <fig id="fig-depth-nb-3">
       <caption><p>Polymer density (a) and abundance (b) for two sampling
       depths (0-5 and 5-10 cm) and the combined (0-10 cm) by slope
-      position. Samples were collected on 2023-09-19 and no ploymer was
-      detected below 5 cm in the riparian area</p></caption>
+      position. Samples were collected on 2023-09-19 and no polymer was
+      detected below 5 cm in the riparian area.</p></caption>
       <graphic mimetype="image" mime-subtype="png" xlink:href="soil_sampling_files/figure-jats/fig-depth-1.png" />
-    </fig>
-    </sec>
-  </sec>
-</sec>
-<sec id="session-info-nb-1">
-  <title>Session info</title>
-  <sec specific-use="notebook-content">
-  <code language="r script">sessioninfo::session_info()
-  </code>
-  <boxed-text>
-    <preformat>─ Session info ───────────────────────────────────────────────────────────────
- setting  value
- version  R version 4.5.3 (2026-03-11)
- os       Ubuntu 24.04.4 LTS
- system   x86_64, linux-gnu
- ui       X11
- language (EN)
- collate  en_US.UTF-8
- ctype    en_US.UTF-8
- tz       America/Winnipeg
- date     2026-06-25
- pandoc   3.1.3 @ /usr/bin/ (via rmarkdown)
- quarto   1.6.39 @ /usr/local/bin/quarto
-
-─ Packages ───────────────────────────────────────────────────────────────────
- package      * version    date (UTC) lib source
- abind          1.4-8      2024-09-12 [1] CRAN (R 4.5.0)
- bit            4.6.0      2025-03-06 [1] CRAN (R 4.5.0)
- bit64          4.6.0-1    2025-01-16 [1] CRAN (R 4.5.0)
- boot           1.3-32     2025-08-29 [4] CRAN (R 4.5.2)
- car            3.1-3      2024-09-27 [1] CRAN (R 4.5.0)
- carData        3.0-5      2022-01-06 [1] CRAN (R 4.5.0)
- cli            3.6.6      2026-04-09 [1] CRAN (R 4.5.3)
- codetools      0.2-20     2024-03-31 [4] CRAN (R 4.4.0)
- crayon         1.5.3      2024-06-20 [1] CRAN (R 4.5.0)
- datawizard     1.3.1      2026-04-26 [1] CRAN (R 4.5.3)
- DHARMa       * 0.5.0      2026-06-01 [1] CRAN (R 4.5.3)
- digest         0.6.39     2025-11-19 [1] CRAN (R 4.5.3)
- doParallel     1.0.17     2022-02-07 [1] CRAN (R 4.5.0)
- dplyr        * 1.2.1      2026-04-03 [1] CRAN (R 4.5.3)
- emmeans      * 2.0.3      2026-04-09 [1] CRAN (R 4.5.3)
- estimability   1.5.1      2024-05-12 [1] CRAN (R 4.5.0)
- evaluate       1.0.5      2025-08-27 [1] CRAN (R 4.5.3)
- farver         2.1.2      2024-05-13 [1] CRAN (R 4.5.0)
- fastmap        1.2.0      2024-05-15 [1] CRAN (R 4.5.0)
- forcats      * 1.0.0      2023-01-29 [1] CRAN (R 4.5.0)
- foreach        1.5.2      2022-02-02 [1] CRAN (R 4.5.0)
- Formula        1.2-5      2023-02-24 [1] CRAN (R 4.5.0)
- fs             2.1.0      2026-04-18 [1] CRAN (R 4.5.3)
- gap            1.6        2024-08-27 [1] CRAN (R 4.5.0)
- gap.datasets   0.0.6      2023-08-25 [1] CRAN (R 4.5.0)
- generics       0.1.4      2025-05-09 [1] CRAN (R 4.5.1)
- ggplot2      * 4.0.3      2026-04-22 [1] CRAN (R 4.5.3)
- glmmTMB      * 1.1.14     2026-01-15 [1] CRAN (R 4.5.3)
- glue           1.8.1      2026-04-17 [1] CRAN (R 4.5.3)
- gt           * 1.3.0      2026-01-22 [1] CRAN (R 4.5.3)
- gtable         0.3.6      2024-10-25 [1] CRAN (R 4.5.0)
- here           1.0.2      2025-09-15 [1] CRAN (R 4.5.1)
- hms            1.1.3      2023-03-21 [1] CRAN (R 4.5.0)
- htmltools      0.5.9      2025-12-04 [1] CRAN (R 4.5.3)
- httpuv         1.6.16     2025-04-16 [1] CRAN (R 4.5.0)
- insight        1.5.1      2026-05-21 [1] CRAN (R 4.5.3)
- iterators      1.0.14     2022-02-05 [1] CRAN (R 4.5.0)
- jsonlite       2.0.0      2025-03-27 [1] CRAN (R 4.5.0)
- knitr          1.51       2025-12-20 [1] CRAN (R 4.5.3)
- labeling       0.4.3      2023-08-29 [1] CRAN (R 4.5.0)
- later          1.4.2      2025-04-08 [1] CRAN (R 4.5.0)
- lattice        0.22-9     2026-02-09 [4] CRAN (R 4.5.2)
- lifecycle      1.0.5      2026-01-08 [1] CRAN (R 4.5.3)
- lme4           1.1-37     2025-03-26 [1] CRAN (R 4.5.0)
- lubridate    * 1.9.4      2024-12-08 [1] CRAN (R 4.5.0)
- magrittr       2.0.5      2026-04-04 [1] CRAN (R 4.5.3)
- MASS           7.3-65     2025-02-28 [4] CRAN (R 4.4.3)
- Matrix         1.7-4      2025-08-28 [4] CRAN (R 4.5.1)
- mgcv           1.9-4      2025-11-07 [4] CRAN (R 4.5.2)
- mime           0.13       2025-03-17 [1] CRAN (R 4.5.0)
- minqa          1.2.8      2024-08-17 [1] CRAN (R 4.5.0)
- multcomp       1.4-28     2025-01-29 [1] CRAN (R 4.5.0)
- mvtnorm        1.3-3      2025-01-10 [1] CRAN (R 4.5.0)
- nlme           3.1-168    2025-03-31 [4] CRAN (R 4.4.3)
- nloptr         2.2.1      2025-03-17 [1] CRAN (R 4.5.0)
- numDeriv       2016.8-1.1 2019-06-06 [1] CRAN (R 4.5.0)
- patchwork    * 1.3.2      2025-08-25 [1] CRAN (R 4.5.3)
- performance    0.17.0     2026-05-21 [1] CRAN (R 4.5.3)
- pillar         1.11.1     2025-09-17 [1] CRAN (R 4.5.3)
- pkgconfig      2.0.3      2019-09-22 [1] CRAN (R 4.5.0)
- plyr           1.8.9      2023-10-02 [1] CRAN (R 4.5.0)
- promises       1.3.2      2024-11-28 [1] CRAN (R 4.5.0)
- purrr        * 1.2.2      2026-04-10 [1] CRAN (R 4.5.3)
- qgam           2.0.0      2025-04-10 [1] CRAN (R 4.5.0)
- R6             2.6.1      2025-02-15 [1] CRAN (R 4.5.0)
- rbibutils      2.3        2024-10-04 [1] CRAN (R 4.5.0)
- RColorBrewer   1.1-3      2022-04-03 [1] CRAN (R 4.5.0)
- Rcpp           1.1.1-1.1  2026-04-24 [1] CRAN (R 4.5.3)
- Rdpack         2.6.4      2025-04-09 [1] CRAN (R 4.5.0)
- readr        * 2.1.5      2024-01-10 [1] CRAN (R 4.5.0)
- reformulas     0.4.4      2026-02-02 [1] CRAN (R 4.5.3)
- rlang          1.2.0      2026-04-06 [1] CRAN (R 4.5.3)
- rmarkdown      2.31       2026-03-26 [1] CRAN (R 4.5.3)
- rprojroot      2.1.1      2025-08-26 [1] CRAN (R 4.5.1)
- rstudioapi     0.17.1     2024-10-22 [1] CRAN (R 4.5.0)
- S7             0.2.2      2026-04-22 [1] CRAN (R 4.5.3)
- sandwich       3.1-1      2024-09-15 [1] CRAN (R 4.5.0)
- sass           0.4.10     2025-04-11 [1] CRAN (R 4.5.0)
- scales         1.4.0      2025-04-24 [1] CRAN (R 4.5.0)
- sessioninfo    1.2.4.9000 2026-06-17 [1] Github (r-lib/sessioninfo@12423b7)
- shiny          1.10.0     2024-12-14 [1] CRAN (R 4.5.0)
- stringi        1.8.7      2025-03-27 [1] CRAN (R 4.5.0)
- stringr      * 1.6.0      2025-11-04 [1] CRAN (R 4.5.1)
- survival       3.8-6      2026-01-16 [4] CRAN (R 4.5.2)
- TH.data        1.1-3      2025-01-17 [1] CRAN (R 4.5.0)
- tibble       * 3.3.1      2026-01-11 [1] CRAN (R 4.5.3)
- tidyr        * 1.3.2      2025-12-19 [1] CRAN (R 4.5.3)
- tidyselect     1.2.1      2024-03-11 [1] CRAN (R 4.5.0)
- tidyverse    * 2.0.0      2023-02-22 [1] CRAN (R 4.5.0)
- timechange     0.3.0      2024-01-18 [1] CRAN (R 4.5.0)
- TMB            1.9.17     2025-03-10 [1] CRAN (R 4.5.0)
- tzdb           0.5.0      2025-03-15 [1] CRAN (R 4.5.0)
- vctrs          0.7.3      2026-04-11 [1] CRAN (R 4.5.3)
- viridisLite    0.4.3      2026-02-04 [1] CRAN (R 4.5.3)
- vroom          1.6.5      2023-12-05 [1] CRAN (R 4.5.0)
- withr          3.0.2      2024-10-28 [1] CRAN (R 4.5.0)
- xfun           0.57       2026-03-20 [1] CRAN (R 4.5.3)
- xml2           1.5.2      2026-01-17 [1] CRAN (R 4.5.3)
- xtable         1.8-4      2019-04-21 [1] CRAN (R 4.5.0)
- yaml           2.3.12     2025-12-10 [1] CRAN (R 4.5.3)
- zoo            1.8-14     2025-04-10 [1] CRAN (R 4.5.0)
-
- [1] /home/alex/R/x86_64-pc-linux-gnu-library/4.5
- [2] /usr/local/lib/R/site-library
- [3] /usr/lib/R/site-library
- [4] /usr/lib/R/library
- * ── Packages attached to the search path.
-
-──────────────────────────────────────────────────────────────────────────────</preformat>
-  </boxed-text>
-  </sec>
-</sec>
-</body>
-
-
-
-<back>
-</back>
-
-
-</sub-article>
-<sub-article article-type="notebook" id="nb-2-nb-2">
-<front-stub>
-<title-group>
-<article-title>04 Discharage</article-title>
-</title-group>
-<contrib-group>
-<contrib contrib-type="author">
-<name>
-<surname>Koiter</surname>
-<given-names>Alex</given-names>
-</name>
-<string-name>Alex Koiter</string-name>
-
-</contrib>
-</contrib-group>
-</front-stub>
-
-<body>
-<sec id="load-libraries-nb-2">
-  <title>Load libraries</title>
-  <sec specific-use="notebook-content">
-  <code language="r script">suppressPackageStartupMessages({
-  library(tidyverse)
-  library(gt)
-})
-  </code>
-  </sec>
-</sec>
-<sec id="load-data-nb-2">
-  <title>Load data</title>
-  <sec specific-use="notebook-content">
-  <code language="r script">discharge &lt;- read_csv(here::here(&quot;./notebooks/discharge.csv&quot;)) |&gt;
-  mutate(volume_m3 = q * 60*15/1000) |&gt;
-  mutate(q_m3s = q / 1000) |&gt;
-  group_by(watershed) |&gt;
-  filter(date_time &gt;= ymd_hms(&quot;2023-04-11 06:00:00&quot;, tz = &quot;UTC&quot;), date_time &lt; ymd_hms(&quot;2023-04-15 00:00:00&quot;, tz = &quot;UTC&quot;)) |&gt;
-  ungroup()
-  </code>
-  <boxed-text>
-    <preformat>Rows: 9216 Columns: 3
-── Column specification ────────────────────────────────────────────────────────
-Delimiter: &quot;,&quot;
-chr  (1): watershed
-dbl  (1): q
-dttm (1): date_time
-
-ℹ Use `spec()` to retrieve the full column specification for this data.
-ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</preformat>
-  </boxed-text>
-  </sec>
-</sec>
-<sec id="plastic-counts-nb-2">
-  <title>Plastic counts</title>
-  <sec specific-use="notebook-content">
-  <code language="r script">sampling &lt;- tibble(
-  start = ymd_hms(c(
-    &quot;2023-04-13 10:00:00&quot;,
-    &quot;2023-04-13 10:00:00&quot;,
-    &quot;2023-04-13 12:00:00&quot;,
-    &quot;2023-04-13 12:00:00&quot;,
-    &quot;2023-04-14 10:00:00&quot;,
-    &quot;2023-04-14 10:00:00&quot;,
-    &quot;2023-04-14 12:00:00&quot;,
-    &quot;2023-04-14 12:00:00&quot;
-  )),
-  end = ymd_hms(c(
-    &quot;2023-04-13 11:45:00&quot;,
-    &quot;2023-04-13 11:30:00&quot;,
-    &quot;2023-04-13 13:30:00&quot;,
-    &quot;2023-04-13 12:45:00&quot;,
-    &quot;2023-04-14 11:45:00&quot;,
-    &quot;2023-04-14 11:45:00&quot;,
-    &quot;2023-04-14 13:45:00&quot;,
-    &quot;2023-04-14 13:45:00&quot;
-  )),
-  watershed = c(&quot;East&quot;, &quot;West&quot;, &quot;East&quot;, &quot;West&quot;, &quot;East&quot;, &quot;West&quot;, &quot;East&quot;, &quot;West&quot;),
-  count = c(3, 3, 2, 3, 1, 0, 1, 2),
-  period = c(1, 1, 2, 2, 3, 3, 4, 4)
-)
-
-results &lt;- discharge |&gt;
-  inner_join(
-    sampling,
-    join_by(watershed, date_time &gt;= start, date_time &lt;= end)
-  ) |&gt;
-summarise(volume = sum(volume_m3), 
-          count = max(count),
-          .by = c(watershed, period)) |&gt;
-  summarise(volume = sum(volume), 
-          count = sum(count),
-          .by = c(watershed)) |&gt;
-  mutate(conc =  count/volume)
-  </code>
-  </sec>
-</sec>
-<sec id="pc-estimation-nb-2">
-  <title>PC estimation</title>
-  <sec specific-use="notebook-content">
-  <code language="r script">
-estimate &lt;- discharge |&gt;
-  summarise(total_Q = sum(volume_m3), .by = watershed) |&gt;
-  full_join(results) |&gt;
-  mutate(total = conc * total_Q) |&gt;
-  mutate(area = case_when(watershed == &quot;West&quot; ~ 5.15,
-                          watershed == &quot;East&quot; ~ 4.16)) |&gt;
-  select(watershed, area, total_Q, conc, total)
-  </code>
-  <boxed-text>
-    <preformat>Joining with `by = join_by(watershed)`</preformat>
-  </boxed-text>
-  <code language="r script">
-estimate |&gt;
-  gt() |&gt;
-  cols_label(watershed = &quot;Watershed&quot;,
-    area = &quot;Area (ha)&quot;,
-    total_Q = md(&quot;Accumulated runoff (m&lt;sup&gt;3&lt;/sup&gt;)&quot;),
-    conc = md(&quot;Concentration (Coatings m&lt;sup&gt;-3&lt;/sup&gt;)&quot;),
-    total = &quot;Total coatings exported&quot;) |&gt;
-    fmt_number(columns = c(total_Q, total), decimals = 0) |&gt;
-  fmt_number(columns = conc, decimals = 3) |&gt;
-  tab_footnote(
-    footnote = &quot;Volume-weighted mean concentration&quot;,
-    locations = cells_column_labels(columns = conc)) |&gt;
-  opt_footnote_marks(marks = &quot;standard&quot;)
-  </code>
-  <fig id="tbl-runoff-nb-2">
-    <caption><p>Estimated total ploymer coating export from West and
-    East watersheds, based on accumulated runoff volume and
-    volume-weighted mean concentration.</p></caption>
-  </fig>
-  </sec>
-</sec>
-<sec id="plot-discharge-nb-2">
-  <title>plot discharge</title>
-  <sec id="cell-fig-discharge-nb-2" specific-use="notebook-content">
-  <code language="r script">
-ggplot(data = discharge, aes(x = date_time, y = q_m3s)) +
-  geom_rect(data = sampling,
-            aes(xmin = start, xmax = end + minutes(15), ymin = -Inf,ymax = Inf,
-            fill = factor(period)), alpha = 0.2, inherit.aes = FALSE) +
-  geom_line() +
-  theme_bw() +
-  scale_x_datetime(date_breaks = &quot;6 hours&quot;, date_labels = &quot;%b %d %H:%M&quot;, expand = c(0,0)) +
-  scale_y_continuous(expand = c(0.001,0)) +
-  theme_bw() +
-  facet_wrap(~watershed) +
-  labs(x = NULL, y = expression(Discharge~(m^3~s^-1)),
-       fill = &quot;Sampling period&quot;)  +
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),
-        legend.position = &quot;bottom&quot;)
-  </code>
-  <fig id="fig-discharge-nb-2">
-    <caption><p>Discharge for the East and West watersheds during the
-    spring snowmelt period in April 2023. Shaded regions indicate the
-    four sampling periods for polymer coatings.</p></caption>
-    <graphic mimetype="image" mime-subtype="png" xlink:href="04_Discharge_files/figure-jats/fig-discharge-1.png" />
-  </fig>
-  </sec>
-</sec>
-</body>
-
-
-
-<back>
-</back>
-
-
-</sub-article>
-<sub-article article-type="notebook" id="nb-3-nb-3">
-<front-stub>
-<title-group>
-<article-title>01 Map of study area</article-title>
-</title-group>
-<contrib-group>
-<contrib contrib-type="author">
-<name>
-<surname>Koiter</surname>
-<given-names>Alex</given-names>
-</name>
-<string-name>Alex Koiter</string-name>
-
-</contrib>
-</contrib-group>
-</front-stub>
-
-<body>
-<sec id="load-libraries-nb-3">
-  <title>Load Libraries</title>
-  <sec specific-use="notebook-content">
-  <code language="r script">library(tidyverse)
-  </code>
-  <boxed-text>
-    <preformat>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.1.5
-✔ forcats   1.0.0     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.4     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</preformat>
-  </boxed-text>
-  <code language="r script">library(ggspatial)
-library(sf)
-  </code>
-  <boxed-text>
-    <preformat>Linking to GEOS 3.12.1, GDAL 3.8.4, PROJ 9.4.0; sf_use_s2() is TRUE</preformat>
-  </boxed-text>
-  <code language="r script">library(rnaturalearth)
-library(patchwork)
-library(OpenStreetMap)
-library(janitor)
-  </code>
-  <boxed-text>
-    <preformat>
-Attaching package: 'janitor'
-
-The following objects are masked from 'package:stats':
-
-    chisq.test, fisher.test</preformat>
-  </boxed-text>
-  </sec>
-</sec>
-<sec id="important-coordinates-nb-3">
-  <title>Important coordinates</title>
-  <p>Regional site location</p>
-  <sec specific-use="notebook-content">
-  <code language="r script">site &lt;- st_sfc(st_point(c(-98.364195, 49.338907)), crs = 4326)
-box = c(xmin = -98.371228, xmax = -98.363396, ymax =  49.341214, ymin =  49.335711)
-  </code>
-  </sec>
-  <p>Study sample locations</p>
-  <sec specific-use="notebook-content">
-  <code language="r script">sites &lt;- read_csv(here::here(&quot;./notebooks/sample_locations.csv&quot;))|&gt;
-  clean_names() |&gt;
-  dplyr::select(-latitude, -longitude) |&gt;
-  st_as_sf(coords  = c(&quot;easting&quot;, &quot;northing&quot;), crs = 32614)|&gt;
-  st_transform(crs = 3857) |&gt;
-  mutate(coords = as.data.frame(
-  st_coordinates(.data[[&quot;geometry&quot;]])))|&gt;
-  unnest(&quot;coords&quot;) |&gt;
-  st_drop_geometry() |&gt;
-  mutate(sample_sit = fct_recode(sample_sit, &quot;Upper&quot; = &quot;Upslope&quot;, &quot;Mid&quot; = &quot;Midslope&quot;, &quot;Lower&quot; = &quot;Downslope&quot;)) |&gt;
-  mutate(sample_sit = fct_relevel(sample_sit, &quot;Upper&quot;, &quot;Mid&quot; , &quot;Lower&quot;))
-  </code>
-  <boxed-text>
-    <preformat>Rows: 24 Columns: 8
-── Column specification ────────────────────────────────────────────────────────
-Delimiter: &quot;,&quot;
-chr (5): Label, Field, Sample_Sit, Latitude, Longitude
-dbl (3): Transect, Easting, Northing
-
-ℹ Use `spec()` to retrieve the full column specification for this data.
-ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</preformat>
-  </boxed-text>
-  </sec>
-</sec>
-<sec id="canada-nb-3">
-  <title>Canada</title>
-  <sec specific-use="notebook-content">
-  <code language="r script">canada &lt;- ne_states(country = &quot;Canada&quot;, returnclass = &quot;sf&quot;) %&gt;%
-  st_transform(crs = 3348) 
-  </code>
-  </sec>
-</sec>
-<sec id="maps-nb-3">
-  <title>Maps</title>
-  <sec id="canada-1-nb-3">
-    <title>Canada</title>
-    <sec specific-use="notebook-content">
-    <code language="r script">p1 &lt;- ggplot() +
-  theme_bw() +
-  layer_spatial(canada, fill = &quot;white&quot;) +
-  layer_spatial(site, shape = 23, colour = &quot;red&quot;, fill = &quot;red&quot;, size = 2) +
-  theme(axis.text = element_blank(),
-        axis.ticks = element_blank(),
-        axis.title = element_blank(),
-        plot.margin = unit(c(0,0,0,0), &quot;mm&quot;),
-        panel.grid.major = element_blank(),
-        panel.grid.minor = element_blank(),
-        #panel.border = element_blank(),
-        panel.background = element_blank())
-    </code>
-    </sec>
-    <sec specific-use="notebook-content">
-    <code language="r script">sf_use_s2(FALSE)
-    </code>
-    <boxed-text>
-      <preformat>Spherical geometry (s2) switched off</preformat>
-    </boxed-text>
-    <code language="r script">mb_river &lt;- ne_download(scale = 10,  type = 'rivers_lake_centerlines', category = &quot;physical&quot;, returnclass = &quot;sf&quot;) %&gt;%
-  st_transform(crs = 4326) %&gt;%
-  st_crop(st_bbox(c(xmin = -100, ymin = 48.99267, 
-                    xmax = -95.15399, ymax = 51.399), 
-                  crs = st_crs(.)))
-    </code>
-    <boxed-text>
-      <preformat>Reading layer `ne_10m_rivers_lake_centerlines' from data source 
-  `/tmp/RtmpgsqXPd/ne_10m_rivers_lake_centerlines.shp' using driver `ESRI Shapefile'
-Simple feature collection with 1473 features and 38 fields
-Geometry type: MULTILINESTRING
-Dimension:     XY
-Bounding box:  xmin: -164.9035 ymin: -52.15775 xmax: 177.5204 ymax: 75.79348
-Geodetic CRS:  WGS 84</preformat>
-    </boxed-text>
-    <boxed-text>
-      <preformat>although coordinates are longitude/latitude, st_intersection assumes that they
-are planar</preformat>
-    </boxed-text>
-    <boxed-text>
-      <preformat>Warning: attribute variables are assumed to be spatially constant throughout
-all geometries</preformat>
-    </boxed-text>
-    <code language="r script">mb_lakes &lt;- ne_download(scale = 10,  type = 'lakes', category = &quot;physical&quot;, returnclass = &quot;sf&quot;) %&gt;%
-  st_transform(crs = 4326) %&gt;%
-  st_crop(st_bbox(c(xmin = -100, ymin = 48.99267, 
-                    xmax = -95.15399, ymax = 51.399), 
-                  crs = st_crs(.)))
-    </code>
-    <boxed-text>
-      <preformat>Reading layer `ne_10m_lakes' from data source `/tmp/RtmpgsqXPd/ne_10m_lakes.shp' using driver `ESRI Shapefile'
-Simple feature collection with 1355 features and 41 fields
-Geometry type: MULTIPOLYGON
-Dimension:     XY
-Bounding box:  xmin: -165.9656 ymin: -50.66967 xmax: 177.1544 ymax: 81.95521
-Geodetic CRS:  WGS 84</preformat>
-    </boxed-text>
-    <boxed-text>
-      <preformat>although coordinates are longitude/latitude, st_intersection assumes that they
-are planar</preformat>
-    </boxed-text>
-    <boxed-text>
-      <preformat>Warning: attribute variables are assumed to be spatially constant throughout
-all geometries</preformat>
-    </boxed-text>
-    <code language="r script">mb &lt;- ne_states(country = &quot;Canada&quot;, returnclass = &quot;sf&quot;) %&gt;%
-  filter(name == &quot;Manitoba&quot;) %&gt;%
-  st_transform(crs = 4326) %&gt;%
-  st_crop(st_bbox(c(xmin = -100, ymin = 48.99267, 
-                    xmax = -95.15399, ymax = 51.399), 
-                  crs = st_crs(.)))
-    </code>
-    <boxed-text>
-      <preformat>although coordinates are longitude/latitude, st_intersection assumes that they
-are planar</preformat>
-    </boxed-text>
-    <boxed-text>
-      <preformat>Warning: attribute variables are assumed to be spatially constant throughout
-all geometries</preformat>
-    </boxed-text>
-    <code language="r script">mb_cities &lt;- maps::canada.cities %&gt;%
-  filter(country.etc == &quot;MB&quot;) %&gt;%
-  mutate(name = str_remove(name, &quot; [A-Z]{2}<!-- (F2ED4C6E)[nb-3]:/home/alex/Dropbox/Graduate students/Cameron/Manuscript/soil-plastics/notebooks/maps.qmd -->quot;)) %&gt;%
-  st_as_sf(coords = c(&quot;long&quot;, &quot;lat&quot;), crs = 4326) %&gt;%
-  st_transform(crs = 4326) %&gt;%
-  st_crop(st_bbox(c(xmin = -100, ymin = 48.99267, 
-                    xmax = -95.15399, ymax = 51.399), 
-                  crs = st_crs(.))) %&gt;%
-  filter(pop &gt;5000)
-    </code>
-    <boxed-text>
-      <preformat>although coordinates are longitude/latitude, st_intersection assumes that they
-are planar</preformat>
-    </boxed-text>
-    <boxed-text>
-      <preformat>Warning: attribute variables are assumed to be spatially constant throughout
-all geometries</preformat>
-    </boxed-text>
-    </sec>
-    <sec specific-use="notebook-content">
-    <code language="r script"># Create an sf point from the site's coordinates
-site_as_sf &lt;- st_sf(
-  name = &quot;Site&quot;,
-  country.etc = NA_character_,
-  pop = NA_real_,
-  capital = NA_real_,
-  geometry = st_sfc(st_point(c(-98.3642, 49.33891)), crs = 4326)
-)
-
-# Combine with mb_cities
-mb_cities_with_site &lt;- rbind(mb_cities, site_as_sf)
-    </code>
-    </sec>
-    <sec specific-use="notebook-content">
-    <code language="r script">p4 &lt;- ggplot() +
-  theme_bw() +
-  geom_sf(data = mb, fill = &quot;white&quot;) +
-  geom_sf(data = mb_river, colour = &quot;skyblue4&quot;) +
-  geom_sf(data = mb_lakes, fill = &quot;lightblue&quot;) +
-  geom_sf(data = mb_cities) +
-  ggrepel::geom_label_repel(
-    data = mb_cities_with_site,
-    aes(label = name, geometry = geometry),
-    stat = &quot;sf_coordinates&quot;,
-    min.segment.length = 0,
-    nudge_y = 0.02,
-    size = 2,
-    box.padding = 0.5
-  ) +
-  layer_spatial(site, shape = 23, colour = &quot;red&quot;, fill = &quot;red&quot;, size = 2) +
-  labs(tag = &quot;a)&quot;) +
-  annotation_scale(location = &quot;bl&quot;,
-                   height = unit(0.05, &quot;cm&quot;), 
-                   pad_y = unit(0.5, &quot;cm&quot;),
-                   pad_x = unit(1.1, &quot;cm&quot;)) +
-  annotation_north_arrow(location = &quot;br&quot;, 
-                         height = unit(0.5, &quot;cm&quot;),
-                         width = unit(0.5, &quot;cm&quot;), 
-                   pad_y = unit(0.5, &quot;cm&quot;),
-                   pad_x = unit(1.1, &quot;cm&quot;)) +
-  theme(axis.text = element_blank(),
-        axis.ticks = element_blank(),
-        axis.title = element_blank(),
-        plot.margin = unit(c(0,0,0,0), &quot;mm&quot;),
-        panel.grid.major = element_blank(),
-        panel.grid.minor = element_blank(),
-        panel.border = element_blank(),
-        panel.background = element_blank())
-p4
-    </code>
-    <boxed-text>
-      <preformat>Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
-give correct results for longitude/latitude data</preformat>
-    </boxed-text>
-    <graphic mimetype="image" mime-subtype="png" xlink:href="maps_files/figure-jats/unnamed-chunk-8-1.png" />
-    <code language="r script">#box = c(xmin = , xmax = -, ymax =  , ymin =  )
-    </code>
-    </sec>
-    <sec specific-use="notebook-content">
-    <code language="r script">map &lt;- openmap(c(49.341, -98.37), c(49.335711, -98.362), zoom = NULL,
-                  type = &quot;esri-imagery&quot;, mergeTiles = TRUE) 
-# 
-# sa_map2 &lt;- openproj(map, projection = &quot;+proj=longlat +datum=WGS84 +no_defs +type=crs&quot;)
-
-p5 &lt;- OpenStreetMap::autoplot.OpenStreetMap(map)  +
-  annotation_scale(
-    location = &quot;bl&quot;,
-    width_hint = 0.25,
-    plot_unit = &quot;m&quot;,         
-    unit_category = &quot;metric&quot;,
-    style = &quot;bar&quot;) +
-  theme_void(base_size = 12) +
-  geom_point(
-    data = sites,
-    aes(x = X, y = Y, fill = sample_sit, shape = factor(transect)),
-    colour = &quot;black&quot;,
-    size = 2.5) +
-  scale_fill_viridis_d(name = &quot;Position&quot;) +
-  scale_shape_manual(values = 21:24, name = &quot;Transect&quot;) +
-  guides(
-    fill = guide_legend(override.aes = list(shape = 21)),
-    shape = guide_legend(override.aes = list(fill = NA))) +
-geom_segment(
-    aes(x = -10950045, y = 6332636, xend = -10950200, yend = 6332150),
-    colour = &quot;black&quot;, linewidth = 0.8, linetype = &quot;dashed&quot;) +
-  # annotate(&quot;label&quot;, x = -10950296, y = 6332115, label = &quot;West&quot;, fill = &quot;lightgray&quot;) +
-  # annotate(&quot;label&quot;, x = -10950016, y = 6332115, label = &quot;East&quot;, fill = &quot;lightgray&quot;) +
-  labs(tag = &quot;b)&quot;) +   
-  theme(legend.position = &quot;bottom&quot;, legend.box = &quot;vertical&quot;) 
-p5
-    </code>
-    <graphic mimetype="image" mime-subtype="png" xlink:href="maps_files/figure-jats/unnamed-chunk-9-1.png" />
-    </sec>
-    <sec id="cell-fig-mapr-nb-3" specific-use="notebook-content">
-    <code language="r script">
-p6 &lt;- (p4 + inset_element(p1, left = 0.6, bottom = 0.6, right = 1, top = 1)) + p5 +  plot_layout(widths = c(1, 1))
-p6
-    </code>
-    <boxed-text>
-      <preformat>Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
-give correct results for longitude/latitude data</preformat>
-    </boxed-text>
-    <code language="r script">
-#ggsave(plot = p6, filename = here::here(&quot;./Figures/Figure .png&quot;), width = 170, height = 90, units = &quot;mm&quot;, dpi = 400) 
-    </code>
-    <fig id="fig-mapr-nb-3">
-      <caption><p>Showing a) the location of the study site in southern
-      Manitoba with an inset map of Canada; and b) the locations of the
-      four transects and three slope positions sampled in the East and
-      West watersheds as separted by the dashed line.</p></caption>
-      <graphic mimetype="image" mime-subtype="png" xlink:href="maps_files/figure-jats/fig-mapr-1.png" />
     </fig>
     </sec>
   </sec>
@@ -2931,100 +2956,122 @@ give correct results for longitude/latitude data</preformat>
   <boxed-text>
     <preformat>─ Session info ───────────────────────────────────────────────────────────────
  setting  value
- version  R version 4.5.3 (2026-03-11)
- os       Ubuntu 24.04.4 LTS
- system   x86_64, linux-gnu
- ui       X11
+ version  R version 4.6.0 (2026-04-24 ucrt)
+ os       Windows 11 x64 (build 22631)
+ system   x86_64, mingw32
+ ui       RTerm
  language (EN)
- collate  en_US.UTF-8
- ctype    en_US.UTF-8
- tz       America/Winnipeg
- date     2026-06-18
- pandoc   3.1.3 @ /usr/bin/ (via rmarkdown)
- quarto   1.6.39 @ /usr/local/bin/quarto
+ collate  English_United States.utf8
+ ctype    English_United States.utf8
+ tz       America/Chicago
+ date     2026-07-17
+ pandoc   3.8.3 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
+ quarto   1.9.38 @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 
 ─ Packages ───────────────────────────────────────────────────────────────────
- package            * version    date (UTC) lib source
- bit                  4.6.0      2025-03-06 [1] CRAN (R 4.5.0)
- bit64                4.6.0-1    2025-01-16 [1] CRAN (R 4.5.0)
- class                7.3-23     2025-01-01 [4] CRAN (R 4.4.2)
- classInt             0.4-11     2025-01-08 [1] CRAN (R 4.5.0)
- cli                  3.6.6      2026-04-09 [1] CRAN (R 4.5.3)
- codetools            0.2-20     2024-03-31 [4] CRAN (R 4.4.0)
- crayon               1.5.3      2024-06-20 [1] CRAN (R 4.5.0)
- DBI                  1.2.3      2024-06-02 [1] CRAN (R 4.5.0)
- digest               0.6.39     2025-11-19 [1] CRAN (R 4.5.3)
- dplyr              * 1.2.1      2026-04-03 [1] CRAN (R 4.5.3)
- e1071                1.7-16     2024-09-16 [1] CRAN (R 4.5.0)
- evaluate             1.0.5      2025-08-27 [1] CRAN (R 4.5.3)
- farver               2.1.2      2024-05-13 [1] CRAN (R 4.5.0)
- fastmap              1.2.0      2024-05-15 [1] CRAN (R 4.5.0)
- forcats            * 1.0.0      2023-01-29 [1] CRAN (R 4.5.0)
- generics             0.1.4      2025-05-09 [1] CRAN (R 4.5.1)
- ggplot2            * 4.0.3      2026-04-22 [1] CRAN (R 4.5.3)
- ggrepel              0.9.6      2024-09-07 [1] CRAN (R 4.5.0)
- ggspatial          * 1.1.9      2023-08-17 [1] CRAN (R 4.5.0)
- glue                 1.8.1      2026-04-17 [1] CRAN (R 4.5.3)
- gtable               0.3.6      2024-10-25 [1] CRAN (R 4.5.0)
- here                 1.0.2      2025-09-15 [1] CRAN (R 4.5.1)
- hms                  1.1.3      2023-03-21 [1] CRAN (R 4.5.0)
- htmltools            0.5.9      2025-12-04 [1] CRAN (R 4.5.3)
- httr                 1.4.7      2023-08-15 [1] CRAN (R 4.5.0)
- janitor            * 2.2.1      2024-12-22 [1] CRAN (R 4.5.0)
- jsonlite             2.0.0      2025-03-27 [1] CRAN (R 4.5.0)
- KernSmooth           2.23-26    2025-01-01 [4] CRAN (R 4.4.2)
- knitr                1.51       2025-12-20 [1] CRAN (R 4.5.3)
- labeling             0.4.3      2023-08-29 [1] CRAN (R 4.5.0)
- lattice              0.22-9     2026-02-09 [4] CRAN (R 4.5.2)
- lifecycle            1.0.5      2026-01-08 [1] CRAN (R 4.5.3)
- lubridate          * 1.9.4      2024-12-08 [1] CRAN (R 4.5.0)
- magrittr             2.0.5      2026-04-04 [1] CRAN (R 4.5.3)
- maps                 3.4.2.1    2024-11-10 [1] CRAN (R 4.5.0)
- OpenStreetMap      * 0.4.0      2023-10-12 [1] CRAN (R 4.5.0)
- patchwork          * 1.3.2      2025-08-25 [1] CRAN (R 4.5.3)
- pillar               1.11.1     2025-09-17 [1] CRAN (R 4.5.3)
- pkgconfig            2.0.3      2019-09-22 [1] CRAN (R 4.5.0)
- proxy                0.4-27     2022-06-09 [1] CRAN (R 4.5.0)
- purrr              * 1.2.2      2026-04-10 [1] CRAN (R 4.5.3)
- R6                   2.6.1      2025-02-15 [1] CRAN (R 4.5.0)
- raster               3.6-32     2025-03-28 [1] CRAN (R 4.5.0)
- RColorBrewer         1.1-3      2022-04-03 [1] CRAN (R 4.5.0)
- Rcpp                 1.1.1-1.1  2026-04-24 [1] CRAN (R 4.5.3)
- readr              * 2.1.5      2024-01-10 [1] CRAN (R 4.5.0)
- rJava                1.0-11     2024-01-26 [1] CRAN (R 4.5.0)
- rlang                1.2.0      2026-04-06 [1] CRAN (R 4.5.3)
- rmarkdown            2.31       2026-03-26 [1] CRAN (R 4.5.3)
- rnaturalearth      * 1.0.1      2023-12-15 [1] CRAN (R 4.5.0)
- rnaturalearthhires   1.0.0.9000 2025-06-10 [1] Github (ropensci/rnaturalearthhires@153b0ea)
- rprojroot            2.1.1      2025-08-26 [1] CRAN (R 4.5.1)
- rstudioapi           0.17.1     2024-10-22 [1] CRAN (R 4.5.0)
- S7                   0.2.2      2026-04-22 [1] CRAN (R 4.5.3)
- scales               1.4.0      2025-04-24 [1] CRAN (R 4.5.0)
- sessioninfo          1.2.4.9000 2026-06-17 [1] Github (r-lib/sessioninfo@12423b7)
- sf                 * 1.0-20     2025-03-24 [1] CRAN (R 4.5.0)
- snakecase            0.11.1     2023-08-27 [1] CRAN (R 4.5.0)
- sp                   2.2-0      2025-02-01 [1] CRAN (R 4.5.0)
- stringi              1.8.7      2025-03-27 [1] CRAN (R 4.5.0)
- stringr            * 1.6.0      2025-11-04 [1] CRAN (R 4.5.1)
- terra                1.8-42     2025-04-02 [1] CRAN (R 4.5.0)
- tibble             * 3.3.1      2026-01-11 [1] CRAN (R 4.5.3)
- tidyr              * 1.3.2      2025-12-19 [1] CRAN (R 4.5.3)
- tidyselect           1.2.1      2024-03-11 [1] CRAN (R 4.5.0)
- tidyverse          * 2.0.0      2023-02-22 [1] CRAN (R 4.5.0)
- timechange           0.3.0      2024-01-18 [1] CRAN (R 4.5.0)
- tzdb                 0.5.0      2025-03-15 [1] CRAN (R 4.5.0)
- units                0.8-7      2025-03-11 [1] CRAN (R 4.5.0)
- vctrs                0.7.3      2026-04-11 [1] CRAN (R 4.5.3)
- viridisLite          0.4.3      2026-02-04 [1] CRAN (R 4.5.3)
- vroom                1.6.5      2023-12-05 [1] CRAN (R 4.5.0)
- withr                3.0.2      2024-10-28 [1] CRAN (R 4.5.0)
- xfun                 0.57       2026-03-20 [1] CRAN (R 4.5.3)
- yaml                 2.3.12     2025-12-10 [1] CRAN (R 4.5.3)
+ package      * version    date (UTC) lib source
+ abind          1.4-8      2024-09-12 [1] CRAN (R 4.6.0)
+ bit            4.6.0      2025-03-06 [1] CRAN (R 4.6.0)
+ bit64          4.8.2      2026-05-19 [1] CRAN (R 4.6.0)
+ boot           1.3-32     2025-08-29 [2] CRAN (R 4.6.0)
+ car            3.1-5      2026-02-03 [1] CRAN (R 4.6.0)
+ carData        3.0-6      2026-01-30 [1] CRAN (R 4.6.0)
+ cli            3.6.6      2026-04-09 [1] CRAN (R 4.6.0)
+ codetools      0.2-20     2024-03-31 [2] CRAN (R 4.6.0)
+ crayon         1.5.3      2024-06-20 [1] CRAN (R 4.6.0)
+ datawizard     1.3.1      2026-04-26 [1] CRAN (R 4.6.0)
+ DHARMa       * 0.5.0      2026-06-01 [1] CRAN (R 4.6.0)
+ digest         0.6.39     2025-11-19 [1] CRAN (R 4.6.0)
+ doParallel     1.0.17     2022-02-07 [1] CRAN (R 4.6.0)
+ dplyr        * 1.2.1      2026-04-03 [1] CRAN (R 4.6.0)
+ emmeans      * 2.0.3      2026-04-09 [1] CRAN (R 4.6.0)
+ estimability   1.5.1      2024-05-12 [1] CRAN (R 4.6.0)
+ evaluate       1.0.5      2025-08-27 [1] CRAN (R 4.6.0)
+ farver         2.1.2      2024-05-13 [1] CRAN (R 4.6.0)
+ fastmap        1.2.0      2024-05-15 [1] CRAN (R 4.6.0)
+ forcats      * 1.0.1      2025-09-25 [1] CRAN (R 4.6.0)
+ foreach        1.5.2      2022-02-02 [1] CRAN (R 4.6.0)
+ Formula        1.2-5      2023-02-24 [1] CRAN (R 4.6.0)
+ fs             2.1.0      2026-04-18 [1] CRAN (R 4.6.0)
+ gap            1.15.2     2026-05-28 [1] CRAN (R 4.6.0)
+ gap.datasets   0.0.6      2023-08-25 [1] CRAN (R 4.6.0)
+ generics       0.1.4      2025-05-09 [1] CRAN (R 4.6.0)
+ ggplot2      * 4.0.3      2026-04-22 [1] CRAN (R 4.6.0)
+ glmmTMB      * 1.1.14     2026-01-15 [1] CRAN (R 4.6.0)
+ glue           1.8.1      2026-04-17 [1] CRAN (R 4.6.0)
+ gt           * 1.3.0      2026-01-22 [1] CRAN (R 4.6.0)
+ gtable         0.3.6      2024-10-25 [1] CRAN (R 4.6.0)
+ here           1.0.2      2025-09-15 [1] CRAN (R 4.6.0)
+ hms            1.1.4      2025-10-17 [1] CRAN (R 4.6.0)
+ htmltools      0.5.9      2025-12-04 [1] CRAN (R 4.6.0)
+ httpuv         1.6.17     2026-03-18 [1] CRAN (R 4.6.0)
+ insight        1.5.1      2026-05-21 [1] CRAN (R 4.6.0)
+ iterators      1.0.14     2022-02-05 [1] CRAN (R 4.6.0)
+ jsonlite       2.0.0      2025-03-27 [1] CRAN (R 4.6.0)
+ knitr          1.51       2025-12-20 [1] CRAN (R 4.6.0)
+ labeling       0.4.3      2023-08-29 [1] CRAN (R 4.6.0)
+ later          1.4.8      2026-03-05 [1] CRAN (R 4.6.0)
+ lattice        0.22-9     2026-02-09 [2] CRAN (R 4.6.0)
+ lifecycle      1.0.5      2026-01-08 [1] CRAN (R 4.6.0)
+ lme4           2.0-1      2026-03-05 [1] CRAN (R 4.6.0)
+ lubridate    * 1.9.5      2026-02-04 [1] CRAN (R 4.6.0)
+ magrittr       2.0.5      2026-04-04 [1] CRAN (R 4.6.0)
+ MASS           7.3-65     2025-02-28 [2] CRAN (R 4.6.0)
+ Matrix         1.7-5      2026-03-21 [2] CRAN (R 4.6.0)
+ mgcv           1.9-4      2025-11-07 [2] CRAN (R 4.6.0)
+ mime           0.13       2025-03-17 [1] CRAN (R 4.6.0)
+ minqa          1.2.8      2024-08-17 [1] CRAN (R 4.6.0)
+ mvtnorm        1.3-7      2026-04-15 [1] CRAN (R 4.6.0)
+ nlme           3.1-169    2026-03-27 [2] CRAN (R 4.6.0)
+ nloptr         2.2.1      2025-03-17 [1] CRAN (R 4.6.0)
+ numDeriv       2016.8-1.1 2019-06-06 [1] CRAN (R 4.6.0)
+ otel           0.2.0      2025-08-29 [1] CRAN (R 4.6.0)
+ patchwork    * 1.3.2      2025-08-25 [1] CRAN (R 4.6.0)
+ performance    0.17.0     2026-05-21 [1] CRAN (R 4.6.0)
+ pillar         1.11.1     2025-09-17 [1] CRAN (R 4.6.0)
+ pkgconfig      2.0.3      2019-09-22 [1] CRAN (R 4.6.0)
+ plyr           1.8.9      2023-10-02 [1] CRAN (R 4.6.0)
+ promises       1.5.0      2025-11-01 [1] CRAN (R 4.6.0)
+ purrr        * 1.2.2      2026-04-10 [1] CRAN (R 4.6.0)
+ qgam           2.0.0      2025-04-10 [1] CRAN (R 4.6.0)
+ R6             2.6.1      2025-02-15 [1] CRAN (R 4.6.0)
+ rbibutils      2.4.1      2026-01-21 [1] CRAN (R 4.6.0)
+ RColorBrewer   1.1-3      2022-04-03 [1] CRAN (R 4.6.0)
+ Rcpp           1.1.1-1    2026-04-23 [1] Custom
+ Rdpack         2.6.6      2026-02-08 [1] CRAN (R 4.6.0)
+ readr        * 2.2.0      2026-02-19 [1] CRAN (R 4.6.0)
+ reformulas     0.4.4      2026-02-02 [1] CRAN (R 4.6.0)
+ rlang          1.2.0      2026-04-06 [1] CRAN (R 4.6.0)
+ rmarkdown      2.31       2026-03-26 [1] CRAN (R 4.6.0)
+ rprojroot      2.1.1      2025-08-26 [1] CRAN (R 4.6.0)
+ rstudioapi     0.18.0     2026-01-16 [1] CRAN (R 4.6.0)
+ S7             0.2.2      2026-04-22 [1] CRAN (R 4.6.0)
+ sandwich       3.1-1      2024-09-15 [1] CRAN (R 4.6.0)
+ sass           0.4.10     2025-04-11 [1] CRAN (R 4.6.0)
+ scales         1.4.0      2025-04-24 [1] CRAN (R 4.6.0)
+ sessioninfo    1.2.4      2026-06-04 [1] CRAN (R 4.6.0)
+ shiny          1.13.0     2026-02-20 [1] CRAN (R 4.6.0)
+ stringi        1.8.7      2025-03-27 [1] CRAN (R 4.6.0)
+ stringr      * 1.6.0      2025-11-04 [1] CRAN (R 4.6.0)
+ tibble       * 3.3.1      2026-01-11 [1] CRAN (R 4.6.0)
+ tidyr        * 1.3.2      2025-12-19 [1] CRAN (R 4.6.0)
+ tidyselect     1.2.1      2024-03-11 [1] CRAN (R 4.6.0)
+ tidyverse    * 2.0.0      2023-02-22 [1] CRAN (R 4.6.0)
+ timechange     0.4.0      2026-01-29 [1] CRAN (R 4.6.0)
+ TMB            1.9.21     2026-03-23 [1] CRAN (R 4.6.0)
+ tzdb           0.5.0      2025-03-15 [1] CRAN (R 4.6.0)
+ vctrs          0.7.3      2026-04-11 [1] CRAN (R 4.6.0)
+ viridisLite    0.4.3      2026-02-04 [1] CRAN (R 4.6.0)
+ vroom          1.7.1      2026-03-31 [1] CRAN (R 4.6.0)
+ withr          3.0.2      2024-10-28 [1] CRAN (R 4.6.0)
+ xfun           0.57       2026-03-20 [1] CRAN (R 4.6.0)
+ xml2           1.5.2      2026-01-17 [1] CRAN (R 4.6.0)
+ xtable         1.8-8      2026-02-22 [1] CRAN (R 4.6.0)
+ yaml           2.3.12     2025-12-10 [1] CRAN (R 4.6.0)
+ zoo            1.8-15     2025-12-15 [1] CRAN (R 4.6.0)
 
- [1] /home/alex/R/x86_64-pc-linux-gnu-library/4.5
- [2] /usr/local/lib/R/site-library
- [3] /usr/lib/R/site-library
- [4] /usr/lib/R/library
+ [1] C:/Users/koitera/AppData/Local/R/win-library/4.6
+ [2] C:/Program Files/R/R-4.6.0/library
  * ── Packages attached to the search path.
 
 ──────────────────────────────────────────────────────────────────────────────</preformat>
@@ -3067,6 +3114,9 @@ give correct results for longitude/latitude data</preformat>
   library(weathercan)
 })
   </code>
+  <boxed-text>
+    <preformat>Warning: package 'weathercan' was built under R version 4.6.1</preformat>
+  </boxed-text>
   </sec>
 </sec>
 <sec id="get-the-data-nb-4">
@@ -3076,6 +3126,12 @@ give correct results for longitude/latitude data</preformat>
     <sec specific-use="notebook-content">
     <code language="r script">stations_search(coords = c(49.332263, -98.382368), dist = 20, normals_years = &quot;1991-2020&quot;)
     </code>
+    <boxed-text>
+      <preformat>Warning in cache_stations_check(): The stations data frame hasn't been updated in over 4 weeks. Consider running
+`stations_dl()`
+The stations data frame hasn't been updated in over 4 weeks. Consider running
+`stations_dl()`</preformat>
+    </boxed-text>
     <boxed-text>
       <preformat>No stations within 20km. Returning closest 10 records</preformat>
     </boxed-text>
@@ -3104,6 +3160,12 @@ give correct results for longitude/latitude data</preformat>
     <code language="r script">stations_search(coords = c(49.332263, -98.382368), dist = 20, normals_years = &quot;1981-2010&quot;)
     </code>
     <boxed-text>
+      <preformat>Warning in cache_stations_check(): The stations data frame hasn't been updated in over 4 weeks. Consider running
+`stations_dl()`
+The stations data frame hasn't been updated in over 4 weeks. Consider running
+`stations_dl()`</preformat>
+    </boxed-text>
+    <boxed-text>
       <preformat># A tibble: 4 × 18
   prov  station_name  station_id climate_id WMO_id TC_id   lat   lon  elev tz   
   &lt;chr&gt; &lt;chr&gt;              &lt;dbl&gt; &lt;chr&gt;       &lt;dbl&gt; &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;
@@ -3121,6 +3183,12 @@ give correct results for longitude/latitude data</preformat>
     <sec specific-use="notebook-content">
     <code language="r script">stations_search(coords = c(49.332263, -98.382368), dist = 20, interval = &quot;day&quot;, starts_latest = 2020, ends_earliest = 2024)
     </code>
+    <boxed-text>
+      <preformat>Warning in cache_stations_check(): The stations data frame hasn't been updated in over 4 weeks. Consider running
+`stations_dl()`
+The stations data frame hasn't been updated in over 4 weeks. Consider running
+`stations_dl()`</preformat>
+    </boxed-text>
     <boxed-text>
       <preformat># A tibble: 1 × 18
   prov  station_name station_id climate_id WMO_id TC_id   lat   lon  elev tz    
@@ -3143,6 +3211,10 @@ give correct results for longitude/latitude data</preformat>
   filter(period == &quot;Year&quot;) |&gt;
   select(precip, rain, )
   </code>
+  <boxed-text>
+    <preformat>Warning in cache_stations_check(): The stations data frame hasn't been updated in over 4 weeks. Consider running
+`stations_dl()`</preformat>
+  </boxed-text>
   </sec>
   <sec id="download-nb-4">
     <title>Download</title>
@@ -3152,6 +3224,10 @@ give correct results for longitude/latitude data</preformat>
   #filter(element_group %in% c(&quot;Precipitation&quot;, &quot;Temperature&quot;)) |&gt;
   select(period, precipitation_mm, rainfall_mm, daily_average_c)
     </code>
+    <boxed-text>
+      <preformat>Warning in cache_stations_check(): The stations data frame hasn't been updated in over 4 weeks. Consider running
+`stations_dl()`</preformat>
+    </boxed-text>
     <boxed-text>
       <preformat>The most current normals available for download by weathercan are '1991-2020'
 Using composite locations: MORDEN</preformat>
@@ -3247,6 +3323,10 @@ p1
   mutate(cumul = cumsum(replace_na(total_precip, 0))) %&gt;%
   ungroup()
     </code>
+    <boxed-text>
+      <preformat>Warning in cache_stations_check(): The stations data frame hasn't been updated in over 4 weeks. Consider running
+`stations_dl()`</preformat>
+    </boxed-text>
     </sec>
   </sec>
   <sec id="sampling-details-nb-4">
@@ -3309,7 +3389,8 @@ p2
       (ESN) (polymer-coated slow-release urea); (2) seeding and tillage
       field operations; and (3) collection of soil and runoff samples.
       Red and blue points indicate average daily temperatures above and
-      below 0 degrees Celsius, respectively.</p></caption>
+      below 0 degrees Celsius, respectively. The blue line indicates
+      cumulative precipitation over the hydrologic year.</p></caption>
       <graphic mimetype="image" mime-subtype="png" xlink:href="weather_climate_files/figure-jats/fig-weather-climate-1.png" />
     </fig>
     </sec>
@@ -3340,95 +3421,94 @@ p2
   <boxed-text>
     <preformat>─ Session info ───────────────────────────────────────────────────────────────
  setting  value
- version  R version 4.5.3 (2026-03-11)
- os       Ubuntu 24.04.4 LTS
- system   x86_64, linux-gnu
- ui       X11
+ version  R version 4.6.0 (2026-04-24 ucrt)
+ os       Windows 11 x64 (build 22631)
+ system   x86_64, mingw32
+ ui       RTerm
  language (EN)
- collate  en_US.UTF-8
- ctype    en_US.UTF-8
- tz       America/Winnipeg
- date     2026-06-25
- pandoc   3.1.3 @ /usr/bin/ (via rmarkdown)
- quarto   1.6.39 @ /usr/local/bin/quarto
+ collate  English_United States.utf8
+ ctype    English_United States.utf8
+ tz       America/Chicago
+ date     2026-07-17
+ pandoc   3.8.3 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
+ quarto   1.9.38 @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 
 ─ Packages ───────────────────────────────────────────────────────────────────
- package      * version    date (UTC) lib source
- bit            4.6.0      2025-03-06 [1] CRAN (R 4.5.0)
- bit64          4.6.0-1    2025-01-16 [1] CRAN (R 4.5.0)
- cachem         1.1.0      2024-05-16 [1] CRAN (R 4.5.0)
- class          7.3-23     2025-01-01 [4] CRAN (R 4.4.2)
- classInt       0.4-11     2025-01-08 [1] CRAN (R 4.5.0)
- cli            3.6.6      2026-04-09 [1] CRAN (R 4.5.3)
- crayon         1.5.3      2024-06-20 [1] CRAN (R 4.5.0)
- curl           7.1.0      2026-04-22 [1] CRAN (R 4.5.3)
- DBI            1.2.3      2024-06-02 [1] CRAN (R 4.5.0)
- digest         0.6.39     2025-11-19 [1] CRAN (R 4.5.3)
- dplyr        * 1.2.1      2026-04-03 [1] CRAN (R 4.5.3)
- e1071          1.7-16     2024-09-16 [1] CRAN (R 4.5.0)
- evaluate       1.0.5      2025-08-27 [1] CRAN (R 4.5.3)
- farver         2.1.2      2024-05-13 [1] CRAN (R 4.5.0)
- fastmap        1.2.0      2024-05-15 [1] CRAN (R 4.5.0)
- forcats      * 1.0.0      2023-01-29 [1] CRAN (R 4.5.0)
- generics       0.1.4      2025-05-09 [1] CRAN (R 4.5.1)
- ggplot2      * 4.0.3      2026-04-22 [1] CRAN (R 4.5.3)
- glue           1.8.1      2026-04-17 [1] CRAN (R 4.5.3)
- gtable         0.3.6      2024-10-25 [1] CRAN (R 4.5.0)
- hms            1.1.3      2023-03-21 [1] CRAN (R 4.5.0)
- htmltools      0.5.9      2025-12-04 [1] CRAN (R 4.5.3)
- httr2          1.2.2      2025-12-08 [1] CRAN (R 4.5.3)
- jsonlite       2.0.0      2025-03-27 [1] CRAN (R 4.5.0)
- KernSmooth     2.23-26    2025-01-01 [4] CRAN (R 4.4.2)
- knitr          1.51       2025-12-20 [1] CRAN (R 4.5.3)
- labeling       0.4.3      2023-08-29 [1] CRAN (R 4.5.0)
- lattice        0.22-9     2026-02-09 [4] CRAN (R 4.5.2)
- lifecycle      1.0.5      2026-01-08 [1] CRAN (R 4.5.3)
- lubridate    * 1.9.4      2024-12-08 [1] CRAN (R 4.5.0)
- magrittr       2.0.5      2026-04-04 [1] CRAN (R 4.5.3)
- Matrix         1.7-4      2025-08-28 [4] CRAN (R 4.5.1)
- memoise        2.0.1      2021-11-26 [1] CRAN (R 4.5.0)
- mgcv           1.9-4      2025-11-07 [4] CRAN (R 4.5.2)
- nlme           3.1-168    2025-03-31 [4] CRAN (R 4.4.3)
- patchwork    * 1.3.2      2025-08-25 [1] CRAN (R 4.5.3)
- pillar         1.11.1     2025-09-17 [1] CRAN (R 4.5.3)
- pkgconfig      2.0.3      2019-09-22 [1] CRAN (R 4.5.0)
- proxy          0.4-27     2022-06-09 [1] CRAN (R 4.5.0)
- purrr        * 1.2.2      2026-04-10 [1] CRAN (R 4.5.3)
- R6             2.6.1      2025-02-15 [1] CRAN (R 4.5.0)
- rappdirs       0.3.4      2026-01-17 [1] CRAN (R 4.5.3)
- RColorBrewer   1.1-3      2022-04-03 [1] CRAN (R 4.5.0)
- Rcpp           1.1.1-1.1  2026-04-24 [1] CRAN (R 4.5.3)
- readr        * 2.1.5      2024-01-10 [1] CRAN (R 4.5.0)
- rlang          1.2.0      2026-04-06 [1] CRAN (R 4.5.3)
- rmarkdown      2.31       2026-03-26 [1] CRAN (R 4.5.3)
- rstudioapi     0.17.1     2024-10-22 [1] CRAN (R 4.5.0)
- s2             1.1.7      2024-07-17 [1] CRAN (R 4.5.0)
- S7             0.2.2      2026-04-22 [1] CRAN (R 4.5.3)
- scales         1.4.0      2025-04-24 [1] CRAN (R 4.5.0)
- sessioninfo    1.2.4.9000 2026-06-17 [1] Github (r-lib/sessioninfo@12423b7)
- sf             1.0-20     2025-03-24 [1] CRAN (R 4.5.0)
- stringi        1.8.7      2025-03-27 [1] CRAN (R 4.5.0)
- stringr      * 1.6.0      2025-11-04 [1] CRAN (R 4.5.1)
- tibble       * 3.3.1      2026-01-11 [1] CRAN (R 4.5.3)
- tidyr        * 1.3.2      2025-12-19 [1] CRAN (R 4.5.3)
- tidyselect     1.2.1      2024-03-11 [1] CRAN (R 4.5.0)
- tidyverse    * 2.0.0      2023-02-22 [1] CRAN (R 4.5.0)
- timechange     0.3.0      2024-01-18 [1] CRAN (R 4.5.0)
- tzdb           0.5.0      2025-03-15 [1] CRAN (R 4.5.0)
- units          0.8-7      2025-03-11 [1] CRAN (R 4.5.0)
- utf8           1.2.6      2025-06-08 [1] CRAN (R 4.5.3)
- vctrs          0.7.3      2026-04-11 [1] CRAN (R 4.5.3)
- vroom          1.6.5      2023-12-05 [1] CRAN (R 4.5.0)
- weathercan   * 1.0.0      2026-06-17 [1] https://ropensci.r-universe.dev (R 4.5.3)
- withr          3.0.2      2024-10-28 [1] CRAN (R 4.5.0)
- wk             0.9.4      2024-10-11 [1] CRAN (R 4.5.0)
- xfun           0.57       2026-03-20 [1] CRAN (R 4.5.3)
- yaml           2.3.12     2025-12-10 [1] CRAN (R 4.5.3)
+ package      * version date (UTC) lib source
+ bit            4.6.0   2025-03-06 [1] CRAN (R 4.6.0)
+ bit64          4.8.2   2026-05-19 [1] CRAN (R 4.6.0)
+ cachem         1.1.0   2024-05-16 [1] CRAN (R 4.6.0)
+ class          7.3-23  2025-01-01 [2] CRAN (R 4.6.0)
+ classInt       0.4-11  2025-01-08 [1] CRAN (R 4.6.0)
+ cli            3.6.6   2026-04-09 [1] CRAN (R 4.6.0)
+ crayon         1.5.3   2024-06-20 [1] CRAN (R 4.6.0)
+ curl           7.1.0   2026-04-22 [1] CRAN (R 4.6.0)
+ DBI            1.3.0   2026-02-25 [1] CRAN (R 4.6.0)
+ digest         0.6.39  2025-11-19 [1] CRAN (R 4.6.0)
+ dplyr        * 1.2.1   2026-04-03 [1] CRAN (R 4.6.0)
+ e1071          1.7-17  2025-12-18 [1] CRAN (R 4.6.0)
+ evaluate       1.0.5   2025-08-27 [1] CRAN (R 4.6.0)
+ farver         2.1.2   2024-05-13 [1] CRAN (R 4.6.0)
+ fastmap        1.2.0   2024-05-15 [1] CRAN (R 4.6.0)
+ forcats      * 1.0.1   2025-09-25 [1] CRAN (R 4.6.0)
+ generics       0.1.4   2025-05-09 [1] CRAN (R 4.6.0)
+ ggplot2      * 4.0.3   2026-04-22 [1] CRAN (R 4.6.0)
+ glue           1.8.1   2026-04-17 [1] CRAN (R 4.6.0)
+ gtable         0.3.6   2024-10-25 [1] CRAN (R 4.6.0)
+ hms            1.1.4   2025-10-17 [1] CRAN (R 4.6.0)
+ htmltools      0.5.9   2025-12-04 [1] CRAN (R 4.6.0)
+ httr2          1.2.2   2025-12-08 [1] CRAN (R 4.6.0)
+ jsonlite       2.0.0   2025-03-27 [1] CRAN (R 4.6.0)
+ KernSmooth     2.23-26 2025-01-01 [2] CRAN (R 4.6.0)
+ knitr          1.51    2025-12-20 [1] CRAN (R 4.6.0)
+ labeling       0.4.3   2023-08-29 [1] CRAN (R 4.6.0)
+ lattice        0.22-9  2026-02-09 [2] CRAN (R 4.6.0)
+ lifecycle      1.0.5   2026-01-08 [1] CRAN (R 4.6.0)
+ lubridate    * 1.9.5   2026-02-04 [1] CRAN (R 4.6.0)
+ magrittr       2.0.5   2026-04-04 [1] CRAN (R 4.6.0)
+ Matrix         1.7-5   2026-03-21 [2] CRAN (R 4.6.0)
+ memoise        2.0.1   2021-11-26 [1] CRAN (R 4.6.0)
+ mgcv           1.9-4   2025-11-07 [2] CRAN (R 4.6.0)
+ nlme           3.1-169 2026-03-27 [2] CRAN (R 4.6.0)
+ otel           0.2.0   2025-08-29 [1] CRAN (R 4.6.0)
+ patchwork    * 1.3.2   2025-08-25 [1] CRAN (R 4.6.0)
+ pillar         1.11.1  2025-09-17 [1] CRAN (R 4.6.0)
+ pkgconfig      2.0.3   2019-09-22 [1] CRAN (R 4.6.0)
+ proxy          0.4-29  2025-12-29 [1] CRAN (R 4.6.0)
+ purrr        * 1.2.2   2026-04-10 [1] CRAN (R 4.6.0)
+ R6             2.6.1   2025-02-15 [1] CRAN (R 4.6.0)
+ rappdirs       0.3.4   2026-01-17 [1] CRAN (R 4.6.0)
+ RColorBrewer   1.1-3   2022-04-03 [1] CRAN (R 4.6.0)
+ Rcpp           1.1.1-1 2026-04-23 [1] Custom
+ readr        * 2.2.0   2026-02-19 [1] CRAN (R 4.6.0)
+ rlang          1.2.0   2026-04-06 [1] CRAN (R 4.6.0)
+ rmarkdown      2.31    2026-03-26 [1] CRAN (R 4.6.0)
+ rstudioapi     0.18.0  2026-01-16 [1] CRAN (R 4.6.0)
+ s2             1.1.9   2025-05-23 [1] CRAN (R 4.6.0)
+ S7             0.2.2   2026-04-22 [1] CRAN (R 4.6.0)
+ scales         1.4.0   2025-04-24 [1] CRAN (R 4.6.0)
+ sessioninfo    1.2.4   2026-06-04 [1] CRAN (R 4.6.0)
+ sf             1.1-0   2026-02-24 [1] CRAN (R 4.6.0)
+ stringi        1.8.7   2025-03-27 [1] CRAN (R 4.6.0)
+ stringr      * 1.6.0   2025-11-04 [1] CRAN (R 4.6.0)
+ tibble       * 3.3.1   2026-01-11 [1] CRAN (R 4.6.0)
+ tidyr        * 1.3.2   2025-12-19 [1] CRAN (R 4.6.0)
+ tidyselect     1.2.1   2024-03-11 [1] CRAN (R 4.6.0)
+ tidyverse    * 2.0.0   2023-02-22 [1] CRAN (R 4.6.0)
+ timechange     0.4.0   2026-01-29 [1] CRAN (R 4.6.0)
+ tzdb           0.5.0   2025-03-15 [1] CRAN (R 4.6.0)
+ units          1.0-1   2026-03-11 [1] CRAN (R 4.6.0)
+ utf8           1.2.6   2025-06-08 [1] CRAN (R 4.6.0)
+ vctrs          0.7.3   2026-04-11 [1] CRAN (R 4.6.0)
+ vroom          1.7.1   2026-03-31 [1] CRAN (R 4.6.0)
+ weathercan   * 1.0.0   2026-07-01 [1] https://ropensci.r-universe.dev (R 4.6.1)
+ withr          3.0.2   2024-10-28 [1] CRAN (R 4.6.0)
+ wk             0.9.5   2025-12-18 [1] CRAN (R 4.6.0)
+ xfun           0.57    2026-03-20 [1] CRAN (R 4.6.0)
+ yaml           2.3.12  2025-12-10 [1] CRAN (R 4.6.0)
 
- [1] /home/alex/R/x86_64-pc-linux-gnu-library/4.5
- [2] /usr/local/lib/R/site-library
- [3] /usr/lib/R/site-library
- [4] /usr/lib/R/library
+ [1] C:/Users/koitera/AppData/Local/R/win-library/4.6
+ [2] C:/Program Files/R/R-4.6.0/library
  * ── Packages attached to the search path.
 
 ──────────────────────────────────────────────────────────────────────────────</preformat>

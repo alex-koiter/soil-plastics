@@ -72,7 +72,7 @@ summarise(volume = sum(volume_m3),
 
 ```{r}
 #| label: tbl-runoff
-#| tbl-cap: Estimated total ploymer coating export from West and East watersheds, based on accumulated runoff volume and volume-weighted mean concentration.
+#| tbl-cap: Estimated total polymer coating export from West and East watersheds over the course of snowmelt in 2023, based on accumulated runoff volume and volume-weighted mean concentration.
 
 
 estimate <- discharge |>

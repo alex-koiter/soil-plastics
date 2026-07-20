@@ -179,7 +179,7 @@ preds_df_date <- as.data.frame(preds_date) |>
 
 ```{r}
 
-# Polymer abundance by elevation and date. Points show raw observations; Points outlined in black and error bars show model predictions with 95% CIs from a GLMM fitted to square-root transformed data, back-transformed to the original scale. Because the riparian area had fewer sampling locations and was only sampled on 2023-09-19 it was excluded from the formal analysis
+# Polymer abundance by elevation and date. Points show raw observations; Points outlined in black and error bars show model predictions with 95% CIs from a GLMM fitted to square-root transformed data, back-transformed to the original scale. Because the riparian area had fewer sampling locations and was only sampled on 2023-09-19 it was excluded from the formal analysis.
 
 p1_a <- ggplot(filter(data, depth == "0-5 cm" ), aes(x = elevation, y = n_m2, color = date_fct)) +
   geom_jitter(position = position_dodge(0.3), alpha = 0.6, size = 2) +
@@ -220,7 +220,7 @@ p1_b
 
 ```{r}
 #| label: fig-denisty-surface
-#| fig-cap: "Polymer abundance (0-5 cm) by elevation and date. Points show raw observations; Points outlined in black and error bars show model predictions with 95% CIs from a linear model fitted to square-root transformed data, back-transformed to the original scale. Within each plot significant differences (p<0.05) between slope position or sampling dates are denoted with different letters. Because the riparian area had fewer sampling locations and was only sampled on 2023-09-19 it was excluded from the formal analysis"
+#| fig-cap: "Polymer abundance (0-5 cm) by elevation and date. Points show raw observations; Points outlined in black and error bars show model predictions with 95% CIs from a linear model fitted to square-root transformed data, back-transformed to the original scale. Within each plot significant differences (p<0.05) between slope position or sampling dates are denoted with different letters. Because the riparian area had fewer sampling locations and was only sampled on 2023-09-19 it was excluded from the formal analysis."
 #| fig-height: 10
 
 
@@ -465,7 +465,7 @@ p4
 ```{r}
 #| label: fig-depth
 #| fig-dpi: 300
-#| fig-cap: "Polymer density (a) and abundance (b) for two sampling depths (0-5 and 5-10 cm) and the combined (0-10 cm) by slope position. Samples were collected on 2023-09-19 and no ploymer was detected below 5 cm in the riparian area"
+#| fig-cap: "Polymer density (a) and abundance (b) for two sampling depths (0-5 and 5-10 cm) and the combined (0-10 cm) by slope position. Samples were collected on 2023-09-19 and no polymer was detected below 5 cm in the riparian area."
 
 
 p5 <- p3 + p4  + plot_layout(axis = 'collect', guides = 'collect') & theme(legend.position = 'bottom', legend.title = element_blank())

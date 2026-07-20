@@ -145,7 +145,7 @@ annotation_data <- data.frame(
 ```{r}
 #| label: fig-weather-climate
 #| fig-dpi: 300
-#| fig-cap: " Weather conditions for the 2022 and 2023 water years (Oct 1 - Sept 30) for Deerwood, MB (Station ID 29886), located approximately 8 km from the field site. Vertical lines indicate the timing of (1) application of Environmental Smart Nitrogen (ESN) (polymer-coated slow-release urea); (2) seeding and tillage field operations; and (3) collection of soil and runoff samples. Red and blue points indicate average daily temperatures above and below 0 degrees Celsius, respectively."
+#| fig-cap: " Weather conditions for the 2022 and 2023 water years (Oct 1 - Sept 30) for Deerwood, MB (Station ID 29886), located approximately 8 km from the field site. Vertical lines indicate the timing of (1) application of Environmental Smart Nitrogen (ESN) (polymer-coated slow-release urea); (2) seeding and tillage field operations; and (3) collection of soil and runoff samples. Red and blue points indicate average daily temperatures above and below 0 degrees Celsius, respectively. The blue line indicates cumulative precipitation over the hydrologic year."
 #| 
 p2 <- ggplot() +
   theme_bw() +
