@@ -226,7 +226,7 @@ p1_b
 
 p1_1 <- p1_a + p1_b  + plot_layout(axis = 'collect') & theme(legend.position = 'bottom', legend.title = element_blank())
 p1_1 
-# ggsave(plot = p1_1, filename = here::here("./Figures/Figure 1.png"), width = 184, height = 100, units = "mm", dpi = 400)
+
 ```
 
 
@@ -433,7 +433,7 @@ p2_1
 fig_1 <- (p1_a/ p2_a) + plot_layout(axis = 'collect', guides = 'collect') & theme(legend.position = 'bottom', legend.title = element_blank()) | (p1_b / p2_b)  + plot_layout(axis = 'collect', guides = 'collect') & theme(legend.position = 'bottom', legend.title = element_blank())
 fig_1 
 
-# ggsave(plot = fig_1, filename = here::here("./Figures/Figure 1.png"), width = 184, height = 175, units = "mm", dpi = 400)
+#ggsave(plot = fig_1, filename = here::here("./Figures/Figure 3.png"), width = 184, height = 175, units = "mm", dpi = 400)
 ```
 
 
@@ -471,7 +471,7 @@ p4
 p5 <- p3 + p4  + plot_layout(axis = 'collect', guides = 'collect') & theme(legend.position = 'bottom', legend.title = element_blank())
 p5 
 
-# ggsave(plot = p5, filename = here::here("./Figures/Figure 2.png"), width = 184, height = 100, units = "mm", dpi = 400)
+#ggsave(plot = p5, filename = here::here("./Figures/Figure 4.png"), width = 184, height = 100, units = "mm", dpi = 400)
 ```
 
 ## Session info

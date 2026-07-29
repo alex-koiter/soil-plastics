@@ -106,7 +106,7 @@ estimate |>
 
 
 
-ggplot(data = discharge, aes(x = date_time, y = q_m3s)) +
+discharge <- ggplot(data = discharge, aes(x = date_time, y = q_m3s)) +
   geom_rect(data = sampling,
             aes(xmin = start, xmax = end + minutes(15), ymin = -Inf,ymax = Inf,
             fill = factor(period)), alpha = 0.2, inherit.aes = FALSE) +
@@ -120,6 +120,10 @@ ggplot(data = discharge, aes(x = date_time, y = q_m3s)) +
        fill = "Sampling period")  +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),
         legend.position = "bottom")
+
+discharge
+
+#ggsave(plot = discharge, filename = here::here("./Figures/Figure 5.png"), width = 150, height = 120, units = "mm", dpi = 400)
 ```
 
 
