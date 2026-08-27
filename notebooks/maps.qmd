@@ -217,6 +217,7 @@ p6 <- (p4 + inset_element(p1, left = 0.6, bottom = 0.6, right = 1, top = 1)) + p
 p6
 
 #ggsave(plot = p6, filename = here::here("./Figures/Figure 1.png"), width = 170, height = 90, units = "mm", dpi = 400) 
+#ggsave(plot = p6, filename = here::here("./Figures/Figure 1.tiff"), width = 170, height = 90, units = "mm", dpi = 400) 
 ```
 
 ## Session info

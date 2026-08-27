@@ -98,32 +98,59 @@ estimate |>
   opt_footnote_marks(marks = "standard")
 ```
 
+
 ## plot discharge
+
+```{r}
+discharge <- discharge |>
+  mutate(watershed = case_when(watershed == "East" ~ "East (4.16 ha)",
+                               watershed == "West" ~ "West (5.15 ha)"))
+sampling <- sampling |>
+  mutate(watershed = case_when(watershed == "East" ~ "East (4.16 ha)",
+                               watershed == "West" ~ "West (5.15 ha)"))
+
+runoff_annot <- data.frame(
+  watershed = c("East (4.16 ha)", "West (5.15 ha)"),  # use your actual facet levels
+  label = c("Cum.~runoff~`=`~4675~m^3",
+          "Cum.~runoff~`=`~\"2,424\"~m^3"),
+  x = ymd_hms("2023-04-11 06:00:00"),  # set to your preferred x position
+  y = 0.12                      # top of each panel
+)
+```
+
 ```{r}
 #| label: fig-discharge
 #| fig-cap: "Discharge for the East and West watersheds during the spring snowmelt period in April 2023. Shaded regions indicate the four sampling periods for polymer coatings."
 #| fig-dpi: 300
 
 
-
-discharge <- ggplot(data = discharge, aes(x = date_time, y = q_m3s)) +
+discharge_p <- ggplot(data = discharge, aes(x = date_time, y = q_m3s)) +
   geom_rect(data = sampling,
             aes(xmin = start, xmax = end + minutes(15), ymin = -Inf,ymax = Inf,
             fill = factor(period)), alpha = 0.2, inherit.aes = FALSE) +
   geom_line() +
   theme_bw() +
   scale_x_datetime(date_breaks = "6 hours", date_labels = "%b %d %H:%M", expand = c(0,0)) +
+  expand_limits(y = 0.125) +
   scale_y_continuous(expand = c(0.001,0)) +
   theme_bw() +
   facet_wrap(~watershed) +
   labs(x = NULL, y = expression(Discharge~(m^3~s^-1)),
        fill = "Sampling period")  +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),
-        legend.position = "bottom")
+        legend.position = "bottom") +
+  geom_text(
+    data = runoff_annot,
+    aes(x = x, y = y, label = label),
+    parse = TRUE,
+    inherit.aes = FALSE,
+    hjust = 0
+  )
 
-discharge
+discharge_p
 
-#ggsave(plot = discharge, filename = here::here("./Figures/Figure 5.png"), width = 150, height = 120, units = "mm", dpi = 400)
+#ggsave(plot = discharge_p, filename = here::here("./Figures/Figure 4.png"), width = 150, height = 120, units = "mm", dpi = 400)
+#ggsave(plot = discharge_p, filename = here::here("./Figures/Figure 4.tiff"), width = 150, height = 120, units = "mm", dpi = 400)
 ```
 
 

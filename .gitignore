@@ -13,3 +13,7 @@
 .DS_Store
 
 **/*.quarto_ipynb
+
+# Ignore TIFF files
+Figures/*.tiff
+*.tiff
